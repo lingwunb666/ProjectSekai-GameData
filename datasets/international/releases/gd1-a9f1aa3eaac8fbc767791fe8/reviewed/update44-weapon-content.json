@@ -1,0 +1,4586 @@
+{
+  "data" : {
+    "build" : "2026.10.08.13.05",
+    "localizations" : {
+      "en" : {
+        "/Lotus/Language/Iceblade/DuelistBowDesc" : "Narin's signature bow is the north wind's icy messenger. Alt Fire unleashes a charged blizzard arrow that freezes enemies it touches and leaves behind a chilling path.",
+        "/Lotus/Language/Iceblade/DuelistBowName" : "Nunchasa",
+        "/Lotus/Language/Iceblade/DuelistPistolsDesc" : "Narin's signature pistols strike with winter's bite. Reloading sends out a chilling pulse that inflicts Cold Status Effect, the pulse's range increases with each round reloaded.",
+        "/Lotus/Language/Iceblade/DuelistPistolsName" : "Aksondol",
+        "/Lotus/Language/Primes/PrimeCorufellDesc" : "Corufell Prime's golden vines streamline its transformation for even faster Heavy Attacks.",
+        "/Lotus/Language/Primes/PrimeCorufellName" : "Corufell Prime",
+        "/Lotus/Language/Primes/PrimeSteflosShotgunDesc" : "This rose has gilded thorns. Deal death from even further afar with Citrine Prime's signature shotgun.",
+        "/Lotus/Language/Primes/PrimeSteflosShotgunName" : "Steflos Prime"
+      },
+      "zh" : {
+        "/Lotus/Language/Iceblade/DuelistBowDesc" : "（英文：NUNCHASA）Narin 的标志性弓箭是北风的冰霜使者。次要开火模式会释放一支充能暴雪箭，冻结接触到的敌人并留下一道寒冰的痕迹。",
+        "/Lotus/Language/Iceblade/DuelistBowName" : "霜冥差",
+        "/Lotus/Language/Iceblade/DuelistPistolsDesc" : "（英文：AKSONDOL）Narin 的标志性手枪威力十足，如同凛冬的寒风。每次装填都会释放出一道寒冷的脉冲，使敌人陷入冰冻异常状态，脉冲的范围会随着装填次数的增加而扩大。",
+        "/Lotus/Language/Iceblade/DuelistPistolsName" : "寒怨刺",
+        "/Lotus/Language/Primes/PrimeCorufellDesc" : "（英文：CORUFELL PRIME）闪劫 Prime 的金色藤蔓让变形更流畅，使重击更迅捷。",
+        "/Lotus/Language/Primes/PrimeCorufellName" : "闪劫 Prime",
+        "/Lotus/Language/Primes/PrimeSteflosShotgunDesc" : "（英文：STEFLOS PRIME）带有镀金棘刺的玫瑰。通过这把 Citrine Prime 的标志性霰弹枪，从更远的地方施展致命一击。",
+        "/Lotus/Language/Primes/PrimeSteflosShotgunName" : "石晶之花 Prime"
+      }
+    },
+    "officialChineseWeaponsSha256" : "8abcfa8e42f098b4d78acfc43e1c03d8b2bec0ae3fee1e2ef6986a1c5f42ab16",
+    "officialUpgradesSha256" : "20d3da857b4b5bd6770464eb1acd772b7f21a079ea19bd61c0db2aa61f47e012",
+    "officialWeaponsSha256" : "316d13e5c8a1f6940ec0c796d94ed8d23ccf2de198bdb9d216a91cc0ee2cbb40",
+    "schema" : 1,
+    "upgradeText" : {
+      "/Lotus/Upgrades/Mods/Randomized/LotusArchgunRandomModRare" : [ {
+        "prefixTag" : "insi",
+        "suffixTag" : "cak",
+        "tag" : "WeaponArmorPiercingDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_PUNCTURE_COLOR>Puncture",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "crita",
+        "suffixTag" : "cron",
+        "tag" : "WeaponCritChanceMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Critical Chance",
+          "value" : 0.0111
+        } ]
+      }, {
+        "prefixTag" : "acri",
+        "suffixTag" : "tis",
+        "tag" : "WeaponCritDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Critical Damage",
+          "value" : 0.0088999998
+        } ]
+      }, {
+        "prefixTag" : "vexi",
+        "suffixTag" : "tio",
+        "tag" : "WeaponElectricityDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_ELECTRICITY_COLOR>Electricity",
+          "value" : 0.0133
+        } ]
+      }, {
+        "prefixTag" : "igni",
+        "suffixTag" : "pha",
+        "tag" : "WeaponFireDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_FIRE_COLOR>Heat",
+          "value" : 0.0133
+        } ]
+      }, {
+        "prefixTag" : "croni",
+        "suffixTag" : "dra",
+        "tag" : "WeaponFireRateMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Fire Rate (x2 for Bows)",
+          "value" : 0.00667
+        } ]
+      }, {
+        "prefixTag" : "geli",
+        "suffixTag" : "do",
+        "tag" : "WeaponFreezeDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_FREEZE_COLOR>Cold",
+          "value" : 0.0133
+        } ]
+      }, {
+        "prefixTag" : "magna",
+        "suffixTag" : "ton",
+        "tag" : "WeaponImpactDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_IMPACT_COLOR>Impact",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "deci",
+        "suffixTag" : "des",
+        "tag" : "WeaponProcTimeMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Status Duration",
+          "value" : 0.01111
+        } ]
+      }, {
+        "prefixTag" : "sci",
+        "suffixTag" : "sus",
+        "tag" : "WeaponSlashDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_SLASH_COLOR>Slash",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "hexa",
+        "suffixTag" : "dex",
+        "tag" : "WeaponStunChanceMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Status Chance",
+          "value" : 0.0066999998
+        } ]
+      }, {
+        "prefixTag" : "toxi",
+        "suffixTag" : "tox",
+        "tag" : "WeaponToxinDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_POISON_COLOR>Toxin",
+          "value" : 0.0133
+        } ]
+      }, {
+        "prefixTag" : "ampi",
+        "suffixTag" : "bin",
+        "tag" : "WeaponAmmoMaxMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Ammo Maximum",
+          "value" : 0.0111
+        } ]
+      }, {
+        "prefixTag" : "arma",
+        "suffixTag" : "tin",
+        "tag" : "WeaponClipMaxMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Magazine Capacity",
+          "value" : 0.0066999998
+        } ]
+      }, {
+        "prefixTag" : "visi",
+        "suffixTag" : "ata",
+        "tag" : "WeaponDamageAmountMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Damage",
+          "value" : 0.0111
+        } ]
+      }, {
+        "prefixTag" : "sati",
+        "suffixTag" : "can",
+        "tag" : "WeaponFireIterationsMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Multishot",
+          "value" : 0.0066999998
+        } ]
+      }, {
+        "prefixTag" : "lexi",
+        "suffixTag" : "nok",
+        "tag" : "WeaponPunctureDepthMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val| Punch Through",
+          "value" : 0.029999999
+        } ]
+      }, {
+        "prefixTag" : "zeti",
+        "suffixTag" : "mag",
+        "tag" : "WeaponRecoilReductionMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Weapon Recoil",
+          "value" : -0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "feva",
+        "suffixTag" : "tak",
+        "tag" : "WeaponReloadSpeedMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Reload Speed",
+          "value" : 0.0111
+        } ]
+      }, {
+        "prefixTag" : "manti",
+        "suffixTag" : "tron",
+        "tag" : "WeaponFactionDamageCorpus",
+        "upgradeValues" : [ {
+          "locTag" : "|val| Damage to Corpus",
+          "value" : 0.0049999999
+        } ]
+      }, {
+        "prefixTag" : "argi",
+        "suffixTag" : "con",
+        "tag" : "WeaponFactionDamageGrineer",
+        "upgradeValues" : [ {
+          "locTag" : "|val| Damage to Grineer",
+          "value" : 0.0049999999
+        } ]
+      }, {
+        "prefixTag" : "pura",
+        "suffixTag" : "ada",
+        "tag" : "WeaponFactionDamageInfested",
+        "upgradeValues" : [ {
+          "locTag" : "|val| Damage to Infested",
+          "value" : 0.0049999999
+        } ]
+      }, {
+        "prefixTag" : "hera",
+        "suffixTag" : "lis",
+        "tag" : "WeaponZoomFovMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Zoom",
+          "value" : 0.006666
+        } ]
+      }, {
+        "prefixTag" : "eni",
+        "suffixTag" : "vo",
+        "tag" : "WeaponWeakpointDamage",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Weak Point Damage",
+          "value" : 0.025
+        } ]
+      }, {
+        "prefixTag" : "exiti",
+        "suffixTag" : "eus",
+        "tag" : "WeaponWeakpointCriticalChance",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Weak Point Critical Chance",
+          "value" : 0.0275
+        } ]
+      }, {
+        "prefixTag" : "parci",
+        "suffixTag" : "pia",
+        "tag" : "WeaponAmmoEfficiency",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Ammo Efficiency",
+          "reverseValueSymbol" : true,
+          "value" : -0.0049999999
+        } ]
+      }, {
+        "prefixTag" : "plaga",
+        "suffixTag" : "mna",
+        "tag" : "WeaponStatusDamage",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Status Damage",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "cali",
+        "suffixTag" : "fel",
+        "tag" : "WeaponGasDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_GAS_COLOR>Gas",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "cori",
+        "suffixTag" : "or",
+        "tag" : "WeaponCorrosiveDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_CORROSIVE_COLOR>Corrosive",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "cari",
+        "suffixTag" : "sco",
+        "tag" : "WeaponViralDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_VIRAL_COLOR>Viral",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "radi",
+        "suffixTag" : "lo",
+        "tag" : "WeaponRadiationDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_RADIATION_COLOR>Radiation",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "fraga",
+        "suffixTag" : "tus",
+        "tag" : "WeaponBlastDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_EXPLOSION_COLOR>Blast",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "magni",
+        "suffixTag" : "bra",
+        "tag" : "WeaponMagneticDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_MAGNETIC_COLOR>Magnetic",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "effi",
+        "suffixTag" : "tas",
+        "tag" : "WeaponFactionDamageOrokin",
+        "upgradeValues" : [ {
+          "locTag" : "|val| Damage to Orokin",
+          "value" : 0.0049999999
+        } ]
+      }, {
+        "prefixTag" : "muti",
+        "suffixTag" : "gia",
+        "tag" : "WeaponFactionDamageTechrot",
+        "upgradeValues" : [ {
+          "locTag" : "|val| Damage to Techrot",
+          "value" : 0.0049999999
+        } ]
+      }, {
+        "prefixTag" : "exsi",
+        "suffixTag" : "llo",
+        "tag" : "WeaponFactionDamageScaldra",
+        "upgradeValues" : [ {
+          "locTag" : "|val| Damage to Scaldra",
+          "value" : 0.0049999999
+        } ]
+      } ],
+      "/Lotus/Upgrades/Mods/Randomized/LotusModularMeleeRandomModRare" : [ {
+        "prefixTag" : "visi",
+        "suffixTag" : "ata",
+        "tag" : "WeaponMeleeDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Melee Damage",
+          "value" : 0.018300001
+        } ]
+      }, {
+        "prefixTag" : "insi",
+        "suffixTag" : "cak",
+        "tag" : "WeaponArmorPiercingDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_PUNCTURE_COLOR>Puncture",
+          "value" : 0.0133
+        } ]
+      }, {
+        "prefixTag" : "magna",
+        "suffixTag" : "ton",
+        "tag" : "WeaponImpactDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_IMPACT_COLOR>Impact",
+          "value" : 0.0133
+        } ]
+      }, {
+        "prefixTag" : "sci",
+        "suffixTag" : "sus",
+        "tag" : "WeaponSlashDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_SLASH_COLOR>Slash",
+          "value" : 0.0133
+        } ]
+      }, {
+        "prefixTag" : "crita",
+        "suffixTag" : "cron",
+        "tag" : "WeaponCritChanceMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Critical Chance (x2 for Heavy Attacks)",
+          "value" : 0.02
+        }, {
+          "value" : 0.02
+        } ]
+      }, {
+        "prefixTag" : "acri",
+        "suffixTag" : "tis",
+        "tag" : "WeaponCritDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Critical Damage",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "vexi",
+        "suffixTag" : "tio",
+        "tag" : "WeaponElectricityDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_ELECTRICITY_COLOR>Electricity",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "igni",
+        "suffixTag" : "pha",
+        "tag" : "WeaponFireDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_FIRE_COLOR>Heat",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "geli",
+        "suffixTag" : "do",
+        "tag" : "WeaponFreezeDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_FREEZE_COLOR>Cold",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "toxi",
+        "suffixTag" : "tox",
+        "tag" : "WeaponToxinDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_POISON_COLOR>Toxin",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "deci",
+        "suffixTag" : "des",
+        "tag" : "WeaponProcTimeMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Status Duration",
+          "value" : 0.01111
+        } ]
+      }, {
+        "prefixTag" : "manti",
+        "suffixTag" : "tron",
+        "tag" : "WeaponMeleeFactionDamageCorpus",
+        "upgradeValues" : [ {
+          "locTag" : "|val| Damage to Corpus",
+          "value" : 0.0049999999
+        } ]
+      }, {
+        "prefixTag" : "argi",
+        "suffixTag" : "con",
+        "tag" : "WeaponMeleeFactionDamageGrineer",
+        "upgradeValues" : [ {
+          "locTag" : "|val| Damage to Grineer",
+          "value" : 0.0049999999
+        } ]
+      }, {
+        "prefixTag" : "pura",
+        "suffixTag" : "ada",
+        "tag" : "WeaponMeleeFactionDamageInfested",
+        "upgradeValues" : [ {
+          "locTag" : "|val| Damage to Infested",
+          "value" : 0.0049999999
+        } ]
+      }, {
+        "prefixTag" : "croni",
+        "suffixTag" : "dra",
+        "tag" : "WeaponFireRateMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Attack Speed",
+          "value" : 0.0060999999
+        } ]
+      }, {
+        "prefixTag" : "hexa",
+        "suffixTag" : "dex",
+        "tag" : "WeaponStunChanceMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Status Chance",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "tempi",
+        "suffixTag" : "nem",
+        "tag" : "ComboDurationMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|s Combo Duration",
+          "value" : 0.090000004
+        } ]
+      }, {
+        "prefixTag" : "pleci",
+        "suffixTag" : "nent",
+        "tag" : "SlideAttackCritChanceMod",
+        "upgradeValues" : [ {
+          "locTag" : "|STAT1|% Critical Chance for Slide Attack",
+          "value" : 0.013334
+        }, {
+          "value" : 0.013334
+        } ]
+      }, {
+        "prefixTag" : "locti",
+        "suffixTag" : "tor",
+        "tag" : "WeaponMeleeRangeIncMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val| Range",
+          "value" : 0.021579999
+        } ]
+      }, {
+        "prefixTag" : "exi",
+        "suffixTag" : "cta",
+        "tag" : "WeaponMeleeFinisherDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Finisher Damage",
+          "value" : 0.0133
+        } ]
+      }, {
+        "prefixTag" : "forti",
+        "suffixTag" : "us",
+        "tag" : "WeaponMeleeComboEfficiencyMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Heavy Attack Efficiency",
+          "value" : 0.0081599997
+        } ]
+      }, {
+        "prefixTag" : "para",
+        "suffixTag" : "um",
+        "tag" : "WeaponMeleeComboInitialBonusMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val| Initial Combo",
+          "value" : 0.27224001
+        } ]
+      }, {
+        "prefixTag" : "",
+        "suffixTag" : "",
+        "tag" : "WeaponMeleeComboPointsOnHitMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Chance to Gain Combo Count",
+          "reverseValueSymbol" : true,
+          "value" : -0.01165
+        } ]
+      }, {
+        "prefixTag" : "laci",
+        "suffixTag" : "nus",
+        "tag" : "WeaponMeleeComboBonusOnHitMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Additional Combo Count Chance",
+          "value" : 0.0065299999
+        } ]
+      }, {
+        "prefixTag" : "laci",
+        "suffixTag" : "nus",
+        "tag" : "WeaponMeleeHeavyAttackDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Melee Damage on Heavy Attack",
+          "value" : 0.0133
+        } ]
+      }, {
+        "prefixTag" : "laci",
+        "suffixTag" : "nus",
+        "tag" : "WeaponMeleeHeavyAttackChargeMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Heavy Attack Wind Up Speed",
+          "value" : 0.0133
+        } ]
+      }, {
+        "prefixTag" : "laci",
+        "suffixTag" : "nus",
+        "tag" : "WeaponMeleeParryAngleMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val| Parry Angle",
+          "value" : 0.0089999996
+        } ]
+      }, {
+        "prefixTag" : "laci",
+        "suffixTag" : "nus",
+        "tag" : "WeaponMeleeSlamDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Slam Attack Damage",
+          "value" : 0.0133
+        } ]
+      }, {
+        "prefixTag" : "cali",
+        "suffixTag" : "fel",
+        "tag" : "WeaponGasDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_GAS_COLOR>Gas",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "cori",
+        "suffixTag" : "or",
+        "tag" : "WeaponCorrosiveDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_CORROSIVE_COLOR>Corrosive",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "cari",
+        "suffixTag" : "sco",
+        "tag" : "WeaponViralDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_VIRAL_COLOR>Viral",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "radi",
+        "suffixTag" : "lo",
+        "tag" : "WeaponRadiationDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_RADIATION_COLOR>Radiation",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "fraga",
+        "suffixTag" : "tus",
+        "tag" : "WeaponBlastDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_EXPLOSION_COLOR>Blast",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "magni",
+        "suffixTag" : "bra",
+        "tag" : "WeaponMagneticDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_MAGNETIC_COLOR>Magnetic",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "effi",
+        "suffixTag" : "tas",
+        "tag" : "WeaponFactionDamageOrokin",
+        "upgradeValues" : [ {
+          "locTag" : "|val| Damage to Orokin",
+          "value" : 0.0049999999
+        } ]
+      }, {
+        "prefixTag" : "muti",
+        "suffixTag" : "gia",
+        "tag" : "WeaponFactionDamageTechrot",
+        "upgradeValues" : [ {
+          "locTag" : "|val| Damage to Techrot",
+          "value" : 0.0049999999
+        } ]
+      }, {
+        "prefixTag" : "exsi",
+        "suffixTag" : "llo",
+        "tag" : "WeaponFactionDamageScaldra",
+        "upgradeValues" : [ {
+          "locTag" : "|val| Damage to Scaldra",
+          "value" : 0.0049999999
+        } ]
+      }, {
+        "prefixTag" : "plaga",
+        "suffixTag" : "mna",
+        "tag" : "WeaponStatusDamage",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Status Damage",
+          "value" : 0.0099999998
+        } ]
+      } ],
+      "/Lotus/Upgrades/Mods/Randomized/LotusModularPistolRandomModRare" : [ {
+        "prefixTag" : "insi",
+        "suffixTag" : "cak",
+        "tag" : "WeaponArmorPiercingDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_PUNCTURE_COLOR>Puncture",
+          "value" : 0.01333
+        } ]
+      }, {
+        "prefixTag" : "crita",
+        "suffixTag" : "cron",
+        "tag" : "WeaponCritChanceMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Critical Chance",
+          "value" : 0.016666001
+        } ]
+      }, {
+        "prefixTag" : "acri",
+        "suffixTag" : "tis",
+        "tag" : "WeaponCritDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Critical Damage",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "vexi",
+        "suffixTag" : "tio",
+        "tag" : "WeaponElectricityDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_ELECTRICITY_COLOR>Electricity",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "igni",
+        "suffixTag" : "pha",
+        "tag" : "WeaponFireDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_FIRE_COLOR>Heat",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "croni",
+        "suffixTag" : "dra",
+        "tag" : "WeaponFireRateMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Fire Rate",
+          "value" : 0.0082999999
+        } ]
+      }, {
+        "prefixTag" : "geli",
+        "suffixTag" : "do",
+        "tag" : "WeaponFreezeDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_FREEZE_COLOR>Cold",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "magna",
+        "suffixTag" : "ton",
+        "tag" : "WeaponImpactDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_IMPACT_COLOR>Impact",
+          "value" : 0.013333
+        } ]
+      }, {
+        "prefixTag" : "deci",
+        "suffixTag" : "des",
+        "tag" : "WeaponProcTimeMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Status Duration",
+          "value" : 0.01111
+        } ]
+      }, {
+        "prefixTag" : "sci",
+        "suffixTag" : "sus",
+        "tag" : "WeaponSlashDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_SLASH_COLOR>Slash",
+          "value" : 0.013333
+        } ]
+      }, {
+        "prefixTag" : "hexa",
+        "suffixTag" : "dex",
+        "tag" : "WeaponStunChanceMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Status Chance",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "toxi",
+        "suffixTag" : "tox",
+        "tag" : "WeaponToxinDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_POISON_COLOR>Toxin",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "ampi",
+        "suffixTag" : "bin",
+        "tag" : "WeaponAmmoMaxMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Ammo Maximum",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "arma",
+        "suffixTag" : "tin",
+        "tag" : "WeaponClipMaxMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Magazine Capacity",
+          "value" : 0.0055550002
+        } ]
+      }, {
+        "prefixTag" : "visi",
+        "suffixTag" : "ata",
+        "tag" : "WeaponDamageAmountMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Damage",
+          "value" : 0.0244
+        } ]
+      }, {
+        "prefixTag" : "sati",
+        "suffixTag" : "can",
+        "tag" : "WeaponFireIterationsMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Multishot",
+          "value" : 0.0133
+        } ]
+      }, {
+        "prefixTag" : "conci",
+        "suffixTag" : "nak",
+        "tag" : "WeaponProjectileSpeedMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Projectile Speed",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "lexi",
+        "suffixTag" : "nok",
+        "tag" : "WeaponPunctureDepthMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val| Punch Through",
+          "value" : 0.029999999
+        } ]
+      }, {
+        "prefixTag" : "zeti",
+        "suffixTag" : "mag",
+        "tag" : "WeaponRecoilReductionMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Weapon Recoil",
+          "value" : -0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "feva",
+        "suffixTag" : "tak",
+        "tag" : "WeaponReloadSpeedMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Reload Speed",
+          "value" : 0.0055550002
+        } ]
+      }, {
+        "prefixTag" : "manti",
+        "suffixTag" : "tron",
+        "tag" : "WeaponFactionDamageCorpus",
+        "upgradeValues" : [ {
+          "locTag" : "|val| Damage to Corpus",
+          "value" : 0.0049999999
+        } ]
+      }, {
+        "prefixTag" : "argi",
+        "suffixTag" : "con",
+        "tag" : "WeaponFactionDamageGrineer",
+        "upgradeValues" : [ {
+          "locTag" : "|val| Damage to Grineer",
+          "value" : 0.0049999999
+        } ]
+      }, {
+        "prefixTag" : "pura",
+        "suffixTag" : "ada",
+        "tag" : "WeaponFactionDamageInfested",
+        "upgradeValues" : [ {
+          "locTag" : "|val| Damage to Infested",
+          "value" : 0.0049999999
+        } ]
+      }, {
+        "prefixTag" : "hera",
+        "suffixTag" : "lis",
+        "tag" : "WeaponZoomFovMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Zoom",
+          "value" : 0.0088999998
+        } ]
+      }, {
+        "prefixTag" : "eni",
+        "suffixTag" : "vo",
+        "tag" : "WeaponWeakpointDamage",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Weak Point Damage",
+          "value" : 0.025
+        } ]
+      }, {
+        "prefixTag" : "exiti",
+        "suffixTag" : "eus",
+        "tag" : "WeaponWeakpointCriticalChance",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Weak Point Critical Chance",
+          "value" : 0.0275
+        } ]
+      }, {
+        "prefixTag" : "parci",
+        "suffixTag" : "pia",
+        "tag" : "WeaponAmmoEfficiency",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Ammo Efficiency",
+          "reverseValueSymbol" : true,
+          "value" : -0.0049999999
+        } ]
+      }, {
+        "prefixTag" : "parci",
+        "suffixTag" : "pia",
+        "tag" : "WeaponMagazineReloadHolstered",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Magazine Reloaded/s when Holstered",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "plaga",
+        "suffixTag" : "mna",
+        "tag" : "WeaponStatusDamage",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Status Damage",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "cali",
+        "suffixTag" : "fel",
+        "tag" : "WeaponGasDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_GAS_COLOR>Gas",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "cori",
+        "suffixTag" : "or",
+        "tag" : "WeaponCorrosiveDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_CORROSIVE_COLOR>Corrosive",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "cari",
+        "suffixTag" : "sco",
+        "tag" : "WeaponViralDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_VIRAL_COLOR>Viral",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "radi",
+        "suffixTag" : "lo",
+        "tag" : "WeaponRadiationDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_RADIATION_COLOR>Radiation",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "fraga",
+        "suffixTag" : "tus",
+        "tag" : "WeaponBlastDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_EXPLOSION_COLOR>Blast",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "magni",
+        "suffixTag" : "bra",
+        "tag" : "WeaponMagneticDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_MAGNETIC_COLOR>Magnetic",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "effi",
+        "suffixTag" : "tas",
+        "tag" : "WeaponFactionDamageOrokin",
+        "upgradeValues" : [ {
+          "locTag" : "|val| Damage to Orokin",
+          "value" : 0.0049999999
+        } ]
+      }, {
+        "prefixTag" : "muti",
+        "suffixTag" : "gia",
+        "tag" : "WeaponFactionDamageTechrot",
+        "upgradeValues" : [ {
+          "locTag" : "|val| Damage to Techrot",
+          "value" : 0.0049999999
+        } ]
+      }, {
+        "prefixTag" : "exsi",
+        "suffixTag" : "llo",
+        "tag" : "WeaponFactionDamageScaldra",
+        "upgradeValues" : [ {
+          "locTag" : "|val| Damage to Scaldra",
+          "value" : 0.0049999999
+        } ]
+      } ],
+      "/Lotus/Upgrades/Mods/Randomized/LotusPistolRandomModRare" : [ {
+        "prefixTag" : "insi",
+        "suffixTag" : "cak",
+        "tag" : "WeaponArmorPiercingDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_PUNCTURE_COLOR>Puncture",
+          "value" : 0.01333
+        } ]
+      }, {
+        "prefixTag" : "crita",
+        "suffixTag" : "cron",
+        "tag" : "WeaponCritChanceMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Critical Chance",
+          "value" : 0.016666001
+        } ]
+      }, {
+        "prefixTag" : "acri",
+        "suffixTag" : "tis",
+        "tag" : "WeaponCritDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Critical Damage",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "vexi",
+        "suffixTag" : "tio",
+        "tag" : "WeaponElectricityDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_ELECTRICITY_COLOR>Electricity",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "igni",
+        "suffixTag" : "pha",
+        "tag" : "WeaponFireDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_FIRE_COLOR>Heat",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "croni",
+        "suffixTag" : "dra",
+        "tag" : "WeaponFireRateMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Fire Rate",
+          "value" : 0.0082999999
+        } ]
+      }, {
+        "prefixTag" : "geli",
+        "suffixTag" : "do",
+        "tag" : "WeaponFreezeDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_FREEZE_COLOR>Cold",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "magna",
+        "suffixTag" : "ton",
+        "tag" : "WeaponImpactDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_IMPACT_COLOR>Impact",
+          "value" : 0.013333
+        } ]
+      }, {
+        "prefixTag" : "deci",
+        "suffixTag" : "des",
+        "tag" : "WeaponProcTimeMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Status Duration",
+          "value" : 0.01111
+        } ]
+      }, {
+        "prefixTag" : "sci",
+        "suffixTag" : "sus",
+        "tag" : "WeaponSlashDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_SLASH_COLOR>Slash",
+          "value" : 0.013333
+        } ]
+      }, {
+        "prefixTag" : "hexa",
+        "suffixTag" : "dex",
+        "tag" : "WeaponStunChanceMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Status Chance",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "toxi",
+        "suffixTag" : "tox",
+        "tag" : "WeaponToxinDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_POISON_COLOR>Toxin",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "ampi",
+        "suffixTag" : "bin",
+        "tag" : "WeaponAmmoMaxMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Ammo Maximum",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "arma",
+        "suffixTag" : "tin",
+        "tag" : "WeaponClipMaxMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Magazine Capacity",
+          "value" : 0.0055550002
+        } ]
+      }, {
+        "prefixTag" : "visi",
+        "suffixTag" : "ata",
+        "tag" : "WeaponDamageAmountMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Damage",
+          "value" : 0.0244
+        } ]
+      }, {
+        "prefixTag" : "sati",
+        "suffixTag" : "can",
+        "tag" : "WeaponFireIterationsMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Multishot",
+          "value" : 0.0133
+        } ]
+      }, {
+        "prefixTag" : "conci",
+        "suffixTag" : "nak",
+        "tag" : "WeaponProjectileSpeedMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Projectile Speed",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "lexi",
+        "suffixTag" : "nok",
+        "tag" : "WeaponPunctureDepthMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val| Punch Through",
+          "value" : 0.029999999
+        } ]
+      }, {
+        "prefixTag" : "zeti",
+        "suffixTag" : "mag",
+        "tag" : "WeaponRecoilReductionMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Weapon Recoil",
+          "value" : -0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "feva",
+        "suffixTag" : "tak",
+        "tag" : "WeaponReloadSpeedMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Reload Speed",
+          "value" : 0.0055550002
+        } ]
+      }, {
+        "prefixTag" : "manti",
+        "suffixTag" : "tron",
+        "tag" : "WeaponFactionDamageCorpus",
+        "upgradeValues" : [ {
+          "locTag" : "|val| Damage to Corpus",
+          "value" : 0.0049999999
+        } ]
+      }, {
+        "prefixTag" : "argi",
+        "suffixTag" : "con",
+        "tag" : "WeaponFactionDamageGrineer",
+        "upgradeValues" : [ {
+          "locTag" : "|val| Damage to Grineer",
+          "value" : 0.0049999999
+        } ]
+      }, {
+        "prefixTag" : "pura",
+        "suffixTag" : "ada",
+        "tag" : "WeaponFactionDamageInfested",
+        "upgradeValues" : [ {
+          "locTag" : "|val| Damage to Infested",
+          "value" : 0.0049999999
+        } ]
+      }, {
+        "prefixTag" : "hera",
+        "suffixTag" : "lis",
+        "tag" : "WeaponZoomFovMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Zoom",
+          "value" : 0.0088999998
+        } ]
+      }, {
+        "prefixTag" : "eni",
+        "suffixTag" : "vo",
+        "tag" : "WeaponWeakpointDamage",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Weak Point Damage",
+          "value" : 0.025
+        } ]
+      }, {
+        "prefixTag" : "exiti",
+        "suffixTag" : "eus",
+        "tag" : "WeaponWeakpointCriticalChance",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Weak Point Critical Chance",
+          "value" : 0.0275
+        } ]
+      }, {
+        "prefixTag" : "parci",
+        "suffixTag" : "pia",
+        "tag" : "WeaponAmmoEfficiency",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Ammo Efficiency",
+          "reverseValueSymbol" : true,
+          "value" : -0.0049999999
+        } ]
+      }, {
+        "prefixTag" : "parci",
+        "suffixTag" : "pia",
+        "tag" : "WeaponMagazineReloadHolstered",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Magazine Reloaded/s when Holstered",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "plaga",
+        "suffixTag" : "mna",
+        "tag" : "WeaponStatusDamage",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Status Damage",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "cali",
+        "suffixTag" : "fel",
+        "tag" : "WeaponGasDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_GAS_COLOR>Gas",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "cori",
+        "suffixTag" : "or",
+        "tag" : "WeaponCorrosiveDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_CORROSIVE_COLOR>Corrosive",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "cari",
+        "suffixTag" : "sco",
+        "tag" : "WeaponViralDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_VIRAL_COLOR>Viral",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "radi",
+        "suffixTag" : "lo",
+        "tag" : "WeaponRadiationDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_RADIATION_COLOR>Radiation",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "fraga",
+        "suffixTag" : "tus",
+        "tag" : "WeaponBlastDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_EXPLOSION_COLOR>Blast",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "magni",
+        "suffixTag" : "bra",
+        "tag" : "WeaponMagneticDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_MAGNETIC_COLOR>Magnetic",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "effi",
+        "suffixTag" : "tas",
+        "tag" : "WeaponFactionDamageOrokin",
+        "upgradeValues" : [ {
+          "locTag" : "|val| Damage to Orokin",
+          "value" : 0.0049999999
+        } ]
+      }, {
+        "prefixTag" : "muti",
+        "suffixTag" : "gia",
+        "tag" : "WeaponFactionDamageTechrot",
+        "upgradeValues" : [ {
+          "locTag" : "|val| Damage to Techrot",
+          "value" : 0.0049999999
+        } ]
+      }, {
+        "prefixTag" : "exsi",
+        "suffixTag" : "llo",
+        "tag" : "WeaponFactionDamageScaldra",
+        "upgradeValues" : [ {
+          "locTag" : "|val| Damage to Scaldra",
+          "value" : 0.0049999999
+        } ]
+      } ],
+      "/Lotus/Upgrades/Mods/Randomized/LotusRifleRandomModRare" : [ {
+        "prefixTag" : "insi",
+        "suffixTag" : "cak",
+        "tag" : "WeaponArmorPiercingDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_PUNCTURE_COLOR>Puncture",
+          "value" : 0.01333
+        } ]
+      }, {
+        "prefixTag" : "crita",
+        "suffixTag" : "cron",
+        "tag" : "WeaponCritChanceMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Critical Chance",
+          "value" : 0.016666001
+        } ]
+      }, {
+        "prefixTag" : "acri",
+        "suffixTag" : "tis",
+        "tag" : "WeaponCritDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Critical Damage",
+          "value" : 0.013333
+        } ]
+      }, {
+        "prefixTag" : "vexi",
+        "suffixTag" : "tio",
+        "tag" : "WeaponElectricityDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_ELECTRICITY_COLOR>Electricity",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "igni",
+        "suffixTag" : "pha",
+        "tag" : "WeaponFireDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_FIRE_COLOR>Heat",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "croni",
+        "suffixTag" : "dra",
+        "tag" : "WeaponFireRateMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Fire Rate (x2 for Bows)",
+          "value" : 0.00667
+        }, {
+          "value" : 0.00667
+        } ]
+      }, {
+        "prefixTag" : "geli",
+        "suffixTag" : "do",
+        "tag" : "WeaponFreezeDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_FREEZE_COLOR>Cold",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "magna",
+        "suffixTag" : "ton",
+        "tag" : "WeaponImpactDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_IMPACT_COLOR>Impact",
+          "value" : 0.013333
+        } ]
+      }, {
+        "prefixTag" : "deci",
+        "suffixTag" : "des",
+        "tag" : "WeaponProcTimeMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Status Duration",
+          "value" : 0.01111
+        } ]
+      }, {
+        "prefixTag" : "sci",
+        "suffixTag" : "sus",
+        "tag" : "WeaponSlashDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_SLASH_COLOR>Slash",
+          "value" : 0.013333
+        } ]
+      }, {
+        "prefixTag" : "hexa",
+        "suffixTag" : "dex",
+        "tag" : "WeaponStunChanceMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Status Chance",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "toxi",
+        "suffixTag" : "tox",
+        "tag" : "WeaponToxinDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_POISON_COLOR>Toxin",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "ampi",
+        "suffixTag" : "bin",
+        "tag" : "WeaponAmmoMaxMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Ammo Maximum",
+          "value" : 0.0055499999
+        } ]
+      }, {
+        "prefixTag" : "arma",
+        "suffixTag" : "tin",
+        "tag" : "WeaponClipMaxMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Magazine Capacity",
+          "value" : 0.0055550002
+        } ]
+      }, {
+        "prefixTag" : "visi",
+        "suffixTag" : "ata",
+        "tag" : "WeaponDamageAmountMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Damage",
+          "value" : 0.018333299
+        } ]
+      }, {
+        "prefixTag" : "sati",
+        "suffixTag" : "can",
+        "tag" : "WeaponFireIterationsMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Multishot",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "conci",
+        "suffixTag" : "nak",
+        "tag" : "WeaponProjectileSpeedMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Projectile Speed",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "lexi",
+        "suffixTag" : "nok",
+        "tag" : "WeaponPunctureDepthMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val| Punch Through",
+          "value" : 0.029999999
+        } ]
+      }, {
+        "prefixTag" : "zeti",
+        "suffixTag" : "mag",
+        "tag" : "WeaponRecoilReductionMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Weapon Recoil",
+          "value" : -0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "feva",
+        "suffixTag" : "tak",
+        "tag" : "WeaponReloadSpeedMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Reload Speed",
+          "value" : 0.0055550002
+        } ]
+      }, {
+        "prefixTag" : "manti",
+        "suffixTag" : "tron",
+        "tag" : "WeaponFactionDamageCorpus",
+        "upgradeValues" : [ {
+          "locTag" : "|val| Damage to Corpus",
+          "value" : 0.0049999999
+        } ]
+      }, {
+        "prefixTag" : "argi",
+        "suffixTag" : "con",
+        "tag" : "WeaponFactionDamageGrineer",
+        "upgradeValues" : [ {
+          "locTag" : "|val| Damage to Grineer",
+          "value" : 0.0049999999
+        } ]
+      }, {
+        "prefixTag" : "pura",
+        "suffixTag" : "ada",
+        "tag" : "WeaponFactionDamageInfested",
+        "upgradeValues" : [ {
+          "locTag" : "|val| Damage to Infested",
+          "value" : 0.0049999999
+        } ]
+      }, {
+        "prefixTag" : "hera",
+        "suffixTag" : "lis",
+        "tag" : "WeaponZoomFovMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Zoom",
+          "value" : 0.006666
+        } ]
+      }, {
+        "prefixTag" : "eni",
+        "suffixTag" : "vo",
+        "tag" : "WeaponWeakpointDamage",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Weak Point Damage",
+          "value" : 0.025
+        } ]
+      }, {
+        "prefixTag" : "exiti",
+        "suffixTag" : "eus",
+        "tag" : "WeaponWeakpointCriticalChance",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Weak Point Critical Chance",
+          "value" : 0.0275
+        } ]
+      }, {
+        "prefixTag" : "parci",
+        "suffixTag" : "pia",
+        "tag" : "WeaponAmmoEfficiency",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Ammo Efficiency",
+          "reverseValueSymbol" : true,
+          "value" : -0.0049999999
+        } ]
+      }, {
+        "prefixTag" : "parci",
+        "suffixTag" : "pia",
+        "tag" : "WeaponMagazineReloadHolstered",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Magazine Reloaded/s when Holstered",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "plaga",
+        "suffixTag" : "mna",
+        "tag" : "WeaponStatusDamage",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Status Damage",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "cali",
+        "suffixTag" : "fel",
+        "tag" : "WeaponGasDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_GAS_COLOR>Gas",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "cori",
+        "suffixTag" : "or",
+        "tag" : "WeaponCorrosiveDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_CORROSIVE_COLOR>Corrosive",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "cari",
+        "suffixTag" : "sco",
+        "tag" : "WeaponViralDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_VIRAL_COLOR>Viral",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "radi",
+        "suffixTag" : "lo",
+        "tag" : "WeaponRadiationDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_RADIATION_COLOR>Radiation",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "fraga",
+        "suffixTag" : "tus",
+        "tag" : "WeaponBlastDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_EXPLOSION_COLOR>Blast",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "magni",
+        "suffixTag" : "bra",
+        "tag" : "WeaponMagneticDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_MAGNETIC_COLOR>Magnetic",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "effi",
+        "suffixTag" : "tas",
+        "tag" : "WeaponFactionDamageOrokin",
+        "upgradeValues" : [ {
+          "locTag" : "|val| Damage to Orokin",
+          "value" : 0.0049999999
+        } ]
+      }, {
+        "prefixTag" : "muti",
+        "suffixTag" : "gia",
+        "tag" : "WeaponFactionDamageTechrot",
+        "upgradeValues" : [ {
+          "locTag" : "|val| Damage to Techrot",
+          "value" : 0.0049999999
+        } ]
+      }, {
+        "prefixTag" : "exsi",
+        "suffixTag" : "llo",
+        "tag" : "WeaponFactionDamageScaldra",
+        "upgradeValues" : [ {
+          "locTag" : "|val| Damage to Scaldra",
+          "value" : 0.0049999999
+        } ]
+      } ],
+      "/Lotus/Upgrades/Mods/Randomized/LotusShotgunRandomModRare" : [ {
+        "prefixTag" : "insi",
+        "suffixTag" : "cak",
+        "tag" : "WeaponArmorPiercingDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_PUNCTURE_COLOR>Puncture",
+          "value" : 0.01333
+        } ]
+      }, {
+        "prefixTag" : "crita",
+        "suffixTag" : "cron",
+        "tag" : "WeaponCritChanceMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Critical Chance",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "acri",
+        "suffixTag" : "tis",
+        "tag" : "WeaponCritDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Critical Damage",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "vexi",
+        "suffixTag" : "tio",
+        "tag" : "WeaponElectricityDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_ELECTRICITY_COLOR>Electricity",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "igni",
+        "suffixTag" : "pha",
+        "tag" : "WeaponFireDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_FIRE_COLOR>Heat",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "croni",
+        "suffixTag" : "dra",
+        "tag" : "WeaponFireRateMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Fire Rate (x2 for Bows)",
+          "value" : 0.0099999998
+        }, {
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "geli",
+        "suffixTag" : "do",
+        "tag" : "WeaponFreezeDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_FREEZE_COLOR>Cold",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "magna",
+        "suffixTag" : "ton",
+        "tag" : "WeaponImpactDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_IMPACT_COLOR>Impact",
+          "value" : 0.013333
+        } ]
+      }, {
+        "prefixTag" : "deci",
+        "suffixTag" : "des",
+        "tag" : "WeaponProcTimeMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Status Duration",
+          "value" : 0.01111
+        } ]
+      }, {
+        "prefixTag" : "sci",
+        "suffixTag" : "sus",
+        "tag" : "WeaponSlashDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_SLASH_COLOR>Slash",
+          "value" : 0.013333
+        } ]
+      }, {
+        "prefixTag" : "hexa",
+        "suffixTag" : "dex",
+        "tag" : "WeaponStunChanceMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Status Chance",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "toxi",
+        "suffixTag" : "tox",
+        "tag" : "WeaponToxinDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_POISON_COLOR>Toxin",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "ampi",
+        "suffixTag" : "bin",
+        "tag" : "WeaponAmmoMaxMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Ammo Maximum",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "arma",
+        "suffixTag" : "tin",
+        "tag" : "WeaponClipMaxMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Magazine Capacity",
+          "value" : 0.0055550002
+        } ]
+      }, {
+        "prefixTag" : "visi",
+        "suffixTag" : "ata",
+        "tag" : "WeaponDamageAmountMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Damage",
+          "value" : 0.018300001
+        } ]
+      }, {
+        "prefixTag" : "sati",
+        "suffixTag" : "can",
+        "tag" : "WeaponFireIterationsMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Multishot",
+          "value" : 0.0133
+        } ]
+      }, {
+        "prefixTag" : "conci",
+        "suffixTag" : "nak",
+        "tag" : "WeaponProjectileSpeedMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Projectile Speed",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "lexi",
+        "suffixTag" : "nok",
+        "tag" : "WeaponPunctureDepthMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val| Punch Through",
+          "value" : 0.029999999
+        } ]
+      }, {
+        "prefixTag" : "zeti",
+        "suffixTag" : "mag",
+        "tag" : "WeaponRecoilReductionMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Weapon Recoil",
+          "value" : -0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "feva",
+        "suffixTag" : "tak",
+        "tag" : "WeaponReloadSpeedMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Reload Speed",
+          "value" : 0.0055550002
+        } ]
+      }, {
+        "prefixTag" : "manti",
+        "suffixTag" : "tron",
+        "tag" : "WeaponFactionDamageCorpus",
+        "upgradeValues" : [ {
+          "locTag" : "|val| Damage to Corpus",
+          "value" : 0.0049999999
+        } ]
+      }, {
+        "prefixTag" : "argi",
+        "suffixTag" : "con",
+        "tag" : "WeaponFactionDamageGrineer",
+        "upgradeValues" : [ {
+          "locTag" : "|val| Damage to Grineer",
+          "value" : 0.0049999999
+        } ]
+      }, {
+        "prefixTag" : "pura",
+        "suffixTag" : "ada",
+        "tag" : "WeaponFactionDamageInfested",
+        "upgradeValues" : [ {
+          "locTag" : "|val| Damage to Infested",
+          "value" : 0.0049999999
+        } ]
+      }, {
+        "prefixTag" : "eni",
+        "suffixTag" : "vo",
+        "tag" : "WeaponWeakpointDamage",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Weak Point Damage",
+          "value" : 0.025
+        } ]
+      }, {
+        "prefixTag" : "exiti",
+        "suffixTag" : "eus",
+        "tag" : "WeaponWeakpointCriticalChance",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Weak Point Critical Chance",
+          "value" : 0.0275
+        } ]
+      }, {
+        "prefixTag" : "parci",
+        "suffixTag" : "pia",
+        "tag" : "WeaponAmmoEfficiency",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Ammo Efficiency",
+          "reverseValueSymbol" : true,
+          "value" : -0.0049999999
+        } ]
+      }, {
+        "prefixTag" : "parci",
+        "suffixTag" : "pia",
+        "tag" : "WeaponMagazineReloadHolstered",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Magazine Reloaded/s when Holstered",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "plaga",
+        "suffixTag" : "mna",
+        "tag" : "WeaponStatusDamage",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Status Damage",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "cali",
+        "suffixTag" : "fel",
+        "tag" : "WeaponGasDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_GAS_COLOR>Gas",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "cori",
+        "suffixTag" : "or",
+        "tag" : "WeaponCorrosiveDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_CORROSIVE_COLOR>Corrosive",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "cari",
+        "suffixTag" : "sco",
+        "tag" : "WeaponViralDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_VIRAL_COLOR>Viral",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "radi",
+        "suffixTag" : "lo",
+        "tag" : "WeaponRadiationDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_RADIATION_COLOR>Radiation",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "fraga",
+        "suffixTag" : "tus",
+        "tag" : "WeaponBlastDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_EXPLOSION_COLOR>Blast",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "magni",
+        "suffixTag" : "bra",
+        "tag" : "WeaponMagneticDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_MAGNETIC_COLOR>Magnetic",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "effi",
+        "suffixTag" : "tas",
+        "tag" : "WeaponFactionDamageOrokin",
+        "upgradeValues" : [ {
+          "locTag" : "|val| Damage to Orokin",
+          "value" : 0.0049999999
+        } ]
+      }, {
+        "prefixTag" : "muti",
+        "suffixTag" : "gia",
+        "tag" : "WeaponFactionDamageTechrot",
+        "upgradeValues" : [ {
+          "locTag" : "|val| Damage to Techrot",
+          "value" : 0.0049999999
+        } ]
+      }, {
+        "prefixTag" : "exsi",
+        "suffixTag" : "llo",
+        "tag" : "WeaponFactionDamageScaldra",
+        "upgradeValues" : [ {
+          "locTag" : "|val| Damage to Scaldra",
+          "value" : 0.0049999999
+        } ]
+      }, {
+        "prefixTag" : "hera",
+        "suffixTag" : "lis",
+        "tag" : "WeaponZoomFovMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Zoom",
+          "value" : 0.0046660001
+        } ]
+      } ],
+      "/Lotus/Upgrades/Mods/Randomized/PlayerMeleeWeaponRandomModRare" : [ {
+        "prefixTag" : "visi",
+        "suffixTag" : "ata",
+        "tag" : "WeaponMeleeDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Melee Damage",
+          "value" : 0.018300001
+        } ]
+      }, {
+        "prefixTag" : "insi",
+        "suffixTag" : "cak",
+        "tag" : "WeaponArmorPiercingDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_PUNCTURE_COLOR>Puncture",
+          "value" : 0.0133
+        }, {
+          "value" : 0.066500001
+        } ]
+      }, {
+        "prefixTag" : "magna",
+        "suffixTag" : "ton",
+        "tag" : "WeaponImpactDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_IMPACT_COLOR>Impact",
+          "value" : 0.0133
+        }, {
+          "value" : 0.066500001
+        } ]
+      }, {
+        "prefixTag" : "sci",
+        "suffixTag" : "sus",
+        "tag" : "WeaponSlashDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_SLASH_COLOR>Slash",
+          "value" : 0.0133
+        }, {
+          "value" : 0.066500001
+        } ]
+      }, {
+        "prefixTag" : "crita",
+        "suffixTag" : "cron",
+        "tag" : "WeaponCritChanceMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Critical Chance (x2 for Heavy Attacks)",
+          "value" : 0.02
+        }, {
+          "value" : 0.02
+        } ]
+      }, {
+        "prefixTag" : "acri",
+        "suffixTag" : "tis",
+        "tag" : "WeaponCritDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Critical Damage",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "vexi",
+        "suffixTag" : "tio",
+        "tag" : "WeaponElectricityDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_ELECTRICITY_COLOR>Electricity",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "igni",
+        "suffixTag" : "pha",
+        "tag" : "WeaponFireDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_FIRE_COLOR>Heat",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "geli",
+        "suffixTag" : "do",
+        "tag" : "WeaponFreezeDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_FREEZE_COLOR>Cold",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "toxi",
+        "suffixTag" : "tox",
+        "tag" : "WeaponToxinDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_POISON_COLOR>Toxin",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "deci",
+        "suffixTag" : "des",
+        "tag" : "WeaponProcTimeMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Status Duration",
+          "value" : 0.01111
+        } ]
+      }, {
+        "prefixTag" : "manti",
+        "suffixTag" : "tron",
+        "tag" : "WeaponMeleeFactionDamageCorpus",
+        "upgradeValues" : [ {
+          "locTag" : "|val| Damage to Corpus",
+          "value" : 0.0049999999
+        } ]
+      }, {
+        "prefixTag" : "argi",
+        "suffixTag" : "con",
+        "tag" : "WeaponMeleeFactionDamageGrineer",
+        "upgradeValues" : [ {
+          "locTag" : "|val| Damage to Grineer",
+          "value" : 0.0049999999
+        } ]
+      }, {
+        "prefixTag" : "pura",
+        "suffixTag" : "ada",
+        "tag" : "WeaponMeleeFactionDamageInfested",
+        "upgradeValues" : [ {
+          "locTag" : "|val| Damage to Infested",
+          "value" : 0.0049999999
+        } ]
+      }, {
+        "prefixTag" : "croni",
+        "suffixTag" : "dra",
+        "tag" : "WeaponFireRateMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Attack Speed",
+          "value" : 0.0060999999
+        } ]
+      }, {
+        "prefixTag" : "hexa",
+        "suffixTag" : "dex",
+        "tag" : "WeaponStunChanceMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Status Chance",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "tempi",
+        "suffixTag" : "nem",
+        "tag" : "ComboDurationMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|s Combo Duration",
+          "value" : 0.090000004
+        } ]
+      }, {
+        "prefixTag" : "pleci",
+        "suffixTag" : "nent",
+        "tag" : "SlideAttackCritChanceMod",
+        "upgradeValues" : [ {
+          "locTag" : "|STAT1|% Critical Chance for Slide Attack",
+          "value" : 0.013334
+        }, {
+          "value" : 0.013334
+        } ]
+      }, {
+        "prefixTag" : "locti",
+        "suffixTag" : "tor",
+        "tag" : "WeaponMeleeRangeIncMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val| Range",
+          "value" : 0.021579999
+        } ]
+      }, {
+        "prefixTag" : "exi",
+        "suffixTag" : "cta",
+        "tag" : "WeaponMeleeFinisherDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Finisher Damage",
+          "value" : 0.0133
+        } ]
+      }, {
+        "prefixTag" : "forti",
+        "suffixTag" : "us",
+        "tag" : "WeaponMeleeComboEfficiencyMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Heavy Attack Efficiency",
+          "value" : 0.0081599997
+        } ]
+      }, {
+        "prefixTag" : "para",
+        "suffixTag" : "um",
+        "tag" : "WeaponMeleeComboInitialBonusMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val| Initial Combo",
+          "value" : 0.27224001
+        } ]
+      }, {
+        "prefixTag" : "",
+        "suffixTag" : "",
+        "tag" : "WeaponMeleeComboPointsOnHitMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Chance to Gain Combo Count",
+          "reverseValueSymbol" : true,
+          "value" : -0.01165
+        } ]
+      }, {
+        "prefixTag" : "laci",
+        "suffixTag" : "nus",
+        "tag" : "WeaponMeleeComboBonusOnHitMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Additional Combo Count Chance",
+          "value" : 0.0065299999
+        } ]
+      }, {
+        "prefixTag" : "laci",
+        "suffixTag" : "nus",
+        "tag" : "WeaponMeleeHeavyAttackDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Melee Damage on Heavy Attack",
+          "value" : 0.0133
+        } ]
+      }, {
+        "prefixTag" : "laci",
+        "suffixTag" : "nus",
+        "tag" : "WeaponMeleeHeavyAttackChargeMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Heavy Attack Wind Up Speed",
+          "value" : 0.0133
+        } ]
+      }, {
+        "prefixTag" : "laci",
+        "suffixTag" : "nus",
+        "tag" : "WeaponMeleeParryAngleMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val| Parry Angle",
+          "value" : 0.0089999996
+        } ]
+      }, {
+        "prefixTag" : "laci",
+        "suffixTag" : "nus",
+        "tag" : "WeaponMeleeSlamDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Slam Attack Damage",
+          "value" : 0.0133
+        } ]
+      }, {
+        "prefixTag" : "cali",
+        "suffixTag" : "fel",
+        "tag" : "WeaponGasDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_GAS_COLOR>Gas",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "cori",
+        "suffixTag" : "or",
+        "tag" : "WeaponCorrosiveDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_CORROSIVE_COLOR>Corrosive",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "cari",
+        "suffixTag" : "sco",
+        "tag" : "WeaponViralDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_VIRAL_COLOR>Viral",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "radi",
+        "suffixTag" : "lo",
+        "tag" : "WeaponRadiationDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_RADIATION_COLOR>Radiation",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "fraga",
+        "suffixTag" : "tus",
+        "tag" : "WeaponBlastDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_EXPLOSION_COLOR>Blast",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "magni",
+        "suffixTag" : "bra",
+        "tag" : "WeaponMagneticDamageMod",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% <DT_MAGNETIC_COLOR>Magnetic",
+          "value" : 0.0099999998
+        } ]
+      }, {
+        "prefixTag" : "effi",
+        "suffixTag" : "tas",
+        "tag" : "WeaponFactionDamageOrokin",
+        "upgradeValues" : [ {
+          "locTag" : "|val| Damage to Orokin",
+          "value" : 0.0049999999
+        } ]
+      }, {
+        "prefixTag" : "muti",
+        "suffixTag" : "gia",
+        "tag" : "WeaponFactionDamageTechrot",
+        "upgradeValues" : [ {
+          "locTag" : "|val| Damage to Techrot",
+          "value" : 0.0049999999
+        } ]
+      }, {
+        "prefixTag" : "exsi",
+        "suffixTag" : "llo",
+        "tag" : "WeaponFactionDamageScaldra",
+        "upgradeValues" : [ {
+          "locTag" : "|val| Damage to Scaldra",
+          "value" : 0.0049999999
+        } ]
+      }, {
+        "prefixTag" : "plaga",
+        "suffixTag" : "mna",
+        "tag" : "WeaponStatusDamage",
+        "upgradeValues" : [ {
+          "locTag" : "|val|% Status Damage",
+          "value" : 0.0099999998
+        } ]
+      } ]
+    },
+    "weapons" : {
+      "/Lotus/Weapons/Tenno/Archwing/Melee/PrimeCorufell/PrimeCorufellScytheWeapon" : {
+        "blockingAngle" : 65,
+        "codexSecret" : false,
+        "comboDuration" : 5,
+        "compatibilityTags" : [ "HEAVY SCYTHE_STANCE" ],
+        "criticalChance" : 0.30000001,
+        "criticalMultiplier" : 2.5,
+        "damagePerShot" : [ 108, 76.5, 40.5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+        "description" : "/Lotus/Language/Primes/PrimeCorufellDesc",
+        "fireRate" : 1.0833334,
+        "followThrough" : 0.40000001,
+        "heavyAttackDamage" : 225,
+        "heavySlamAttack" : 1125,
+        "heavySlamRadialDamage" : 675,
+        "heavySlamRadius" : 9,
+        "holsterCategory" : "MELEE",
+        "icon" : "/Lotus/Interface/Icons/StoreIcons/Weapons/MeleeWeapons/Weapons/CorufellPrime.png",
+        "masteryReq" : 16,
+        "name" : "/Lotus/Language/Primes/PrimeCorufellName",
+        "omegaAttenuation" : 0.5,
+        "parentName" : "/Lotus/Weapons/Tenno/Archwing/Melee/ExaltedArchScythe/ExaltedAWScytheWeapon",
+        "procChance" : 0.19999999,
+        "productCategory" : "Melee",
+        "range" : 2.5999999,
+        "sekaiGameBuild" : "2026.10.08.13.05",
+        "sekaiSource" : {
+          "addCharges" : [ ],
+          "behaviors" : [ {
+            "fire:Type" : "/EE/Types/Game/WeaponMeleeSweepFireBehavior",
+            "fire:WeaponMeleeSweepFireBehavior" : {
+              "AiUsageInfo" : {
+                "aimError" : [ 4, 10 ],
+                "aimGraph" : "",
+                "attackWeight" : 1,
+                "desiredAttackRange" : [ 5, 25 ],
+                "desiredAttackState" : "AS_SHORT_RANGE",
+                "hitSpreadMultiplier" : 0,
+                "preferences" : {
+                  "ShootOnStaggerProbability" : 0.1,
+                  "StaggerTimeOut" : 1,
+                  "aimAtClosestPart" : 0,
+                  "aimAtPart" : "TORSO",
+                  "allowFireWhileBlocking" : 0,
+                  "continuousAim" : 0,
+                  "controlAim" : 0,
+                  "controlReload" : 1,
+                  "firingPreferences" : {
+                    "burstPauseTime" : [ 0, 0 ],
+                    "burstTime" : [ 0, 0 ],
+                    "fireRate" : [ 0, 0 ],
+                    "firingType" : "FT_NORMAL"
+                  },
+                  "ignoreNonVisible" : 0,
+                  "lockAimOnFullCharge" : 0,
+                  "minAngleToTurn" : 0,
+                  "minimumAimMask" : 0.89999998,
+                  "onlyFireAboveMinRangeMultiplier" : 0,
+                  "onlyFireWithinRangeMultiplier" : 0,
+                  "reloadThreshold" : 0,
+                  "setAimSource" : 1,
+                  "setAimTarget" : 1,
+                  "shootAtCover" : 1
+                }
+              },
+              "ConsumeEntireClip" : 0,
+              "ConsumePartialAmmo" : 0,
+              "ConsumesChargesForFire" : 0,
+              "DefaultMeleeProxies" : {
+                "EXTRA1" : {
+                  "BoneName" : "GAME_R1_LEG2",
+                  "ExtraSweepDistance" : 0,
+                  "LocalPosition" : [ -2, 0, 0 ],
+                  "LocalRotation" : [ 0, 0, 0, 1 ],
+                  "OverrideAttachmentHand" : "MAIN_HAND",
+                  "RadiusOverride" : 0,
+                  "UseOverrideAttachmentHand" : 0,
+                  "WeaponBone" : ""
+                },
+                "EXTRA2" : {
+                  "BoneName" : "GAME_L1_LEG2",
+                  "ExtraSweepDistance" : 0,
+                  "LocalPosition" : [ -2, 0, 0 ],
+                  "LocalRotation" : [ 0, 0, 0, 1 ],
+                  "OverrideAttachmentHand" : "MAIN_HAND",
+                  "RadiusOverride" : 0,
+                  "UseOverrideAttachmentHand" : 0,
+                  "WeaponBone" : ""
+                },
+                "HEAD" : {
+                  "BoneName" : "GAME_C1_HEAD1",
+                  "ExtraSweepDistance" : 0,
+                  "LocalPosition" : [ -1, 0, 0 ],
+                  "LocalRotation" : [ 0, 0, 0, 1 ],
+                  "OverrideAttachmentHand" : "MAIN_HAND",
+                  "RadiusOverride" : 0,
+                  "UseOverrideAttachmentHand" : 0,
+                  "WeaponBone" : ""
+                },
+                "MAIN_HAND" : {
+                  "BoneName" : "GAME_R1_WEAPON1",
+                  "ExtraSweepDistance" : 0,
+                  "LocalPosition" : [ 0, 2.5999999, 0 ],
+                  "LocalRotation" : [ 0, 0, 0, 1 ],
+                  "OverrideAttachmentHand" : "MAIN_HAND",
+                  "RadiusOverride" : 0,
+                  "UseOverrideAttachmentHand" : 0,
+                  "WeaponBone" : ""
+                },
+                "OFF_HAND" : {
+                  "BoneName" : "GAME_L1_WEAPON1",
+                  "ExtraSweepDistance" : 0,
+                  "LocalPosition" : [ 0, 2, 0 ],
+                  "LocalRotation" : [ 0, 0, 0, 1 ],
+                  "OverrideAttachmentHand" : "MAIN_HAND",
+                  "RadiusOverride" : 0,
+                  "UseOverrideAttachmentHand" : 0,
+                  "WeaponBone" : ""
+                }
+              },
+              "DistanceBetweenHittingSameNonAvatar" : 2,
+              "EnergyConsumedPerFire" : 0,
+              "ExplicitNpcPerceptionSoundAttenuationRadius" : [ 10, 100 ],
+              "ExplicitNpcPerceptionSoundGain" : 0,
+              "HitPunctureDepth" : 0,
+              "HitVisibilityCheck" : 1,
+              "HitVisibilityUsesVisibilityRay" : 1,
+              "IgnoreFireIterations" : 0,
+              "IgnoreOwner" : 1,
+              "InterruptAttackOnMaxAvatarsHit" : 0,
+              "IsMeleeBehavior" : 0,
+              "IsSilenced" : 0,
+              "LockOnProperties" : {
+                "LockOnAngleWeighting" : 1,
+                "LockOnDistanceOverride" : 0,
+                "LockOnDistanceWeighting" : 0.1,
+                "LockOnIgnoreEndPointTarget" : 0,
+                "LockOnIgnoreInvisible" : 0,
+                "LockOnIgnoreTags" : [ ],
+                "LockOnInitialAngle" : 0,
+                "LockOnMaxAngle" : 45,
+                "LockOnMaxTargets" : 0,
+                "LockOnPart" : "ANY_PART",
+                "LockOnStyle" : "LS_ENEMY"
+              },
+              "MaxHitAvatarsPerAttack" : 1,
+              "NotifyPotentialVictimsOfIncomingAttack" : 0,
+              "PerFrameSweepSampling" : 1,
+              "RefinedSweep" : 0,
+              "ReportAttack" : 1,
+              "RequireHitSubEntity" : 1,
+              "RoundUpAmmoConsumption" : 0,
+              "ScaleAmmoRequirement" : 0,
+              "SweepCapsuleHalfHeight" : 0.25,
+              "SweepRadius" : 0.25,
+              "UseAmmo" : 1,
+              "UseExplicitNpcPerceptionSoundProperties" : 0,
+              "UseWeaponHandForHitEntitiesIndex" : 1,
+              "aimMode" : "AIM_MODE_IRON_SIGHTS",
+              "ammoRequirement" : 0,
+              "ammoType" : "",
+              "fireIterations" : 1
+            },
+            "impact:MeleeImpactBehavior" : {
+              "AltEffectHands" : [ ],
+              "AlternateAttackData" : {
+                "Amount" : 0,
+                "DT_IMPACT" : 0.33333299,
+                "DT_PUNCTURE" : 0.33333299,
+                "DT_SLASH" : 0.33333403,
+                "ForcedDeathProcs" : [ ],
+                "ForcedProcCount" : 1,
+                "ForcedProcs" : [ ],
+                "HitType" : "DHT_NONE",
+                "ProcChance" : 0.1,
+                "ProcExtraTime" : 0,
+                "Type" : "DT_PHYSICAL",
+                "UseNewFormat" : 0
+              },
+              "AlwaysOverrideFiringAvatar" : 0,
+              "AmmoConsumedWhenHitInvulnerableTarget" : 0,
+              "AmmoConsumedWhenHitVulnerableTarget" : 0,
+              "AttackData" : {
+                "Amount" : 225,
+                "DT_IMPACT" : 0.47999999,
+                "DT_PUNCTURE" : 0.34,
+                "DT_SLASH" : 0.18000001,
+                "ForcedDeathProcs" : [ ],
+                "ForcedProcCount" : 1,
+                "ForcedProcs" : [ ],
+                "HitType" : "DHT_MELEE",
+                "ProcChance" : 0.2,
+                "ProcExtraTime" : 0,
+                "Type" : "DT_PHYSICAL",
+                "UseNewFormat" : 0
+              },
+              "BaseHitCount" : 20,
+              "BaseHitMultipler" : 1,
+              "ComboForcedProcHitCountWrap" : 0,
+              "ComboHitsAlwaysEnabled" : 1,
+              "ComboProcData" : [ ],
+              "ConsumeAmmoWhenDamageDealt" : 0,
+              "DamageUpgradeTypes" : [ "WEAPON_MELEE_DAMAGE" ],
+              "DeathEffect" : "",
+              "HitCounterCap" : 220,
+              "HitReqNextTierOperationType" : "HTO_ADDITIVE",
+              "HitReqNextTierOperator" : 20,
+              "IgnoreHeadshotBonus" : 1,
+              "IgnoreHeadshotBonusPvp" : 0,
+              "InfiniteTimeBetweenHits" : 0,
+              "InitialHitCounter" : 0,
+              "InitialHitCounterRecoveryRate" : 40,
+              "MinTimeBetweenHits" : 0.1,
+              "OnHitScript" : {
+                "Script" : ""
+              },
+              "OnHitScriptEnabled" : 1,
+              "PauseHitTimerWhenHolstered" : 0,
+              "PerComboExtraProcs" : {
+                "CC_AIR" : [ ],
+                "CC_AIR_LEFT" : [ ],
+                "CC_AIR_RIGHT" : [ ],
+                "CC_ATTACK_BLOCKED" : [ ],
+                "CC_ATTACK_COUNTERED" : [ ],
+                "CC_COUNTER_ATTACK" : [ ],
+                "CC_DOWNED_ENEMY" : [ ],
+                "CC_GROUND" : [ ],
+                "CC_GROUND_BRANCH_A" : [ ],
+                "CC_GROUND_BRANCH_B" : [ ],
+                "CC_GROUND_BRANCH_C" : [ ],
+                "CC_GROUND_HEAVY" : [ ],
+                "CC_GROUND_HELD_HEAVY" : [ ],
+                "CC_GUARD_BROKEN" : [ ],
+                "CC_PARRY_HEAVY" : [ ],
+                "CC_SLIDING" : [ ],
+                "CC_SLIDING_PVP" : [ ],
+                "CC_WALLRUN" : [ ]
+              },
+              "PlayHitEffectsOnFriendlyAvatars" : 0,
+              "PlayerDamageMultiplier" : 1,
+              "PlayerScaleDamageMultiplierByMissionLevel" : 0,
+              "PvpDamageMultiplier" : 1,
+              "PvpForcedDeathProcs" : [ ],
+              "PvpForcedProcs" : [ ],
+              "TimeBetweenHits" : 5,
+              "TimeUpgrade" : "WEAPON_MELEE_COMBO_DURATION_BONUS",
+              "UseNextShotDamageBonus" : 1,
+              "additionalForce" : [ 0, 0, 0 ],
+              "applyPushVelocity" : 0,
+              "applyPushVelocityOnlyToBlockingTarget" : 0,
+              "criticalHitChance" : 0.30000001,
+              "criticalHitDamageMultiplier" : 2.5,
+              "damageFallOff" : [ 0, 0 ],
+              "damageFallOffMinDamage" : 1,
+              "deflectHitEffects" : 0,
+              "deflectRange" : [ 0, 1 ],
+              "flash" : 0,
+              "hitEffect" : "/Lotus/Fx/Weapons/Melee/Clean/HitEffects/MeleeHitEffectSword",
+              "hitEffectAlt" : "/Lotus/Fx/Weapons/Melee/Clean/HitEffects/MeleeHitEffectSword",
+              "impulseFallOff" : [ 0, 10 ],
+              "instantImpulse" : 500,
+              "minImpulseFallOff" : 1,
+              "pushMagnitude" : [ 0.5, 1 ],
+              "pushMagnitudeFallOff" : [ 10, 100 ],
+              "radius" : 0,
+              "ragdollChance" : 0,
+              "strength" : 0
+            },
+            "impact:Type" : "/Lotus/Types/Game/MeleeImpactBehavior",
+            "state:GunBladeStateBehavior" : {
+              "AmmoOverheatSound" : "",
+              "AmmoOverheatSoundResetThreshold" : 0.75,
+              "AmmoTakenPerReload" : -1,
+              "AnimWeaponType" : "WEAPONTYPE_NORMAL",
+              "ApplyNumChargesToDamageMultiplier" : 1,
+              "AttackEffect" : {
+                "Attach" : 1,
+                "BoneName" : "",
+                "Chance" : 255,
+                "DestroyParentOnDeath" : 0,
+                "DestroyWithOwner" : 1,
+                "FadeOutOnDestruction" : 0,
+                "LocalPosition" : [ 0, 0, 0 ],
+                "LocalRotation" : [ 0, 0, 0, 1 ],
+                "RelativeToBounds" : 0,
+                "Scale" : 1,
+                "Type" : ""
+              },
+              "AttackSound" : "",
+              "BehaviorTag" : "",
+              "BurstDelay" : 0,
+              "BurstTracer" : {
+                "Attach" : 1,
+                "BoneName" : "",
+                "Chance" : 255,
+                "DestroyParentOnDeath" : 0,
+                "DestroyWithOwner" : 1,
+                "FadeOutOnDestruction" : 0,
+                "LocalPosition" : [ 0, 0, 0 ],
+                "LocalRotation" : [ 0, 0, 0, 1 ],
+                "RelativeToBounds" : 0,
+                "Scale" : 1,
+                "Type" : ""
+              },
+              "CanAttackDuringEquip" : 1,
+              "CanChargeWhileRunning" : 1,
+              "CanDoFastMeleeCombos" : 0,
+              "CanFireWhileInAir" : 1,
+              "CanFireWhileRunning" : 0,
+              "CanInterruptModeSwitch" : 0,
+              "CancelPostures" : [ "PM_STUN", "PM_KNOCKDOWN", "PM_STAGGER", "PM_HELD", "PM_GROUNDFIRE" ],
+              "ComboData" : {
+                "HeavyMeleeChargeTime" : 2,
+                "MinHeldHeavyTime" : 0,
+                "PerfectHeldHeavyRange" : [ 0, 0 ],
+                "UseCurrentContextAfterCharge" : 0
+              },
+              "ContinueRunningWhenAttacking" : 1,
+              "ContinuousMelee" : 0,
+              "DefaultMeleeAction" : "MELEE_CHARGE",
+              "DefaultMeleeSwingAction" : "MELEE_CHARGE",
+              "DefaultOffhandMeleeAction" : "MELEE_CHARGE",
+              "DoPreFire" : 0,
+              "EnableReloadEmpty" : 0,
+              "ForceNoSwapOnEmpty" : 0,
+              "ForceReloadFromEmpty" : 0,
+              "ForceReturnToPreviousBehavior" : 0,
+              "FullClipModeSwitchTime" : 0,
+              "GroundHitLerpRate" : 0.25,
+              "InstantOverheat" : 0,
+              "IsAlternateFire" : 0,
+              "IsToggleBehavior" : 0,
+              "LocTag" : "",
+              "MaxNumProjectiles" : 0,
+              "MeleeDisableTime" : 1,
+              "ModeSwitchTime" : 0,
+              "NeedsLockOnTargets" : 0,
+              "NeedsPassiveUpdate" : 0,
+              "NumShots" : 1,
+              "OnNewProjectileScript" : {
+                "Script" : ""
+              },
+              "OnlyGiveAmmoOnReloadCompleteEvent" : 0,
+              "OverheatCooldownModifier" : 1,
+              "OverheatEndedSound" : "",
+              "OverheatStyle" : "OS_PLATEAU",
+              "OverheatTime" : 0,
+              "ParryHeavyCoolDown" : 0,
+              "PerfectReloadRange" : [ 0, 0 ],
+              "PrefireTime" : 0,
+              "PreventRunDuringModeSwitch" : 1,
+              "PreventRunWhileRecharging" : 0,
+              "PvpMaxNumProjectiles" : 0,
+              "QueueReloadOnEmptyClip" : 0,
+              "RecordFireEvent" : 1,
+              "ReduceOverheatAmount" : 0,
+              "ReloadDuringModeSwitch" : 0,
+              "ReloadOnAdditionalEmptyFire" : 0,
+              "ReplicateAmmoConsumption" : 0,
+              "RunCausesReady" : 0,
+              "SetToPreviousBehaviorWhenMeleeActionEnds" : 0,
+              "ShareFireRateWithPrefire" : 0,
+              "ShouldAutoPreFireToFire" : 0,
+              "SkipRefireOnEmpty" : 0,
+              "TrackProjectiles" : 0,
+              "UseReloadTimeBetweenShots" : 0,
+              "autoReloadEmptyTime" : 0,
+              "fireRate" : 65,
+              "reloadTime" : 1
+            },
+            "state:Type" : "/Lotus/Types/Weapon/GunBladeStateBehavior"
+          }, {
+            "fire:GunBladeProjectileFireBehavior" : {
+              "AIMED_ACCURACY" : "",
+              "AIMED_CAMERA_RECOIL" : "/Lotus/Types/Game/WeaponProperties/Recoil/Weapon/ShotgunAimRecoilInfo",
+              "AiUsageInfo" : {
+                "aimError" : [ 4, 10 ],
+                "aimGraph" : "",
+                "attackWeight" : 1,
+                "desiredAttackRange" : [ 5, 25 ],
+                "desiredAttackState" : "AS_SHORT_RANGE",
+                "hitSpreadMultiplier" : 0,
+                "preferences" : {
+                  "ShootOnStaggerProbability" : 0.1,
+                  "StaggerTimeOut" : 1,
+                  "aimAtClosestPart" : 0,
+                  "aimAtPart" : "TORSO",
+                  "allowFireWhileBlocking" : 0,
+                  "continuousAim" : 0,
+                  "controlAim" : 0,
+                  "controlReload" : 1,
+                  "firingPreferences" : {
+                    "burstPauseTime" : [ 0, 0 ],
+                    "burstTime" : [ 0, 0 ],
+                    "fireRate" : [ 0, 0 ],
+                    "firingType" : "FT_NORMAL"
+                  },
+                  "ignoreNonVisible" : 0,
+                  "lockAimOnFullCharge" : 0,
+                  "minAngleToTurn" : 0,
+                  "minimumAimMask" : 0.89999998,
+                  "onlyFireAboveMinRangeMultiplier" : 0,
+                  "onlyFireWithinRangeMultiplier" : 0,
+                  "reloadThreshold" : 0,
+                  "setAimSource" : 1,
+                  "setAimTarget" : 1,
+                  "shootAtCover" : 1
+                }
+              },
+              "AimController:AimController" : [ ],
+              "AimController:Type" : "/EE/Types/Game/AimController",
+              "AimIgnoresChargedProjectile" : 0,
+              "AimIgnoresProjectile" : 0,
+              "AimProperties" : {
+                "AttenuateRecoilByChargeAmount" : 0,
+                "AttenuateRecoilBySpinUpAmount" : 0,
+                "CameraRecoilCurve" : "ET_LINEAR",
+                "CameraRecoilStrength" : [ 0, 1 ],
+                "EyeBasedAimSource" : 1,
+                "NpcEyeBasedAimSource" : 0,
+                "OverrideLaunchDir" : 0,
+                "PerfectChargeExtraRecoilAmount" : 0,
+                "ScopedPlayerUsesCameraPos" : 0,
+                "UseWeaponAttachment" : 1
+              },
+              "AlwaysUseAimEndPoint" : 0,
+              "ApplyFlightSpeedToLaunchImpulse" : 0,
+              "ApplyWeaponMaterialsToProjectile" : 0,
+              "ArcEffectType" : "",
+              "ArcEndEffectType" : "",
+              "ArcMaxEffectInstances" : 1,
+              "AttenuateFireIterationsForCharge" : 0,
+              "AttenuateForCharge" : 0,
+              "AttenuateSpreadForCharge" : 0,
+              "AutoTargetChance" : 0,
+              "ChargedProjectileMaxSpeed" : -1,
+              "ChargedProjectileMinSpeed" : -1,
+              "ConsumeEntireClip" : 0,
+              "ConsumePartialAmmo" : 0,
+              "ConsumeRemainingClip" : 0,
+              "ConsumesChargesForFire" : 0,
+              "DesiredTimeForArc" : 0,
+              "DrawCondition" : "DC_AIMING",
+              "DrawGrenadeArc" : 0,
+              "EnergyConsumedPerFire" : 0,
+              "ExplicitNpcPerceptionSoundAttenuationRadius" : [ 10, 100 ],
+              "ExplicitNpcPerceptionSoundGain" : 0,
+              "FallbackAgentTargetting" : 1,
+              "FudgeAngle" : 0,
+              "HIP_CAMERA_RECOIL" : "/Lotus/Types/Game/WeaponProperties/Recoil/Weapon/ShotgunHipRecoilInfo",
+              "HIP_FIRE_ACCURACY" : "",
+              "IgnoreFireIterations" : 0,
+              "IgnoreOwner" : 1,
+              "IgnoreSpreadOnFirstFireIteration" : 0,
+              "IsMeleeBehavior" : 1,
+              "IsSilenced" : 0,
+              "KeepOriginalVisuals" : 0,
+              "LockOnProperties" : {
+                "LockOnAngleWeighting" : 1,
+                "LockOnDistanceOverride" : 0,
+                "LockOnDistanceWeighting" : 0.1,
+                "LockOnIgnoreEndPointTarget" : 0,
+                "LockOnIgnoreInvisible" : 0,
+                "LockOnIgnoreTags" : [ ],
+                "LockOnInitialAngle" : 0,
+                "LockOnMaxAngle" : 15,
+                "LockOnMaxTargets" : 0,
+                "LockOnPart" : "ANY_PART",
+                "LockOnStyle" : "LS_ENEMY"
+              },
+              "MaxChargePunctureDepth" : 1,
+              "MaxChargeSpreadAtten" : 1,
+              "MaxPeakHeight" : 0,
+              "MaxRays" : 0,
+              "MinChargePunctureDepth" : 0,
+              "MinChargeSpreadAtten" : 1,
+              "MultiShotChargedProjectileType" : "",
+              "MultiShotProjectileType" : "",
+              "MultiTargetLock" : 0,
+              "MultishotAmmoSpread" : 0,
+              "MultishotUseConeAngle" : 0,
+              "OverrideFiringHand" : 0,
+              "OverridePunctureDepthForCharge" : 0,
+              "OwnProjectiles" : 0,
+              "PerfectChargeRange" : [ 0, 0 ],
+              "PerfectChargedProjectileType" : "",
+              "ProjectileChargeScale" : [ 0, 1 ],
+              "PvpChargedProjectileType" : "",
+              "PvpProjectileType" : "",
+              "QuadDrawType" : "",
+              "RaysPerMeter" : 0.5,
+              "ReportAttack" : 1,
+              "RoundUpAmmoConsumption" : 0,
+              "ScaleAmmoRequirement" : 0,
+              "SequentialProjectileLaunchDirectionOffsets" : [ ],
+              "SetProjectileTargetForLockOn" : 0,
+              "SplineDrawType" : "",
+              "SplineSpeed" : 1,
+              "SpreadExtraProjectiles" : 0,
+              "SpreadInverse" : 0,
+              "SpreadRatioHorizontal" : 0.5,
+              "SpreadRotationOffset" : 0,
+              "UpdateFirePositionPerIteration" : 0,
+              "UseAmmo" : 1,
+              "UseExplicitNpcPerceptionSoundProperties" : 0,
+              "UseFanSpread" : 0,
+              "UseMultishotLineSpread" : 0,
+              "advanceProjectileSequenceOnFire" : 1,
+              "aimMode" : "AIM_MODE_IRON_SIGHTS",
+              "ammoRequirement" : 0,
+              "ammoType" : "/EE/Types/Game/AmmoEx",
+              "calculateLobAngle" : 0,
+              "chargeSpeedMult" : [ 1, 1 ],
+              "chargedProjectileSequenceList" : [ ],
+              "chargedProjectileType" : "",
+              "fireIterations" : 1,
+              "horizontalDeviationAngle" : 0,
+              "lobVerticalOffset" : 0,
+              "playerDamageMultiplier" : 1,
+              "projectileImpulse" : [ 0, 0 ],
+              "projectileLaunchDirectionOffset" : [ 0, 0, 0 ],
+              "projectileLaunchOffset" : [ 0, 0, 0 ],
+              "projectileSequenceList" : [ ],
+              "projectileTorque" : [ 0, 0, 0 ],
+              "projectileType" : "PrimeCorufellScytheWaveProj",
+              "projectileUpImpulse" : [ 0, 0 ],
+              "spreadUniform" : 0,
+              "useLargerLobAngle" : 0
+            },
+            "fire:Type" : "/Lotus/Types/Weapon/GunBladeProjectileFireBehavior",
+            "impact:GunbladeMeleeImpactBehavior" : {
+              "AltEffectHands" : [ ],
+              "AlternateAttackData" : {
+                "Amount" : 0,
+                "DT_IMPACT" : 0.33333299,
+                "DT_PUNCTURE" : 0.33333299,
+                "DT_SLASH" : 0.33333403,
+                "ForcedDeathProcs" : [ ],
+                "ForcedProcCount" : 1,
+                "ForcedProcs" : [ ],
+                "HitType" : "DHT_NONE",
+                "ProcChance" : 0.1,
+                "ProcExtraTime" : 0,
+                "Type" : "DT_PHYSICAL",
+                "UseNewFormat" : 0
+              },
+              "AlwaysOverrideFiringAvatar" : 0,
+              "AmmoConsumedWhenHitInvulnerableTarget" : 0,
+              "AmmoConsumedWhenHitVulnerableTarget" : 0,
+              "AttackData" : {
+                "Amount" : 700,
+                "ForcedDeathProcs" : [ ],
+                "ForcedProcCount" : 1,
+                "ForcedProcs" : [ ],
+                "HitType" : "DHT_PROJECTILE",
+                "ProcChance" : 0.14,
+                "ProcExtraTime" : 0,
+                "Type" : "DT_IMPACT",
+                "UseNewFormat" : 0
+              },
+              "BaseHitCount" : 15,
+              "BaseHitMultipler" : 0.5,
+              "ComboForcedProcHitCountWrap" : 0,
+              "ComboHitsAlwaysEnabled" : 1,
+              "ComboHitsMultiplier" : 4,
+              "ComboProcData" : [ ],
+              "ConsumeAmmoWhenDamageDealt" : 0,
+              "DamageUpgradeTypes" : [ "WEAPON_MELEE_DAMAGE" ],
+              "DeathEffect" : "",
+              "HitCounterCap" : 180,
+              "HitReqNextTierOperationType" : "HTO_ADDITIVE",
+              "HitReqNextTierOperator" : 15,
+              "IgnoreHeadshotBonus" : 1,
+              "IgnoreHeadshotBonusPvp" : 0,
+              "InfiniteTimeBetweenHits" : 0,
+              "InitialHitCounter" : 0,
+              "InitialHitCounterRecoveryRate" : 20,
+              "MinTimeBetweenHits" : 0.1,
+              "OnHitScript" : {
+                "Script" : ""
+              },
+              "OnHitScriptEnabled" : 1,
+              "PauseHitTimerWhenHolstered" : 0,
+              "PerComboExtraProcs" : {
+                "CC_AIR" : [ ],
+                "CC_AIR_LEFT" : [ ],
+                "CC_AIR_RIGHT" : [ ],
+                "CC_ATTACK_BLOCKED" : [ ],
+                "CC_ATTACK_COUNTERED" : [ ],
+                "CC_COUNTER_ATTACK" : [ ],
+                "CC_DOWNED_ENEMY" : [ ],
+                "CC_GROUND" : [ ],
+                "CC_GROUND_BRANCH_A" : [ ],
+                "CC_GROUND_BRANCH_B" : [ ],
+                "CC_GROUND_BRANCH_C" : [ ],
+                "CC_GROUND_HEAVY" : [ ],
+                "CC_GROUND_HELD_HEAVY" : [ ],
+                "CC_GUARD_BROKEN" : [ ],
+                "CC_PARRY_HEAVY" : [ ],
+                "CC_SLIDING" : [ ],
+                "CC_SLIDING_PVP" : [ ],
+                "CC_WALLRUN" : [ ]
+              },
+              "PlayHitEffectsOnFriendlyAvatars" : 0,
+              "PlayerDamageMultiplier" : 1,
+              "PlayerScaleDamageMultiplierByMissionLevel" : 0,
+              "PvpDamageMultiplier" : 1,
+              "PvpForcedDeathProcs" : [ ],
+              "PvpForcedProcs" : [ ],
+              "TimeBetweenHits" : 3,
+              "TimeUpgrade" : "WEAPON_MELEE_COMBO_DURATION_BONUS",
+              "UseNextShotDamageBonus" : 1,
+              "additionalForce" : [ 0, 0, 0 ],
+              "applyPushVelocity" : 0,
+              "applyPushVelocityOnlyToBlockingTarget" : 0,
+              "criticalHitChance" : 0.30000001,
+              "criticalHitDamageMultiplier" : 2.4000001,
+              "damageFallOff" : [ 8, 16 ],
+              "damageFallOffMinDamage" : 80,
+              "deflectHitEffects" : 0,
+              "deflectRange" : [ 0, 1 ],
+              "flash" : 0,
+              "hitEffect" : "/Lotus/Fx/Weapons/Basic/Ballistic/Impacts/BallisticHitEffectSmall",
+              "hitEffectAlt" : "",
+              "impulseFallOff" : [ 10, 1000 ],
+              "instantImpulse" : 250,
+              "minImpulseFallOff" : 1,
+              "pushMagnitude" : [ 0.5, 1 ],
+              "pushMagnitudeFallOff" : [ 10, 100 ],
+              "radius" : 0,
+              "ragdollChance" : 0,
+              "strength" : 0
+            },
+            "impact:Type" : "/Lotus/Types/Weapon/GunbladeMeleeImpactBehavior",
+            "state:GunBladeProxyStateBehavior" : {
+              "AmmoOverheatSound" : "",
+              "AmmoOverheatSoundResetThreshold" : 0.75,
+              "AmmoTakenPerReload" : -1,
+              "AnimWeaponType" : "WEAPONTYPE_NORMAL",
+              "ApplyNumChargesToDamageMultiplier" : 1,
+              "BehaviorTag" : "",
+              "CanChargeWhileRunning" : 1,
+              "CanFireWhileInAir" : 1,
+              "CanFireWhileRunning" : 0,
+              "CanInterruptModeSwitch" : 0,
+              "DoPreFire" : 0,
+              "EnableReloadEmpty" : 0,
+              "ForceNoSwapOnEmpty" : 0,
+              "ForceReloadFromEmpty" : 0,
+              "ForceReturnToPreviousBehavior" : 0,
+              "FullClipModeSwitchTime" : 0,
+              "InstantOverheat" : 0,
+              "IsAlternateFire" : 0,
+              "IsToggleBehavior" : 0,
+              "LocTag" : "",
+              "MaxNumProjectiles" : 0,
+              "ModeSwitchTime" : 0,
+              "NeedsLockOnTargets" : 0,
+              "NeedsPassiveUpdate" : 0,
+              "OnNewProjectileScript" : {
+                "Script" : ""
+              },
+              "OnlyGiveAmmoOnReloadCompleteEvent" : 0,
+              "OverheatCooldownModifier" : 1,
+              "OverheatEndedSound" : "",
+              "OverheatStyle" : "OS_PLATEAU",
+              "OverheatTime" : 0,
+              "PerfectReloadRange" : [ 0, 0 ],
+              "PrefireTime" : 0,
+              "PreventRunDuringModeSwitch" : 1,
+              "PreventRunWhileRecharging" : 0,
+              "PvpMaxNumProjectiles" : 0,
+              "QueueReloadOnEmptyClip" : 0,
+              "ReduceOverheatAmount" : 0,
+              "ReloadDuringModeSwitch" : 0,
+              "ReloadOnAdditionalEmptyFire" : 0,
+              "ReplicateAmmoConsumption" : 0,
+              "RunCausesReady" : 0,
+              "ShareFireRateWithPrefire" : 0,
+              "ShouldAutoPreFireToFire" : 0,
+              "SkipRefireOnEmpty" : 0,
+              "TrackProjectiles" : 1,
+              "UseReloadTimeBetweenShots" : 0,
+              "autoReloadEmptyTime" : 0,
+              "fireRate" : 50,
+              "reloadTime" : 2
+            },
+            "state:Type" : "/Lotus/Types/Weapon/GunBladeProxyStateBehavior"
+          } ],
+          "charge" : 0,
+          "chargesPerShot" : 0,
+          "defaultUpgrades" : [ "/Lotus/Weapons/Tenno/Archwing/Melee/ExaltedArchScythe/GunScytheInnateMod", "PrimeCorufellInnateMod" ],
+          "maxCharges" : 0,
+          "projectiles" : {
+            "/Lotus/Weapons/Tenno/Archwing/Melee/PrimeCorufell/PrimeCorufellScytheWaveProj" : {
+              "AttackData" : {
+                "Amount" : 650,
+                "ForcedDeathProcs" : [ "PT_RAGDOLL" ],
+                "ForcedProcs" : [ "PT_BIG_STAGGER" ],
+                "ProcChance" : 0.2,
+                "Type" : "DT_FIRE"
+              },
+              "CriticalChance" : 0.30000001,
+              "CriticalMultiplier" : 2.5,
+              "DamageFallOff" : [ 15, 30 ],
+              "DamageFallOffMinDamage" : 300,
+              "DamageUpgradeTypes" : [ "WEAPON_MELEE_DAMAGE" ],
+              "InitialRadius" : 1,
+              "KinematicInitialSpeed" : 40,
+              "KinematicMaxSpeed" : 40,
+              "KinematicMinSpeed" : 40,
+              "MaxLife" : 0.68000001,
+              "NotifyImpactBehavior" : 1
+            }
+          },
+          "requireFullCharges" : 0,
+          "slams" : [ {
+            "AttackData" : {
+              "Amount" : 20,
+              "ForcedDeathProcs" : [ ],
+              "ForcedProcCount" : 1,
+              "ForcedProcs" : [ "PT_KNOCKBACK" ],
+              "HitType" : "DHT_NONE",
+              "ProcChance" : 0.1,
+              "ProcExtraTime" : 0,
+              "Type" : "DT_EXPLOSION",
+              "UseNewFormat" : 0
+            },
+            "BaseDamageAttenuation" : 1,
+            "Bone" : "GAME_R1_WEAPON1",
+            "CanCrit" : 0,
+            "CanUseComboMultiplier" : 0,
+            "Effect" : {
+              "Attach" : 1,
+              "BoneName" : "GAME_R1_WEAPON1",
+              "Chance" : 255,
+              "DestroyParentOnDeath" : 0,
+              "DestroyWithOwner" : 0,
+              "FadeOutOnDestruction" : 0,
+              "LocalPosition" : [ 0, 0, 0 ],
+              "LocalRotation" : [ 0, 0, 0, 1 ],
+              "RelativeToBounds" : 0,
+              "Scale" : 1,
+              "Type" : "/Lotus/Fx/Weapons/Melee/Clean/Slams/ScaledSlam/MeleeSlamScaled"
+            },
+            "FXOffset" : [ 0, 0, 1 ],
+            "FallOff" : 1,
+            "FallOffMax" : 0.5,
+            "HitAirborneTargets" : 1,
+            "HorizontalImpulse" : 500,
+            "IsAerialSlam" : 1,
+            "MainHandOnly" : 0,
+            "MeleeAttack" : "",
+            "Offset" : [ 0, 0, 0 ],
+            "Radius" : 8,
+            "RadiusMin" : 0,
+            "TriggeringAnimEvent" : "MeleeSlam",
+            "UseCurrentMeleeAttackForDamage" : 0,
+            "UseImpactBehaviorAttackDataAmount" : 1,
+            "UseModifiedRadius" : 1,
+            "UseWeaponAttachment" : 0,
+            "UseWeaponProcChance" : 1,
+            "VerticalImpulse" : 1000,
+            "WeaponAttachmentHand" : "MAIN_HAND"
+          }, {
+            "AttackData" : {
+              "Amount" : 50,
+              "ForcedDeathProcs" : [ ],
+              "ForcedProcCount" : 1,
+              "ForcedProcs" : [ "PT_LIFT_HIT" ],
+              "HitType" : "DHT_NONE",
+              "ProcChance" : 0.1,
+              "ProcExtraTime" : 0,
+              "Type" : "DT_EXPLOSION",
+              "UseNewFormat" : 0
+            },
+            "BaseDamageAttenuation" : 5,
+            "Bone" : "GAME_R1_WEAPON1",
+            "CanCrit" : 0,
+            "CanUseComboMultiplier" : 1,
+            "Effect" : {
+              "Attach" : 1,
+              "BoneName" : "",
+              "Chance" : 255,
+              "DestroyParentOnDeath" : 0,
+              "DestroyWithOwner" : 0,
+              "FadeOutOnDestruction" : 0,
+              "LocalPosition" : [ 0, 0, 0 ],
+              "LocalRotation" : [ 0, 0, 0, 1 ],
+              "RelativeToBounds" : 0,
+              "Scale" : 1,
+              "Type" : "/Lotus/Sounds/Weapons/Archwing/Melee/ExaltedArchwingScythe/CorufellPrimeScytheMeleeSlamSuspendFX"
+            },
+            "FXOffset" : [ 0, 0, 1 ],
+            "FallOff" : 1,
+            "FallOffMax" : 0.69999999,
+            "HitAirborneTargets" : 1,
+            "HorizontalImpulse" : 500,
+            "IsAerialSlam" : 1,
+            "MainHandOnly" : 0,
+            "MeleeAttack" : "",
+            "Offset" : [ 0, 0, 0 ],
+            "Radius" : 9,
+            "RadiusMin" : 0,
+            "TriggeringAnimEvent" : "HeavySlam",
+            "UseCurrentMeleeAttackForDamage" : 0,
+            "UseImpactBehaviorAttackDataAmount" : 1,
+            "UseModifiedRadius" : 1,
+            "UseWeaponAttachment" : 0,
+            "UseWeaponProcChance" : 1,
+            "VerticalImpulse" : 1000,
+            "WeaponAttachmentHand" : "MAIN_HAND"
+          }, {
+            "AttackData" : {
+              "Amount" : 0,
+              "ForcedDeathProcs" : [ ],
+              "ForcedProcCount" : 1,
+              "ForcedProcs" : [ ],
+              "HitType" : "DHT_NONE",
+              "ProcChance" : 0.1,
+              "ProcExtraTime" : 0,
+              "Type" : "DT_EXPLOSION",
+              "UseNewFormat" : 0
+            },
+            "BaseDamageAttenuation" : 1,
+            "Bone" : "GAME_R1_WEAPON1",
+            "CanCrit" : 0,
+            "CanUseComboMultiplier" : 0,
+            "Effect" : {
+              "Attach" : 1,
+              "BoneName" : "GAME_R1_WEAPON1",
+              "Chance" : 255,
+              "DestroyParentOnDeath" : 0,
+              "DestroyWithOwner" : 0,
+              "FadeOutOnDestruction" : 0,
+              "LocalPosition" : [ 0, 0, 0 ],
+              "LocalRotation" : [ 0, 0, 0, 1 ],
+              "RelativeToBounds" : 0,
+              "Scale" : 1,
+              "Type" : "/Lotus/Fx/Weapons/Melee/Clean/Slams/MeleeGroundContactFX"
+            },
+            "FXOffset" : [ 0, 0, 0 ],
+            "FallOff" : 1,
+            "FallOffMax" : 0,
+            "HitAirborneTargets" : 1,
+            "HorizontalImpulse" : 0.1,
+            "IsAerialSlam" : 0,
+            "MainHandOnly" : 0,
+            "MeleeAttack" : "",
+            "Offset" : [ 0, 0, 0 ],
+            "Radius" : 1,
+            "RadiusMin" : 0,
+            "TriggeringAnimEvent" : "GroundAttackEffect",
+            "UseCurrentMeleeAttackForDamage" : 0,
+            "UseImpactBehaviorAttackDataAmount" : 1,
+            "UseModifiedRadius" : 1,
+            "UseWeaponAttachment" : 0,
+            "UseWeaponProcChance" : 0,
+            "VerticalImpulse" : 0.15000001,
+            "WeaponAttachmentHand" : "MAIN_HAND"
+          } ],
+          "weaknessBonus" : 0
+        },
+        "slamAttack" : 675,
+        "slamRadialDamage" : 450,
+        "slamRadius" : 8,
+        "slideAttack" : 450,
+        "slot" : 5,
+        "totalDamage" : 225,
+        "tradable" : false,
+        "variantType" : "VT_PRIME",
+        "windUp" : 1.3000001
+      },
+      "/Lotus/Weapons/Tenno/Bows/DuelistBow/DuelistBow" : {
+        "accuracy" : 16.666666,
+        "codexSecret" : false,
+        "compatibilityTags" : [ "PROJECTILE", "DUELISTBOW" ],
+        "criticalChance" : 0.31999999,
+        "criticalMultiplier" : 2.4000001,
+        "damagePerShot" : [ 0, 200, 0, 0, 200, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+        "description" : "/Lotus/Language/Iceblade/DuelistBowDesc",
+        "fireRate" : 1,
+        "holsterCategory" : "BOW",
+        "icon" : "/Lotus/Interface/Icons/StoreIcons/Weapons/PrimaryWeapons/Weapons/DuelistBow.png",
+        "magazineSize" : 1,
+        "masteryReq" : 14,
+        "multishot" : 1,
+        "name" : "/Lotus/Language/Iceblade/DuelistBowName",
+        "noise" : "SILENT",
+        "omegaAttenuation" : 0.5,
+        "parentName" : "/Lotus/Weapons/Tenno/Bows/LotusLongBow",
+        "procChance" : 0.31999999,
+        "productCategory" : "LongGuns",
+        "reloadTime" : 0.60000002,
+        "sekaiGameBuild" : "2026.10.08.13.05",
+        "sekaiSource" : {
+          "addCharges" : [ {
+            "Conditions" : [ "PRIMARY_HEADSHOT" ],
+            "NumCharges" : 2
+          }, {
+            "Conditions" : [ "PRIMARY_DIRECT_HIT" ],
+            "NumCharges" : 1
+          } ],
+          "behaviors" : [ {
+            "fire:LotusWeaponProjectileFireBehavior" : {
+              "AIMED_ACCURACY" : "/Lotus/Types/Game/WeaponProperties/Accuracy/Weapon/HuntingBowAimAccuracyInfo",
+              "AIMED_CAMERA_RECOIL" : "/Lotus/Types/Game/WeaponProperties/Recoil/Weapon/HuntingBowAimRecoilInfo",
+              "AiUsageInfo" : {
+                "aimError" : [ 2, 4 ],
+                "aimGraph" : "/EE/Types/Npc/WeaponAimGraphs/AllHitAimGraph",
+                "attackWeight" : 1,
+                "desiredAttackRange" : [ 5, 25 ],
+                "desiredAttackState" : "AS_LONG_RANGE",
+                "hitSpreadMultiplier" : 0,
+                "preferences" : {
+                  "ShootOnStaggerProbability" : 0.1,
+                  "StaggerTimeOut" : 1,
+                  "aimAtClosestPart" : 0,
+                  "aimAtPart" : "TORSO",
+                  "allowFireWhileBlocking" : 0,
+                  "continuousAim" : 0,
+                  "controlAim" : 0,
+                  "controlReload" : 1,
+                  "firingPreferences" : {
+                    "burstPauseTime" : [ 0, 0 ],
+                    "burstTime" : [ 0, 0 ],
+                    "fireRate" : [ 0, 0 ],
+                    "firingType" : "FT_CHARGED"
+                  },
+                  "ignoreNonVisible" : 0,
+                  "lockAimOnFullCharge" : 0,
+                  "minAngleToTurn" : 0,
+                  "minimumAimMask" : 0.89999998,
+                  "onlyFireAboveMinRangeMultiplier" : 0,
+                  "onlyFireWithinRangeMultiplier" : 0,
+                  "reloadThreshold" : 0,
+                  "setAimSource" : 1,
+                  "setAimTarget" : 1,
+                  "shootAtCover" : 1
+                }
+              },
+              "AimController:AimController" : [ ],
+              "AimController:Type" : "/EE/Types/Game/AimController",
+              "AimIgnoresChargedProjectile" : 0,
+              "AimIgnoresProjectile" : 0,
+              "AimProperties" : {
+                "AttenuateRecoilByChargeAmount" : 0,
+                "AttenuateRecoilBySpinUpAmount" : 0,
+                "CameraRecoilCurve" : "ET_LINEAR",
+                "CameraRecoilStrength" : [ 0, 1 ],
+                "EyeBasedAimSource" : 1,
+                "LocalPos" : [ 0, 0, 0 ],
+                "LocalRot" : [ 0, 0, 0, 1 ],
+                "NpcEyeBasedAimSource" : 0,
+                "OverrideLaunchBone" : 0,
+                "OverrideLaunchDir" : 0,
+                "PerfectChargeExtraRecoilAmount" : 0,
+                "ScopedPlayerUsesCameraPos" : 0,
+                "UsePrevResults" : 0,
+                "UseWeaponAttachment" : 0
+              },
+              "AlwaysUseAimEndPoint" : 0,
+              "ApplyFlightSpeedToLaunchImpulse" : 0,
+              "ApplyWeaponMaterialsToProjectile" : 0,
+              "ArcEffectType" : "",
+              "ArcEndEffectType" : "",
+              "ArcMaxEffectInstances" : 1,
+              "AttenuateFireIterationsForCharge" : 0,
+              "AttenuateForCharge" : 0,
+              "AttenuateSpreadForCharge" : 0,
+              "AutoTargetChance" : 0,
+              "ChargedProjectileMaxSpeed" : -1,
+              "ChargedProjectileMinSpeed" : -1,
+              "ConsumeEntireClip" : 0,
+              "ConsumePartialAmmo" : 0,
+              "ConsumeRemainingClip" : 0,
+              "ConsumesChargesForFire" : 0,
+              "DesiredTimeForArc" : 0,
+              "DrawCondition" : "DC_AIMING",
+              "DrawGrenadeArc" : 0,
+              "EnergyConsumedPerFire" : 0,
+              "ExplicitNpcPerceptionSoundAttenuationRadius" : [ 10, 100 ],
+              "ExplicitNpcPerceptionSoundGain" : 0,
+              "FallbackAgentTargetting" : 1,
+              "FudgeAngle" : 0,
+              "HIP_CAMERA_RECOIL" : "/Lotus/Types/Game/WeaponProperties/Recoil/Weapon/HuntingBowHipRecoilInfo",
+              "HIP_FIRE_ACCURACY" : "/Lotus/Types/Game/WeaponProperties/Accuracy/Weapon/HuntingBowHipAccuracyInfo",
+              "IgnoreFireIterations" : 0,
+              "IgnoreOwner" : 1,
+              "IgnoreSpreadOnFirstFireIteration" : 0,
+              "IsMeleeBehavior" : 0,
+              "IsSilenced" : 1,
+              "KeepOriginalVisuals" : 0,
+              "LockOnProperties" : {
+                "LockOnAngleWeighting" : 1,
+                "LockOnDistanceOverride" : 0,
+                "LockOnDistanceWeighting" : 0.1,
+                "LockOnIgnoreEndPointTarget" : 0,
+                "LockOnIgnoreInvisible" : 0,
+                "LockOnIgnoreTags" : [ ],
+                "LockOnInitialAngle" : 0,
+                "LockOnMaxAngle" : 15,
+                "LockOnMaxTargets" : 0,
+                "LockOnPart" : "ANY_PART",
+                "LockOnStyle" : "LS_ENEMY"
+              },
+              "MaxChargePunctureDepth" : 1,
+              "MaxChargeSpreadAtten" : 1,
+              "MaxPeakHeight" : 0,
+              "MaxRays" : 0,
+              "MinChargePunctureDepth" : 0,
+              "MinChargeSpreadAtten" : 1,
+              "MultiShotChargedProjectileType" : "",
+              "MultiShotProjectileType" : "",
+              "MultiTargetLock" : 0,
+              "MultishotAmmoSpread" : 0,
+              "MultishotUseConeAngle" : 0,
+              "OverrideFiringHand" : 0,
+              "OverridePunctureDepthForCharge" : 0,
+              "OwnProjectiles" : 0,
+              "PerfectChargeRange" : [ 0, 0 ],
+              "PerfectChargedProjectileType" : "",
+              "ProjectileChargeScale" : [ 0, 1 ],
+              "PvpChargedProjectileType" : "",
+              "PvpProjectileType" : "",
+              "QuadDrawType" : "",
+              "RaysPerMeter" : 0.5,
+              "ReportAttack" : 1,
+              "RoundUpAmmoConsumption" : 0,
+              "ScaleAmmoRequirement" : 0,
+              "SequentialProjectileLaunchDirectionOffsets" : [ ],
+              "SetProjectileTargetForLockOn" : 0,
+              "SplineDrawType" : "",
+              "SplineSpeed" : 1,
+              "SpreadExtraProjectiles" : 0,
+              "SpreadInverse" : 0,
+              "SpreadRatioHorizontal" : 0.5,
+              "SpreadRotationOffset" : 0,
+              "UpdateFirePositionPerIteration" : 0,
+              "UseAmmo" : 1,
+              "UseExplicitNpcPerceptionSoundProperties" : 0,
+              "UseFanSpread" : 0,
+              "UseMultishotLineSpread" : 0,
+              "advanceProjectileSequenceOnFire" : 1,
+              "aimMode" : "AIM_MODE_IRON_SIGHTS",
+              "ammoRequirement" : 1,
+              "ammoType" : "/Lotus/Weapons/Ammo/RifleAmmoEx",
+              "calculateLobAngle" : 0,
+              "chargeSpeedMult" : [ 1, 1 ],
+              "chargedProjectileSequenceList" : [ ],
+              "chargedProjectileType" : "WeakDuelistArrow",
+              "fireIterations" : 1,
+              "horizontalDeviationAngle" : 0,
+              "lobVerticalOffset" : 0,
+              "playerDamageMultiplier" : 1,
+              "projectileImpulse" : [ 0, 0 ],
+              "projectileLaunchDirectionOffset" : [ 0, 0, 0 ],
+              "projectileLaunchOffset" : [ 0, 0, 0 ],
+              "projectileSequenceList" : [ ],
+              "projectileTorque" : [ 0, 0, 0 ],
+              "projectileType" : "",
+              "projectileUpImpulse" : [ 0, 0 ],
+              "spreadUniform" : 0,
+              "useLargerLobAngle" : 0
+            },
+            "fire:Type" : "/Lotus/Types/Game/LotusWeaponProjectileFireBehavior",
+            "impact:SniperImpactBehavior" : {
+              "AltEffectHands" : [ ],
+              "AlwaysOverrideFiringAvatar" : 0,
+              "AmmoConsumedWhenHitInvulnerableTarget" : 0,
+              "AmmoConsumedWhenHitVulnerableTarget" : 0,
+              "AttackData" : {
+                "Amount" : 8,
+                "DT_IMPACT" : 0.33333299,
+                "DT_PUNCTURE" : 0.33333299,
+                "DT_SLASH" : 0.33333403,
+                "ForcedDeathProcs" : [ ],
+                "ForcedProcCount" : 1,
+                "ForcedProcs" : [ ],
+                "HitType" : "DHT_NONE",
+                "ProcChance" : 0.1,
+                "ProcExtraTime" : 0,
+                "Type" : "DT_PHYSICAL",
+                "UseNewFormat" : 0
+              },
+              "BaseHitCount" : 3,
+              "BaseHitMultipler" : 1,
+              "ComboDecayEnabled" : 0,
+              "ComboForcedProcHitCountWrap" : 0,
+              "ComboHitsAlwaysEnabled" : 1,
+              "ComboProcData" : [ ],
+              "ConsumeAmmoWhenDamageDealt" : 0,
+              "DamageUpgradeTypes" : [ "WEAPON_DAMAGE_AMOUNT" ],
+              "DeathEffect" : "",
+              "HitCounterCap" : 180,
+              "HitReqNextTierOperationType" : "HTO_MULTIPLICATIVE",
+              "HitReqNextTierOperator" : 30,
+              "IgnoreHeadshotBonus" : 0,
+              "IgnoreHeadshotBonusPvp" : 0,
+              "InfiniteTimeBetweenHits" : 0,
+              "InitialHitCounter" : 0,
+              "InitialHitCounterRecoveryRate" : 20,
+              "MinTimeBetweenHits" : 0.1,
+              "OnHitScript" : {
+                "Script" : ""
+              },
+              "OnHitScriptEnabled" : 1,
+              "PauseHitTimerWhenHolstered" : 0,
+              "PlayHitEffectsOnFriendlyAvatars" : 0,
+              "PlayerDamageMultiplier" : 1,
+              "PlayerScaleDamageMultiplierByMissionLevel" : 0,
+              "PvpDamageMultiplier" : 1,
+              "PvpForcedDeathProcs" : [ ],
+              "PvpForcedProcs" : [ ],
+              "TimeBetweenHits" : 5,
+              "TimeUpgrade" : "WEAPON_SNIPER_COMBO_DURATION_BONUS",
+              "UseNextShotDamageBonus" : 1,
+              "additionalForce" : [ 0, 0, 0 ],
+              "applyPushVelocity" : 0,
+              "applyPushVelocityOnlyToBlockingTarget" : 0,
+              "criticalHitChance" : 0.5,
+              "criticalHitDamageMultiplier" : 2,
+              "damageFallOff" : [ 0, 0 ],
+              "damageFallOffMinDamage" : 0,
+              "deflectHitEffects" : 0,
+              "deflectRange" : [ 0, 1 ],
+              "flash" : 0,
+              "hitEffect" : "/Lotus/Fx/ArrowTraditionalHitEffect",
+              "hitEffectAlt" : "",
+              "impulseFallOff" : [ 10, 1000 ],
+              "instantImpulse" : 250,
+              "minImpulseFallOff" : 0.2,
+              "pushMagnitude" : [ 0.5, 1 ],
+              "pushMagnitudeFallOff" : [ 10, 100 ],
+              "radius" : 0,
+              "ragdollChance" : 0,
+              "strength" : 0
+            },
+            "impact:Type" : "/Lotus/Types/Game/SniperImpactBehavior",
+            "state:Type" : "/EE/Types/Game/WeaponChargedStateBehavior",
+            "state:WeaponChargedStateBehavior" : {
+              "AccessibilityTrigger" : 0,
+              "AlwaysApplyChargeRateModifier" : 0,
+              "AmmoConsumedPerSecondAtFullCharge" : 0,
+              "AmmoOverheatSound" : "",
+              "AmmoOverheatSoundResetThreshold" : 0.75,
+              "AmmoTakenPerReload" : -1,
+              "AnimWeaponType" : "WEAPONTYPE_NORMAL",
+              "ApplyNumChargesToDamageMultiplier" : 0,
+              "AutoFireWhenChargeCompleted" : 0,
+              "BehaviorTag" : "",
+              "CanChargeWhileRunning" : 1,
+              "CanFireWhileInAir" : 1,
+              "CanFireWhileRunning" : 0,
+              "CanInterruptModeSwitch" : 0,
+              "CanInterruptReload" : 0,
+              "ChargeCancelledScript" : {
+                "Script" : ""
+              },
+              "ChargeModifier" : "WEAPON_FIRE_RATE",
+              "ChargeRequireFullClip" : 0,
+              "ChargeTime" : 0.60000002,
+              "ClipSizeAffectsChargeTime" : 0,
+              "DamageMultiplier" : 1,
+              "DoPreFire" : 0,
+              "EnableReloadEmpty" : 0,
+              "FireWhenFullChargeTimeExceeded" : 0,
+              "ForceNoSwapOnEmpty" : 0,
+              "ForceReloadFromEmpty" : 0,
+              "ForceReturnToPreviousBehavior" : 0,
+              "FullChargeTimeLimit" : -1,
+              "FullClipModeSwitchTime" : 0,
+              "FullyChargedScript" : {
+                "Script" : ""
+              },
+              "InstantOverheat" : 0,
+              "IsAlternateFire" : 0,
+              "IsAutomatic" : 0,
+              "IsToggleBehavior" : 0,
+              "LocTag" : "/Lotus/Language/Menu/Loadout_TriggerCharge",
+              "MaxDamageMultiplier" : 0,
+              "MaxNumProjectiles" : 0,
+              "MinChargeRatio" : 1,
+              "MinDamageMultiplier" : 1,
+              "ModeSwitchTime" : 0,
+              "NeedsLockOnTargets" : 0,
+              "NeedsPassiveUpdate" : 0,
+              "OnNewProjectileScript" : {
+                "Script" : ""
+              },
+              "OnlyGiveAmmoOnReloadCompleteEvent" : 0,
+              "OverheatCooldownModifier" : 1,
+              "OverheatEndedSound" : "",
+              "OverheatStyle" : "OS_PLATEAU",
+              "OverheatTime" : 0,
+              "PVPFullChargeTimeLimit" : 4,
+              "PerfectReloadRange" : [ 0, 0 ],
+              "PrefireTime" : 0,
+              "PreventRunDuringModeSwitch" : 1,
+              "PreventRunWhileRecharging" : 0,
+              "PvpMaxNumProjectiles" : 0,
+              "QueueAbortsWhenReleased" : 1,
+              "QueueFiring" : 1,
+              "QueueReloadOnEmptyClip" : 0,
+              "ReduceOverheatAmount" : 0,
+              "ReloadCancelsCharge" : 1,
+              "ReloadDuringModeSwitch" : 0,
+              "ReloadOnAdditionalEmptyFire" : 0,
+              "ReplicateAmmoConsumption" : 0,
+              "ReplicateFireStop" : 0,
+              "RunCausesReady" : 0,
+              "ShareFireRateWithPrefire" : 0,
+              "ShouldAutoPreFireToFire" : 0,
+              "SkipRefireOnEmpty" : 0,
+              "TrackProjectiles" : 0,
+              "UseClipSizeAsDamageMultiplier" : 0,
+              "UseReloadTimeBetweenShots" : 1,
+              "autoReloadEmptyTime" : 0.2,
+              "fireRate" : 60,
+              "reloadTime" : 0.60000002
+            }
+          }, {
+            "fire:LotusWeaponProjectileFireBehavior" : {
+              "AIMED_ACCURACY" : "/Lotus/Types/Game/WeaponProperties/Accuracy/Weapon/HuntingBowAimAccuracyInfo",
+              "AIMED_CAMERA_RECOIL" : "/Lotus/Types/Game/WeaponProperties/Recoil/Weapon/HuntingBowAimRecoilInfo",
+              "AiUsageInfo" : {
+                "aimError" : [ 2, 4 ],
+                "aimGraph" : "/EE/Types/Npc/WeaponAimGraphs/AllHitAimGraph",
+                "attackWeight" : 1,
+                "desiredAttackRange" : [ 5, 25 ],
+                "desiredAttackState" : "AS_LONG_RANGE",
+                "hitSpreadMultiplier" : 0,
+                "preferences" : {
+                  "ShootOnStaggerProbability" : 0.1,
+                  "StaggerTimeOut" : 1,
+                  "aimAtClosestPart" : 0,
+                  "aimAtPart" : "TORSO",
+                  "allowFireWhileBlocking" : 0,
+                  "continuousAim" : 0,
+                  "controlAim" : 0,
+                  "controlReload" : 1,
+                  "firingPreferences" : {
+                    "burstPauseTime" : [ 0, 0 ],
+                    "burstTime" : [ 0, 0 ],
+                    "fireRate" : [ 0, 0 ],
+                    "firingType" : "FT_CHARGED"
+                  },
+                  "ignoreNonVisible" : 0,
+                  "lockAimOnFullCharge" : 0,
+                  "minAngleToTurn" : 0,
+                  "minimumAimMask" : 0.89999998,
+                  "onlyFireAboveMinRangeMultiplier" : 0,
+                  "onlyFireWithinRangeMultiplier" : 0,
+                  "reloadThreshold" : 0,
+                  "setAimSource" : 1,
+                  "setAimTarget" : 1,
+                  "shootAtCover" : 1
+                }
+              },
+              "AimController:AimController" : [ ],
+              "AimController:Type" : "/EE/Types/Game/AimController",
+              "AimIgnoresChargedProjectile" : 0,
+              "AimIgnoresProjectile" : 0,
+              "AimProperties" : {
+                "AttenuateRecoilByChargeAmount" : 0,
+                "AttenuateRecoilBySpinUpAmount" : 0,
+                "CameraRecoilCurve" : "ET_LINEAR",
+                "CameraRecoilStrength" : [ 0, 1 ],
+                "EyeBasedAimSource" : 1,
+                "LocalPos" : [ 0, 0, 0 ],
+                "LocalRot" : [ 0, 0, 0, 1 ],
+                "NpcEyeBasedAimSource" : 0,
+                "OverrideLaunchBone" : 0,
+                "OverrideLaunchDir" : 0,
+                "PerfectChargeExtraRecoilAmount" : 0,
+                "ScopedPlayerUsesCameraPos" : 0,
+                "UsePrevResults" : 0,
+                "UseWeaponAttachment" : 0
+              },
+              "AlwaysUseAimEndPoint" : 0,
+              "ApplyFlightSpeedToLaunchImpulse" : 0,
+              "ApplyWeaponMaterialsToProjectile" : 0,
+              "ArcEffectType" : "",
+              "ArcEndEffectType" : "",
+              "ArcMaxEffectInstances" : 1,
+              "AttenuateFireIterationsForCharge" : 0,
+              "AttenuateForCharge" : 0,
+              "AttenuateSpreadForCharge" : 0,
+              "AutoTargetChance" : 0,
+              "ChargedProjectileMaxSpeed" : -1,
+              "ChargedProjectileMinSpeed" : -1,
+              "ConsumeEntireClip" : 0,
+              "ConsumePartialAmmo" : 0,
+              "ConsumeRemainingClip" : 0,
+              "ConsumesChargesForFire" : 1,
+              "DesiredTimeForArc" : 0,
+              "DrawCondition" : "DC_AIMING",
+              "DrawGrenadeArc" : 0,
+              "EnergyConsumedPerFire" : 0,
+              "ExplicitNpcPerceptionSoundAttenuationRadius" : [ 10, 100 ],
+              "ExplicitNpcPerceptionSoundGain" : 0,
+              "FallbackAgentTargetting" : 1,
+              "FudgeAngle" : 0,
+              "HIP_CAMERA_RECOIL" : "/Lotus/Types/Game/WeaponProperties/Recoil/Weapon/HuntingBowHipRecoilInfo",
+              "HIP_FIRE_ACCURACY" : "/Lotus/Types/Game/WeaponProperties/Accuracy/Weapon/HuntingBowHipAccuracyInfo",
+              "IgnoreFireIterations" : 0,
+              "IgnoreOwner" : 1,
+              "IgnoreSpreadOnFirstFireIteration" : 0,
+              "IsMeleeBehavior" : 0,
+              "IsSilenced" : 0,
+              "KeepOriginalVisuals" : 0,
+              "LockOnProperties" : {
+                "LockOnAngleWeighting" : 1,
+                "LockOnDistanceOverride" : 0,
+                "LockOnDistanceWeighting" : 0.1,
+                "LockOnIgnoreEndPointTarget" : 0,
+                "LockOnIgnoreInvisible" : 0,
+                "LockOnIgnoreTags" : [ ],
+                "LockOnInitialAngle" : 0,
+                "LockOnMaxAngle" : 15,
+                "LockOnMaxTargets" : 0,
+                "LockOnPart" : "ANY_PART",
+                "LockOnStyle" : "LS_ENEMY"
+              },
+              "MaxChargePunctureDepth" : 1,
+              "MaxChargeSpreadAtten" : 1,
+              "MaxPeakHeight" : 0,
+              "MaxRays" : 0,
+              "MinChargePunctureDepth" : 0,
+              "MinChargeSpreadAtten" : 1,
+              "MultiShotChargedProjectileType" : "",
+              "MultiShotProjectileType" : "",
+              "MultiTargetLock" : 0,
+              "MultishotAmmoSpread" : 0,
+              "MultishotUseConeAngle" : 0,
+              "OverrideFiringHand" : 0,
+              "OverridePunctureDepthForCharge" : 0,
+              "OwnProjectiles" : 0,
+              "PerfectChargeRange" : [ 0, 0 ],
+              "PerfectChargedProjectileType" : "",
+              "ProjectileChargeScale" : [ 0, 1 ],
+              "PvpChargedProjectileType" : "",
+              "PvpProjectileType" : "",
+              "QuadDrawType" : "",
+              "RaysPerMeter" : 0.5,
+              "ReportAttack" : 1,
+              "RoundUpAmmoConsumption" : 0,
+              "ScaleAmmoRequirement" : 0,
+              "SequentialProjectileLaunchDirectionOffsets" : [ ],
+              "SetProjectileTargetForLockOn" : 0,
+              "SplineDrawType" : "",
+              "SplineSpeed" : 1,
+              "SpreadExtraProjectiles" : 0,
+              "SpreadInverse" : 0,
+              "SpreadRatioHorizontal" : 0.5,
+              "SpreadRotationOffset" : 0,
+              "UpdateFirePositionPerIteration" : 0,
+              "UseAmmo" : 0,
+              "UseExplicitNpcPerceptionSoundProperties" : 0,
+              "UseFanSpread" : 0,
+              "UseMultishotLineSpread" : 0,
+              "advanceProjectileSequenceOnFire" : 1,
+              "aimMode" : "AIM_MODE_IRON_SIGHTS",
+              "ammoRequirement" : 1,
+              "ammoType" : "",
+              "calculateLobAngle" : 0,
+              "chargeSpeedMult" : [ 1, 1 ],
+              "chargedProjectileSequenceList" : [ ],
+              "chargedProjectileType" : "DuelistBowAltWaveProjectile",
+              "fireIterations" : 1,
+              "horizontalDeviationAngle" : 0,
+              "lobVerticalOffset" : 0,
+              "playerDamageMultiplier" : 1,
+              "projectileImpulse" : [ 0, 0 ],
+              "projectileLaunchDirectionOffset" : [ 0, 0, 0 ],
+              "projectileLaunchOffset" : [ 0, 0, 0 ],
+              "projectileSequenceList" : [ ],
+              "projectileTorque" : [ 0, 0, 0 ],
+              "projectileType" : "",
+              "projectileUpImpulse" : [ 0, 0 ],
+              "spreadUniform" : 0,
+              "useLargerLobAngle" : 0
+            },
+            "fire:Type" : "/Lotus/Types/Game/LotusWeaponProjectileFireBehavior",
+            "impact:SniperImpactBehavior" : {
+              "AltEffectHands" : [ ],
+              "AlwaysOverrideFiringAvatar" : 0,
+              "AmmoConsumedWhenHitInvulnerableTarget" : 0,
+              "AmmoConsumedWhenHitVulnerableTarget" : 0,
+              "AttackData" : {
+                "Amount" : 8,
+                "DT_IMPACT" : 0.33333299,
+                "DT_PUNCTURE" : 0.33333299,
+                "DT_SLASH" : 0.33333403,
+                "ForcedDeathProcs" : [ ],
+                "ForcedProcCount" : 1,
+                "ForcedProcs" : [ ],
+                "HitType" : "DHT_NONE",
+                "ProcChance" : 0.1,
+                "ProcExtraTime" : 0,
+                "Type" : "DT_PHYSICAL",
+                "UseNewFormat" : 0
+              },
+              "BaseHitCount" : 3,
+              "BaseHitMultipler" : 1,
+              "ComboDecayEnabled" : 0,
+              "ComboForcedProcHitCountWrap" : 0,
+              "ComboHitsAlwaysEnabled" : 1,
+              "ComboProcData" : [ ],
+              "ConsumeAmmoWhenDamageDealt" : 0,
+              "DamageUpgradeTypes" : [ "WEAPON_DAMAGE_AMOUNT" ],
+              "DeathEffect" : "",
+              "HitCounterCap" : 180,
+              "HitReqNextTierOperationType" : "HTO_MULTIPLICATIVE",
+              "HitReqNextTierOperator" : 30,
+              "IgnoreHeadshotBonus" : 1,
+              "IgnoreHeadshotBonusPvp" : 0,
+              "InfiniteTimeBetweenHits" : 0,
+              "InitialHitCounter" : 0,
+              "InitialHitCounterRecoveryRate" : 20,
+              "MinTimeBetweenHits" : 0.1,
+              "OnHitScript" : {
+                "Script" : ""
+              },
+              "OnHitScriptEnabled" : 1,
+              "PauseHitTimerWhenHolstered" : 0,
+              "PlayHitEffectsOnFriendlyAvatars" : 0,
+              "PlayerDamageMultiplier" : 1,
+              "PlayerScaleDamageMultiplierByMissionLevel" : 0,
+              "PvpDamageMultiplier" : 1,
+              "PvpForcedDeathProcs" : [ ],
+              "PvpForcedProcs" : [ ],
+              "TimeBetweenHits" : 5,
+              "TimeUpgrade" : "WEAPON_SNIPER_COMBO_DURATION_BONUS",
+              "UseNextShotDamageBonus" : 1,
+              "additionalForce" : [ 0, 0, 0 ],
+              "applyPushVelocity" : 0,
+              "applyPushVelocityOnlyToBlockingTarget" : 0,
+              "criticalHitChance" : 0.5,
+              "criticalHitDamageMultiplier" : 2,
+              "damageFallOff" : [ 0, 0 ],
+              "damageFallOffMinDamage" : 0,
+              "deflectHitEffects" : 0,
+              "deflectRange" : [ 0, 1 ],
+              "flash" : 0,
+              "hitEffect" : "/Lotus/Fx/ArrowTraditionalHitEffect",
+              "hitEffectAlt" : "",
+              "impulseFallOff" : [ 10, 1000 ],
+              "instantImpulse" : 250,
+              "minImpulseFallOff" : 0.2,
+              "pushMagnitude" : [ 0.5, 1 ],
+              "pushMagnitudeFallOff" : [ 10, 100 ],
+              "radius" : 0,
+              "ragdollChance" : 0,
+              "strength" : 0
+            },
+            "impact:Type" : "/Lotus/Types/Game/SniperImpactBehavior",
+            "state:Type" : "/EE/Types/Game/WeaponChargedStateBehavior",
+            "state:WeaponChargedStateBehavior" : {
+              "AccessibilityTrigger" : 0,
+              "AlwaysApplyChargeRateModifier" : 0,
+              "AmmoConsumedPerSecondAtFullCharge" : 0,
+              "AmmoOverheatSound" : "",
+              "AmmoOverheatSoundResetThreshold" : 0.75,
+              "AmmoTakenPerReload" : -1,
+              "AnimWeaponType" : "WEAPONTYPE_NORMAL",
+              "ApplyNumChargesToDamageMultiplier" : 0,
+              "AutoFireWhenChargeCompleted" : 1,
+              "BehaviorTag" : "",
+              "CanChargeWhileRunning" : 1,
+              "CanFireWhileInAir" : 1,
+              "CanFireWhileRunning" : 0,
+              "CanInterruptModeSwitch" : 0,
+              "CanInterruptReload" : 0,
+              "ChargeCancelledScript" : {
+                "Script" : ""
+              },
+              "ChargeModifier" : "WEAPON_FIRE_RATE",
+              "ChargeRequireFullClip" : 0,
+              "ChargeTime" : 1.5,
+              "ClipSizeAffectsChargeTime" : 0,
+              "DamageMultiplier" : 1,
+              "DoPreFire" : 0,
+              "EnableReloadEmpty" : 0,
+              "FireWhenFullChargeTimeExceeded" : 0,
+              "ForceNoSwapOnEmpty" : 0,
+              "ForceReloadFromEmpty" : 0,
+              "ForceReturnToPreviousBehavior" : 0,
+              "FullChargeTimeLimit" : -1,
+              "FullClipModeSwitchTime" : 0,
+              "FullyChargedScript" : {
+                "Script" : ""
+              },
+              "InstantOverheat" : 0,
+              "IsAlternateFire" : 1,
+              "IsAutomatic" : 0,
+              "IsToggleBehavior" : 0,
+              "LocTag" : "/Lotus/Language/Menu/Loadout_TriggerCharge",
+              "MaxDamageMultiplier" : 0,
+              "MaxNumProjectiles" : 0,
+              "MinChargeRatio" : 1,
+              "MinDamageMultiplier" : 1,
+              "ModeSwitchTime" : 0,
+              "NeedsLockOnTargets" : 0,
+              "NeedsPassiveUpdate" : 0,
+              "OnNewProjectileScript" : {
+                "Script" : ""
+              },
+              "OnlyGiveAmmoOnReloadCompleteEvent" : 0,
+              "OverheatCooldownModifier" : 1,
+              "OverheatEndedSound" : "",
+              "OverheatStyle" : "OS_PLATEAU",
+              "OverheatTime" : 0,
+              "PVPFullChargeTimeLimit" : 4,
+              "PerfectReloadRange" : [ 0, 0 ],
+              "PrefireTime" : 0,
+              "PreventRunDuringModeSwitch" : 1,
+              "PreventRunWhileRecharging" : 0,
+              "PvpMaxNumProjectiles" : 0,
+              "QueueAbortsWhenReleased" : 0,
+              "QueueFiring" : 1,
+              "QueueReloadOnEmptyClip" : 0,
+              "ReduceOverheatAmount" : 0,
+              "ReloadCancelsCharge" : 1,
+              "ReloadDuringModeSwitch" : 0,
+              "ReloadOnAdditionalEmptyFire" : 0,
+              "ReplicateAmmoConsumption" : 0,
+              "ReplicateFireStop" : 0,
+              "RunCausesReady" : 0,
+              "ShareFireRateWithPrefire" : 0,
+              "ShouldAutoPreFireToFire" : 0,
+              "SkipRefireOnEmpty" : 0,
+              "TrackProjectiles" : 0,
+              "UseClipSizeAsDamageMultiplier" : 0,
+              "UseReloadTimeBetweenShots" : 1,
+              "autoReloadEmptyTime" : 0.2,
+              "fireRate" : 60,
+              "reloadTime" : 0.60000002
+            }
+          } ],
+          "charge" : 0.60000002,
+          "chargesPerShot" : 10,
+          "defaultUpgrades" : [ "DuelistBowPassiveDescUpgrade" ],
+          "maxCharges" : 10,
+          "projectiles" : {
+            "/Lotus/Weapons/Tenno/Bows/DuelistBow/DuelistBowAltWaveProjectile" : {
+              "AttackData" : {
+                "Amount" : 1000,
+                "DT_CORROSIVE" : 0,
+                "DT_ELECTRICITY" : 0,
+                "DT_EXPLOSION" : 0,
+                "DT_FIRE" : 0,
+                "DT_FREEZE" : 500,
+                "DT_GAS" : 0,
+                "DT_IMPACT" : 0,
+                "DT_MAGNETIC" : 0,
+                "DT_POISON" : 0,
+                "DT_PUNCTURE" : 250,
+                "DT_RADIANT" : 0,
+                "DT_RADIATION" : 0,
+                "DT_SLASH" : 250,
+                "DT_VIRAL" : 0,
+                "ForcedProcCount" : 10,
+                "ForcedProcs" : [ "PT_CHILLED" ],
+                "HitType" : "DHT_PROJECTILE",
+                "ProcChance" : 0.36000001,
+                "Type" : "DT_PUNCTURE",
+                "UseNewFormat" : 1
+              },
+              "CriticalChance" : 0.36000001,
+              "CriticalMultiplier" : 3,
+              "EmbedAttack" : {
+                "Amount" : 0
+              },
+              "FaceVelocity" : 1,
+              "InitialRadius" : 0.2,
+              "KinematicInitialSpeed" : 70,
+              "KinematicMaxSpeed" : 70,
+              "KinematicPostCollisionsSpeedFactor" : 0.40000001,
+              "OnProjectileDeathScript" : {
+                "Function" : "RefreshTrailLifetime",
+                "Script" : "/Lotus/Scripts/WeaponAttachments/DuelistBow.lua",
+                "_desiredScale" : 1.8,
+                "_iceType" : "",
+                "_lifeTime" : 10,
+                "_scaleUpTime" : 0.80000001
+              },
+              "ReplicaRunScriptInstance" : 1,
+              "ScriptInstance" : {
+                "Function" : "CreateIceTrail",
+                "Script" : "/Lotus/Scripts/WeaponAttachments/DuelistBow.lua",
+                "_desiredScale" : 0.30000001,
+                "_iceType" : "/Lotus/Fx/Weapons/Bow/DuelistBowGroundSpawner",
+                "_lifeTime" : 10,
+                "_scaleUpTime" : 0.75
+              },
+              "WhizzByRadius" : 15
+            },
+            "/Lotus/Weapons/Tenno/Bows/DuelistBow/WeakDuelistArrow" : {
+              "AttackData" : {
+                "Amount" : 400,
+                "DT_CORROSIVE" : 0,
+                "DT_ELECTRICITY" : 0,
+                "DT_EXPLOSION" : 0,
+                "DT_FIRE" : 0,
+                "DT_FREEZE" : 200,
+                "DT_GAS" : 0,
+                "DT_IMPACT" : 0,
+                "DT_MAGNETIC" : 0,
+                "DT_POISON" : 0,
+                "DT_PUNCTURE" : 200,
+                "DT_RADIANT" : 0,
+                "DT_RADIATION" : 0,
+                "DT_SLASH" : 0,
+                "DT_VIRAL" : 0,
+                "ProcChance" : 0.31999999,
+                "UseNewFormat" : 1
+              },
+              "BounceOnAvatars" : 0,
+              "BounceOnRagdolls" : 0,
+              "ContactExplosionDamage" : 250,
+              "ContactExplosionRadius" : 10,
+              "CriticalChance" : 0.31999999,
+              "CriticalMultiplier" : 2.4000001,
+              "DealDamageThroughImpactBehavior" : 1,
+              "EmbedAttack" : {
+                "Amount" : 0
+              },
+              "FaceVelocity" : 1,
+              "KinematicInitialSpeed" : 140,
+              "KinematicMaxSpeed" : 140,
+              "KinematicPostCollisionsSpeedFactor" : 0.75,
+              "OnProjectileStoppedScript" : {
+                "Function" : "KillArrayAttachedToSelf",
+                "Script" : "/Lotus/Scripts/Effects/AttachFX.lua",
+                "_attachPos" : [ 0, 0, 0 ],
+                "_attachRot" : [ 0, 0, 0 ],
+                "_attachToArray" : [ ],
+                "_attachToThis" : "",
+                "_attachmentType" : "",
+                "_beamAttachBones" : [ ],
+                "_beamEndBones" : [ ],
+                "_bone" : "",
+                "_delay" : 0,
+                "_destrySelfIfNotLocal" : 0,
+                "_isAttachedToThis" : "",
+                "_isAttachedToThisArray" : [ ],
+                "_isEnable" : 1,
+                "_masterOnly" : 1,
+                "_newMesh" : "",
+                "_positionBoneOffset" : 0,
+                "_positionBonelessOffset" : 0,
+                "_stopSpewing" : 0,
+                "_typeToAttach" : "",
+                "_typeToKill" : "/Lotus/Fx/Weapons/Bow/DuelistChargedProjectileFlarePerfect",
+                "_typesToKill" : [ "/Lotus/Fx/Weapons/Bow/DuelistChargedProjectileFlarePerfect", "/Lotus/Fx/Weapons/Bow/DuelistBowChargedProjectileEmbers" ]
+              },
+              "SweepRadius" : 0,
+              "WhizzByRadius" : 15
+            }
+          },
+          "requireFullCharges" : 1,
+          "slams" : [ ],
+          "weaknessBonus" : 1
+        },
+        "slot" : 1,
+        "totalDamage" : 400,
+        "tradable" : false,
+        "trigger" : "CHARGE",
+        "variantType" : "VT_NORMAL"
+      },
+      "/Lotus/Weapons/Tenno/LongGuns/PrimeSteflos/PrimeSteflosShotgun" : {
+        "accuracy" : 100,
+        "codexSecret" : false,
+        "compatibilityTags" : [ "PROJECTILE", "ASSAULT_AMMO", "SEMI_AUTO" ],
+        "criticalChance" : 0.18000001,
+        "criticalMultiplier" : 2.2,
+        "damagePerShot" : [ 195, 0, 0, 285, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+        "description" : "/Lotus/Language/Primes/PrimeSteflosShotgunDesc",
+        "fireRate" : 3.0000002,
+        "holsterCategory" : "RIFLE",
+        "icon" : "/Lotus/Interface/Icons/StoreIcons/Weapons/PrimaryWeapons/Weapons/SteflosPrime.png",
+        "magazineSize" : 12,
+        "masteryReq" : 15,
+        "multishot" : 1,
+        "name" : "/Lotus/Language/Primes/PrimeSteflosShotgunName",
+        "noise" : "ALARMING",
+        "omegaAttenuation" : 0.5,
+        "parentName" : "/Lotus/Weapons/Tenno/LongGuns/TnoLotusPodShotgun/TnoLotusPodShotgun",
+        "procChance" : 0.27999997,
+        "productCategory" : "LongGuns",
+        "reloadTime" : 2.4000001,
+        "sekaiGameBuild" : "2026.10.08.13.05",
+        "sekaiSource" : {
+          "addCharges" : [ ],
+          "behaviors" : [ {
+            "fire:LotusWeaponProjectileFireBehavior" : {
+              "AIMED_ACCURACY" : "",
+              "AIMED_CAMERA_RECOIL" : "/Lotus/Types/Game/WeaponProperties/Recoil/Weapon/PrimeSteflosShotgunAimRecoilInfo",
+              "AiUsageInfo" : {
+                "aimError" : [ 4, 10 ],
+                "aimGraph" : "",
+                "attackWeight" : 1,
+                "desiredAttackRange" : [ 5, 25 ],
+                "desiredAttackState" : "AS_SHORT_RANGE",
+                "hitSpreadMultiplier" : 0,
+                "preferences" : {
+                  "ShootOnStaggerProbability" : 0.1,
+                  "StaggerTimeOut" : 1,
+                  "aimAtClosestPart" : 0,
+                  "aimAtPart" : "TORSO",
+                  "allowFireWhileBlocking" : 0,
+                  "continuousAim" : 0,
+                  "controlAim" : 0,
+                  "controlReload" : 1,
+                  "firingPreferences" : {
+                    "burstPauseTime" : [ 0, 0 ],
+                    "burstTime" : [ 0, 0 ],
+                    "fireRate" : [ 0, 0 ],
+                    "firingType" : "FT_NORMAL"
+                  },
+                  "ignoreNonVisible" : 0,
+                  "lockAimOnFullCharge" : 0,
+                  "minAngleToTurn" : 0,
+                  "minimumAimMask" : 0.89999998,
+                  "onlyFireAboveMinRangeMultiplier" : 0,
+                  "onlyFireWithinRangeMultiplier" : 0,
+                  "reloadThreshold" : 0,
+                  "setAimSource" : 1,
+                  "setAimTarget" : 1,
+                  "shootAtCover" : 1
+                }
+              },
+              "AimController:AimController" : [ ],
+              "AimController:Type" : "/EE/Types/Game/AimController",
+              "AimIgnoresChargedProjectile" : 0,
+              "AimIgnoresProjectile" : 0,
+              "AimProperties" : {
+                "AttenuateRecoilByChargeAmount" : 0,
+                "AttenuateRecoilBySpinUpAmount" : 0,
+                "CameraRecoilCurve" : "ET_LINEAR",
+                "CameraRecoilStrength" : [ 0, 1 ],
+                "EyeBasedAimSource" : 1,
+                "NpcEyeBasedAimSource" : 0,
+                "OverrideLaunchDir" : 0,
+                "PerfectChargeExtraRecoilAmount" : 0,
+                "ScopedPlayerUsesCameraPos" : 0,
+                "UseWeaponAttachment" : 1
+              },
+              "AlwaysUseAimEndPoint" : 0,
+              "ApplyFlightSpeedToLaunchImpulse" : 0,
+              "ApplyWeaponMaterialsToProjectile" : 0,
+              "ArcEffectType" : "",
+              "ArcEndEffectType" : "",
+              "ArcMaxEffectInstances" : 1,
+              "AttenuateFireIterationsForCharge" : 0,
+              "AttenuateForCharge" : 0,
+              "AttenuateSpreadForCharge" : 0,
+              "AutoTargetChance" : 0,
+              "ChargedProjectileMaxSpeed" : -1,
+              "ChargedProjectileMinSpeed" : -1,
+              "ConsumeEntireClip" : 0,
+              "ConsumePartialAmmo" : 0,
+              "ConsumeRemainingClip" : 0,
+              "ConsumesChargesForFire" : 0,
+              "DesiredTimeForArc" : 0,
+              "DrawCondition" : "DC_AIMING",
+              "DrawGrenadeArc" : 0,
+              "EnergyConsumedPerFire" : 0,
+              "ExplicitNpcPerceptionSoundAttenuationRadius" : [ 10, 100 ],
+              "ExplicitNpcPerceptionSoundGain" : 0,
+              "FallbackAgentTargetting" : 1,
+              "FudgeAngle" : 0,
+              "HIP_CAMERA_RECOIL" : "/Lotus/Types/Game/WeaponProperties/Recoil/Weapon/ShotgunHipRecoilInfo",
+              "HIP_FIRE_ACCURACY" : "",
+              "IgnoreFireIterations" : 0,
+              "IgnoreOwner" : 1,
+              "IgnoreSpreadOnFirstFireIteration" : 0,
+              "IsMeleeBehavior" : 0,
+              "IsSilenced" : 0,
+              "KeepOriginalVisuals" : 0,
+              "LockOnProperties" : {
+                "LockOnAngleWeighting" : 1,
+                "LockOnDistanceOverride" : 0,
+                "LockOnDistanceWeighting" : 0.1,
+                "LockOnIgnoreEndPointTarget" : 0,
+                "LockOnIgnoreInvisible" : 0,
+                "LockOnIgnoreTags" : [ ],
+                "LockOnInitialAngle" : 0,
+                "LockOnMaxAngle" : 15,
+                "LockOnMaxTargets" : 0,
+                "LockOnPart" : "ANY_PART",
+                "LockOnStyle" : "LS_ENEMY"
+              },
+              "MaxChargePunctureDepth" : 1,
+              "MaxChargeSpreadAtten" : 1,
+              "MaxPeakHeight" : 0,
+              "MaxRays" : 0,
+              "MinChargePunctureDepth" : 0,
+              "MinChargeSpreadAtten" : 1,
+              "MultiShotChargedProjectileType" : "",
+              "MultiShotProjectileType" : "",
+              "MultiTargetLock" : 0,
+              "MultishotAmmoSpread" : 0,
+              "MultishotUseConeAngle" : 0,
+              "OverrideFiringHand" : 0,
+              "OverridePunctureDepthForCharge" : 0,
+              "OwnProjectiles" : 0,
+              "PerfectChargeRange" : [ 0, 0 ],
+              "PerfectChargedProjectileType" : "",
+              "ProjectileChargeScale" : [ 0, 1 ],
+              "PvpChargedProjectileType" : "",
+              "PvpProjectileType" : "",
+              "QuadDrawType" : "",
+              "RaysPerMeter" : 0.5,
+              "ReportAttack" : 1,
+              "RoundUpAmmoConsumption" : 0,
+              "ScaleAmmoRequirement" : 0,
+              "SequentialProjectileLaunchDirectionOffsets" : [ ],
+              "SetProjectileTargetForLockOn" : 0,
+              "SplineDrawType" : "",
+              "SplineSpeed" : 1,
+              "SpreadExtraProjectiles" : 0,
+              "SpreadInverse" : 0,
+              "SpreadRatioHorizontal" : 0.5,
+              "SpreadRotationOffset" : 0,
+              "UpdateFirePositionPerIteration" : 0,
+              "UseAmmo" : 1,
+              "UseExplicitNpcPerceptionSoundProperties" : 0,
+              "UseFanSpread" : 0,
+              "UseMultishotLineSpread" : 0,
+              "advanceProjectileSequenceOnFire" : 1,
+              "aimMode" : "AIM_MODE_IRON_SIGHTS",
+              "ammoRequirement" : 1,
+              "ammoType" : "/Lotus/Weapons/Ammo/RifleAmmoEx",
+              "calculateLobAngle" : 0,
+              "chargeSpeedMult" : [ 1, 1 ],
+              "chargedProjectileSequenceList" : [ ],
+              "chargedProjectileType" : "",
+              "fireIterations" : 1,
+              "horizontalDeviationAngle" : 0,
+              "lobVerticalOffset" : 0,
+              "playerDamageMultiplier" : 1,
+              "projectileImpulse" : [ 0, 0 ],
+              "projectileLaunchDirectionOffset" : [ 0, 0, 0 ],
+              "projectileLaunchOffset" : [ 0, 0, 0 ],
+              "projectileSequenceList" : [ ],
+              "projectileTorque" : [ 0, 0, 0 ],
+              "projectileType" : "PrimeSteflosShotgunWaveProj",
+              "projectileUpImpulse" : [ 0, 0 ],
+              "spreadUniform" : 0,
+              "useLargerLobAngle" : 0
+            },
+            "fire:Type" : "/Lotus/Types/Game/LotusWeaponProjectileFireBehavior",
+            "impact:LotusWeaponImpactBehavior" : {
+              "AltEffectHands" : [ ],
+              "AlwaysOverrideFiringAvatar" : 0,
+              "AmmoConsumedWhenHitInvulnerableTarget" : 0,
+              "AmmoConsumedWhenHitVulnerableTarget" : 0,
+              "AttackData" : {
+                "Amount" : 90,
+                "DT_IMPACT" : 0.25999999,
+                "DT_PUNCTURE" : 0.25999999,
+                "DT_SLASH" : 0.48000002,
+                "ForcedDeathProcs" : [ ],
+                "ForcedProcCount" : 1,
+                "ForcedProcs" : [ ],
+                "HitType" : "DHT_NONE",
+                "ProcChance" : 0.22,
+                "ProcExtraTime" : 0,
+                "Type" : "DT_PHYSICAL",
+                "UseNewFormat" : 0
+              },
+              "ConsumeAmmoWhenDamageDealt" : 0,
+              "DamageUpgradeTypes" : [ "WEAPON_DAMAGE_AMOUNT" ],
+              "DeathEffect" : "",
+              "IgnoreHeadshotBonus" : 1,
+              "IgnoreHeadshotBonusPvp" : 0,
+              "OnHitScript" : {
+                "Script" : ""
+              },
+              "OnHitScriptEnabled" : 1,
+              "PlayHitEffectsOnFriendlyAvatars" : 0,
+              "PlayerDamageMultiplier" : 1,
+              "PlayerScaleDamageMultiplierByMissionLevel" : 0,
+              "PvpDamageMultiplier" : 0.74000001,
+              "PvpForcedDeathProcs" : [ ],
+              "PvpForcedProcs" : [ ],
+              "UseNextShotDamageBonus" : 1,
+              "additionalForce" : [ 0, 0, 0 ],
+              "applyPushVelocity" : 0,
+              "applyPushVelocityOnlyToBlockingTarget" : 0,
+              "criticalHitChance" : 0.22,
+              "criticalHitDamageMultiplier" : 2.2,
+              "damageFallOff" : [ 0, 0 ],
+              "damageFallOffMinDamage" : 1,
+              "deflectHitEffects" : 1,
+              "deflectRange" : [ 0, 1 ],
+              "flash" : 0,
+              "hitEffect" : "/Lotus/Fx/Weapons/Basic/Ballistic/Impacts/BallisticHitEffectMedium",
+              "hitEffectAlt" : "",
+              "impulseFallOff" : [ 10, 1000 ],
+              "instantImpulse" : 350,
+              "minImpulseFallOff" : 1,
+              "pushMagnitude" : [ 0.5, 1 ],
+              "pushMagnitudeFallOff" : [ 10, 100 ],
+              "radius" : 0,
+              "ragdollChance" : 0,
+              "strength" : 0
+            },
+            "impact:Type" : "/Lotus/Types/Weapon/LotusWeaponImpactBehavior",
+            "state:Type" : "/EE/Types/Game/WeaponSemiAutomaticStateBehavior",
+            "state:WeaponSemiAutomaticStateBehavior" : {
+              "AccessibilityTrigger" : 1,
+              "AmmoOverheatSound" : "",
+              "AmmoOverheatSoundResetThreshold" : 0.75,
+              "AmmoTakenPerReload" : -1,
+              "AnimWeaponType" : "WEAPONTYPE_NORMAL",
+              "ApplyNumChargesToDamageMultiplier" : 1,
+              "BehaviorTag" : "",
+              "CanChargeWhileRunning" : 1,
+              "CanFireWhileInAir" : 1,
+              "CanFireWhileRunning" : 0,
+              "CanInterruptModeSwitch" : 0,
+              "DoPreFire" : 0,
+              "EnableReloadEmpty" : 0,
+              "FireOnButtonAction" : "PRESSED",
+              "ForceNoSwapOnEmpty" : 0,
+              "ForceReloadFromEmpty" : 0,
+              "ForceReturnToPreviousBehavior" : 0,
+              "FullClipModeSwitchTime" : 0,
+              "InstantOverheat" : 0,
+              "IsAlternateFire" : 0,
+              "IsAutomatic" : 0,
+              "IsToggleBehavior" : 0,
+              "LocTag" : "/Lotus/Language/Menu/Loadout_TriggerSemiAuto",
+              "MaxNumProjectiles" : 0,
+              "ModeSwitchTime" : 0,
+              "NeedsLockOnTargets" : 0,
+              "NeedsPassiveUpdate" : 0,
+              "OnNewProjectileScript" : {
+                "Script" : ""
+              },
+              "OnlyGiveAmmoOnReloadCompleteEvent" : 0,
+              "OverheatCooldownModifier" : 1,
+              "OverheatEndedSound" : "",
+              "OverheatStyle" : "OS_PLATEAU",
+              "OverheatTime" : 0,
+              "PerfectReloadRange" : [ 0, 0 ],
+              "PrefireTime" : 0,
+              "PreventRunDuringModeSwitch" : 1,
+              "PreventRunWhileRecharging" : 0,
+              "PvpMaxNumProjectiles" : 0,
+              "QueueDelay" : 0.1,
+              "QueueFiring" : 0,
+              "QueueReloadOnEmptyClip" : 0,
+              "ReduceOverheatAmount" : 0,
+              "ReloadDuringModeSwitch" : 0,
+              "ReloadOnAdditionalEmptyFire" : 0,
+              "ReplicateAmmoConsumption" : 0,
+              "RunCausesReady" : 0,
+              "ShareFireRateWithPrefire" : 0,
+              "ShouldAutoPreFireToFire" : 0,
+              "SkipRefireOnEmpty" : 0,
+              "SkipRefireWaitTimerOnEmptyClip" : 0,
+              "TrackProjectiles" : 1,
+              "UseReloadTimeBetweenShots" : 0,
+              "autoReloadEmptyTime" : 0,
+              "fireRate" : 180,
+              "reloadTime" : 2.4000001
+            }
+          } ],
+          "charge" : 0,
+          "chargesPerShot" : 0,
+          "defaultUpgrades" : [ "TnoLotusPodShotgunInnateUpgrade" ],
+          "maxCharges" : 0,
+          "projectiles" : {
+            "/Lotus/Weapons/Tenno/LongGuns/PrimeSteflos/PrimeSteflosShotgunWaveProj" : {
+              "AttackData" : {
+                "Amount" : 480,
+                "DT_CORROSIVE" : 0,
+                "DT_ELECTRICITY" : 0,
+                "DT_EXPLOSION" : 0,
+                "DT_FIRE" : 285,
+                "DT_FREEZE" : 0,
+                "DT_GAS" : 0,
+                "DT_IMPACT" : 195,
+                "DT_MAGNETIC" : 0,
+                "DT_POISON" : 0,
+                "DT_PUNCTURE" : 0,
+                "DT_RADIANT" : 0,
+                "DT_RADIATION" : 0,
+                "DT_SLASH" : 0,
+                "DT_VIRAL" : 0,
+                "ForcedDeathProcs" : [ "PT_RAGDOLL" ],
+                "HitType" : "DHT_PROJECTILE",
+                "ProcChance" : 0.28,
+                "Type" : "DT_IMPACT",
+                "UseNewFormat" : 1
+              },
+              "CriticalChance" : 0.18000001,
+              "CriticalMultiplier" : 2.2,
+              "DamageFallOff" : [ 8, 24 ],
+              "DamageFallOffMinDamage" : 180,
+              "ExplosiveAttack" : {
+                "ProcChance" : 0,
+                "Type" : "DT_RADIATION"
+              },
+              "InitialRadius" : 0.1,
+              "KinematicInitialSpeed" : 20,
+              "KinematicMaxSpeed" : 20,
+              "MaxLife" : 10,
+              "OnHitScript" : {
+                "Function" : "OnProjectileHit",
+                "Script" : "/Lotus/Scripts/WeaponAttachments/TnoLotusPodShotgun.lua",
+                "_avatarHitEffect" : "/Lotus/Fx/Weapons/Tenno/TnPodShotgun/TnLotusPodShotgunHitFX",
+                "_projDeathEffect" : ""
+              },
+              "OnProjectileStartScript" : {
+                "Function" : "OnProjectileSpawned",
+                "Script" : "/Lotus/Scripts/WeaponAttachments/TnoLotusPodShotgun.lua",
+                "_avatarHitEffect" : "",
+                "_projDeathEffect" : "/Lotus/Fx/Weapons/Tenno/TnPodShotgun/Prime/TnLotusPodShotgunPrimeProjEndFX"
+              },
+              "RunHitScriptOnDirectHit" : 1
+            }
+          },
+          "requireFullCharges" : 0,
+          "slams" : [ ],
+          "weaknessBonus" : 0.5
+        },
+        "slot" : 1,
+        "totalDamage" : 480,
+        "tradable" : false,
+        "trigger" : "SEMI",
+        "variantType" : "VT_PRIME"
+      },
+      "/Lotus/Weapons/Tenno/Pistols/DuelistPistols/DuelistPistols" : {
+        "accuracy" : 26.666666,
+        "codexSecret" : false,
+        "compatibilityTags" : [ "PROJECTILE", "SEMI_AUTO" ],
+        "criticalChance" : 0.23999999,
+        "criticalMultiplier" : 2.5999999,
+        "damagePerShot" : [ 0, 70, 0, 0, 70, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+        "description" : "/Lotus/Language/Iceblade/DuelistPistolsDesc",
+        "fireRate" : 4,
+        "holsterCategory" : "SMG",
+        "icon" : "/Lotus/Interface/Icons/StoreIcons/Weapons/SecondaryWeapons/Weapons/DuelistPistols.png",
+        "magazineSize" : 8,
+        "masteryReq" : 14,
+        "multishot" : 1,
+        "name" : "/Lotus/Language/Iceblade/DuelistPistolsName",
+        "noise" : "ALARMING",
+        "omegaAttenuation" : 0.5,
+        "parentName" : "/Lotus/Weapons/Tenno/Akimbo/LotusAkimbo",
+        "procChance" : 0.22000003,
+        "productCategory" : "Pistols",
+        "reloadTime" : 2.5999999,
+        "sekaiGameBuild" : "2026.10.08.13.05",
+        "sekaiSource" : {
+          "addCharges" : [ ],
+          "behaviors" : [ {
+            "fire:LotusWeaponProjectileFireBehavior" : {
+              "AIMED_ACCURACY" : "/Lotus/Types/Game/WeaponProperties/Accuracy/Weapon/AkimboBoltoAimAccuracyInfo",
+              "AIMED_CAMERA_RECOIL" : "/Lotus/Types/Game/WeaponProperties/Recoil/Weapon/AkimboBoltoAimRecoilInfo",
+              "AiUsageInfo" : {
+                "aimError" : [ 4, 10 ],
+                "aimGraph" : "/EE/Types/Npc/WeaponAimGraphs/ShortAimGraph",
+                "attackWeight" : 1,
+                "desiredAttackRange" : [ 5, 25 ],
+                "desiredAttackState" : "AS_SHORT_RANGE",
+                "hitSpreadMultiplier" : 0,
+                "preferences" : {
+                  "ShootOnStaggerProbability" : 0.1,
+                  "StaggerTimeOut" : 1,
+                  "aimAtClosestPart" : 0,
+                  "aimAtPart" : "TORSO",
+                  "allowFireWhileBlocking" : 0,
+                  "continuousAim" : 0,
+                  "controlAim" : 0,
+                  "controlReload" : 1,
+                  "firingPreferences" : {
+                    "burstPauseTime" : [ 0, 0 ],
+                    "burstTime" : [ 0, 0 ],
+                    "fireRate" : [ 0, 0 ],
+                    "firingType" : "FT_NORMAL"
+                  },
+                  "ignoreNonVisible" : 0,
+                  "lockAimOnFullCharge" : 0,
+                  "minAngleToTurn" : 0,
+                  "minimumAimMask" : 0.89999998,
+                  "onlyFireAboveMinRangeMultiplier" : 0,
+                  "onlyFireWithinRangeMultiplier" : 0,
+                  "reloadThreshold" : 0,
+                  "setAimSource" : 1,
+                  "setAimTarget" : 1,
+                  "shootAtCover" : 1
+                }
+              },
+              "AimController:AimController" : [ ],
+              "AimController:Type" : "/EE/Types/Game/AimController",
+              "AimIgnoresChargedProjectile" : 0,
+              "AimIgnoresProjectile" : 0,
+              "AimProperties" : {
+                "AttenuateRecoilByChargeAmount" : 0,
+                "AttenuateRecoilBySpinUpAmount" : 0,
+                "CameraRecoilCurve" : "ET_LINEAR",
+                "CameraRecoilStrength" : [ 0, 1 ],
+                "EyeBasedAimSource" : 1,
+                "LocalPos" : [ 0, 0, 0 ],
+                "LocalRot" : [ 0, 0, 0, 1 ],
+                "NpcEyeBasedAimSource" : 0,
+                "OverrideLaunchBone" : 0,
+                "OverrideLaunchDir" : 0,
+                "PerfectChargeExtraRecoilAmount" : 0,
+                "ScopedPlayerUsesCameraPos" : 0,
+                "UsePrevResults" : 0,
+                "UseWeaponAttachment" : 0
+              },
+              "AlwaysUseAimEndPoint" : 0,
+              "ApplyFlightSpeedToLaunchImpulse" : 0,
+              "ApplyWeaponMaterialsToProjectile" : 0,
+              "ArcEffectType" : "",
+              "ArcEndEffectType" : "",
+              "ArcMaxEffectInstances" : 1,
+              "AttenuateFireIterationsForCharge" : 0,
+              "AttenuateForCharge" : 0,
+              "AttenuateSpreadForCharge" : 0,
+              "AutoTargetChance" : 0,
+              "ChargedProjectileMaxSpeed" : -1,
+              "ChargedProjectileMinSpeed" : -1,
+              "ConsumeEntireClip" : 0,
+              "ConsumePartialAmmo" : 0,
+              "ConsumeRemainingClip" : 0,
+              "ConsumesChargesForFire" : 0,
+              "DesiredTimeForArc" : 0,
+              "DrawCondition" : "DC_AIMING",
+              "DrawGrenadeArc" : 0,
+              "EnergyConsumedPerFire" : 0,
+              "ExplicitNpcPerceptionSoundAttenuationRadius" : [ 10, 100 ],
+              "ExplicitNpcPerceptionSoundGain" : 0,
+              "FallbackAgentTargetting" : 1,
+              "FudgeAngle" : 0,
+              "HIP_CAMERA_RECOIL" : "/Lotus/Types/Game/WeaponProperties/Recoil/Weapon/AkimboBoltoHipRecoilInfo",
+              "HIP_FIRE_ACCURACY" : "/Lotus/Types/Game/WeaponProperties/Accuracy/Weapon/AkimboBoltoHipAccuracyInfo",
+              "IgnoreFireIterations" : 0,
+              "IgnoreOwner" : 1,
+              "IgnoreSpreadOnFirstFireIteration" : 0,
+              "IsMeleeBehavior" : 0,
+              "IsSilenced" : 0,
+              "KeepOriginalVisuals" : 0,
+              "LockOnProperties" : {
+                "LockOnAngleWeighting" : 1,
+                "LockOnDistanceOverride" : 0,
+                "LockOnDistanceWeighting" : 0.1,
+                "LockOnIgnoreEndPointTarget" : 0,
+                "LockOnIgnoreInvisible" : 0,
+                "LockOnIgnoreTags" : [ ],
+                "LockOnInitialAngle" : 0,
+                "LockOnMaxAngle" : 15,
+                "LockOnMaxTargets" : 0,
+                "LockOnPart" : "ANY_PART",
+                "LockOnStyle" : "LS_ENEMY"
+              },
+              "MaxChargePunctureDepth" : 1,
+              "MaxChargeSpreadAtten" : 1,
+              "MaxPeakHeight" : 0,
+              "MaxRays" : 0,
+              "MinChargePunctureDepth" : 0,
+              "MinChargeSpreadAtten" : 1,
+              "MultiShotChargedProjectileType" : "",
+              "MultiShotProjectileType" : "",
+              "MultiTargetLock" : 0,
+              "MultishotAmmoSpread" : 0,
+              "MultishotUseConeAngle" : 0,
+              "OverrideFiringHand" : 0,
+              "OverridePunctureDepthForCharge" : 0,
+              "OwnProjectiles" : 0,
+              "PerfectChargeRange" : [ 0, 0 ],
+              "PerfectChargedProjectileType" : "",
+              "ProjectileChargeScale" : [ 0, 1 ],
+              "PvpChargedProjectileType" : "",
+              "PvpProjectileType" : "DuelistPistolsProj",
+              "QuadDrawType" : "",
+              "RaysPerMeter" : 0.5,
+              "ReportAttack" : 1,
+              "RoundUpAmmoConsumption" : 0,
+              "ScaleAmmoRequirement" : 0,
+              "SequentialProjectileLaunchDirectionOffsets" : [ ],
+              "SetProjectileTargetForLockOn" : 0,
+              "SplineDrawType" : "",
+              "SplineSpeed" : 1,
+              "SpreadExtraProjectiles" : 0,
+              "SpreadInverse" : 0,
+              "SpreadRatioHorizontal" : 0.5,
+              "SpreadRotationOffset" : 0,
+              "UpdateFirePositionPerIteration" : 0,
+              "UseAmmo" : 1,
+              "UseExplicitNpcPerceptionSoundProperties" : 0,
+              "UseFanSpread" : 0,
+              "UseMultishotLineSpread" : 0,
+              "advanceProjectileSequenceOnFire" : 1,
+              "aimMode" : "AIM_MODE_IRON_SIGHTS",
+              "ammoRequirement" : 1,
+              "ammoType" : "/Lotus/Weapons/Ammo/PistolAmmoEx",
+              "calculateLobAngle" : 0,
+              "chargeSpeedMult" : [ 1, 1 ],
+              "chargedProjectileSequenceList" : [ ],
+              "chargedProjectileType" : "",
+              "fireIterations" : 1,
+              "horizontalDeviationAngle" : 0,
+              "lobVerticalOffset" : 0,
+              "playerDamageMultiplier" : 1,
+              "projectileImpulse" : [ 0, 0 ],
+              "projectileLaunchDirectionOffset" : [ 0, 0, 0 ],
+              "projectileLaunchOffset" : [ 0, 0, 0 ],
+              "projectileSequenceList" : [ ],
+              "projectileTorque" : [ 0, 0, 0 ],
+              "projectileType" : "DuelistPistolsProj",
+              "projectileUpImpulse" : [ 0, 0 ],
+              "spreadUniform" : 0,
+              "useLargerLobAngle" : 0
+            },
+            "fire:Type" : "/Lotus/Types/Game/LotusWeaponProjectileFireBehavior",
+            "impact:LotusWeaponImpactBehavior" : {
+              "AltEffectHands" : [ ],
+              "AlwaysOverrideFiringAvatar" : 0,
+              "AmmoConsumedWhenHitInvulnerableTarget" : 0,
+              "AmmoConsumedWhenHitVulnerableTarget" : 0,
+              "AttackData" : {
+                "Amount" : 20,
+                "DT_IMPACT" : 0.33333299,
+                "DT_PUNCTURE" : 0.33333299,
+                "DT_SLASH" : 0.33333403,
+                "ForcedDeathProcs" : [ ],
+                "ForcedProcCount" : 1,
+                "ForcedProcs" : [ ],
+                "HitType" : "DHT_NONE",
+                "ProcChance" : 0.1,
+                "ProcExtraTime" : 0,
+                "Type" : "DT_PHYSICAL",
+                "UseNewFormat" : 0
+              },
+              "ConsumeAmmoWhenDamageDealt" : 0,
+              "DamageUpgradeTypes" : [ "WEAPON_DAMAGE_AMOUNT" ],
+              "DeathEffect" : "",
+              "IgnoreHeadshotBonus" : 0,
+              "IgnoreHeadshotBonusPvp" : 0,
+              "OnHitScript" : {
+                "Script" : ""
+              },
+              "OnHitScriptEnabled" : 1,
+              "PlayHitEffectsOnFriendlyAvatars" : 0,
+              "PlayerDamageMultiplier" : 1,
+              "PlayerScaleDamageMultiplierByMissionLevel" : 0,
+              "PvpDamageMultiplier" : 0.62,
+              "PvpForcedDeathProcs" : [ ],
+              "PvpForcedProcs" : [ ],
+              "UseNextShotDamageBonus" : 1,
+              "additionalForce" : [ 0, 0, 0 ],
+              "applyPushVelocity" : 0,
+              "applyPushVelocityOnlyToBlockingTarget" : 0,
+              "criticalHitChance" : 0.025,
+              "criticalHitDamageMultiplier" : 1.5,
+              "damageFallOff" : [ 0, 0 ],
+              "damageFallOffMinDamage" : 0,
+              "deflectHitEffects" : 1,
+              "deflectRange" : [ 0, 1 ],
+              "flash" : 0,
+              "hitEffect" : "/Lotus/Fx/Weapons/Basic/Ballistic/Impacts/BallisticHitEffectSmall",
+              "hitEffectAlt" : "",
+              "impulseFallOff" : [ 10, 1000 ],
+              "instantImpulse" : 250,
+              "minImpulseFallOff" : 1,
+              "pushMagnitude" : [ 0.5, 1 ],
+              "pushMagnitudeFallOff" : [ 10, 100 ],
+              "radius" : 0,
+              "ragdollChance" : 0,
+              "strength" : 0
+            },
+            "impact:Type" : "/Lotus/Types/Weapon/LotusWeaponImpactBehavior",
+            "state:Type" : "/EE/Types/Game/WeaponSemiAutomaticStateBehavior",
+            "state:WeaponSemiAutomaticStateBehavior" : {
+              "AccessibilityTrigger" : 1,
+              "AmmoOverheatSound" : "",
+              "AmmoOverheatSoundResetThreshold" : 0.75,
+              "AmmoTakenPerReload" : -1,
+              "AnimWeaponType" : "WEAPONTYPE_NORMAL",
+              "ApplyNumChargesToDamageMultiplier" : 1,
+              "BehaviorTag" : "",
+              "CanChargeWhileRunning" : 1,
+              "CanFireWhileInAir" : 1,
+              "CanFireWhileRunning" : 0,
+              "CanInterruptModeSwitch" : 0,
+              "DoPreFire" : 0,
+              "EnableReloadEmpty" : 0,
+              "FireOnButtonAction" : "PRESSED",
+              "ForceNoSwapOnEmpty" : 0,
+              "ForceReloadFromEmpty" : 0,
+              "ForceReturnToPreviousBehavior" : 0,
+              "FullClipModeSwitchTime" : 0,
+              "InstantOverheat" : 0,
+              "IsAlternateFire" : 0,
+              "IsAutomatic" : 0,
+              "IsToggleBehavior" : 0,
+              "LocTag" : "/Lotus/Language/Menu/Loadout_TriggerSemiAuto",
+              "MaxNumProjectiles" : 0,
+              "ModeSwitchTime" : 0,
+              "NeedsLockOnTargets" : 0,
+              "NeedsPassiveUpdate" : 0,
+              "OnNewProjectileScript" : {
+                "Script" : ""
+              },
+              "OnlyGiveAmmoOnReloadCompleteEvent" : 0,
+              "OverheatCooldownModifier" : 1,
+              "OverheatEndedSound" : "",
+              "OverheatStyle" : "OS_PLATEAU",
+              "OverheatTime" : 0,
+              "PerfectReloadRange" : [ 0, 0 ],
+              "PrefireTime" : 0,
+              "PreventRunDuringModeSwitch" : 1,
+              "PreventRunWhileRecharging" : 0,
+              "PvpMaxNumProjectiles" : 0,
+              "QueueDelay" : 0.1,
+              "QueueFiring" : 1,
+              "QueueReloadOnEmptyClip" : 0,
+              "ReduceOverheatAmount" : 0,
+              "ReloadDuringModeSwitch" : 0,
+              "ReloadOnAdditionalEmptyFire" : 0,
+              "ReplicateAmmoConsumption" : 0,
+              "RunCausesReady" : 0,
+              "ShareFireRateWithPrefire" : 0,
+              "ShouldAutoPreFireToFire" : 0,
+              "SkipRefireOnEmpty" : 0,
+              "SkipRefireWaitTimerOnEmptyClip" : 0,
+              "TrackProjectiles" : 0,
+              "UseReloadTimeBetweenShots" : 0,
+              "autoReloadEmptyTime" : 0.2,
+              "fireRate" : 240,
+              "reloadTime" : 2.5999999
+            }
+          } ],
+          "charge" : 0,
+          "chargesPerShot" : 0,
+          "defaultUpgrades" : [ "DuelistPistolsPassiveDescUpgrade" ],
+          "maxCharges" : 0,
+          "projectiles" : {
+            "/Lotus/Weapons/Tenno/Pistols/DuelistPistols/DuelistPistolsProj" : {
+              "AttackData" : {
+                "Amount" : 140,
+                "DT_CORROSIVE" : 0,
+                "DT_ELECTRICITY" : 0,
+                "DT_EXPLOSION" : 0,
+                "DT_FIRE" : 0,
+                "DT_FREEZE" : 70,
+                "DT_GAS" : 0,
+                "DT_IMPACT" : 0,
+                "DT_MAGNETIC" : 0,
+                "DT_POISON" : 0,
+                "DT_PUNCTURE" : 70,
+                "DT_RADIANT" : 0,
+                "DT_RADIATION" : 0,
+                "DT_SLASH" : 0,
+                "DT_VIRAL" : 0,
+                "ProcChance" : 0.22,
+                "Type" : "DT_PUNCTURE",
+                "UseNewFormat" : 1
+              },
+              "ContactExplosionDamage" : 250,
+              "ContactExplosionRadius" : 10,
+              "CriticalChance" : 0.23999999,
+              "CriticalMultiplier" : 2.5999999,
+              "DealDamageThroughImpactBehavior" : 1,
+              "EmbedAttack" : {
+                "Type" : "DT_IMPACT"
+              },
+              "KinematicInitialSpeed" : 110,
+              "KinematicMaxSpeed" : 110,
+              "KinematicPostCollisionsSpeedFactor" : 0.15000001,
+              "RagdollEmbedLife" : 10,
+              "SpikeAttack" : {
+                "Amount" : 0
+              },
+              "SweepRadius" : 0
+            }
+          },
+          "requireFullCharges" : 0,
+          "slams" : [ ],
+          "weaknessBonus" : 0.5
+        },
+        "slot" : 0,
+        "totalDamage" : 140,
+        "tradable" : false,
+        "trigger" : "SEMI",
+        "variantType" : "VT_NORMAL"
+      }
+    }
+  },
+  "provenance" : {
+    "applicability" : "Pinned Update 44 resources only; not asserted to match subsequently collected PublicExport.",
+    "clientBuild" : "2026.10.08.13.05",
+    "contentSha256" : "a09e5ea8680131231a942decd8db39b514586cf63f840e62bb0b0584c7c28431",
+    "documentation" : "https://github.com/lingwunb666/ProjectSekai/blob/665d859bf5ed8e4c6a74482bccd45b5cf0296588/docs/game-update-44-1-adaptation.md",
+    "metadataSha256" : "17954381246e8d8d5b3cd8873886a8e747dfd132d5efc98f2e6c9e53d08510bd",
+    "officialWeaponsSha256" : "316d13e5c8a1f6940ec0c796d94ed8d23ccf2de198bdb9d216a91cc0ee2cbb40",
+    "rulesSha256" : "5c5b751dfa69dc03a460856e7928d14014d22c4ab63689a1b3960dc9eebb7ee5",
+    "sourceKind" : "REVIEWED_CLIENT_AND_OFFICIAL_EXPORT"
+  },
+  "region" : "international",
+  "schemaVersion" : 1
+}

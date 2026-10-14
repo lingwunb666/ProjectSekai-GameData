@@ -1,0 +1,10 @@
+{
+  "artifactCount" : 33,
+  "checks" : [ "index-stable-during-collection", "official-root-shapes", "region-isolation", "content-hashes", "public-content-screening" ],
+  "limits" : [ "Official-export sections retain their original structure; not an engine-ready complete mechanics catalog.", "An unchanged source index does not prove equivalence to any particular installed client build.", "Language zh denotes Simplified Chinese, not the China server." ],
+  "region" : "international",
+  "schemaVersion" : 1,
+  "sourceRecordCount" : 59973,
+  "status" : "PASS",
+  "warnings" : [ "NON_ARRAY_SECTION:ExportSortieRewards.json:ExportNightwave", "NON_ARRAY_SECTION:ExportSortieRewards.json:ExportRailjack", "IDENTICAL_DUPLICATE_PROPERTIES:exports/en/ExportWeapons.json:564", "NON_ARRAY_SECTION:ExportSortieRewards.json:ExportNightwave", "NON_ARRAY_SECTION:ExportSortieRewards.json:ExportRailjack", "IDENTICAL_DUPLICATE_PROPERTIES:exports/zh/ExportWeapons.json:564" ]
+}

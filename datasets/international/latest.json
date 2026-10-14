@@ -1,0 +1,8 @@
+{
+  "activation" : "DISCOVERY_ONLY_PIN_COMMIT_AND_MANIFEST_HASH",
+  "manifest" : "datasets/international/releases/gd1-a9f1aa3eaac8fbc767791fe8/manifest.json",
+  "manifestSha256" : "2abf6f43eaceb0a0a608f80ea09f2377139d50c950369e97166b45f2586c9fa6",
+  "region" : "international",
+  "releaseId" : "gd1-a9f1aa3eaac8fbc767791fe8",
+  "schemaVersion" : 1
+}
