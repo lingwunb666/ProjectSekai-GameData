@@ -19,7 +19,9 @@ ProjectSekai 的公开、版本化游戏数据仓库。数据由独立采集工�
 3. 按 `manifest.files` 下载并校验文件大小与 SHA-256。
 4. 在本地构建、检查，再发布给业务使用；仓库发布不等于生产数据库切换。
 
-无需下载游戏程序或大型资源包。`exports/<locale>/Export*.json` 使用统一信封；官方分类与本地 `Client*` 分类有不同的能力和结构，消费者必须明确支持，不能只根据路径导入。`reviewed/*.json` 保存已审核补充。详细格式见 [数据格式](FORMAT.md)。
+无需下载游戏程序或大型资源包。`exports/<locale>/Export*.json` 使用统一信封；官方分类与本地 `Client*` 分类有不同的能力和结构，消费者必须明确支持，不能只根据路径导入。`reviewed/*.json` 保存已审核补充。带 `regional-catalog-v1` 能力的版本还提供 `canonical/` 实体、语言变体、引用关系及覆盖报告，可用于区域化查询。详细格式见 [数据格式](FORMAT.md)。
+
+采集工具的 `fetch --region ... --commit ... --version ... --sha256 ... --output ...` 可按固定提交下载并校验一个版本；`query` 可离线查询统一模型。ProjectSekai 后端提供 `/api/v2/catalog/self-hosted/{region}/search`，需显式配置各区域固定包，并具有 `catalog.view` 权限。查询不会联网或自动切换原有战斗数据源。
 
 ## 验证
 

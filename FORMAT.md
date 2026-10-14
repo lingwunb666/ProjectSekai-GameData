@@ -9,7 +9,7 @@
 - `sources`：来源类型、区域、语言、公开 URL 或本地结构化来源声明及哈希。不包含本地绝对路径。
 - `files`：每个 JSON 文件的相对路径、字节数、SHA-256。`manifest.json` 不包含在自己的清单中；它的 SHA-256 位于区域 `latest.json`。
 - `releaseId`：`gd1-` 加内容 SHA-256 前 24 位。计算时去掉 manifest 的 `releaseId`、`collectedAt`，递归按对象键排序、保留数组顺序，序列化为无空白 UTF-8 JSON 并在末尾添加一个 LF。
-- `engineCompatibility`：当前为 `REQUIRES_CANONICAL_ADAPTER_AND_MECHANICS_COVERAGE`，不得直接解释成任意版本引擎兼容。
+- `engineCompatibility`：原始包为 `REQUIRES_CANONICAL_ADAPTER_AND_MECHANICS_COVERAGE`；带统一查询模型的包为 `QUERY_ONLY_REQUIRES_TYPED_MECHANICS_ADAPTER`。两者均不得解释成战斗计算已兼容。
 
 PublicExport 的清单是采集时读取的索引，不应以本机游戏 EXE 版本替代它。只有本地资源补充声明自己的 `clientBuild`。两个来源的版本差异要显式审阅，不能因为同在一个包里就推定一致。
 
@@ -27,7 +27,7 @@ PublicExport 的清单是采集时读取的索引，不应以本机游戏 EXE �
 }
 ```
 
-`sections` 保留源中的所有分类，不只取文件名对应的分类。数组顺序保留，记录的 `uniqueName` 是其来源内关联标识；没有唯一 ID 的记录不按显示名称强行合并。此格式目前没有把不同语言记录物化为一个实体表，也不宣称完整跨源关系已经校验。
+`sections` 保留源中的所有分类，不只取文件名对应的分类。数组顺序保留，记录的 `uniqueName` 是其来源内关联标识；没有唯一 ID 的记录不按显示名称强行合并。原始导出独立保存；跨语言查询表位于可选的 `canonical/`。
 
 相同值的重复 JSON 属性会合并并写入质量报告；值不同的重复属性拒绝采集。官方字符串中的原始换行规范化为合法 JSON 转义，不改变文字含义。所有原始文件的哈希记录在 `sources`。
 
@@ -38,6 +38,18 @@ PublicExport 的清单是采集时读取的索引，不应以本机游戏 EXE �
 `ExportClientCoverage.json` 和 `quality.clientCoverage` 给出具体缺口。未知类别、缺失语言保留 null，不能解释为默认手枪或回退到另一区域。缓存可能含隐藏/未开放物品，不能把清单作为游戏可获取列表。`completeResourceChain` 只说明资源父链可解析，不表示所有脚本、原生默认值与战斗行为已经实现。
 
 `manifest.clientExtraction` 保存 TOC、压缩资源、解压资源哈希和解码计数。`clientBuild=packages-sha256-...` 是资源内容身份，不是游戏面板版本号。客户端来源各自独立，即使资源 ID 相同也不得跨区域覆盖。
+
+## 统一查询模型
+
+能力 `regional-catalog-v1` 和 `canonicalModel` 表示包中含以下只读查询投影：
+
+- `canonical/entities-<分类小写>.json`：`entities` 数组。每项有 `key=section|id`、`section`、`id`、`names`、`variants`、`provenance`。`variants` 保留每种语言的源记录，`provenance` 指向原始文件、分类、数组下标及文件校验和。
+- `canonical/relations.json`：按明确字段抽取的引用，包含源实体、语言、JSON Pointer、关系种类、原始和规范化目标 ID、候选实体及 `RESOLVED/UNRESOLVED/AMBIGUOUS`。仅对精确 `/Lotus/StoreItems/` 前缀进行资源 ID 转换，不按相似名称匹配。
+- `canonical/coverage.json`：实体数、分类数、源记录数、未投影记录、完全重复记录、跨语言数值冲突、关系统计和逐功能支持状态。
+
+所有文件保留 `schemaVersion=1`、区域和 `model=regional-catalog-v1`。分类与源 ID 联合确定实体；名称不充当 ID。完全相同的重复记录仅保留一份语言变体，但保留全部来源；冲突重复拒绝生成。缺失名称为 `null`，不合成跨语言或跨服回退。
+
+`features.catalogQuery=AVAILABLE` 表示可查询这些实体，不表示所有源结构都已投影。无稳定 ID 或尚未适配的复合结构保留在原始导出，列于 `unidentified`。`rivenCalculation`、`automaticLoadout` 的支持状态必须分别检查，当前均为 `UNSUPPORTED_...`，不能直接作为战斗输入。`quality.status=PASS` 不覆盖这些能力限制。
 
 ## 已审核补充
 

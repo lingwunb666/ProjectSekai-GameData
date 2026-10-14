@@ -53,16 +53,50 @@ for (const region of regions) {
     assert.equal('gd1-' + hash(Buffer.from(JSON.stringify(sorted(identity)) + '\n')).slice(0,24), manifest.releaseId, 'Content identity');
     assert(Array.isArray(manifest.files) && manifest.files.length > 0 && manifest.files.length <= 512);
     const expected = new Set(['manifest.json']); let bytesTotal = 0;
+    const entityIds = new Map(); let canonicalCoverage, canonicalRelations;
     for (const file of manifest.files) {
-      assert(/^(?:exports\/(?:en|zh|tc|neutral)\/Export[A-Za-z0-9]+|reviewed\/[a-z0-9-]+|quality)\.json$/.test(file.path), 'Unapproved path');
+      assert(/^(?:exports\/(?:en|zh|tc|neutral)\/Export[A-Za-z0-9]+|reviewed\/[a-z0-9-]+|canonical\/[a-z0-9-]+|quality)\.json$/.test(file.path), 'Unapproved path');
       assert(!expected.has(file.path), 'Duplicate file'); expected.add(file.path);
       const bytes = await read(resolve(directory, file.path)); bytesTotal += bytes.length;
       assert.equal(bytes.length, file.bytes); assert.equal(hash(bytes), file.sha256, file.path);
       const content = JSON.parse(bytes); publicData(content);
       assert.equal(content.region, region); assert.equal(content.schemaVersion, 1);
       if (file.path.startsWith('exports/')) { assert.equal(content.locale, file.path.split('/')[1]); assert(content.sections && !Array.isArray(content.sections)); }
+      if (file.path.startsWith('canonical/')) assert.equal(content.model, 'regional-catalog-v1');
+      if (file.path.startsWith('canonical/entities-')) {
+        assert(Array.isArray(content.entities));
+        for (const entity of content.entities) {
+          assert.equal(entity.section, content.section);
+          assert.equal(entity.key, `${entity.section}|${entity.id}`);
+          assert(typeof entity.id === 'string' && entity.id.length > 0 && !entityIds.has(entity.key));
+          entityIds.set(entity.key, entity.id);
+          assert(entity.variants && entity.names && Array.isArray(entity.provenance) && entity.provenance.length > 0);
+          for (const source of entity.provenance) {
+            assert(source.section === entity.section && Number.isInteger(source.index) && source.index >= 0);
+            assert(Object.hasOwn(entity.variants, source.locale));
+            assert(manifest.files.some(f => f.path === source.path && f.sha256 === source.sha256), 'Provenance file/hash');
+          }
+        }
+      }
+      if (file.path === 'canonical/coverage.json') canonicalCoverage = content;
+      if (file.path === 'canonical/relations.json') canonicalRelations = content;
     }
     assert(bytesTotal <= 384 * 1024 * 1024); assert(expected.has('quality.json'));
+    if (manifest.canonicalModel || entityIds.size) {
+      assert.equal(manifest.canonicalModel, 'regional-catalog-v1');
+      assert(manifest.capabilities.includes('regional-catalog-v1'));
+      assert(canonicalCoverage && canonicalRelations);
+      assert.equal(canonicalCoverage.entities, entityIds.size); assert(entityIds.size > 0);
+      const counts = {};
+      for (const relation of canonicalRelations.relations) {
+        assert(entityIds.has(relation.source)); assert(Array.isArray(relation.candidates));
+        for (const key of relation.candidates) assert.equal(entityIds.get(key), relation.targetId);
+        assert.equal(relation.resolution, relation.candidates.length === 0 ? 'UNRESOLVED' : relation.candidates.length === 1 ? 'RESOLVED' : 'AMBIGUOUS');
+        counts[relation.resolution] = (counts[relation.resolution] ?? 0) + 1;
+      }
+      assert.deepEqual(counts, canonicalCoverage.relationCounts);
+      assert.equal(canonicalCoverage.features.catalogQuery, 'AVAILABLE');
+    }
     assert.equal((await json(resolve(directory, 'quality.json'))).status, 'PASS');
     for (const path of await walk(directory)) assert(expected.delete(relative(directory, path).split(sep).join('/')), 'Unlisted file');
     assert.equal(expected.size, 0); releases++;
