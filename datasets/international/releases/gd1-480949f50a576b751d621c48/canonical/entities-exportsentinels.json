@@ -1,0 +1,1609 @@
+{
+  "entities" : [ {
+    "id" : "/Lotus/Powersuits/Khora/Kavat/KhoraKavatPowerSuit",
+    "key" : "ExportSentinels|/Lotus/Powersuits/Khora/Kavat/KhoraKavatPowerSuit",
+    "names" : {
+      "en" : "Venari",
+      "zh" : "薇娜丽"
+    },
+    "provenance" : [ {
+      "index" : 1,
+      "locale" : "en",
+      "path" : "exports/en/ExportSentinels.json",
+      "section" : "ExportSentinels",
+      "sha256" : "dc3058e503852c58b98c3c70eea943aa2e9d0a83a6c2a8fc7898780f993eda79"
+    }, {
+      "index" : 1,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportSentinels.json",
+      "section" : "ExportSentinels",
+      "sha256" : "6746a6ea10503b1ae6a75cbcdbae1cd50b87cb386379d656e3138ec054772d15"
+    } ],
+    "section" : "ExportSentinels",
+    "variants" : {
+      "en" : {
+        "armor" : 350,
+        "codexSecret" : false,
+        "description" : "Khora's loyal Kavat. Her constant companion and protector.",
+        "excludeFromCodex" : true,
+        "health" : 900,
+        "name" : "Venari",
+        "power" : 100,
+        "productCategory" : "SpecialItems",
+        "shield" : 0,
+        "stamina" : 8,
+        "uniqueName" : "/Lotus/Powersuits/Khora/Kavat/KhoraKavatPowerSuit"
+      },
+      "zh" : {
+        "armor" : 350,
+        "codexSecret" : false,
+        "description" : "Khora 忠诚的库娃。她永远的同伴和守护者。",
+        "excludeFromCodex" : true,
+        "health" : 900,
+        "name" : "薇娜丽",
+        "power" : 100,
+        "productCategory" : "SpecialItems",
+        "shield" : 0,
+        "stamina" : 8,
+        "uniqueName" : "/Lotus/Powersuits/Khora/Kavat/KhoraKavatPowerSuit"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Powersuits/Khora/Kavat/KhoraPrimeKavatPowerSuit",
+    "key" : "ExportSentinels|/Lotus/Powersuits/Khora/Kavat/KhoraPrimeKavatPowerSuit",
+    "names" : {
+      "en" : "Venari Prime",
+      "zh" : "薇娜丽 Prime"
+    },
+    "provenance" : [ {
+      "index" : 0,
+      "locale" : "en",
+      "path" : "exports/en/ExportSentinels.json",
+      "section" : "ExportSentinels",
+      "sha256" : "dc3058e503852c58b98c3c70eea943aa2e9d0a83a6c2a8fc7898780f993eda79"
+    }, {
+      "index" : 0,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportSentinels.json",
+      "section" : "ExportSentinels",
+      "sha256" : "6746a6ea10503b1ae6a75cbcdbae1cd50b87cb386379d656e3138ec054772d15"
+    } ],
+    "section" : "ExportSentinels",
+    "variants" : {
+      "en" : {
+        "armor" : 450,
+        "codexSecret" : false,
+        "description" : "Khora's will, Venari's fangs and claws.",
+        "excludeFromCodex" : true,
+        "health" : 1050,
+        "name" : "Venari Prime",
+        "power" : 100,
+        "productCategory" : "SpecialItems",
+        "shield" : 0,
+        "stamina" : 8,
+        "uniqueName" : "/Lotus/Powersuits/Khora/Kavat/KhoraPrimeKavatPowerSuit"
+      },
+      "zh" : {
+        "armor" : 450,
+        "codexSecret" : false,
+        "description" : "Khora 的意志，薇娜丽的尖牙利爪。",
+        "excludeFromCodex" : true,
+        "health" : 1050,
+        "name" : "薇娜丽 Prime",
+        "power" : 100,
+        "productCategory" : "SpecialItems",
+        "shield" : 0,
+        "stamina" : 8,
+        "uniqueName" : "/Lotus/Powersuits/Khora/Kavat/KhoraPrimeKavatPowerSuit"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Types/Friendly/Pets/CreaturePets/ArmoredInfestedCatbrowPetPowerSuit",
+    "key" : "ExportSentinels|/Lotus/Types/Friendly/Pets/CreaturePets/ArmoredInfestedCatbrowPetPowerSuit",
+    "names" : {
+      "en" : "Panzer Vulpaphyla",
+      "zh" : "铁甲狐帕菲拉"
+    },
+    "provenance" : [ {
+      "index" : 33,
+      "locale" : "en",
+      "path" : "exports/en/ExportSentinels.json",
+      "section" : "ExportSentinels",
+      "sha256" : "dc3058e503852c58b98c3c70eea943aa2e9d0a83a6c2a8fc7898780f993eda79"
+    }, {
+      "index" : 33,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportSentinels.json",
+      "section" : "ExportSentinels",
+      "sha256" : "6746a6ea10503b1ae6a75cbcdbae1cd50b87cb386379d656e3138ec054772d15"
+    } ],
+    "section" : "ExportSentinels",
+    "variants" : {
+      "en" : {
+        "armor" : 300,
+        "codexSecret" : false,
+        "description" : "Fast and foxy, Vulpaphyla are agile allies to bring along on your next adventure.",
+        "health" : 680,
+        "name" : "Panzer Vulpaphyla",
+        "power" : 100,
+        "productCategory" : "KubrowPets",
+        "shield" : 370,
+        "stamina" : 8,
+        "uniqueName" : "/Lotus/Types/Friendly/Pets/CreaturePets/ArmoredInfestedCatbrowPetPowerSuit"
+      },
+      "zh" : {
+        "armor" : 300,
+        "codexSecret" : false,
+        "description" : "速度快且狡猾，让狐帕菲拉作为敏捷的友军，和你一起踏上下一次历险。",
+        "health" : 680,
+        "name" : "铁甲狐帕菲拉",
+        "power" : 100,
+        "productCategory" : "KubrowPets",
+        "shield" : 370,
+        "stamina" : 8,
+        "uniqueName" : "/Lotus/Types/Friendly/Pets/CreaturePets/ArmoredInfestedCatbrowPetPowerSuit"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Types/Friendly/Pets/CreaturePets/HornedInfestedCatbrowPetPowerSuit",
+    "key" : "ExportSentinels|/Lotus/Types/Friendly/Pets/CreaturePets/HornedInfestedCatbrowPetPowerSuit",
+    "names" : {
+      "en" : "Crescent Vulpaphyla",
+      "zh" : "月刃狐帕菲拉"
+    },
+    "provenance" : [ {
+      "index" : 32,
+      "locale" : "en",
+      "path" : "exports/en/ExportSentinels.json",
+      "section" : "ExportSentinels",
+      "sha256" : "dc3058e503852c58b98c3c70eea943aa2e9d0a83a6c2a8fc7898780f993eda79"
+    }, {
+      "index" : 32,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportSentinels.json",
+      "section" : "ExportSentinels",
+      "sha256" : "6746a6ea10503b1ae6a75cbcdbae1cd50b87cb386379d656e3138ec054772d15"
+    } ],
+    "section" : "ExportSentinels",
+    "variants" : {
+      "en" : {
+        "armor" : 300,
+        "codexSecret" : false,
+        "description" : "Fast and foxy, Vulpaphyla are agile allies to bring along on your next adventure.",
+        "health" : 680,
+        "name" : "Crescent Vulpaphyla",
+        "power" : 100,
+        "productCategory" : "KubrowPets",
+        "shield" : 370,
+        "stamina" : 8,
+        "uniqueName" : "/Lotus/Types/Friendly/Pets/CreaturePets/HornedInfestedCatbrowPetPowerSuit"
+      },
+      "zh" : {
+        "armor" : 300,
+        "codexSecret" : false,
+        "description" : "速度快且狡猾，让狐帕菲拉作为敏捷的友军，和你一起踏上下一次历险。",
+        "health" : 680,
+        "name" : "月刃狐帕菲拉",
+        "power" : 100,
+        "productCategory" : "KubrowPets",
+        "shield" : 370,
+        "stamina" : 8,
+        "uniqueName" : "/Lotus/Types/Friendly/Pets/CreaturePets/HornedInfestedCatbrowPetPowerSuit"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Types/Friendly/Pets/CreaturePets/MedjayPredatorKubrowPetPowerSuit",
+    "key" : "ExportSentinels|/Lotus/Types/Friendly/Pets/CreaturePets/MedjayPredatorKubrowPetPowerSuit",
+    "names" : {
+      "en" : "Medjay Predasite",
+      "zh" : "守卫扑猎达赛"
+    },
+    "provenance" : [ {
+      "index" : 31,
+      "locale" : "en",
+      "path" : "exports/en/ExportSentinels.json",
+      "section" : "ExportSentinels",
+      "sha256" : "dc3058e503852c58b98c3c70eea943aa2e9d0a83a6c2a8fc7898780f993eda79"
+    }, {
+      "index" : 31,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportSentinels.json",
+      "section" : "ExportSentinels",
+      "sha256" : "6746a6ea10503b1ae6a75cbcdbae1cd50b87cb386379d656e3138ec054772d15"
+    } ],
+    "section" : "ExportSentinels",
+    "variants" : {
+      "en" : {
+        "armor" : 300,
+        "codexSecret" : false,
+        "description" : "These hard-charging, four-legged predators make formidable companions when in the field.",
+        "health" : 710,
+        "name" : "Medjay Predasite",
+        "power" : 100,
+        "productCategory" : "KubrowPets",
+        "shield" : 350,
+        "stamina" : 8,
+        "uniqueName" : "/Lotus/Types/Friendly/Pets/CreaturePets/MedjayPredatorKubrowPetPowerSuit"
+      },
+      "zh" : {
+        "armor" : 300,
+        "codexSecret" : false,
+        "description" : "这些强悍的四足捕食者会成为你在战斗时的强大伙伴。",
+        "health" : 710,
+        "name" : "守卫扑猎达赛",
+        "power" : 100,
+        "productCategory" : "KubrowPets",
+        "shield" : 350,
+        "stamina" : 8,
+        "uniqueName" : "/Lotus/Types/Friendly/Pets/CreaturePets/MedjayPredatorKubrowPetPowerSuit"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Types/Friendly/Pets/CreaturePets/PharaohPredatorKubrowPetPowerSuit",
+    "key" : "ExportSentinels|/Lotus/Types/Friendly/Pets/CreaturePets/PharaohPredatorKubrowPetPowerSuit",
+    "names" : {
+      "en" : "Pharaoh Predasite",
+      "zh" : "法老扑猎达赛"
+    },
+    "provenance" : [ {
+      "index" : 30,
+      "locale" : "en",
+      "path" : "exports/en/ExportSentinels.json",
+      "section" : "ExportSentinels",
+      "sha256" : "dc3058e503852c58b98c3c70eea943aa2e9d0a83a6c2a8fc7898780f993eda79"
+    }, {
+      "index" : 30,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportSentinels.json",
+      "section" : "ExportSentinels",
+      "sha256" : "6746a6ea10503b1ae6a75cbcdbae1cd50b87cb386379d656e3138ec054772d15"
+    } ],
+    "section" : "ExportSentinels",
+    "variants" : {
+      "en" : {
+        "armor" : 300,
+        "codexSecret" : false,
+        "description" : "These hard-charging, four-legged predators make formidable companions when in the field.",
+        "health" : 710,
+        "name" : "Pharaoh Predasite",
+        "power" : 100,
+        "productCategory" : "KubrowPets",
+        "shield" : 350,
+        "stamina" : 8,
+        "uniqueName" : "/Lotus/Types/Friendly/Pets/CreaturePets/PharaohPredatorKubrowPetPowerSuit"
+      },
+      "zh" : {
+        "armor" : 300,
+        "codexSecret" : false,
+        "description" : "这些强悍的四足捕食者会成为你在战斗时的强大伙伴。",
+        "health" : 710,
+        "name" : "法老扑猎达赛",
+        "power" : 100,
+        "productCategory" : "KubrowPets",
+        "shield" : 350,
+        "stamina" : 8,
+        "uniqueName" : "/Lotus/Types/Friendly/Pets/CreaturePets/PharaohPredatorKubrowPetPowerSuit"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Types/Friendly/Pets/CreaturePets/VizierPredatorKubrowPetPowerSuit",
+    "key" : "ExportSentinels|/Lotus/Types/Friendly/Pets/CreaturePets/VizierPredatorKubrowPetPowerSuit",
+    "names" : {
+      "en" : "Vizier Predasite",
+      "zh" : "宰相扑猎达赛"
+    },
+    "provenance" : [ {
+      "index" : 29,
+      "locale" : "en",
+      "path" : "exports/en/ExportSentinels.json",
+      "section" : "ExportSentinels",
+      "sha256" : "dc3058e503852c58b98c3c70eea943aa2e9d0a83a6c2a8fc7898780f993eda79"
+    }, {
+      "index" : 29,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportSentinels.json",
+      "section" : "ExportSentinels",
+      "sha256" : "6746a6ea10503b1ae6a75cbcdbae1cd50b87cb386379d656e3138ec054772d15"
+    } ],
+    "section" : "ExportSentinels",
+    "variants" : {
+      "en" : {
+        "armor" : 300,
+        "codexSecret" : false,
+        "description" : "These hard-charging, four-legged predators make formidable companions when in the field.",
+        "health" : 710,
+        "name" : "Vizier Predasite",
+        "power" : 100,
+        "productCategory" : "KubrowPets",
+        "shield" : 350,
+        "stamina" : 8,
+        "uniqueName" : "/Lotus/Types/Friendly/Pets/CreaturePets/VizierPredatorKubrowPetPowerSuit"
+      },
+      "zh" : {
+        "armor" : 300,
+        "codexSecret" : false,
+        "description" : "这些强悍的四足捕食者会成为你在战斗时的强大伙伴。",
+        "health" : 710,
+        "name" : "宰相扑猎达赛",
+        "power" : 100,
+        "productCategory" : "KubrowPets",
+        "shield" : 350,
+        "stamina" : 8,
+        "uniqueName" : "/Lotus/Types/Friendly/Pets/CreaturePets/VizierPredatorKubrowPetPowerSuit"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Types/Friendly/Pets/CreaturePets/VulpineInfestedCatbrowPetPowerSuit",
+    "key" : "ExportSentinels|/Lotus/Types/Friendly/Pets/CreaturePets/VulpineInfestedCatbrowPetPowerSuit",
+    "names" : {
+      "en" : "Sly Vulpaphyla",
+      "zh" : "狡黠狐帕菲拉"
+    },
+    "provenance" : [ {
+      "index" : 28,
+      "locale" : "en",
+      "path" : "exports/en/ExportSentinels.json",
+      "section" : "ExportSentinels",
+      "sha256" : "dc3058e503852c58b98c3c70eea943aa2e9d0a83a6c2a8fc7898780f993eda79"
+    }, {
+      "index" : 28,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportSentinels.json",
+      "section" : "ExportSentinels",
+      "sha256" : "6746a6ea10503b1ae6a75cbcdbae1cd50b87cb386379d656e3138ec054772d15"
+    } ],
+    "section" : "ExportSentinels",
+    "variants" : {
+      "en" : {
+        "armor" : 300,
+        "codexSecret" : false,
+        "description" : "Fast and foxy, Vulpaphyla are agile allies to bring along on your next adventure.",
+        "health" : 680,
+        "name" : "Sly Vulpaphyla",
+        "power" : 100,
+        "productCategory" : "KubrowPets",
+        "shield" : 370,
+        "stamina" : 8,
+        "uniqueName" : "/Lotus/Types/Friendly/Pets/CreaturePets/VulpineInfestedCatbrowPetPowerSuit"
+      },
+      "zh" : {
+        "armor" : 300,
+        "codexSecret" : false,
+        "description" : "速度快且狡猾，让狐帕菲拉作为敏捷的友军，和你一起踏上下一次历险。",
+        "health" : 680,
+        "name" : "狡黠狐帕菲拉",
+        "power" : 100,
+        "productCategory" : "KubrowPets",
+        "shield" : 370,
+        "stamina" : 8,
+        "uniqueName" : "/Lotus/Types/Friendly/Pets/CreaturePets/VulpineInfestedCatbrowPetPowerSuit"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Types/Game/CatbrowPet/CheshireCatbrowPetPowerSuit",
+    "key" : "ExportSentinels|/Lotus/Types/Game/CatbrowPet/CheshireCatbrowPetPowerSuit",
+    "names" : {
+      "en" : "Smeeta Kavat",
+      "zh" : "笑面型库娃"
+    },
+    "provenance" : [ {
+      "index" : 27,
+      "locale" : "en",
+      "path" : "exports/en/ExportSentinels.json",
+      "section" : "ExportSentinels",
+      "sha256" : "dc3058e503852c58b98c3c70eea943aa2e9d0a83a6c2a8fc7898780f993eda79"
+    }, {
+      "index" : 27,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportSentinels.json",
+      "section" : "ExportSentinels",
+      "sha256" : "6746a6ea10503b1ae6a75cbcdbae1cd50b87cb386379d656e3138ec054772d15"
+    } ],
+    "section" : "ExportSentinels",
+    "variants" : {
+      "en" : {
+        "armor" : 300,
+        "codexSecret" : false,
+        "description" : "This sly feline is playful yet devious.",
+        "health" : 390,
+        "name" : "Smeeta Kavat",
+        "power" : 100,
+        "productCategory" : "KubrowPets",
+        "shield" : 230,
+        "stamina" : 8,
+        "uniqueName" : "/Lotus/Types/Game/CatbrowPet/CheshireCatbrowPetPowerSuit"
+      },
+      "zh" : {
+        "armor" : 300,
+        "codexSecret" : false,
+        "description" : "这只狡猾的猫既好玩又诡诈。",
+        "health" : 390,
+        "name" : "笑面型库娃",
+        "power" : 100,
+        "productCategory" : "KubrowPets",
+        "shield" : 230,
+        "stamina" : 8,
+        "uniqueName" : "/Lotus/Types/Game/CatbrowPet/CheshireCatbrowPetPowerSuit"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Types/Game/CatbrowPet/MirrorCatbrowPetPowerSuit",
+    "key" : "ExportSentinels|/Lotus/Types/Game/CatbrowPet/MirrorCatbrowPetPowerSuit",
+    "names" : {
+      "en" : "Adarza Kavat",
+      "zh" : "镜像型库娃"
+    },
+    "provenance" : [ {
+      "index" : 26,
+      "locale" : "en",
+      "path" : "exports/en/ExportSentinels.json",
+      "section" : "ExportSentinels",
+      "sha256" : "dc3058e503852c58b98c3c70eea943aa2e9d0a83a6c2a8fc7898780f993eda79"
+    }, {
+      "index" : 26,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportSentinels.json",
+      "section" : "ExportSentinels",
+      "sha256" : "6746a6ea10503b1ae6a75cbcdbae1cd50b87cb386379d656e3138ec054772d15"
+    } ],
+    "section" : "ExportSentinels",
+    "variants" : {
+      "en" : {
+        "armor" : 300,
+        "codexSecret" : false,
+        "description" : "A vicious and deadly Kavat prized for its combat prowess, offering increased critical chance and punishing those that dare attack it.",
+        "health" : 310,
+        "name" : "Adarza Kavat",
+        "power" : 100,
+        "productCategory" : "KubrowPets",
+        "shield" : 270,
+        "stamina" : 8,
+        "uniqueName" : "/Lotus/Types/Game/CatbrowPet/MirrorCatbrowPetPowerSuit"
+      },
+      "zh" : {
+        "armor" : 300,
+        "codexSecret" : false,
+        "description" : "凶猛而致命的库娃因其战斗力而备受推崇，它能增加暴击几率并惩罚那些胆敢攻击它的人。",
+        "health" : 310,
+        "name" : "镜像型库娃",
+        "power" : 100,
+        "productCategory" : "KubrowPets",
+        "shield" : 270,
+        "stamina" : 8,
+        "uniqueName" : "/Lotus/Types/Game/CatbrowPet/MirrorCatbrowPetPowerSuit"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Types/Game/CatbrowPet/VampireCatbrowPetPowerSuit",
+    "key" : "ExportSentinels|/Lotus/Types/Game/CatbrowPet/VampireCatbrowPetPowerSuit",
+    "names" : {
+      "en" : "Vasca Kavat",
+      "zh" : "噬血型库娃"
+    },
+    "provenance" : [ {
+      "index" : 25,
+      "locale" : "en",
+      "path" : "exports/en/ExportSentinels.json",
+      "section" : "ExportSentinels",
+      "sha256" : "dc3058e503852c58b98c3c70eea943aa2e9d0a83a6c2a8fc7898780f993eda79"
+    }, {
+      "index" : 25,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportSentinels.json",
+      "section" : "ExportSentinels",
+      "sha256" : "6746a6ea10503b1ae6a75cbcdbae1cd50b87cb386379d656e3138ec054772d15"
+    } ],
+    "section" : "ExportSentinels",
+    "variants" : {
+      "en" : {
+        "armor" : 300,
+        "codexSecret" : false,
+        "description" : "Now free of the Vasca virus, these Kavats can transfuse life to extend not only their own health but that of their master.",
+        "health" : 310,
+        "name" : "Vasca Kavat",
+        "power" : 100,
+        "productCategory" : "KubrowPets",
+        "shield" : 270,
+        "stamina" : 8,
+        "uniqueName" : "/Lotus/Types/Game/CatbrowPet/VampireCatbrowPetPowerSuit"
+      },
+      "zh" : {
+        "armor" : 300,
+        "codexSecret" : false,
+        "description" : "现在，这些库娃已经摆脱了噬血病毒，它们可以通过输送生命来延长自己的生命值，同时也可以延长主人的生命值。",
+        "health" : 310,
+        "name" : "噬血型库娃",
+        "power" : 100,
+        "productCategory" : "KubrowPets",
+        "shield" : 270,
+        "stamina" : 8,
+        "uniqueName" : "/Lotus/Types/Game/CatbrowPet/VampireCatbrowPetPowerSuit"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Types/Game/KubrowPet/AdventurerKubrowPetPowerSuit",
+    "key" : "ExportSentinels|/Lotus/Types/Game/KubrowPet/AdventurerKubrowPetPowerSuit",
+    "names" : {
+      "en" : "Sahasa Kubrow",
+      "zh" : "突击型库狛"
+    },
+    "provenance" : [ {
+      "index" : 24,
+      "locale" : "en",
+      "path" : "exports/en/ExportSentinels.json",
+      "section" : "ExportSentinels",
+      "sha256" : "dc3058e503852c58b98c3c70eea943aa2e9d0a83a6c2a8fc7898780f993eda79"
+    }, {
+      "index" : 24,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportSentinels.json",
+      "section" : "ExportSentinels",
+      "sha256" : "6746a6ea10503b1ae6a75cbcdbae1cd50b87cb386379d656e3138ec054772d15"
+    } ],
+    "section" : "ExportSentinels",
+    "variants" : {
+      "en" : {
+        "armor" : 300,
+        "codexSecret" : false,
+        "description" : "A reliable partner that locates supplies for their Tenno master and while thinning enemy ranks.",
+        "health" : 940,
+        "name" : "Sahasa Kubrow",
+        "power" : 100,
+        "productCategory" : "KubrowPets",
+        "shield" : 290,
+        "stamina" : 8,
+        "uniqueName" : "/Lotus/Types/Game/KubrowPet/AdventurerKubrowPetPowerSuit"
+      },
+      "zh" : {
+        "armor" : 300,
+        "codexSecret" : false,
+        "description" : "一个可靠的伙伴，为他们的 Tenno 主人找到补给并削弱敌人的力量。",
+        "health" : 940,
+        "name" : "突击型库狛",
+        "power" : 100,
+        "productCategory" : "KubrowPets",
+        "shield" : 290,
+        "stamina" : 8,
+        "uniqueName" : "/Lotus/Types/Game/KubrowPet/AdventurerKubrowPetPowerSuit"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Types/Game/KubrowPet/ChargerKubrowPetPowerSuit",
+    "key" : "ExportSentinels|/Lotus/Types/Game/KubrowPet/ChargerKubrowPetPowerSuit",
+    "names" : {
+      "en" : "Helminth Charger",
+      "zh" : "Helminth 疾冲者"
+    },
+    "provenance" : [ {
+      "index" : 23,
+      "locale" : "en",
+      "path" : "exports/en/ExportSentinels.json",
+      "section" : "ExportSentinels",
+      "sha256" : "dc3058e503852c58b98c3c70eea943aa2e9d0a83a6c2a8fc7898780f993eda79"
+    }, {
+      "index" : 23,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportSentinels.json",
+      "section" : "ExportSentinels",
+      "sha256" : "6746a6ea10503b1ae6a75cbcdbae1cd50b87cb386379d656e3138ec054772d15"
+    } ],
+    "section" : "ExportSentinels",
+    "variants" : {
+      "en" : {
+        "armor" : 300,
+        "codexSecret" : false,
+        "description" : "An experimental blending of Kubrow and Infestation. Uses maggots and other Infested abilities to inflict damage and control the battlefield.",
+        "health" : 710,
+        "name" : "Helminth Charger",
+        "power" : 100,
+        "productCategory" : "KubrowPets",
+        "shield" : 330,
+        "stamina" : 8,
+        "uniqueName" : "/Lotus/Types/Game/KubrowPet/ChargerKubrowPetPowerSuit"
+      },
+      "zh" : {
+        "armor" : 300,
+        "codexSecret" : false,
+        "description" : "库狛与感染者的实验性混合体。可使用蛆虫和其他感染者的能力造成伤害并控制战场。",
+        "health" : 710,
+        "name" : "Helminth 疾冲者",
+        "power" : 100,
+        "productCategory" : "KubrowPets",
+        "shield" : 330,
+        "stamina" : 8,
+        "uniqueName" : "/Lotus/Types/Game/KubrowPet/ChargerKubrowPetPowerSuit"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Types/Game/KubrowPet/FurtiveKubrowPetPowerSuit",
+    "key" : "ExportSentinels|/Lotus/Types/Game/KubrowPet/FurtiveKubrowPetPowerSuit",
+    "names" : {
+      "en" : "Huras Kubrow",
+      "zh" : "匿踪型库狛"
+    },
+    "provenance" : [ {
+      "index" : 22,
+      "locale" : "en",
+      "path" : "exports/en/ExportSentinels.json",
+      "section" : "ExportSentinels",
+      "sha256" : "dc3058e503852c58b98c3c70eea943aa2e9d0a83a6c2a8fc7898780f993eda79"
+    }, {
+      "index" : 22,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportSentinels.json",
+      "section" : "ExportSentinels",
+      "sha256" : "6746a6ea10503b1ae6a75cbcdbae1cd50b87cb386379d656e3138ec054772d15"
+    } ],
+    "section" : "ExportSentinels",
+    "variants" : {
+      "en" : {
+        "armor" : 300,
+        "codexSecret" : false,
+        "description" : "A stealthy ally, surprising enemies with impressive takedowns of explosive force.",
+        "health" : 560,
+        "name" : "Huras Kubrow",
+        "power" : 100,
+        "productCategory" : "KubrowPets",
+        "shield" : 490,
+        "stamina" : 8,
+        "uniqueName" : "/Lotus/Types/Game/KubrowPet/FurtiveKubrowPetPowerSuit"
+      },
+      "zh" : {
+        "armor" : 300,
+        "codexSecret" : false,
+        "description" : "一个隐秘的伙伴，以惊人的爆炸力量出其不意地击倒敌人。",
+        "health" : 560,
+        "name" : "匿踪型库狛",
+        "power" : 100,
+        "productCategory" : "KubrowPets",
+        "shield" : 490,
+        "stamina" : 8,
+        "uniqueName" : "/Lotus/Types/Game/KubrowPet/FurtiveKubrowPetPowerSuit"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Types/Game/KubrowPet/GuardKubrowPetPowerSuit",
+    "key" : "ExportSentinels|/Lotus/Types/Game/KubrowPet/GuardKubrowPetPowerSuit",
+    "names" : {
+      "en" : "Raksa Kubrow",
+      "zh" : "防护型库狛"
+    },
+    "provenance" : [ {
+      "index" : 21,
+      "locale" : "en",
+      "path" : "exports/en/ExportSentinels.json",
+      "section" : "ExportSentinels",
+      "sha256" : "dc3058e503852c58b98c3c70eea943aa2e9d0a83a6c2a8fc7898780f993eda79"
+    }, {
+      "index" : 21,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportSentinels.json",
+      "section" : "ExportSentinels",
+      "sha256" : "6746a6ea10503b1ae6a75cbcdbae1cd50b87cb386379d656e3138ec054772d15"
+    } ],
+    "section" : "ExportSentinels",
+    "variants" : {
+      "en" : {
+        "armor" : 300,
+        "codexSecret" : false,
+        "description" : "A strong guardian focused on protecting its master by bolstering their defense and by driving away attackers.",
+        "health" : 750,
+        "name" : "Raksa Kubrow",
+        "power" : 100,
+        "productCategory" : "KubrowPets",
+        "shield" : 390,
+        "stamina" : 8,
+        "uniqueName" : "/Lotus/Types/Game/KubrowPet/GuardKubrowPetPowerSuit"
+      },
+      "zh" : {
+        "armor" : 300,
+        "codexSecret" : false,
+        "description" : "强大的守护者，专注于通过加强防御和驱赶攻击者来保护其主人。",
+        "health" : 750,
+        "name" : "防护型库狛",
+        "power" : 100,
+        "productCategory" : "KubrowPets",
+        "shield" : 390,
+        "stamina" : 8,
+        "uniqueName" : "/Lotus/Types/Game/KubrowPet/GuardKubrowPetPowerSuit"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Types/Game/KubrowPet/HunterKubrowPetPowerSuit",
+    "key" : "ExportSentinels|/Lotus/Types/Game/KubrowPet/HunterKubrowPetPowerSuit",
+    "names" : {
+      "en" : "Sunika Kubrow",
+      "zh" : "猎杀型库狛"
+    },
+    "provenance" : [ {
+      "index" : 20,
+      "locale" : "en",
+      "path" : "exports/en/ExportSentinels.json",
+      "section" : "ExportSentinels",
+      "sha256" : "dc3058e503852c58b98c3c70eea943aa2e9d0a83a6c2a8fc7898780f993eda79"
+    }, {
+      "index" : 20,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportSentinels.json",
+      "section" : "ExportSentinels",
+      "sha256" : "6746a6ea10503b1ae6a75cbcdbae1cd50b87cb386379d656e3138ec054772d15"
+    } ],
+    "section" : "ExportSentinels",
+    "variants" : {
+      "en" : {
+        "armor" : 300,
+        "codexSecret" : false,
+        "description" : "Bred by the Orokin for combat. This martial beast lives to create chaos and bring down the most fierce opponents.",
+        "health" : 830,
+        "name" : "Sunika Kubrow",
+        "power" : 100,
+        "productCategory" : "KubrowPets",
+        "shield" : 350,
+        "stamina" : 8,
+        "uniqueName" : "/Lotus/Types/Game/KubrowPet/HunterKubrowPetPowerSuit"
+      },
+      "zh" : {
+        "armor" : 300,
+        "codexSecret" : false,
+        "description" : "由奥罗金培育，用于战斗。这头武术野兽的使命是制造混乱，击倒最凶猛的对手。",
+        "health" : 830,
+        "name" : "猎杀型库狛",
+        "power" : 100,
+        "productCategory" : "KubrowPets",
+        "shield" : 350,
+        "stamina" : 8,
+        "uniqueName" : "/Lotus/Types/Game/KubrowPet/HunterKubrowPetPowerSuit"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Types/Game/KubrowPet/RetrieverKubrowPetPowerSuit",
+    "key" : "ExportSentinels|/Lotus/Types/Game/KubrowPet/RetrieverKubrowPetPowerSuit",
+    "names" : {
+      "en" : "Chesa Kubrow",
+      "zh" : "寻猎型库狛"
+    },
+    "provenance" : [ {
+      "index" : 19,
+      "locale" : "en",
+      "path" : "exports/en/ExportSentinels.json",
+      "section" : "ExportSentinels",
+      "sha256" : "dc3058e503852c58b98c3c70eea943aa2e9d0a83a6c2a8fc7898780f993eda79"
+    }, {
+      "index" : 19,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportSentinels.json",
+      "section" : "ExportSentinels",
+      "sha256" : "6746a6ea10503b1ae6a75cbcdbae1cd50b87cb386379d656e3138ec054772d15"
+    } ],
+    "section" : "ExportSentinels",
+    "variants" : {
+      "en" : {
+        "armor" : 300,
+        "codexSecret" : false,
+        "description" : "A clever accomplice, trained to relieve the enemy of both their weapons and their loot caches.",
+        "health" : 940,
+        "name" : "Chesa Kubrow",
+        "power" : 100,
+        "productCategory" : "KubrowPets",
+        "shield" : 290,
+        "stamina" : 8,
+        "uniqueName" : "/Lotus/Types/Game/KubrowPet/RetrieverKubrowPetPowerSuit"
+      },
+      "zh" : {
+        "armor" : 300,
+        "codexSecret" : false,
+        "description" : "一个聪明的伙伴，经过训练可以从敌人手中夺取武器和战利品。",
+        "health" : 940,
+        "name" : "寻猎型库狛",
+        "power" : 100,
+        "productCategory" : "KubrowPets",
+        "shield" : 290,
+        "stamina" : 8,
+        "uniqueName" : "/Lotus/Types/Game/KubrowPet/RetrieverKubrowPetPowerSuit"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Types/Sentinels/SentinelPowersuits/ArcDronePowerSuit",
+    "key" : "ExportSentinels|/Lotus/Types/Sentinels/SentinelPowersuits/ArcDronePowerSuit",
+    "names" : {
+      "en" : "Diriga",
+      "zh" : "电气浮囊"
+    },
+    "provenance" : [ {
+      "index" : 18,
+      "locale" : "en",
+      "path" : "exports/en/ExportSentinels.json",
+      "section" : "ExportSentinels",
+      "sha256" : "dc3058e503852c58b98c3c70eea943aa2e9d0a83a6c2a8fc7898780f993eda79"
+    }, {
+      "index" : 18,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportSentinels.json",
+      "section" : "ExportSentinels",
+      "sha256" : "6746a6ea10503b1ae6a75cbcdbae1cd50b87cb386379d656e3138ec054772d15"
+    } ],
+    "section" : "ExportSentinels",
+    "variants" : {
+      "en" : {
+        "armor" : 80,
+        "codexSecret" : false,
+        "description" : "Diriga shocks nearby enemies, and picks off distant threats, utilizing the Vulklok sniper rifle and the 'Calculated Shot', 'Arc Coil' and 'Electro Pulse' precepts.",
+        "health" : 700,
+        "name" : "Diriga",
+        "power" : 100,
+        "productCategory" : "Sentinels",
+        "shield" : 150,
+        "stamina" : 8,
+        "uniqueName" : "/Lotus/Types/Sentinels/SentinelPowersuits/ArcDronePowerSuit"
+      },
+      "zh" : {
+        "armor" : 80,
+        "codexSecret" : false,
+        "description" : "电气浮囊会电击附近的敌人，并针对远处的威胁目标进行攻击。使用「金工火枪」狙击步枪与「精算射击」、「电弧线圈」与「电光脉冲」等独特技能。",
+        "health" : 700,
+        "name" : "电气浮囊",
+        "power" : 100,
+        "productCategory" : "Sentinels",
+        "shield" : 150,
+        "stamina" : 8,
+        "uniqueName" : "/Lotus/Types/Sentinels/SentinelPowersuits/ArcDronePowerSuit"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Types/Sentinels/SentinelPowersuits/CarrierPowerSuit",
+    "key" : "ExportSentinels|/Lotus/Types/Sentinels/SentinelPowersuits/CarrierPowerSuit",
+    "names" : {
+      "en" : "Carrier",
+      "zh" : "搬运者"
+    },
+    "provenance" : [ {
+      "index" : 17,
+      "locale" : "en",
+      "path" : "exports/en/ExportSentinels.json",
+      "section" : "ExportSentinels",
+      "sha256" : "dc3058e503852c58b98c3c70eea943aa2e9d0a83a6c2a8fc7898780f993eda79"
+    }, {
+      "index" : 17,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportSentinels.json",
+      "section" : "ExportSentinels",
+      "sha256" : "6746a6ea10503b1ae6a75cbcdbae1cd50b87cb386379d656e3138ec054772d15"
+    } ],
+    "section" : "ExportSentinels",
+    "variants" : {
+      "en" : {
+        "armor" : 80,
+        "codexSecret" : false,
+        "description" : "With 'Assault Mode' and 'Ammo Case' as default Precepts, Carrier is a seeker Sentinel. Carrier also comes with a shotgun weapon.",
+        "health" : 560,
+        "name" : "Carrier",
+        "power" : 100,
+        "productCategory" : "Sentinels",
+        "shield" : 250,
+        "stamina" : 8,
+        "uniqueName" : "/Lotus/Types/Sentinels/SentinelPowersuits/CarrierPowerSuit"
+      },
+      "zh" : {
+        "armor" : 80,
+        "codexSecret" : false,
+        "description" : "以「突击模式」和「弹药储转箱」为预设指令，搬运者是一个前锋守护，并配备一把霰弹枪。",
+        "health" : 560,
+        "name" : "搬运者",
+        "power" : 100,
+        "productCategory" : "Sentinels",
+        "shield" : 250,
+        "stamina" : 8,
+        "uniqueName" : "/Lotus/Types/Sentinels/SentinelPowersuits/CarrierPowerSuit"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Types/Sentinels/SentinelPowersuits/DethCubePowerSuit",
+    "key" : "ExportSentinels|/Lotus/Types/Sentinels/SentinelPowersuits/DethCubePowerSuit",
+    "names" : {
+      "en" : "Dethcube",
+      "zh" : "死亡魔方"
+    },
+    "provenance" : [ {
+      "index" : 16,
+      "locale" : "en",
+      "path" : "exports/en/ExportSentinels.json",
+      "section" : "ExportSentinels",
+      "sha256" : "dc3058e503852c58b98c3c70eea943aa2e9d0a83a6c2a8fc7898780f993eda79"
+    }, {
+      "index" : 16,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportSentinels.json",
+      "section" : "ExportSentinels",
+      "sha256" : "6746a6ea10503b1ae6a75cbcdbae1cd50b87cb386379d656e3138ec054772d15"
+    } ],
+    "section" : "ExportSentinels",
+    "variants" : {
+      "en" : {
+        "armor" : 80,
+        "codexSecret" : false,
+        "description" : "With 'Assault Mode' and 'Vaporize' as default precepts, Dethcube acts exactly as advertised, as a badass cube of 'deth'. Comes loaded with Deth Machine Rifle weapon.",
+        "health" : 560,
+        "name" : "Dethcube",
+        "power" : 100,
+        "productCategory" : "Sentinels",
+        "shield" : 250,
+        "stamina" : 8,
+        "uniqueName" : "/Lotus/Types/Sentinels/SentinelPowersuits/DethCubePowerSuit"
+      },
+      "zh" : {
+        "armor" : 80,
+        "codexSecret" : false,
+        "description" : "以「突击模式」和「汽化」为预设指令，死亡魔方就像广告宣传的那样，是一个带来死亡的超棒魔方，内置死亡机枪。",
+        "health" : 560,
+        "name" : "死亡魔方",
+        "power" : 100,
+        "productCategory" : "Sentinels",
+        "shield" : 250,
+        "stamina" : 8,
+        "uniqueName" : "/Lotus/Types/Sentinels/SentinelPowersuits/DethCubePowerSuit"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Types/Sentinels/SentinelPowersuits/EmpyreanSentinelPowerSuit",
+    "key" : "ExportSentinels|/Lotus/Types/Sentinels/SentinelPowersuits/EmpyreanSentinelPowerSuit",
+    "names" : {
+      "en" : "Nautilus",
+      "zh" : "鹦鹉螺"
+    },
+    "provenance" : [ {
+      "index" : 15,
+      "locale" : "en",
+      "path" : "exports/en/ExportSentinels.json",
+      "section" : "ExportSentinels",
+      "sha256" : "dc3058e503852c58b98c3c70eea943aa2e9d0a83a6c2a8fc7898780f993eda79"
+    }, {
+      "index" : 15,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportSentinels.json",
+      "section" : "ExportSentinels",
+      "sha256" : "6746a6ea10503b1ae6a75cbcdbae1cd50b87cb386379d656e3138ec054772d15"
+    } ],
+    "section" : "ExportSentinels",
+    "variants" : {
+      "en" : {
+        "armor" : 80,
+        "codexSecret" : false,
+        "description" : "With 'Auto Omni' and 'Cordon' as default Precepts, this Sentinel is the ideal companion for long voyages aboard a Railjack.",
+        "health" : 560,
+        "name" : "Nautilus",
+        "power" : 100,
+        "productCategory" : "Sentinels",
+        "shield" : 250,
+        "stamina" : 8,
+        "uniqueName" : "/Lotus/Types/Sentinels/SentinelPowersuits/EmpyreanSentinelPowerSuit"
+      },
+      "zh" : {
+        "armor" : 80,
+        "codexSecret" : false,
+        "description" : "以「万用自修」和「防线封锁」为默认指令，这件守护是搭乘航道星舰远航的理想同伴。",
+        "health" : 560,
+        "name" : "鹦鹉螺",
+        "power" : 100,
+        "productCategory" : "Sentinels",
+        "shield" : 250,
+        "stamina" : 8,
+        "uniqueName" : "/Lotus/Types/Sentinels/SentinelPowersuits/EmpyreanSentinelPowerSuit"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Types/Sentinels/SentinelPowersuits/GubberPowerSuit",
+    "key" : "ExportSentinels|/Lotus/Types/Sentinels/SentinelPowersuits/GubberPowerSuit",
+    "names" : {
+      "en" : "Djinn",
+      "zh" : "引灵"
+    },
+    "provenance" : [ {
+      "index" : 14,
+      "locale" : "en",
+      "path" : "exports/en/ExportSentinels.json",
+      "section" : "ExportSentinels",
+      "sha256" : "dc3058e503852c58b98c3c70eea943aa2e9d0a83a6c2a8fc7898780f993eda79"
+    }, {
+      "index" : 14,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportSentinels.json",
+      "section" : "ExportSentinels",
+      "sha256" : "6746a6ea10503b1ae6a75cbcdbae1cd50b87cb386379d656e3138ec054772d15"
+    } ],
+    "section" : "ExportSentinels",
+    "variants" : {
+      "en" : {
+        "armor" : 80,
+        "codexSecret" : false,
+        "description" : "With 'Thumper' and 'Fatal Attraction' as default Precepts, Djinn is a combat Sentinel. Djinn also comes with a poison dart weapon.",
+        "health" : 560,
+        "name" : "Djinn",
+        "power" : 100,
+        "productCategory" : "Sentinels",
+        "shield" : 250,
+        "stamina" : 8,
+        "uniqueName" : "/Lotus/Types/Sentinels/SentinelPowersuits/GubberPowerSuit"
+      },
+      "zh" : {
+        "armor" : 80,
+        "codexSecret" : false,
+        "description" : "以「重击者」和「致命诱惑」为预设指令，引灵是一个战斗守护，还配备了毒镖武器。",
+        "health" : 560,
+        "name" : "引灵",
+        "power" : 100,
+        "productCategory" : "Sentinels",
+        "shield" : 250,
+        "stamina" : 8,
+        "uniqueName" : "/Lotus/Types/Sentinels/SentinelPowersuits/GubberPowerSuit"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Types/Sentinels/SentinelPowersuits/MeleePetPowerSuit",
+    "key" : "ExportSentinels|/Lotus/Types/Sentinels/SentinelPowersuits/MeleePetPowerSuit",
+    "names" : {
+      "en" : "Helios",
+      "zh" : "赫利俄斯"
+    },
+    "provenance" : [ {
+      "index" : 13,
+      "locale" : "en",
+      "path" : "exports/en/ExportSentinels.json",
+      "section" : "ExportSentinels",
+      "sha256" : "dc3058e503852c58b98c3c70eea943aa2e9d0a83a6c2a8fc7898780f993eda79"
+    }, {
+      "index" : 13,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportSentinels.json",
+      "section" : "ExportSentinels",
+      "sha256" : "6746a6ea10503b1ae6a75cbcdbae1cd50b87cb386379d656e3138ec054772d15"
+    } ],
+    "section" : "ExportSentinels",
+    "variants" : {
+      "en" : {
+        "armor" : 80,
+        "codexSecret" : false,
+        "description" : "With 'Investigator' as its unique Precept and 'Deconstructor' as its weapon, the versatile Helios Sentinel acts as both a lethal guardian and an automatic codex scanner. Scans require an equipped Codex Scanner and an available charge.",
+        "health" : 560,
+        "name" : "Helios",
+        "power" : 100,
+        "productCategory" : "Sentinels",
+        "shield" : 250,
+        "stamina" : 8,
+        "uniqueName" : "/Lotus/Types/Sentinels/SentinelPowersuits/MeleePetPowerSuit"
+      },
+      "zh" : {
+        "armor" : 80,
+        "codexSecret" : false,
+        "description" : "赫利俄斯拥有独特的「侦查」指令并以「分离」作为武器，这位多功能的守护既是致命的守护者，又是资料库的自动扫描器。扫描功能须在身上携带扫描器，且扫描器有可使用的扫描次数才能触发。",
+        "health" : 560,
+        "name" : "赫利俄斯",
+        "power" : 100,
+        "productCategory" : "Sentinels",
+        "shield" : 250,
+        "stamina" : 8,
+        "uniqueName" : "/Lotus/Types/Sentinels/SentinelPowersuits/MeleePetPowerSuit"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Types/Sentinels/SentinelPowersuits/NautilusPrimeSentinelPowerSuit",
+    "key" : "ExportSentinels|/Lotus/Types/Sentinels/SentinelPowersuits/NautilusPrimeSentinelPowerSuit",
+    "names" : {
+      "en" : "Nautilus Prime",
+      "zh" : "鹦鹉螺 Prime"
+    },
+    "provenance" : [ {
+      "index" : 12,
+      "locale" : "en",
+      "path" : "exports/en/ExportSentinels.json",
+      "section" : "ExportSentinels",
+      "sha256" : "dc3058e503852c58b98c3c70eea943aa2e9d0a83a6c2a8fc7898780f993eda79"
+    }, {
+      "index" : 12,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportSentinels.json",
+      "section" : "ExportSentinels",
+      "sha256" : "6746a6ea10503b1ae6a75cbcdbae1cd50b87cb386379d656e3138ec054772d15"
+    } ],
+    "section" : "ExportSentinels",
+    "variants" : {
+      "en" : {
+        "armor" : 175,
+        "codexSecret" : false,
+        "description" : "This brave deckhand defends his crew with Verglas Prime.",
+        "health" : 560,
+        "name" : "Nautilus Prime",
+        "power" : 100,
+        "productCategory" : "Sentinels",
+        "shield" : 350,
+        "stamina" : 8,
+        "uniqueName" : "/Lotus/Types/Sentinels/SentinelPowersuits/NautilusPrimeSentinelPowerSuit"
+      },
+      "zh" : {
+        "armor" : 175,
+        "codexSecret" : false,
+        "description" : "（英文：NAUTILUS PRIME）这位勇敢的水手使用冰凇 Prime 来保护他的船员。",
+        "health" : 560,
+        "name" : "鹦鹉螺 Prime",
+        "power" : 100,
+        "productCategory" : "Sentinels",
+        "shield" : 350,
+        "stamina" : 8,
+        "uniqueName" : "/Lotus/Types/Sentinels/SentinelPowersuits/NautilusPrimeSentinelPowerSuit"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Types/Sentinels/SentinelPowersuits/PrimeCarrierPowerSuit",
+    "key" : "ExportSentinels|/Lotus/Types/Sentinels/SentinelPowersuits/PrimeCarrierPowerSuit",
+    "names" : {
+      "en" : "Carrier Prime",
+      "zh" : "搬运者 Prime"
+    },
+    "provenance" : [ {
+      "index" : 11,
+      "locale" : "en",
+      "path" : "exports/en/ExportSentinels.json",
+      "section" : "ExportSentinels",
+      "sha256" : "dc3058e503852c58b98c3c70eea943aa2e9d0a83a6c2a8fc7898780f993eda79"
+    }, {
+      "index" : 11,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportSentinels.json",
+      "section" : "ExportSentinels",
+      "sha256" : "6746a6ea10503b1ae6a75cbcdbae1cd50b87cb386379d656e3138ec054772d15"
+    } ],
+    "section" : "ExportSentinels",
+    "variants" : {
+      "en" : {
+        "armor" : 150,
+        "codexSecret" : false,
+        "description" : "This ornate sentinel is an excellent example of late Orokin craftsmanship and styling.",
+        "health" : 650,
+        "name" : "Carrier Prime",
+        "power" : 100,
+        "productCategory" : "Sentinels",
+        "shield" : 300,
+        "stamina" : 8,
+        "uniqueName" : "/Lotus/Types/Sentinels/SentinelPowersuits/PrimeCarrierPowerSuit"
+      },
+      "zh" : {
+        "armor" : 150,
+        "codexSecret" : false,
+        "description" : "这架华丽的守护是呈现奥罗金晚期工艺与风格极佳的范例。",
+        "health" : 650,
+        "name" : "搬运者 Prime",
+        "power" : 100,
+        "productCategory" : "Sentinels",
+        "shield" : 300,
+        "stamina" : 8,
+        "uniqueName" : "/Lotus/Types/Sentinels/SentinelPowersuits/PrimeCarrierPowerSuit"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Types/Sentinels/SentinelPowersuits/PrimeDethCubePowerSuit",
+    "key" : "ExportSentinels|/Lotus/Types/Sentinels/SentinelPowersuits/PrimeDethCubePowerSuit",
+    "names" : {
+      "en" : "Dethcube Prime",
+      "zh" : "死亡魔方 Prime"
+    },
+    "provenance" : [ {
+      "index" : 10,
+      "locale" : "en",
+      "path" : "exports/en/ExportSentinels.json",
+      "section" : "ExportSentinels",
+      "sha256" : "dc3058e503852c58b98c3c70eea943aa2e9d0a83a6c2a8fc7898780f993eda79"
+    }, {
+      "index" : 10,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportSentinels.json",
+      "section" : "ExportSentinels",
+      "sha256" : "6746a6ea10503b1ae6a75cbcdbae1cd50b87cb386379d656e3138ec054772d15"
+    } ],
+    "section" : "ExportSentinels",
+    "variants" : {
+      "en" : {
+        "armor" : 150,
+        "codexSecret" : false,
+        "description" : "With 'Assault Mode' and 'Vaporize' as default precepts, Dethcube Prime is the apex of lethal support. Comes loaded with Deth Machine Rifle Prime weapon.",
+        "health" : 600,
+        "name" : "Dethcube Prime",
+        "power" : 125,
+        "productCategory" : "Sentinels",
+        "shield" : 300,
+        "stamina" : 8,
+        "uniqueName" : "/Lotus/Types/Sentinels/SentinelPowersuits/PrimeDethCubePowerSuit"
+      },
+      "zh" : {
+        "armor" : 150,
+        "codexSecret" : false,
+        "description" : "以「突击模式」和「汽化」作为预设指令，死亡魔方 Prime 是致命支援的巅峰。其标配武器为死亡机枪 Prime。",
+        "health" : 600,
+        "name" : "死亡魔方 Prime",
+        "power" : 125,
+        "productCategory" : "Sentinels",
+        "shield" : 300,
+        "stamina" : 8,
+        "uniqueName" : "/Lotus/Types/Sentinels/SentinelPowersuits/PrimeDethCubePowerSuit"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Types/Sentinels/SentinelPowersuits/PrimeHeliosPowerSuit",
+    "key" : "ExportSentinels|/Lotus/Types/Sentinels/SentinelPowersuits/PrimeHeliosPowerSuit",
+    "names" : {
+      "en" : "Helios Prime",
+      "zh" : "赫利俄斯 Prime"
+    },
+    "provenance" : [ {
+      "index" : 9,
+      "locale" : "en",
+      "path" : "exports/en/ExportSentinels.json",
+      "section" : "ExportSentinels",
+      "sha256" : "dc3058e503852c58b98c3c70eea943aa2e9d0a83a6c2a8fc7898780f993eda79"
+    }, {
+      "index" : 9,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportSentinels.json",
+      "section" : "ExportSentinels",
+      "sha256" : "6746a6ea10503b1ae6a75cbcdbae1cd50b87cb386379d656e3138ec054772d15"
+    } ],
+    "section" : "ExportSentinels",
+    "variants" : {
+      "en" : {
+        "armor" : 100,
+        "codexSecret" : false,
+        "description" : "This knowledge hungry protector defends its master with Deconstructor Prime.",
+        "health" : 700,
+        "name" : "Helios Prime",
+        "power" : 100,
+        "productCategory" : "Sentinels",
+        "shield" : 300,
+        "stamina" : 8,
+        "uniqueName" : "/Lotus/Types/Sentinels/SentinelPowersuits/PrimeHeliosPowerSuit"
+      },
+      "zh" : {
+        "armor" : 100,
+        "codexSecret" : false,
+        "description" : "这个充满求知欲的守护与分离 Prime 一同防卫着它们的主人。",
+        "health" : 700,
+        "name" : "赫利俄斯 Prime",
+        "power" : 100,
+        "productCategory" : "Sentinels",
+        "shield" : 300,
+        "stamina" : 8,
+        "uniqueName" : "/Lotus/Types/Sentinels/SentinelPowersuits/PrimeHeliosPowerSuit"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Types/Sentinels/SentinelPowersuits/PrimeShadePowerSuit",
+    "key" : "ExportSentinels|/Lotus/Types/Sentinels/SentinelPowersuits/PrimeShadePowerSuit",
+    "names" : {
+      "en" : "Shade Prime",
+      "zh" : "阴影 Prime"
+    },
+    "provenance" : [ {
+      "index" : 8,
+      "locale" : "en",
+      "path" : "exports/en/ExportSentinels.json",
+      "section" : "ExportSentinels",
+      "sha256" : "dc3058e503852c58b98c3c70eea943aa2e9d0a83a6c2a8fc7898780f993eda79"
+    }, {
+      "index" : 8,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportSentinels.json",
+      "section" : "ExportSentinels",
+      "sha256" : "6746a6ea10503b1ae6a75cbcdbae1cd50b87cb386379d656e3138ec054772d15"
+    } ],
+    "section" : "ExportSentinels",
+    "variants" : {
+      "en" : {
+        "armor" : 100,
+        "codexSecret" : false,
+        "description" : "Shade Prime specializes in stealth and comes locked and loaded with the Burst Laser Prime. Together, you can dominate the shadows.",
+        "health" : 700,
+        "name" : "Shade Prime",
+        "power" : 100,
+        "productCategory" : "Sentinels",
+        "shield" : 300,
+        "stamina" : 8,
+        "uniqueName" : "/Lotus/Types/Sentinels/SentinelPowersuits/PrimeShadePowerSuit"
+      },
+      "zh" : {
+        "armor" : 100,
+        "codexSecret" : false,
+        "description" : "阴影 Prime 专长隐形，它装载了激光点发 Prime。和它一同主宰暗影吧。",
+        "health" : 700,
+        "name" : "阴影 Prime",
+        "power" : 100,
+        "productCategory" : "Sentinels",
+        "shield" : 300,
+        "stamina" : 8,
+        "uniqueName" : "/Lotus/Types/Sentinels/SentinelPowersuits/PrimeShadePowerSuit"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Types/Sentinels/SentinelPowersuits/PrimeWyrmPowerSuit",
+    "key" : "ExportSentinels|/Lotus/Types/Sentinels/SentinelPowersuits/PrimeWyrmPowerSuit",
+    "names" : {
+      "en" : "Wyrm Prime",
+      "zh" : "蛟龙 Prime"
+    },
+    "provenance" : [ {
+      "index" : 7,
+      "locale" : "en",
+      "path" : "exports/en/ExportSentinels.json",
+      "section" : "ExportSentinels",
+      "sha256" : "dc3058e503852c58b98c3c70eea943aa2e9d0a83a6c2a8fc7898780f993eda79"
+    }, {
+      "index" : 7,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportSentinels.json",
+      "section" : "ExportSentinels",
+      "sha256" : "6746a6ea10503b1ae6a75cbcdbae1cd50b87cb386379d656e3138ec054772d15"
+    } ],
+    "section" : "ExportSentinels",
+    "variants" : {
+      "en" : {
+        "armor" : 150,
+        "codexSecret" : false,
+        "description" : "Both bodyguard and status symbol, the Wyrm Prime Sentinel was the last line of defense for high ranking Tenno in the Orokin Era.",
+        "health" : 450,
+        "name" : "Wyrm Prime",
+        "power" : 100,
+        "productCategory" : "Sentinels",
+        "shield" : 600,
+        "stamina" : 8,
+        "uniqueName" : "/Lotus/Types/Sentinels/SentinelPowersuits/PrimeWyrmPowerSuit"
+      },
+      "zh" : {
+        "armor" : 150,
+        "codexSecret" : false,
+        "description" : "保镖与地位的象征，在奥罗金时代中，蛟龙守护 Prime 是高阶Tenno 的最后一道防线。",
+        "health" : 450,
+        "name" : "蛟龙 Prime",
+        "power" : 100,
+        "productCategory" : "Sentinels",
+        "shield" : 600,
+        "stamina" : 8,
+        "uniqueName" : "/Lotus/Types/Sentinels/SentinelPowersuits/PrimeWyrmPowerSuit"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Types/Sentinels/SentinelPowersuits/PrismaShadePowerSuit",
+    "key" : "ExportSentinels|/Lotus/Types/Sentinels/SentinelPowersuits/PrismaShadePowerSuit",
+    "names" : {
+      "en" : "Prisma Shade",
+      "zh" : "棱晶 阴影"
+    },
+    "provenance" : [ {
+      "index" : 6,
+      "locale" : "en",
+      "path" : "exports/en/ExportSentinels.json",
+      "section" : "ExportSentinels",
+      "sha256" : "dc3058e503852c58b98c3c70eea943aa2e9d0a83a6c2a8fc7898780f993eda79"
+    }, {
+      "index" : 6,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportSentinels.json",
+      "section" : "ExportSentinels",
+      "sha256" : "6746a6ea10503b1ae6a75cbcdbae1cd50b87cb386379d656e3138ec054772d15"
+    } ],
+    "section" : "ExportSentinels",
+    "variants" : {
+      "en" : {
+        "armor" : 80,
+        "codexSecret" : true,
+        "description" : "A rare jewel of the void. How could anything so beautiful be crafted for stealth?",
+        "health" : 700,
+        "name" : "Prisma Shade",
+        "power" : 100,
+        "productCategory" : "Sentinels",
+        "shield" : 300,
+        "stamina" : 8,
+        "uniqueName" : "/Lotus/Types/Sentinels/SentinelPowersuits/PrismaShadePowerSuit"
+      },
+      "zh" : {
+        "armor" : 80,
+        "codexSecret" : true,
+        "description" : "虚空中的一种稀有珍宝。怎有如此美丽宝物竟是为潜行锻造？",
+        "health" : 700,
+        "name" : "棱晶 阴影",
+        "power" : 100,
+        "productCategory" : "Sentinels",
+        "shield" : 300,
+        "stamina" : 8,
+        "uniqueName" : "/Lotus/Types/Sentinels/SentinelPowersuits/PrismaShadePowerSuit"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Types/Sentinels/SentinelPowersuits/RadarPowerSuit",
+    "key" : "ExportSentinels|/Lotus/Types/Sentinels/SentinelPowersuits/RadarPowerSuit",
+    "names" : {
+      "en" : "Oxylus",
+      "zh" : "奥克绪罗斯"
+    },
+    "provenance" : [ {
+      "index" : 5,
+      "locale" : "en",
+      "path" : "exports/en/ExportSentinels.json",
+      "section" : "ExportSentinels",
+      "sha256" : "dc3058e503852c58b98c3c70eea943aa2e9d0a83a6c2a8fc7898780f993eda79"
+    }, {
+      "index" : 5,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportSentinels.json",
+      "section" : "ExportSentinels",
+      "sha256" : "6746a6ea10503b1ae6a75cbcdbae1cd50b87cb386379d656e3138ec054772d15"
+    } ],
+    "section" : "ExportSentinels",
+    "variants" : {
+      "en" : {
+        "armor" : 80,
+        "codexSecret" : false,
+        "description" : "With 'Scan Aquatic Lifeforms' and 'Scan Matter' as default Precepts, Oxylus was designed to assist in Search-and-Rescue operations through the harsh landscape around The Orb Vallis. Oxylus also comes with a Multron rifle.",
+        "health" : 560,
+        "name" : "Oxylus",
+        "power" : 100,
+        "productCategory" : "Sentinels",
+        "shield" : 250,
+        "stamina" : 8,
+        "uniqueName" : "/Lotus/Types/Sentinels/SentinelPowersuits/RadarPowerSuit"
+      },
+      "zh" : {
+        "armor" : 80,
+        "codexSecret" : false,
+        "description" : "以「扫描水生生命体」和「扫描物质」为默认指令，奥克绪罗斯被设计用于奥布山谷外围严酷环境的搜救行动。奥克绪罗斯拥有一把多连穿甲枪。",
+        "health" : 560,
+        "name" : "奥克绪罗斯",
+        "power" : 100,
+        "productCategory" : "Sentinels",
+        "shield" : 250,
+        "stamina" : 8,
+        "uniqueName" : "/Lotus/Types/Sentinels/SentinelPowersuits/RadarPowerSuit"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Types/Sentinels/SentinelPowersuits/ShadePowerSuit",
+    "key" : "ExportSentinels|/Lotus/Types/Sentinels/SentinelPowersuits/ShadePowerSuit",
+    "names" : {
+      "en" : "Shade",
+      "zh" : "阴影"
+    },
+    "provenance" : [ {
+      "index" : 4,
+      "locale" : "en",
+      "path" : "exports/en/ExportSentinels.json",
+      "section" : "ExportSentinels",
+      "sha256" : "dc3058e503852c58b98c3c70eea943aa2e9d0a83a6c2a8fc7898780f993eda79"
+    }, {
+      "index" : 4,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportSentinels.json",
+      "section" : "ExportSentinels",
+      "sha256" : "6746a6ea10503b1ae6a75cbcdbae1cd50b87cb386379d656e3138ec054772d15"
+    } ],
+    "section" : "ExportSentinels",
+    "variants" : {
+      "en" : {
+        "armor" : 80,
+        "codexSecret" : false,
+        "description" : "With 'Revenge' and 'Ghost' as default Precepts, Shade is well suited for stealth gameplay. Shade also comes with a burst laser pistol.",
+        "health" : 600,
+        "name" : "Shade",
+        "power" : 100,
+        "productCategory" : "Sentinels",
+        "shield" : 130,
+        "stamina" : 8,
+        "uniqueName" : "/Lotus/Types/Sentinels/SentinelPowersuits/ShadePowerSuit"
+      },
+      "zh" : {
+        "armor" : 80,
+        "codexSecret" : false,
+        "description" : "以「复仇」和「幽灵」为预设指令，非常适合隐匿型玩法，并同时具备点放式激光手枪。",
+        "health" : 600,
+        "name" : "阴影",
+        "power" : 100,
+        "productCategory" : "Sentinels",
+        "shield" : 130,
+        "stamina" : 8,
+        "uniqueName" : "/Lotus/Types/Sentinels/SentinelPowersuits/ShadePowerSuit"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Types/Sentinels/SentinelPowersuits/TnSentinelCrossPowerSuit",
+    "key" : "ExportSentinels|/Lotus/Types/Sentinels/SentinelPowersuits/TnSentinelCrossPowerSuit",
+    "names" : {
+      "en" : "Taxon",
+      "zh" : "塔克桑"
+    },
+    "provenance" : [ {
+      "index" : 3,
+      "locale" : "en",
+      "path" : "exports/en/ExportSentinels.json",
+      "section" : "ExportSentinels",
+      "sha256" : "dc3058e503852c58b98c3c70eea943aa2e9d0a83a6c2a8fc7898780f993eda79"
+    }, {
+      "index" : 3,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportSentinels.json",
+      "section" : "ExportSentinels",
+      "sha256" : "6746a6ea10503b1ae6a75cbcdbae1cd50b87cb386379d656e3138ec054772d15"
+    } ],
+    "section" : "ExportSentinels",
+    "variants" : {
+      "en" : {
+        "armor" : 80,
+        "codexSecret" : false,
+        "description" : "With 'Assault Mode' and 'Molecular Conversion' as default Precepts, Taxon protects its owner with shield restoration. Equipped with the Artax ice-beam.",
+        "health" : 560,
+        "name" : "Taxon",
+        "power" : 100,
+        "productCategory" : "Sentinels",
+        "shield" : 250,
+        "stamina" : 8,
+        "uniqueName" : "/Lotus/Types/Sentinels/SentinelPowersuits/TnSentinelCrossPowerSuit"
+      },
+      "zh" : {
+        "armor" : 80,
+        "codexSecret" : false,
+        "description" : "以「突击模式」和「分子转化」为预设指令，塔克桑利用护盾恢复来保护主人。它装备了阿塔克斯冰冷光束。",
+        "health" : 560,
+        "name" : "塔克桑",
+        "power" : 100,
+        "productCategory" : "Sentinels",
+        "shield" : 250,
+        "stamina" : 8,
+        "uniqueName" : "/Lotus/Types/Sentinels/SentinelPowersuits/TnSentinelCrossPowerSuit"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Types/Sentinels/SentinelPowersuits/WyrmPowerSuit",
+    "key" : "ExportSentinels|/Lotus/Types/Sentinels/SentinelPowersuits/WyrmPowerSuit",
+    "names" : {
+      "en" : "Wyrm",
+      "zh" : "蛟龙"
+    },
+    "provenance" : [ {
+      "index" : 2,
+      "locale" : "en",
+      "path" : "exports/en/ExportSentinels.json",
+      "section" : "ExportSentinels",
+      "sha256" : "dc3058e503852c58b98c3c70eea943aa2e9d0a83a6c2a8fc7898780f993eda79"
+    }, {
+      "index" : 2,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportSentinels.json",
+      "section" : "ExportSentinels",
+      "sha256" : "6746a6ea10503b1ae6a75cbcdbae1cd50b87cb386379d656e3138ec054772d15"
+    } ],
+    "section" : "ExportSentinels",
+    "variants" : {
+      "en" : {
+        "armor" : 80,
+        "codexSecret" : false,
+        "description" : "With 'Assault Mode' and 'Crowd Dispersion' as default Precepts, Wyrm is a highly offensive Sentinel. Wyrm also comes with a laser rifle.",
+        "health" : 560,
+        "name" : "Wyrm",
+        "power" : 100,
+        "productCategory" : "Sentinels",
+        "shield" : 250,
+        "stamina" : 8,
+        "uniqueName" : "/Lotus/Types/Sentinels/SentinelPowersuits/WyrmPowerSuit"
+      },
+      "zh" : {
+        "armor" : 80,
+        "codexSecret" : false,
+        "description" : "以「突击模式」和「群体击散」为预设指令，是强力进攻型的守护，并同时具备激光步枪。",
+        "health" : 560,
+        "name" : "蛟龙",
+        "power" : 100,
+        "productCategory" : "Sentinels",
+        "shield" : 250,
+        "stamina" : 8,
+        "uniqueName" : "/Lotus/Types/Sentinels/SentinelPowersuits/WyrmPowerSuit"
+      }
+    }
+  } ],
+  "model" : "regional-catalog-v1",
+  "region" : "international",
+  "schemaVersion" : 1,
+  "section" : "ExportSentinels"
+}
