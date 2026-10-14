@@ -1,0 +1,177 @@
+{
+  "capabilities" : [ "local-client-structured-export-v1", "client-resource-facts-v1" ],
+  "clientBuild" : "packages-sha256-db414220290b5739bd7be38b1557d0f2e981703892fc36d8b62ec0e7c55fc786",
+  "clientExtraction" : {
+    "adapter" : "local-client-cache-v1",
+    "coverage" : {
+      "completeChains" : 2986,
+      "issues" : [ ],
+      "limitations" : [ "Resource inventory may include hidden or unreleased items; it is not an availability list.", "Only allowlisted own facts are exported; arrays retain source indices and are not merged.", "Native defaults, scripts, full evolution routes and final damage are not reconstructed.", "Missing data remains unknown. No other region is used to fill gaps." ],
+      "missingNames" : {
+        "en" : [ "/Lotus/Powersuits/DemonFrame/DemonFrameFireBallAugmentCard", "/Lotus/Powersuits/Devourer/DevourerPassiveAugmentCard", "/Lotus/Powersuits/Duelist/Duelist", "/Lotus/Powersuits/Frost/IceShieldAugmentTwoCard", "/Lotus/Powersuits/Geode/CitrinePrime", "/Lotus/Powersuits/Oraxia/BroodAugmentCard", "/Lotus/Weapons/Tenno/Archwing/Melee/PrimeCorufell/PrimeCorufellScytheWeapon", "/Lotus/Weapons/Tenno/Bows/DuelistBow/DuelistBow", "/Lotus/Weapons/Tenno/LongGuns/PrimeSteflos/PrimeSteflosShotgun", "/Lotus/Weapons/Tenno/Pistols/DuelistPistols/DuelistPistols" ],
+        "zh" : [ ]
+      },
+      "resources" : 3315,
+      "schema" : "client-resource-facts-v1",
+      "storeRecords" : 2986,
+      "uniqueItems" : 2986,
+      "unknownCategories" : [ "/Lotus/Weapons/ClanTech/Bio/AcidDartPistol", "/Lotus/Weapons/ClanTech/Energy/CrpLaserPistol", "/Lotus/Weapons/Corpus/BoardExec/Secondary/CrpBECycron/CrpBECycron", "/Lotus/Weapons/Corpus/BoardExec/Secondary/CrpBEDetron/CrpBEDetron", "/Lotus/Weapons/Corpus/BoardExec/Secondary/CrpBEPlinx/CrpBEPlinxWeapon", "/Lotus/Weapons/Corpus/Pistols/CorpusHandShotgun/CorpusHandCannon", "/Lotus/Weapons/Corpus/Pistols/CorpusMinigun/CorpusMinigun", "/Lotus/Weapons/Corpus/Pistols/CorpusMinigun/DualCorpusMinigun", "/Lotus/Weapons/Corpus/Pistols/CorpusModularPistol/Vandal/CrpLaserPistolVandal", "/Lotus/Weapons/Corpus/Pistols/CrpAirPistol/CrpAirPistolArray", "/Lotus/Weapons/Corpus/Pistols/CrpBriefcaseAkimbo/CrpBriefcaseAkimboPistol", "/Lotus/Weapons/Corpus/Pistols/CrpChargeGun/CrpChargeGun", "/Lotus/Weapons/Corpus/Pistols/CrpElectroMag/CrpElectroMag", "/Lotus/Weapons/Corpus/Pistols/CrpHandRL/CorpusHandRocketLauncher", "/Lotus/Weapons/Corpus/Pistols/CrpHandRL/PrismaAngstrum", "/Lotus/Weapons/Corpus/Pistols/CrpIgniterPistol/CrpIgniterPistol", "/Lotus/Weapons/Corpus/Pistols/CrpSentAmalgPistol/CrpSentAmalgPistol", "/Lotus/Weapons/Corpus/Pistols/CrpSentExperimentPistol/CrpSentExperimentPistol", "/Lotus/Weapons/Corpus/Pistols/CrpSonificBlastor/CrpBlastorWeapon", "/Lotus/Weapons/Corpus/Pistols/SniperPistol/CrpScopeGun", "/Lotus/Weapons/Grineer/GrineerPistol/GrineerAkimboPistol", "/Lotus/Weapons/Grineer/GrineerPistol/GrineerLightPistol", "/Lotus/Weapons/Grineer/GrineerPistol/GrnHeavyPistol", "/Lotus/Weapons/Grineer/GrineerPistol/GrnScopedPistolPlayer", "/Lotus/Weapons/Grineer/KuvaLich/Secondaries/Brakk/KuvaBrakk", "/Lotus/Weapons/Grineer/KuvaLich/Secondaries/Kraken/KuvaKraken", "/Lotus/Weapons/Grineer/KuvaLich/Secondaries/Nukor/KuvaNukor", "/Lotus/Weapons/Grineer/KuvaLich/Secondaries/Seer/KuvaSeer", "/Lotus/Weapons/Grineer/KuvaLich/Secondaries/Stubba/KuvaStubba", "/Lotus/Weapons/Grineer/LongGuns/GrineerAssaultRifle/TwinGrakatas", "/Lotus/Weapons/Grineer/Pistols/GrineerBulbousSMG/Prisma/PrismaTwinGremlinsWeapon", "/Lotus/Weapons/Grineer/Pistols/GrineerCrossbow/GrineerGooGun", "/Lotus/Weapons/Grineer/Pistols/GrineerHandShotgun/GrineerHandCannon", "/Lotus/Weapons/Grineer/Pistols/GrineerLeverActionPistol/GLAPistol", "/Lotus/Weapons/Grineer/Pistols/GrineerMicrowavegun/GrnMicrowavePistol", "/Lotus/Weapons/Grineer/Pistols/GrnAmphisPistol/GrnAmphisPistol", "/Lotus/Weapons/Grineer/Pistols/GrnDWUniques/GrnTwinKohmaks", "/Lotus/Weapons/Grineer/Pistols/GrnKohmPistol/GrnKohmPistol", "/Lotus/Weapons/Grineer/Pistols/GrnOrokinPistol/GrnOrokinPistol", "/Lotus/Weapons/Grineer/Pistols/GrnQueenGuardDualPistol/GrnQueenGuardDualPistols", "/Lotus/Weapons/Grineer/Pistols/GrnTorpedoPistol/GrnTorpedoPistol", "/Lotus/Weapons/Grineer/Pistols/GrnUzi/GrnUziWeapon", "/Lotus/Weapons/Grineer/Pistols/HeatGun/GrnHeatGun", "/Lotus/Weapons/Grineer/Pistols/WraithSingleViper/WraithSingleViper", "/Lotus/Weapons/Grineer/Pistols/WraithTwinVipers/WraithTwinVipers", "/Lotus/Weapons/Grineer/ThrowingWeapons/GrnVorStickyBomb/GrnVorStickyBomb", "/Lotus/Weapons/Infested/InfestedLich/Pistols/1999InfSporePistol/1999InfSporePistolWeapon", "/Lotus/Weapons/Infested/InfestedLich/Pistols/CodaCatabolyst", "/Lotus/Weapons/Infested/InfestedLich/Pistols/CodaPox", "/Lotus/Weapons/Infested/InfestedLich/Pistols/CodaTysis", "/Lotus/Weapons/Infested/Pistols/InfBeamPistol/InfBeamPistol", "/Lotus/Weapons/Infested/Pistols/InfProximityStars/InfProximityStars", "/Lotus/Weapons/Infested/Pistols/InfUzi/InfUziWeapon", "/Lotus/Weapons/Infested/Pistols/InfVomitGun/InfVomitGunWep", "/Lotus/Weapons/Infested/Pistols/InfestedDartPistol/InfestedDartPistol", "/Lotus/Weapons/Infested/Pistols/InfestedPistol", "/Lotus/Weapons/Lasria/LasGooPistol/LasGooPistolPlayerWeapon", "/Lotus/Weapons/Lasria/LasSilencedPistol/LasSilencedPistolWeapon", "/Lotus/Weapons/MK1Series/MK1Furis", "/Lotus/Weapons/MK1Series/MK1Kunai", "/Lotus/Weapons/SolarisUnited/Secondary/LotusModularSecondary", "/Lotus/Weapons/SolarisUnited/Secondary/LotusModularSecondaryBeam", "/Lotus/Weapons/SolarisUnited/Secondary/LotusModularSecondaryShotgun", "/Lotus/Weapons/Syndicates/ArbitersOfHexis/Pistols/AHAkbolto", "/Lotus/Weapons/Syndicates/CephalonSuda/Pistols/CSDroidArray", "/Lotus/Weapons/Syndicates/CephalonSuda/Pistols/CSSynoidGammacor", "/Lotus/Weapons/Syndicates/NewLoka/Pistols/NLCastanas", "/Lotus/Weapons/Syndicates/PerrinSequence/Pistols/PSDualCestra", "/Lotus/Weapons/Syndicates/RedVeil/Pistols/RVBallistica", "/Lotus/Weapons/Syndicates/SteelMeridian/Pistols/SMMarelok", "/Lotus/Weapons/Tenno/Akimbo/AkLexPistols", "/Lotus/Weapons/Tenno/Akimbo/AkLexPrimePistols", "/Lotus/Weapons/Tenno/Akimbo/AkimboAutoPistols", "/Lotus/Weapons/Tenno/Akimbo/AkimboBolto", "/Lotus/Weapons/Tenno/Akimbo/AkimboPistol", "/Lotus/Weapons/Tenno/Akimbo/AkimboShotGun", "/Lotus/Weapons/Tenno/Akimbo/AkimboViperPistols", "/Lotus/Weapons/Tenno/Akimbo/DualMagnus", "/Lotus/Weapons/Tenno/Akimbo/DualMagnusPrime", "/Lotus/Weapons/Tenno/Akimbo/DualVastos", "/Lotus/Weapons/Tenno/Akimbo/PrimeAkimboShotGun", "/Lotus/Weapons/Tenno/Gear/MiningLaserBWeapon", "/Lotus/Weapons/Tenno/Gear/MiningLaserCWeapon", "/Lotus/Weapons/Tenno/Gear/MiningLaserSolarisWeaponA", "/Lotus/Weapons/Tenno/Gear/MiningLaserWeapon", "/Lotus/Weapons/Tenno/Grimoire/TnDoppelgangerGrimoire", "/Lotus/Weapons/Tenno/Grimoire/TnGrimoire", "/Lotus/Weapons/Tenno/Pistol/AutoPistol", "/Lotus/Weapons/Tenno/Pistol/AutoPistolVariant", "/Lotus/Weapons/Tenno/Pistol/BroncoPrime", "/Lotus/Weapons/Tenno/Pistol/BurstPistol", "/Lotus/Weapons/Tenno/Pistol/CoHLoanerPistol", "/Lotus/Weapons/Tenno/Pistol/CrossBow", "/Lotus/Weapons/Tenno/Pistol/HandShotGun", "/Lotus/Weapons/Tenno/Pistol/HandShotGunVariant", "/Lotus/Weapons/Tenno/Pistol/HeavyPistol", "/Lotus/Weapons/Tenno/Pistol/HeavyPistolVariant", "/Lotus/Weapons/Tenno/Pistol/LatoPrime", "/Lotus/Weapons/Tenno/Pistol/LatoVandal", "/Lotus/Weapons/Tenno/Pistol/LotusPistol", "/Lotus/Weapons/Tenno/Pistol/Pistol", "/Lotus/Weapons/Tenno/Pistol/PistolVariant", "/Lotus/Weapons/Tenno/Pistol/RevolverPistol", "/Lotus/Weapons/Tenno/Pistols/1999EntHybridPistolWeapon/1999EntHybridPistolWeapon", "/Lotus/Weapons/Tenno/Pistols/AllNew1hSG/AllNew1hSG", "/Lotus/Weapons/Tenno/Pistols/AutomaticHandCrossbow/AutoCrossBow", "/Lotus/Weapons/Tenno/Pistols/ConclaveLeverPistol/ConclaveLeverPistol", "/Lotus/Weapons/Tenno/Pistols/DexFuris/DexFuris", "/Lotus/Weapons/Tenno/Pistols/DuelistPistols/DuelistPistols", "/Lotus/Weapons/Tenno/Pistols/HarlequinGun/HarlequinPistols", "/Lotus/Weapons/Tenno/Pistols/Magnum/Magnum", "/Lotus/Weapons/Tenno/Pistols/PrimeAfuris/PrimeAFurisWeapon", "/Lotus/Weapons/Tenno/Pistols/PrimeAkarius/PrimeAkariusWeapon", "/Lotus/Weapons/Tenno/Pistols/PrimeAkbolto/PrimeAkBoltoWeapon", "/Lotus/Weapons/Tenno/Pistols/PrimeAkjagara/AkJagaraPrime", "/Lotus/Weapons/Tenno/Pistols/PrimeAksomati/PrimeAksomati", "/Lotus/Weapons/Tenno/Pistols/PrimeAkstiletto/PrimeAkstiletto", "/Lotus/Weapons/Tenno/Pistols/PrimeAthodai/PrimeAthodaiPistolWeapon", "/Lotus/Weapons/Tenno/Pistols/PrimeBallistica/PrimeBallistica", "/Lotus/Weapons/Tenno/Pistols/PrimeEpitaph/PrimeEpitaphSidearmWeapon", "/Lotus/Weapons/Tenno/Pistols/PrimeHystrix/PrimeHystrixWeapon", "/Lotus/Weapons/Tenno/Pistols/PrimeKnell/PrimeKnellWeapon", "/Lotus/Weapons/Tenno/Pistols/PrimeKompressa/PrimeKompressa", "/Lotus/Weapons/Tenno/Pistols/PrimeLex/PrimeLex", "/Lotus/Weapons/Tenno/Pistols/PrimeMagnus/PrimeMagnusWeapon", "/Lotus/Weapons/Tenno/Pistols/PrimePandero/PanderoPrimeWeapon", "/Lotus/Weapons/Tenno/Pistols/PrimePyrana/PrimePyranaPistol", "/Lotus/Weapons/Tenno/Pistols/PrimeSicarus/PrimeSicarusPistol", "/Lotus/Weapons/Tenno/Pistols/PrimeVasto/AkPrimeVasto/AkPrimeVastoPistol", "/Lotus/Weapons/Tenno/Pistols/PrimeVasto/PrimeVastoPistol", "/Lotus/Weapons/Tenno/Pistols/PrimeVelox/PrimeVeloxPistol", "/Lotus/Weapons/Tenno/Pistols/PrimeZakti/PrimeZaktiPistol", "/Lotus/Weapons/Tenno/Pistols/PrimeZylok/ZylokPrimePistol", "/Lotus/Weapons/Tenno/Pistols/QuillDartgun/QuillDartGunWeapon", "/Lotus/Weapons/Tenno/Pistols/SapientPistol/SapientPistol", "/Lotus/Weapons/Tenno/Pistols/SawnOffShotgun/TennoHandShotgun", "/Lotus/Weapons/Tenno/Pistols/SomaSidearm/AkimboSomaPistols", "/Lotus/Weapons/Tenno/Pistols/SundialGun/SundialPistol", "/Lotus/Weapons/Tenno/Pistols/TennoUzi/TennoUzi", "/Lotus/Weapons/Tenno/Pistols/TigrisRedeemerSetPistol/TnoBladedPistols", "/Lotus/Weapons/Tenno/Pistols/TnBardPistol/TnBardPistolGun", "/Lotus/Weapons/Tenno/Pistols/TnGuandoPistol/TnGuandoPistolGun", "/Lotus/Weapons/Tenno/Pistols/TnJetTurbine/TnJetTurbinePistolWeapon", "/Lotus/Weapons/Tenno/Pistols/TnOdaliskSmg/TnOdaliskSmgPistol", "/Lotus/Weapons/Tenno/Pistols/TnPriestPistolScope/TnPriestPistolWeapon", "/Lotus/Weapons/Tenno/Pistols/TnWraitheSidearm/TnWraitheSidearmWeapon", "/Lotus/Weapons/Tenno/Pistols/TnYareliPistol/TnYareliPistolWeapon", "/Lotus/Weapons/Tenno/ThrowingWeapons/GlassKunai/GlassKunaiWeapon", "/Lotus/Weapons/Tenno/ThrowingWeapons/Kunai", "/Lotus/Weapons/Tenno/ThrowingWeapons/LiDagger/LiDagger", "/Lotus/Weapons/Tenno/ThrowingWeapons/PrimeLiDagger/PrimeLiDagger", "/Lotus/Weapons/Tenno/ThrowingWeapons/PrimeThrowingStar/PrimeHikou", "/Lotus/Weapons/Tenno/ThrowingWeapons/StalkerKunai", "/Lotus/Weapons/Tenno/ThrowingWeapons/StickyBomb/StickyBombs", "/Lotus/Weapons/Tenno/ThrowingWeapons/TennoStars", "/Lotus/Weapons/Tenno/ThrowingWeapons/TnChoirframeKunai/TnChoirframeKunai", "/Lotus/Weapons/Tenno/ThrowingWeapons/TnOraxiaFlechette/TnOraxiaFlechette", "/Lotus/Weapons/Tenno/ThrowingWeapons/U18ThrowingKnives/U18throwingknives", "/Lotus/Weapons/Tenno/ThrowingWeapons/VariantSnowBalls", "/Lotus/Weapons/Tenno/ThrowingWeapons/VariantTennoStars", "/Lotus/Weapons/Tenno/Zariman/Pistols/HeavyPistol/ZarimanHeavyPistol", "/Lotus/Weapons/Thanotech/EntratiWristGun/EntratiWristGunWeapon", "/Lotus/Weapons/Thanotech/ThanoPistol/ThanotechPistol", "/Lotus/Weapons/VoidTrader/VTDetron" ]
+    },
+    "schemaVersion" : 1,
+    "sourceRecords" : [ {
+      "bytes" : 53800581,
+      "cache" : "H.Misc",
+      "checks" : {
+        "compressed" : 201502,
+        "duplicates" : [ {
+          "identical" : false,
+          "path" : "/Lotus/Types/Enemies/Tau/GuiltSentient/DactolystBossAvatar"
+        } ],
+        "entities" : 467300,
+        "exactEof" : true,
+        "flagBits" : 671387,
+        "formatVersion" : 46,
+        "framesBytes" : 20393649,
+        "layout" : {
+          "cf" : 3067,
+          "cs" : 87733,
+          "cz" : 328644,
+          "czlen" : 21442225,
+          "dictionary" : 1048576,
+          "entities" : 467300,
+          "table" : 21770884,
+          "texts" : 204087
+        },
+        "raw" : 2585,
+        "tableEnd" : 53800581,
+        "trailingFlagBytes" : 0,
+        "uniqueEntities" : 467299
+      },
+      "compressedSha256" : "cf788c2fc2cc3053dcd9a7be87f08b54acd9f87a85658c747f16db080240432b",
+      "decodedSha256" : "db414220290b5739bd7be38b1557d0f2e981703892fc36d8b62ec0e7c55fc786",
+      "resource" : "/Packages.bin",
+      "stamp" : "134364153517880000",
+      "tocSha256" : "682b80075460a3e5cf12ca6cc6b94bc781e5028b57c9a813159284701bd1cc81"
+    }, {
+      "bytes" : 10599631,
+      "cache" : "H.Misc_en",
+      "checks" : {
+        "exactEof" : true,
+        "flags" : [ 0, 1, 2, 3, 4, 256, 512, 513, 514, 515, 516, 517, 518, 519, 520, 521, 522, 768, 769 ],
+        "formatVersion" : 44,
+        "locales" : [ "_en", "_zh" ],
+        "records" : 153796,
+        "sections" : 468,
+        "uniqueLabels" : 153796
+      },
+      "compressedSha256" : "33c98438c6276cae7e61f9bc3648f2f9754fb2e1bd9b999a143321aa10302a1d",
+      "decodedSha256" : "5606cb5d9a885f7d303ede38796a18de038b8d83968498fe9abff7d007fffc7e",
+      "resource" : "/Languages.bin",
+      "stamp" : "134364153564760000",
+      "tocSha256" : "ccc575a36e55c0fa435b02273678977ec7693f42b487f3b7f58efdd60ed77108"
+    }, {
+      "bytes" : 10885255,
+      "cache" : "H.Misc_zh",
+      "checks" : {
+        "exactEof" : true,
+        "flags" : [ 0, 1, 2, 3, 4, 256, 512, 513, 514, 515, 516, 517, 518, 519, 520, 521, 522, 768, 769 ],
+        "formatVersion" : 44,
+        "locales" : [ "_en", "_zh" ],
+        "records" : 155209,
+        "sections" : 475,
+        "uniqueLabels" : 155209
+      },
+      "compressedSha256" : "81c3a3c24fc1a0511e33924875aab25315a8208dfb62a3c383db0b24a9116069",
+      "decodedSha256" : "5e7b1f77a72eb6ab71bb9ea463d1922ddcb3f43e34dbca093b24bb236312b4f7",
+      "resource" : "/Languages.bin",
+      "stamp" : "134364153567270000",
+      "tocSha256" : "7fde04ab5196ba0fb9debde756b6d3aaed429f677876bc24725c39ff839706d8"
+    } ]
+  },
+  "collectedAt" : "2026-10-14T01:50:15.690804Z",
+  "collectorVersion" : "1.1.0",
+  "engineCompatibility" : "REQUIRES_CANONICAL_ADAPTER_AND_MECHANICS_COVERAGE",
+  "files" : [ {
+    "bytes" : 2555780,
+    "path" : "exports/en/ExportClientItems.json",
+    "sha256" : "c929fc73c831fc858311950b637a50e8a0caa85355b3fc0e60ebd05e883d4a27"
+  }, {
+    "bytes" : 639053,
+    "path" : "exports/en/ExportClientLocalization.json",
+    "sha256" : "2b7143f2f506eee4546bdf5ab2cc00688dcc2619ddcbd1af4d17e85c9aa18a2f"
+  }, {
+    "bytes" : 11219,
+    "path" : "exports/neutral/ExportClientCoverage.json",
+    "sha256" : "1781fbe0b9c9718612ceb2092d99319fb8c3a67a3b54a10af7d97f279f70b531"
+  }, {
+    "bytes" : 9432994,
+    "path" : "exports/neutral/ExportClientResources.json",
+    "sha256" : "c5045385af225d6f889f9c61a2fa3363bb5e843ed794e5011e62891c1fff4d7b"
+  }, {
+    "bytes" : 2555487,
+    "path" : "exports/zh/ExportClientItems.json",
+    "sha256" : "f50076c40b908e8f6c3b49c1b46b4865fbea94856730f8275b39c98bf7799297"
+  }, {
+    "bytes" : 641457,
+    "path" : "exports/zh/ExportClientLocalization.json",
+    "sha256" : "8399acf2b89ba67ba38e50a769d8ac39c0aa905e65bf16069190eb3c8a98120d"
+  }, {
+    "bytes" : 11488,
+    "path" : "quality.json",
+    "sha256" : "283577e965c236865cad6ec5d14d53f582f4d3430062653c5370ab44cdc96234"
+  } ],
+  "locales" : [ "en", "neutral", "zh" ],
+  "region" : "china",
+  "regionEvidence" : "Operator-selected China installation with rail_files and WeGameLauncher markers.",
+  "releaseId" : "gd1-715cb8896d5a104edc350b76",
+  "schemaVersion" : 1,
+  "sources" : [ {
+    "clientArtifactSha256" : "e68d430f32e0bde3d09223e0a7688452c2c847d3a7c062930e2e8059dfff8271",
+    "clientBuild" : "packages-sha256-db414220290b5739bd7be38b1557d0f2e981703892fc36d8b62ec0e7c55fc786",
+    "kind" : "LOCAL_CLIENT_STRUCTURED_EXPORT",
+    "locale" : "en",
+    "path" : "exports/en/ExportClientItems.json",
+    "rawSha256" : "31bb40642db75c428dfa18842c2dcbb8d6fcaacc516274734b2e3964aca819c4",
+    "region" : "china"
+  }, {
+    "clientArtifactSha256" : "e68d430f32e0bde3d09223e0a7688452c2c847d3a7c062930e2e8059dfff8271",
+    "clientBuild" : "packages-sha256-db414220290b5739bd7be38b1557d0f2e981703892fc36d8b62ec0e7c55fc786",
+    "kind" : "LOCAL_CLIENT_STRUCTURED_EXPORT",
+    "locale" : "zh",
+    "path" : "exports/zh/ExportClientItems.json",
+    "rawSha256" : "8a48a6eb49379e53cc624d1a8f4f0549326abb9510d9792587cc2f513c4bb5b6",
+    "region" : "china"
+  }, {
+    "clientArtifactSha256" : "e68d430f32e0bde3d09223e0a7688452c2c847d3a7c062930e2e8059dfff8271",
+    "clientBuild" : "packages-sha256-db414220290b5739bd7be38b1557d0f2e981703892fc36d8b62ec0e7c55fc786",
+    "kind" : "LOCAL_CLIENT_STRUCTURED_EXPORT",
+    "locale" : "en",
+    "path" : "exports/en/ExportClientLocalization.json",
+    "rawSha256" : "307f76889881190f5251dcb779252cedd8e03697de6eb13da13d14b3399313c7",
+    "region" : "china"
+  }, {
+    "clientArtifactSha256" : "e68d430f32e0bde3d09223e0a7688452c2c847d3a7c062930e2e8059dfff8271",
+    "clientBuild" : "packages-sha256-db414220290b5739bd7be38b1557d0f2e981703892fc36d8b62ec0e7c55fc786",
+    "kind" : "LOCAL_CLIENT_STRUCTURED_EXPORT",
+    "locale" : "zh",
+    "path" : "exports/zh/ExportClientLocalization.json",
+    "rawSha256" : "57863b26a97086b1adfdeae5c71e12993dfa187e3cbb1b31be4dd486a20351ab",
+    "region" : "china"
+  }, {
+    "clientArtifactSha256" : "e68d430f32e0bde3d09223e0a7688452c2c847d3a7c062930e2e8059dfff8271",
+    "clientBuild" : "packages-sha256-db414220290b5739bd7be38b1557d0f2e981703892fc36d8b62ec0e7c55fc786",
+    "kind" : "LOCAL_CLIENT_STRUCTURED_EXPORT",
+    "locale" : "neutral",
+    "path" : "exports/neutral/ExportClientResources.json",
+    "rawSha256" : "04a159c8fb7248b5f3f86e1edb1f61f4baba4eebc3172f3d83a98468ee81588c",
+    "region" : "china"
+  }, {
+    "clientArtifactSha256" : "e68d430f32e0bde3d09223e0a7688452c2c847d3a7c062930e2e8059dfff8271",
+    "clientBuild" : "packages-sha256-db414220290b5739bd7be38b1557d0f2e981703892fc36d8b62ec0e7c55fc786",
+    "kind" : "LOCAL_CLIENT_STRUCTURED_EXPORT",
+    "locale" : "neutral",
+    "path" : "exports/neutral/ExportClientCoverage.json",
+    "rawSha256" : "722f798e0a5419c965378b23d7fbed5ccfd5ecd1635bc348b8f7da97071e9805",
+    "region" : "china"
+  } ]
+}
