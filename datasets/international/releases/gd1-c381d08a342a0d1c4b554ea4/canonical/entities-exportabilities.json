@@ -1,0 +1,436 @@
+{
+  "entities" : [ {
+    "id" : "/Lotus/Powersuits/PowersuitAbilities/HelminthCompanionAbility",
+    "key" : "ExportAbilities|/Lotus/Powersuits/PowersuitAbilities/HelminthCompanionAbility",
+    "names" : {
+      "en" : "Master's Summons",
+      "zh" : "主人的召唤"
+    },
+    "provenance" : [ {
+      "index" : 1,
+      "locale" : "en",
+      "path" : "exports/en/ExportWarframes.json",
+      "section" : "ExportAbilities",
+      "sha256" : "3432fe5a50f3268daa37de1bc96c472b8e6d6d7b6297126468c83afd4bce41b5"
+    }, {
+      "index" : 1,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportWarframes.json",
+      "section" : "ExportAbilities",
+      "sha256" : "0214373dac43e3b19e385923136e6f5a6b27fb8b810b15ad3f995d3f588f303b"
+    } ],
+    "section" : "ExportAbilities",
+    "variants" : {
+      "en" : {
+        "abilityName" : "Master's Summons",
+        "abilityUniqueName" : "/Lotus/Powersuits/PowersuitAbilities/HelminthCompanionAbility",
+        "description" : "Heal your companion and call it to your side."
+      },
+      "zh" : {
+        "abilityName" : "主人的召唤",
+        "abilityUniqueName" : "/Lotus/Powersuits/PowersuitAbilities/HelminthCompanionAbility",
+        "description" : "治疗你的同伴，并让它立刻回到你身边。"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Powersuits/PowersuitAbilities/HelminthEfficiencyAbility",
+    "key" : "ExportAbilities|/Lotus/Powersuits/PowersuitAbilities/HelminthEfficiencyAbility",
+    "names" : {
+      "en" : "Energized Munitions",
+      "zh" : "充沛军需"
+    },
+    "provenance" : [ {
+      "index" : 0,
+      "locale" : "en",
+      "path" : "exports/en/ExportWarframes.json",
+      "section" : "ExportAbilities",
+      "sha256" : "3432fe5a50f3268daa37de1bc96c472b8e6d6d7b6297126468c83afd4bce41b5"
+    }, {
+      "index" : 0,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportWarframes.json",
+      "section" : "ExportAbilities",
+      "sha256" : "0214373dac43e3b19e385923136e6f5a6b27fb8b810b15ad3f995d3f588f303b"
+    } ],
+    "section" : "ExportAbilities",
+    "variants" : {
+      "en" : {
+        "abilityName" : "Energized Munitions",
+        "abilityUniqueName" : "/Lotus/Powersuits/PowersuitAbilities/HelminthEfficiencyAbility",
+        "description" : "Increase the efficiency of your ammo consumption."
+      },
+      "zh" : {
+        "abilityName" : "充沛军需",
+        "abilityUniqueName" : "/Lotus/Powersuits/PowersuitAbilities/HelminthEfficiencyAbility",
+        "description" : "提高你的武器弹药效率。"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Powersuits/PowersuitAbilities/HelminthEnergyShareAbility",
+    "key" : "ExportAbilities|/Lotus/Powersuits/PowersuitAbilities/HelminthEnergyShareAbility",
+    "names" : {
+      "en" : "Voracious Metastasis",
+      "zh" : "贪婪转移"
+    },
+    "provenance" : [ {
+      "index" : 2,
+      "locale" : "en",
+      "path" : "exports/en/ExportWarframes.json",
+      "section" : "ExportAbilities",
+      "sha256" : "3432fe5a50f3268daa37de1bc96c472b8e6d6d7b6297126468c83afd4bce41b5"
+    }, {
+      "index" : 2,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportWarframes.json",
+      "section" : "ExportAbilities",
+      "sha256" : "0214373dac43e3b19e385923136e6f5a6b27fb8b810b15ad3f995d3f588f303b"
+    } ],
+    "section" : "ExportAbilities",
+    "variants" : {
+      "en" : {
+        "abilityName" : "Voracious Metastasis",
+        "abilityUniqueName" : "/Lotus/Powersuits/PowersuitAbilities/HelminthEnergyShareAbility",
+        "description" : "Consume Energy to heal yourself and grant matching Energy to each ally."
+      },
+      "zh" : {
+        "abilityName" : "贪婪转移",
+        "abilityUniqueName" : "/Lotus/Powersuits/PowersuitAbilities/HelminthEnergyShareAbility",
+        "description" : "消耗能量治疗自身，并使每名友军获得等值的能量。"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Powersuits/PowersuitAbilities/HelminthHackAbility",
+    "key" : "ExportAbilities|/Lotus/Powersuits/PowersuitAbilities/HelminthHackAbility",
+    "names" : {
+      "en" : "Perspicacity",
+      "zh" : "洞察力"
+    },
+    "provenance" : [ {
+      "index" : 3,
+      "locale" : "en",
+      "path" : "exports/en/ExportWarframes.json",
+      "section" : "ExportAbilities",
+      "sha256" : "3432fe5a50f3268daa37de1bc96c472b8e6d6d7b6297126468c83afd4bce41b5"
+    }, {
+      "index" : 3,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportWarframes.json",
+      "section" : "ExportAbilities",
+      "sha256" : "0214373dac43e3b19e385923136e6f5a6b27fb8b810b15ad3f995d3f588f303b"
+    } ],
+    "section" : "ExportAbilities",
+    "variants" : {
+      "en" : {
+        "abilityName" : "Perspicacity",
+        "abilityUniqueName" : "/Lotus/Powersuits/PowersuitAbilities/HelminthHackAbility",
+        "description" : "Automatically succeed at your next hack attempt."
+      },
+      "zh" : {
+        "abilityName" : "洞察力",
+        "abilityUniqueName" : "/Lotus/Powersuits/PowersuitAbilities/HelminthHackAbility",
+        "description" : "自动完成下一次入侵"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Powersuits/PowersuitAbilities/HelminthMaxStatusAbility",
+    "key" : "ExportAbilities|/Lotus/Powersuits/PowersuitAbilities/HelminthMaxStatusAbility",
+    "names" : {
+      "en" : "Sickening Pulse",
+      "zh" : "恶疾脉冲"
+    },
+    "provenance" : [ {
+      "index" : 4,
+      "locale" : "en",
+      "path" : "exports/en/ExportWarframes.json",
+      "section" : "ExportAbilities",
+      "sha256" : "3432fe5a50f3268daa37de1bc96c472b8e6d6d7b6297126468c83afd4bce41b5"
+    }, {
+      "index" : 4,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportWarframes.json",
+      "section" : "ExportAbilities",
+      "sha256" : "0214373dac43e3b19e385923136e6f5a6b27fb8b810b15ad3f995d3f588f303b"
+    } ],
+    "section" : "ExportAbilities",
+    "variants" : {
+      "en" : {
+        "abilityName" : "Sickening Pulse",
+        "abilityUniqueName" : "/Lotus/Powersuits/PowersuitAbilities/HelminthMaxStatusAbility",
+        "description" : "Emit a pulse that adds stacks to Status Effects already afflicting enemies. The damage of <DT_SLASH_COLOR>Slash, <DT_FIRE_COLOR>Heat, and <DT_POISON_COLOR>Toxin effects, excluding those created by Sickening Pulse itself, are added together to create a new instance of the Effect with a refreshed timer"
+      },
+      "zh" : {
+        "abilityName" : "恶疾脉冲",
+        "abilityUniqueName" : "/Lotus/Powersuits/PowersuitAbilities/HelminthMaxStatusAbility",
+        "description" : "施放一个脉冲，为敌人身上已有的异常状态效果叠加层数。<DT_SLASH_COLOR>切割、<DT_FIRE_COLOR>火焰和 <DT_POISON_COLOR>毒素异常状态的伤害（不包括由「恶疾脉冲」自身产生的伤害）将被叠加，从而生成一个全新的异常状态效果，并重新计时"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Powersuits/PowersuitAbilities/HelminthProcBlockAbility",
+    "key" : "ExportAbilities|/Lotus/Powersuits/PowersuitAbilities/HelminthProcBlockAbility",
+    "names" : {
+      "en" : "Hideous Resistance",
+      "zh" : "狰狞抵抗"
+    },
+    "provenance" : [ {
+      "index" : 5,
+      "locale" : "en",
+      "path" : "exports/en/ExportWarframes.json",
+      "section" : "ExportAbilities",
+      "sha256" : "3432fe5a50f3268daa37de1bc96c472b8e6d6d7b6297126468c83afd4bce41b5"
+    }, {
+      "index" : 5,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportWarframes.json",
+      "section" : "ExportAbilities",
+      "sha256" : "0214373dac43e3b19e385923136e6f5a6b27fb8b810b15ad3f995d3f588f303b"
+    } ],
+    "section" : "ExportAbilities",
+    "variants" : {
+      "en" : {
+        "abilityName" : "Hideous Resistance",
+        "abilityUniqueName" : "/Lotus/Powersuits/PowersuitAbilities/HelminthProcBlockAbility",
+        "description" : "Grant yourself immunity to Status effects."
+      },
+      "zh" : {
+        "abilityName" : "狰狞抵抗",
+        "abilityUniqueName" : "/Lotus/Powersuits/PowersuitAbilities/HelminthProcBlockAbility",
+        "description" : "赋予自身异常状态免疫效果。"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Powersuits/PowersuitAbilities/HelminthShieldArmorAbility",
+    "key" : "ExportAbilities|/Lotus/Powersuits/PowersuitAbilities/HelminthShieldArmorAbility",
+    "names" : {
+      "en" : "Parasitic Armor",
+      "zh" : "寄生护甲"
+    },
+    "provenance" : [ {
+      "index" : 6,
+      "locale" : "en",
+      "path" : "exports/en/ExportWarframes.json",
+      "section" : "ExportAbilities",
+      "sha256" : "3432fe5a50f3268daa37de1bc96c472b8e6d6d7b6297126468c83afd4bce41b5"
+    }, {
+      "index" : 6,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportWarframes.json",
+      "section" : "ExportAbilities",
+      "sha256" : "0214373dac43e3b19e385923136e6f5a6b27fb8b810b15ad3f995d3f588f303b"
+    } ],
+    "section" : "ExportAbilities",
+    "variants" : {
+      "en" : {
+        "abilityName" : "Parasitic Armor",
+        "abilityUniqueName" : "/Lotus/Powersuits/PowersuitAbilities/HelminthShieldArmorAbility",
+        "description" : "Sacrifice Shields to reinforce Armor for a period of time."
+      },
+      "zh" : {
+        "abilityName" : "寄生护甲",
+        "abilityUniqueName" : "/Lotus/Powersuits/PowersuitAbilities/HelminthShieldArmorAbility",
+        "description" : "牺牲护盾以在一段时间内增强护甲。"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Powersuits/PowersuitAbilities/HelminthShieldsAbility",
+    "key" : "ExportAbilities|/Lotus/Powersuits/PowersuitAbilities/HelminthShieldsAbility",
+    "names" : {
+      "en" : "Rebuild Shields",
+      "zh" : "重塑护盾"
+    },
+    "provenance" : [ {
+      "index" : 7,
+      "locale" : "en",
+      "path" : "exports/en/ExportWarframes.json",
+      "section" : "ExportAbilities",
+      "sha256" : "3432fe5a50f3268daa37de1bc96c472b8e6d6d7b6297126468c83afd4bce41b5"
+    }, {
+      "index" : 7,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportWarframes.json",
+      "section" : "ExportAbilities",
+      "sha256" : "0214373dac43e3b19e385923136e6f5a6b27fb8b810b15ad3f995d3f588f303b"
+    } ],
+    "section" : "ExportAbilities",
+    "variants" : {
+      "en" : {
+        "abilityName" : "Rebuild Shields",
+        "abilityUniqueName" : "/Lotus/Powersuits/PowersuitAbilities/HelminthShieldsAbility",
+        "description" : "Instantly restore your shields."
+      },
+      "zh" : {
+        "abilityName" : "重塑护盾",
+        "abilityUniqueName" : "/Lotus/Powersuits/PowersuitAbilities/HelminthShieldsAbility",
+        "description" : "立即恢复护盾。"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Powersuits/PowersuitAbilities/HelminthSpeedAbility",
+    "key" : "ExportAbilities|/Lotus/Powersuits/PowersuitAbilities/HelminthSpeedAbility",
+    "names" : {
+      "en" : "Infested Mobility",
+      "zh" : "感染敏捷性"
+    },
+    "provenance" : [ {
+      "index" : 8,
+      "locale" : "en",
+      "path" : "exports/en/ExportWarframes.json",
+      "section" : "ExportAbilities",
+      "sha256" : "3432fe5a50f3268daa37de1bc96c472b8e6d6d7b6297126468c83afd4bce41b5"
+    }, {
+      "index" : 8,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportWarframes.json",
+      "section" : "ExportAbilities",
+      "sha256" : "0214373dac43e3b19e385923136e6f5a6b27fb8b810b15ad3f995d3f588f303b"
+    } ],
+    "section" : "ExportAbilities",
+    "variants" : {
+      "en" : {
+        "abilityName" : "Infested Mobility",
+        "abilityUniqueName" : "/Lotus/Powersuits/PowersuitAbilities/HelminthSpeedAbility",
+        "description" : "Increase your parkour velocity."
+      },
+      "zh" : {
+        "abilityName" : "感染敏捷性",
+        "abilityUniqueName" : "/Lotus/Powersuits/PowersuitAbilities/HelminthSpeedAbility",
+        "description" : "提高你的跑酷速度。"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Powersuits/PowersuitAbilities/HelminthStatusAbility",
+    "key" : "ExportAbilities|/Lotus/Powersuits/PowersuitAbilities/HelminthStatusAbility",
+    "names" : {
+      "en" : "Expedite Suffering",
+      "zh" : "瞬时苦痛"
+    },
+    "provenance" : [ {
+      "index" : 9,
+      "locale" : "en",
+      "path" : "exports/en/ExportWarframes.json",
+      "section" : "ExportAbilities",
+      "sha256" : "3432fe5a50f3268daa37de1bc96c472b8e6d6d7b6297126468c83afd4bce41b5"
+    }, {
+      "index" : 9,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportWarframes.json",
+      "section" : "ExportAbilities",
+      "sha256" : "0214373dac43e3b19e385923136e6f5a6b27fb8b810b15ad3f995d3f588f303b"
+    } ],
+    "section" : "ExportAbilities",
+    "variants" : {
+      "en" : {
+        "abilityName" : "Expedite Suffering",
+        "abilityUniqueName" : "/Lotus/Powersuits/PowersuitAbilities/HelminthStatusAbility",
+        "description" : "Condense all <DT_SLASH_COLOR>Slash and <DT_POISON_COLOR>Toxin Status Effects into a single damage instance."
+      },
+      "zh" : {
+        "abilityName" : "瞬时苦痛",
+        "abilityUniqueName" : "/Lotus/Powersuits/PowersuitAbilities/HelminthStatusAbility",
+        "description" : "将所有 <DT_SLASH_COLOR>切割和 <DT_POISON_COLOR>毒素异常状态浓缩为一个单次伤害。"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Powersuits/PowersuitAbilities/HelminthStrengthAbility",
+    "key" : "ExportAbilities|/Lotus/Powersuits/PowersuitAbilities/HelminthStrengthAbility",
+    "names" : {
+      "en" : "Empower",
+      "zh" : "强化"
+    },
+    "provenance" : [ {
+      "index" : 10,
+      "locale" : "en",
+      "path" : "exports/en/ExportWarframes.json",
+      "section" : "ExportAbilities",
+      "sha256" : "3432fe5a50f3268daa37de1bc96c472b8e6d6d7b6297126468c83afd4bce41b5"
+    }, {
+      "index" : 10,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportWarframes.json",
+      "section" : "ExportAbilities",
+      "sha256" : "0214373dac43e3b19e385923136e6f5a6b27fb8b810b15ad3f995d3f588f303b"
+    } ],
+    "section" : "ExportAbilities",
+    "variants" : {
+      "en" : {
+        "abilityName" : "Empower",
+        "abilityUniqueName" : "/Lotus/Powersuits/PowersuitAbilities/HelminthStrengthAbility",
+        "description" : "Increase the strength of your next ability use."
+      },
+      "zh" : {
+        "abilityName" : "强化",
+        "abilityUniqueName" : "/Lotus/Powersuits/PowersuitAbilities/HelminthStrengthAbility",
+        "description" : "提高下个技能的强度。"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Powersuits/PowersuitAbilities/HelminthStunAbility",
+    "key" : "ExportAbilities|/Lotus/Powersuits/PowersuitAbilities/HelminthStunAbility",
+    "names" : {
+      "en" : "Marked for Death",
+      "zh" : "死亡标记"
+    },
+    "provenance" : [ {
+      "index" : 11,
+      "locale" : "en",
+      "path" : "exports/en/ExportWarframes.json",
+      "section" : "ExportAbilities",
+      "sha256" : "3432fe5a50f3268daa37de1bc96c472b8e6d6d7b6297126468c83afd4bce41b5"
+    }, {
+      "index" : 11,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportWarframes.json",
+      "section" : "ExportAbilities",
+      "sha256" : "0214373dac43e3b19e385923136e6f5a6b27fb8b810b15ad3f995d3f588f303b"
+    } ],
+    "section" : "ExportAbilities",
+    "variants" : {
+      "en" : {
+        "abilityName" : "Marked for Death",
+        "abilityUniqueName" : "/Lotus/Powersuits/PowersuitAbilities/HelminthStunAbility",
+        "description" : "Stun an enemy; a portion of the next damage you deal to it will be dealt to all enemies around it."
+      },
+      "zh" : {
+        "abilityName" : "死亡标记",
+        "abilityUniqueName" : "/Lotus/Powersuits/PowersuitAbilities/HelminthStunAbility",
+        "description" : "击晕一个敌人，对它造成的下一发伤害的一部分也将被应用于周围所有的敌人。"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Powersuits/PowersuitAbilities/HelminthTreasureAbility",
+    "key" : "ExportAbilities|/Lotus/Powersuits/PowersuitAbilities/HelminthTreasureAbility",
+    "names" : {
+      "en" : "Golden Instinct",
+      "zh" : "黄金本能"
+    },
+    "provenance" : [ {
+      "index" : 12,
+      "locale" : "en",
+      "path" : "exports/en/ExportWarframes.json",
+      "section" : "ExportAbilities",
+      "sha256" : "3432fe5a50f3268daa37de1bc96c472b8e6d6d7b6297126468c83afd4bce41b5"
+    }, {
+      "index" : 12,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportWarframes.json",
+      "section" : "ExportAbilities",
+      "sha256" : "0214373dac43e3b19e385923136e6f5a6b27fb8b810b15ad3f995d3f588f303b"
+    } ],
+    "section" : "ExportAbilities",
+    "variants" : {
+      "en" : {
+        "abilityName" : "Golden Instinct",
+        "abilityUniqueName" : "/Lotus/Powersuits/PowersuitAbilities/HelminthTreasureAbility",
+        "description" : "Send out a short-lived Void Spark that is drawn toward the nearest Medallion, Ayatan Sculpture, rare crate, unscanned Kuria or unscanned Fragment."
+      },
+      "zh" : {
+        "abilityName" : "黄金本能",
+        "abilityUniqueName" : "/Lotus/Powersuits/PowersuitAbilities/HelminthTreasureAbility",
+        "description" : "发射一道短暂的虚空火花指向离你最近的集团奖章、阿耶檀识塑像、稀有储存箱、未扫描的库利亚猫神器或碎片。"
+      }
+    }
+  } ],
+  "model" : "regional-catalog-v1",
+  "region" : "international",
+  "schemaVersion" : 1,
+  "section" : "ExportAbilities"
+}
