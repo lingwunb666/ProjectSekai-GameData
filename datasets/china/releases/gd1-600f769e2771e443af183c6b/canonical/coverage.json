@@ -1,0 +1,24 @@
+{
+  "entities" : 2986,
+  "features" : {
+    "automaticLoadout" : "UNSUPPORTED_ATTACKS_MODS_EVOLUTIONS_STANCES_COVERAGE_REQUIRED",
+    "catalogQuery" : "AVAILABLE",
+    "rivenCalculation" : "UNSUPPORTED_TYPED_TRAITS_AND_DISPOSITION_COVERAGE_REQUIRED"
+  },
+  "identicalDuplicates" : [ ],
+  "inputRecords" : {
+    "ClientItems:en" : 2986,
+    "ClientItems:zh" : 2986
+  },
+  "limits" : [ "Identities are scoped by section; identical labels never merge records.", "Payload variants are preserved per locale; missing names have no synthetic fallback.", "Unresolved references may target native types or data outside this release; they are not deleted.", "Client records may be hidden or unreleased; presence does not establish gameplay availability.", "This projection is queryable, not a complete combat model. Numeric conflicts remain visible." ],
+  "localeNumericConflicts" : [ ],
+  "model" : "regional-catalog-v1",
+  "region" : "china",
+  "relationCounts" : {
+    "RESOLVED" : 6168,
+    "UNRESOLVED" : 1332
+  },
+  "schemaVersion" : 1,
+  "sections" : 1,
+  "unidentified" : [ ]
+}
