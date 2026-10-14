@@ -1,8 +1,8 @@
 {
   "activation" : "DISCOVERY_ONLY_PIN_COMMIT_AND_MANIFEST_HASH",
-  "manifest" : "datasets/china/releases/gd1-600f769e2771e443af183c6b/manifest.json",
-  "manifestSha256" : "6efd1430bf0bbc73b16eb80244123c5b95b9cf3b3de9d786537d62f3e9ffb67e",
+  "manifest" : "datasets/china/releases/gd1-9b58378756ffec9923a9f86b/manifest.json",
+  "manifestSha256" : "e2a26a09deade31d3bf237d64ed9c95f635093dbf7978704bde4b8bd3f0784ab",
   "region" : "china",
-  "releaseId" : "gd1-600f769e2771e443af183c6b",
+  "releaseId" : "gd1-9b58378756ffec9923a9f86b",
   "schemaVersion" : 1
 }
