@@ -1,8 +1,10 @@
 {
   "schemaVersion": 1,
   "region": "china",
-  "status": "AWAITING_VERIFIED_SOURCE",
-  "reason": "No independent China PublicExport endpoint or China client structured export has been supplied.",
+  "status": "LOCAL_CLIENT_SOURCE_VERIFIED",
+  "reason": "Read-only China client cache extraction is available; no China PublicExport exists. See latest.json and the release coverage report for published scope and gaps.",
+  "sourceKind": "LOCAL_CLIENT_STRUCTURED_EXPORT",
+  "publicExportAvailable": false,
   "crossRegionFallback": false,
   "internationalChineseIsChinaData": false
 }

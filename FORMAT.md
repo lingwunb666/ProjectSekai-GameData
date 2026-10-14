@@ -31,6 +31,14 @@ PublicExport 的清单是采集时读取的索引，不应以本机游戏 EXE �
 
 相同值的重复 JSON 属性会合并并写入质量报告；值不同的重复属性拒绝采集。官方字符串中的原始换行规范化为合法 JSON 转义，不改变文字含义。所有原始文件的哈希记录在 `sources`。
 
+## 本地客户端事实
+
+能力 `client-resource-facts-v1` 表示只读解析 Packages/Languages 后的白名单事实，不是 PublicExport 格式或完整战斗模型。`exports/en|zh/ExportClientItems.json` 的 `sections.ClientItems` 包含物品和继承链；`ExportClientLocalization.json` 仅包含被引用的文本标签。`exports/neutral/ExportClientResources.json` 的 `ownFacts` 保留字段路径与原始数值/枚举，父级另存，不合并数组或填充原生默认值。
+
+`ExportClientCoverage.json` 和 `quality.clientCoverage` 给出具体缺口。未知类别、缺失语言保留 null，不能解释为默认手枪或回退到另一区域。缓存可能含隐藏/未开放物品，不能把清单作为游戏可获取列表。`completeResourceChain` 只说明资源父链可解析，不表示所有脚本、原生默认值与战斗行为已经实现。
+
+`manifest.clientExtraction` 保存 TOC、压缩资源、解压资源哈希和解码计数。`clientBuild=packages-sha256-...` 是资源内容身份，不是游戏面板版本号。客户端来源各自独立，即使资源 ID 相同也不得跨区域覆盖。
+
 ## 已审核补充
 
 `reviewed/*.json` 包含 `schemaVersion`、`region`、`provenance`、`data`。这是有边界的资源事实或规则，不是原程序文件或研究数据库。补充不会覆盖 `exports`，消费者必须检查来源版本和规则适用条件。
