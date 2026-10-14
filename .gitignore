@@ -1,0 +1,12 @@
+.pending-*/
+*.tmp
+.env
+.env.*
+*.exe
+*.dll
+*.i64
+*.idb
+*.cache
+*.key
+*.pem
+node_modules/
