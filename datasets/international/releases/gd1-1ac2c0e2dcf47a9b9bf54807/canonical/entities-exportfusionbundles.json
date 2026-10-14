@@ -1,0 +1,1792 @@
+{
+  "entities" : [ {
+    "id" : "/Lotus/Upgrades/Mods/FusionBundles/AlertFusionBundleLarge",
+    "key" : "ExportFusionBundles|/Lotus/Upgrades/Mods/FusionBundles/AlertFusionBundleLarge",
+    "names" : {
+      "en" : null,
+      "zh" : null
+    },
+    "provenance" : [ {
+      "index" : 9,
+      "locale" : "en",
+      "path" : "exports/en/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "1b19851074d32e43bb65b419ba2d4922bc4f7ef638432ccfe5007c98ce46b9be"
+    }, {
+      "index" : 9,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "52473bbe8bcba3293b5f83d9fe7c10ba98ce6239317b04c83735cd351f6d470d"
+    } ],
+    "section" : "ExportFusionBundles",
+    "variants" : {
+      "en" : {
+        "codexSecret" : false,
+        "description" : "Consumed in the fusion process to power up existing Mods.",
+        "fusionPoints" : 150,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/AlertFusionBundleLarge"
+      },
+      "zh" : {
+        "codexSecret" : false,
+        "description" : "在融铸时使用以增强你的 Mod。",
+        "fusionPoints" : 150,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/AlertFusionBundleLarge"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Upgrades/Mods/FusionBundles/AlertFusionBundleMedium",
+    "key" : "ExportFusionBundles|/Lotus/Upgrades/Mods/FusionBundles/AlertFusionBundleMedium",
+    "names" : {
+      "en" : null,
+      "zh" : null
+    },
+    "provenance" : [ {
+      "index" : 10,
+      "locale" : "en",
+      "path" : "exports/en/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "1b19851074d32e43bb65b419ba2d4922bc4f7ef638432ccfe5007c98ce46b9be"
+    }, {
+      "index" : 10,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "52473bbe8bcba3293b5f83d9fe7c10ba98ce6239317b04c83735cd351f6d470d"
+    } ],
+    "section" : "ExportFusionBundles",
+    "variants" : {
+      "en" : {
+        "codexSecret" : false,
+        "description" : "Consumed in the fusion process to power up existing Mods.",
+        "fusionPoints" : 100,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/AlertFusionBundleMedium"
+      },
+      "zh" : {
+        "codexSecret" : false,
+        "description" : "在融铸时使用以增强你的 Mod。",
+        "fusionPoints" : 100,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/AlertFusionBundleMedium"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Upgrades/Mods/FusionBundles/AlertFusionBundleSmall",
+    "key" : "ExportFusionBundles|/Lotus/Upgrades/Mods/FusionBundles/AlertFusionBundleSmall",
+    "names" : {
+      "en" : null,
+      "zh" : null
+    },
+    "provenance" : [ {
+      "index" : 11,
+      "locale" : "en",
+      "path" : "exports/en/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "1b19851074d32e43bb65b419ba2d4922bc4f7ef638432ccfe5007c98ce46b9be"
+    }, {
+      "index" : 11,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "52473bbe8bcba3293b5f83d9fe7c10ba98ce6239317b04c83735cd351f6d470d"
+    } ],
+    "section" : "ExportFusionBundles",
+    "variants" : {
+      "en" : {
+        "codexSecret" : false,
+        "description" : "Consumed in the fusion process to power up existing Mods.",
+        "fusionPoints" : 80,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/AlertFusionBundleSmall"
+      },
+      "zh" : {
+        "codexSecret" : false,
+        "description" : "在融铸时使用以增强你的 Mod。",
+        "fusionPoints" : 80,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/AlertFusionBundleSmall"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Upgrades/Mods/FusionBundles/AlertRewardFusionBundle",
+    "key" : "ExportFusionBundles|/Lotus/Upgrades/Mods/FusionBundles/AlertRewardFusionBundle",
+    "names" : {
+      "en" : null,
+      "zh" : null
+    },
+    "provenance" : [ {
+      "index" : 12,
+      "locale" : "en",
+      "path" : "exports/en/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "1b19851074d32e43bb65b419ba2d4922bc4f7ef638432ccfe5007c98ce46b9be"
+    }, {
+      "index" : 12,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "52473bbe8bcba3293b5f83d9fe7c10ba98ce6239317b04c83735cd351f6d470d"
+    } ],
+    "section" : "ExportFusionBundles",
+    "variants" : {
+      "en" : {
+        "codexSecret" : false,
+        "description" : "Consumed in the fusion process to power up existing Mods.",
+        "fusionPoints" : 235,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/AlertRewardFusionBundle"
+      },
+      "zh" : {
+        "codexSecret" : false,
+        "description" : "在融铸时使用以增强你的 Mod。",
+        "fusionPoints" : 235,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/AlertRewardFusionBundle"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Upgrades/Mods/FusionBundles/CetusTierAEndoCommon",
+    "key" : "ExportFusionBundles|/Lotus/Upgrades/Mods/FusionBundles/CetusTierAEndoCommon",
+    "names" : {
+      "en" : null,
+      "zh" : null
+    },
+    "provenance" : [ {
+      "index" : 13,
+      "locale" : "en",
+      "path" : "exports/en/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "1b19851074d32e43bb65b419ba2d4922bc4f7ef638432ccfe5007c98ce46b9be"
+    }, {
+      "index" : 13,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "52473bbe8bcba3293b5f83d9fe7c10ba98ce6239317b04c83735cd351f6d470d"
+    } ],
+    "section" : "ExportFusionBundles",
+    "variants" : {
+      "en" : {
+        "codexSecret" : false,
+        "description" : "Consumed in the fusion process to power up existing Mods.",
+        "fusionPoints" : 15,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/CetusTierAEndoCommon"
+      },
+      "zh" : {
+        "codexSecret" : false,
+        "description" : "在融铸时使用以增强你的 Mod。",
+        "fusionPoints" : 15,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/CetusTierAEndoCommon"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Upgrades/Mods/FusionBundles/CetusTierAEndoUncommon",
+    "key" : "ExportFusionBundles|/Lotus/Upgrades/Mods/FusionBundles/CetusTierAEndoUncommon",
+    "names" : {
+      "en" : null,
+      "zh" : null
+    },
+    "provenance" : [ {
+      "index" : 14,
+      "locale" : "en",
+      "path" : "exports/en/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "1b19851074d32e43bb65b419ba2d4922bc4f7ef638432ccfe5007c98ce46b9be"
+    }, {
+      "index" : 14,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "52473bbe8bcba3293b5f83d9fe7c10ba98ce6239317b04c83735cd351f6d470d"
+    } ],
+    "section" : "ExportFusionBundles",
+    "variants" : {
+      "en" : {
+        "codexSecret" : false,
+        "description" : "Consumed in the fusion process to power up existing Mods.",
+        "fusionPoints" : 50,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/CetusTierAEndoUncommon"
+      },
+      "zh" : {
+        "codexSecret" : false,
+        "description" : "在融铸时使用以增强你的 Mod。",
+        "fusionPoints" : 50,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/CetusTierAEndoUncommon"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Upgrades/Mods/FusionBundles/CetusTierBEndoCommon",
+    "key" : "ExportFusionBundles|/Lotus/Upgrades/Mods/FusionBundles/CetusTierBEndoCommon",
+    "names" : {
+      "en" : null,
+      "zh" : null
+    },
+    "provenance" : [ {
+      "index" : 15,
+      "locale" : "en",
+      "path" : "exports/en/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "1b19851074d32e43bb65b419ba2d4922bc4f7ef638432ccfe5007c98ce46b9be"
+    }, {
+      "index" : 15,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "52473bbe8bcba3293b5f83d9fe7c10ba98ce6239317b04c83735cd351f6d470d"
+    } ],
+    "section" : "ExportFusionBundles",
+    "variants" : {
+      "en" : {
+        "codexSecret" : false,
+        "description" : "Consumed in the fusion process to power up existing Mods.",
+        "fusionPoints" : 15,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/CetusTierBEndoCommon"
+      },
+      "zh" : {
+        "codexSecret" : false,
+        "description" : "在融铸时使用以增强你的 Mod。",
+        "fusionPoints" : 15,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/CetusTierBEndoCommon"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Upgrades/Mods/FusionBundles/CetusTierBEndoUncommon",
+    "key" : "ExportFusionBundles|/Lotus/Upgrades/Mods/FusionBundles/CetusTierBEndoUncommon",
+    "names" : {
+      "en" : null,
+      "zh" : null
+    },
+    "provenance" : [ {
+      "index" : 16,
+      "locale" : "en",
+      "path" : "exports/en/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "1b19851074d32e43bb65b419ba2d4922bc4f7ef638432ccfe5007c98ce46b9be"
+    }, {
+      "index" : 16,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "52473bbe8bcba3293b5f83d9fe7c10ba98ce6239317b04c83735cd351f6d470d"
+    } ],
+    "section" : "ExportFusionBundles",
+    "variants" : {
+      "en" : {
+        "codexSecret" : false,
+        "description" : "Consumed in the fusion process to power up existing Mods.",
+        "fusionPoints" : 50,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/CetusTierBEndoUncommon"
+      },
+      "zh" : {
+        "codexSecret" : false,
+        "description" : "在融铸时使用以增强你的 Mod。",
+        "fusionPoints" : 50,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/CetusTierBEndoUncommon"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Upgrades/Mods/FusionBundles/CetusTierCEndoUncommon",
+    "key" : "ExportFusionBundles|/Lotus/Upgrades/Mods/FusionBundles/CetusTierCEndoUncommon",
+    "names" : {
+      "en" : null,
+      "zh" : null
+    },
+    "provenance" : [ {
+      "index" : 17,
+      "locale" : "en",
+      "path" : "exports/en/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "1b19851074d32e43bb65b419ba2d4922bc4f7ef638432ccfe5007c98ce46b9be"
+    }, {
+      "index" : 17,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "52473bbe8bcba3293b5f83d9fe7c10ba98ce6239317b04c83735cd351f6d470d"
+    } ],
+    "section" : "ExportFusionBundles",
+    "variants" : {
+      "en" : {
+        "codexSecret" : false,
+        "description" : "Consumed in the fusion process to power up existing Mods.",
+        "fusionPoints" : 50,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/CetusTierCEndoUncommon"
+      },
+      "zh" : {
+        "codexSecret" : false,
+        "description" : "在融铸时使用以增强你的 Mod。",
+        "fusionPoints" : 50,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/CetusTierCEndoUncommon"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Upgrades/Mods/FusionBundles/CetusTierDEndoUncommon",
+    "key" : "ExportFusionBundles|/Lotus/Upgrades/Mods/FusionBundles/CetusTierDEndoUncommon",
+    "names" : {
+      "en" : null,
+      "zh" : null
+    },
+    "provenance" : [ {
+      "index" : 18,
+      "locale" : "en",
+      "path" : "exports/en/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "1b19851074d32e43bb65b419ba2d4922bc4f7ef638432ccfe5007c98ce46b9be"
+    }, {
+      "index" : 18,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "52473bbe8bcba3293b5f83d9fe7c10ba98ce6239317b04c83735cd351f6d470d"
+    } ],
+    "section" : "ExportFusionBundles",
+    "variants" : {
+      "en" : {
+        "codexSecret" : false,
+        "description" : "Consumed in the fusion process to power up existing Mods.",
+        "fusionPoints" : 50,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/CetusTierDEndoUncommon"
+      },
+      "zh" : {
+        "codexSecret" : false,
+        "description" : "在融铸时使用以增强你的 Mod。",
+        "fusionPoints" : 50,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/CetusTierDEndoUncommon"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Upgrades/Mods/FusionBundles/CircuitRepeatableNormalFusionBundle",
+    "key" : "ExportFusionBundles|/Lotus/Upgrades/Mods/FusionBundles/CircuitRepeatableNormalFusionBundle",
+    "names" : {
+      "en" : null,
+      "zh" : null
+    },
+    "provenance" : [ {
+      "index" : 19,
+      "locale" : "en",
+      "path" : "exports/en/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "1b19851074d32e43bb65b419ba2d4922bc4f7ef638432ccfe5007c98ce46b9be"
+    }, {
+      "index" : 19,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "52473bbe8bcba3293b5f83d9fe7c10ba98ce6239317b04c83735cd351f6d470d"
+    } ],
+    "section" : "ExportFusionBundles",
+    "variants" : {
+      "en" : {
+        "codexSecret" : false,
+        "description" : "Consumed in the fusion process to power up existing Mods.",
+        "fusionPoints" : 250,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/CircuitRepeatableNormalFusionBundle"
+      },
+      "zh" : {
+        "codexSecret" : false,
+        "description" : "在融铸时使用以增强你的 Mod。",
+        "fusionPoints" : 250,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/CircuitRepeatableNormalFusionBundle"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Upgrades/Mods/FusionBundles/CircuitRepeatableSteelPathFusionBundle",
+    "key" : "ExportFusionBundles|/Lotus/Upgrades/Mods/FusionBundles/CircuitRepeatableSteelPathFusionBundle",
+    "names" : {
+      "en" : null,
+      "zh" : null
+    },
+    "provenance" : [ {
+      "index" : 20,
+      "locale" : "en",
+      "path" : "exports/en/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "1b19851074d32e43bb65b419ba2d4922bc4f7ef638432ccfe5007c98ce46b9be"
+    }, {
+      "index" : 20,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "52473bbe8bcba3293b5f83d9fe7c10ba98ce6239317b04c83735cd351f6d470d"
+    } ],
+    "section" : "ExportFusionBundles",
+    "variants" : {
+      "en" : {
+        "codexSecret" : false,
+        "description" : "Consumed in the fusion process to power up existing Mods.",
+        "fusionPoints" : 1000,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/CircuitRepeatableSteelPathFusionBundle"
+      },
+      "zh" : {
+        "codexSecret" : false,
+        "description" : "在融铸时使用以增强你的 Mod。",
+        "fusionPoints" : 1000,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/CircuitRepeatableSteelPathFusionBundle"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Upgrades/Mods/FusionBundles/CircuitSilverNormalFusionBundle",
+    "key" : "ExportFusionBundles|/Lotus/Upgrades/Mods/FusionBundles/CircuitSilverNormalFusionBundle",
+    "names" : {
+      "en" : null,
+      "zh" : null
+    },
+    "provenance" : [ {
+      "index" : 21,
+      "locale" : "en",
+      "path" : "exports/en/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "1b19851074d32e43bb65b419ba2d4922bc4f7ef638432ccfe5007c98ce46b9be"
+    }, {
+      "index" : 21,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "52473bbe8bcba3293b5f83d9fe7c10ba98ce6239317b04c83735cd351f6d470d"
+    } ],
+    "section" : "ExportFusionBundles",
+    "variants" : {
+      "en" : {
+        "codexSecret" : false,
+        "description" : "Consumed in the fusion process to power up existing Mods.",
+        "fusionPoints" : 500,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/CircuitSilverNormalFusionBundle"
+      },
+      "zh" : {
+        "codexSecret" : false,
+        "description" : "在融铸时使用以增强你的 Mod。",
+        "fusionPoints" : 500,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/CircuitSilverNormalFusionBundle"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Upgrades/Mods/FusionBundles/CircuitSilverSteelPathFusionBundle",
+    "key" : "ExportFusionBundles|/Lotus/Upgrades/Mods/FusionBundles/CircuitSilverSteelPathFusionBundle",
+    "names" : {
+      "en" : null,
+      "zh" : null
+    },
+    "provenance" : [ {
+      "index" : 22,
+      "locale" : "en",
+      "path" : "exports/en/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "1b19851074d32e43bb65b419ba2d4922bc4f7ef638432ccfe5007c98ce46b9be"
+    }, {
+      "index" : 22,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "52473bbe8bcba3293b5f83d9fe7c10ba98ce6239317b04c83735cd351f6d470d"
+    } ],
+    "section" : "ExportFusionBundles",
+    "variants" : {
+      "en" : {
+        "codexSecret" : false,
+        "description" : "Consumed in the fusion process to power up existing Mods.",
+        "fusionPoints" : 6000,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/CircuitSilverSteelPathFusionBundle"
+      },
+      "zh" : {
+        "codexSecret" : false,
+        "description" : "在融铸时使用以增强你的 Mod。",
+        "fusionPoints" : 6000,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/CircuitSilverSteelPathFusionBundle"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Upgrades/Mods/FusionBundles/CommonFusionBundle",
+    "key" : "ExportFusionBundles|/Lotus/Upgrades/Mods/FusionBundles/CommonFusionBundle",
+    "names" : {
+      "en" : null,
+      "zh" : null
+    },
+    "provenance" : [ {
+      "index" : 23,
+      "locale" : "en",
+      "path" : "exports/en/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "1b19851074d32e43bb65b419ba2d4922bc4f7ef638432ccfe5007c98ce46b9be"
+    }, {
+      "index" : 23,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "52473bbe8bcba3293b5f83d9fe7c10ba98ce6239317b04c83735cd351f6d470d"
+    } ],
+    "section" : "ExportFusionBundles",
+    "variants" : {
+      "en" : {
+        "codexSecret" : false,
+        "description" : "Consumed in the fusion process to power up existing Mods.",
+        "fusionPoints" : 15,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/CommonFusionBundle"
+      },
+      "zh" : {
+        "codexSecret" : false,
+        "description" : "在融铸时使用以增强你的 Mod。",
+        "fusionPoints" : 15,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/CommonFusionBundle"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Upgrades/Mods/FusionBundles/CrewShipFusionBundles/DeepSpaceCommonAvionicsEndo",
+    "key" : "ExportFusionBundles|/Lotus/Upgrades/Mods/FusionBundles/CrewShipFusionBundles/DeepSpaceCommonAvionicsEndo",
+    "names" : {
+      "en" : null,
+      "zh" : null
+    },
+    "provenance" : [ {
+      "index" : 0,
+      "locale" : "en",
+      "path" : "exports/en/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "1b19851074d32e43bb65b419ba2d4922bc4f7ef638432ccfe5007c98ce46b9be"
+    }, {
+      "index" : 0,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "52473bbe8bcba3293b5f83d9fe7c10ba98ce6239317b04c83735cd351f6d470d"
+    } ],
+    "section" : "ExportFusionBundles",
+    "variants" : {
+      "en" : {
+        "codexSecret" : false,
+        "description" : "Consumed to upgrade the Railjack Grid and Avionics.",
+        "fusionPoints" : 150,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/CrewShipFusionBundles/DeepSpaceCommonAvionicsEndo"
+      },
+      "zh" : {
+        "codexSecret" : false,
+        "description" : "用来升级航道星舰区格和航电设备",
+        "fusionPoints" : 150,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/CrewShipFusionBundles/DeepSpaceCommonAvionicsEndo"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Upgrades/Mods/FusionBundles/CrewShipFusionBundles/DeepSpaceUncommonAvionicsEndo",
+    "key" : "ExportFusionBundles|/Lotus/Upgrades/Mods/FusionBundles/CrewShipFusionBundles/DeepSpaceUncommonAvionicsEndo",
+    "names" : {
+      "en" : null,
+      "zh" : null
+    },
+    "provenance" : [ {
+      "index" : 1,
+      "locale" : "en",
+      "path" : "exports/en/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "1b19851074d32e43bb65b419ba2d4922bc4f7ef638432ccfe5007c98ce46b9be"
+    }, {
+      "index" : 1,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "52473bbe8bcba3293b5f83d9fe7c10ba98ce6239317b04c83735cd351f6d470d"
+    } ],
+    "section" : "ExportFusionBundles",
+    "variants" : {
+      "en" : {
+        "codexSecret" : false,
+        "description" : "Consumed to upgrade the Railjack Grid and Avionics.",
+        "fusionPoints" : 300,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/CrewShipFusionBundles/DeepSpaceUncommonAvionicsEndo"
+      },
+      "zh" : {
+        "codexSecret" : false,
+        "description" : "用来升级航道星舰区格和航电设备",
+        "fusionPoints" : 300,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/CrewShipFusionBundles/DeepSpaceUncommonAvionicsEndo"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Upgrades/Mods/FusionBundles/CrewShipFusionBundles/EarthCommonAvionicsEndo",
+    "key" : "ExportFusionBundles|/Lotus/Upgrades/Mods/FusionBundles/CrewShipFusionBundles/EarthCommonAvionicsEndo",
+    "names" : {
+      "en" : null,
+      "zh" : null
+    },
+    "provenance" : [ {
+      "index" : 2,
+      "locale" : "en",
+      "path" : "exports/en/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "1b19851074d32e43bb65b419ba2d4922bc4f7ef638432ccfe5007c98ce46b9be"
+    }, {
+      "index" : 2,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "52473bbe8bcba3293b5f83d9fe7c10ba98ce6239317b04c83735cd351f6d470d"
+    } ],
+    "section" : "ExportFusionBundles",
+    "variants" : {
+      "en" : {
+        "codexSecret" : false,
+        "description" : "Consumed to upgrade the Railjack Grid and Avionics.",
+        "fusionPoints" : 50,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/CrewShipFusionBundles/EarthCommonAvionicsEndo"
+      },
+      "zh" : {
+        "codexSecret" : false,
+        "description" : "用来升级航道星舰区格和航电设备",
+        "fusionPoints" : 50,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/CrewShipFusionBundles/EarthCommonAvionicsEndo"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Upgrades/Mods/FusionBundles/CrewShipFusionBundles/EarthUncommonAvionicsEndo",
+    "key" : "ExportFusionBundles|/Lotus/Upgrades/Mods/FusionBundles/CrewShipFusionBundles/EarthUncommonAvionicsEndo",
+    "names" : {
+      "en" : null,
+      "zh" : null
+    },
+    "provenance" : [ {
+      "index" : 3,
+      "locale" : "en",
+      "path" : "exports/en/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "1b19851074d32e43bb65b419ba2d4922bc4f7ef638432ccfe5007c98ce46b9be"
+    }, {
+      "index" : 3,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "52473bbe8bcba3293b5f83d9fe7c10ba98ce6239317b04c83735cd351f6d470d"
+    } ],
+    "section" : "ExportFusionBundles",
+    "variants" : {
+      "en" : {
+        "codexSecret" : false,
+        "description" : "Consumed to upgrade the Railjack Grid and Avionics.",
+        "fusionPoints" : 100,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/CrewShipFusionBundles/EarthUncommonAvionicsEndo"
+      },
+      "zh" : {
+        "codexSecret" : false,
+        "description" : "用来升级航道星舰区格和航电设备",
+        "fusionPoints" : 100,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/CrewShipFusionBundles/EarthUncommonAvionicsEndo"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Upgrades/Mods/FusionBundles/CrewShipFusionBundles/MarketTier1CrewShipFusionBundle",
+    "key" : "ExportFusionBundles|/Lotus/Upgrades/Mods/FusionBundles/CrewShipFusionBundles/MarketTier1CrewShipFusionBundle",
+    "names" : {
+      "en" : null,
+      "zh" : null
+    },
+    "provenance" : [ {
+      "index" : 4,
+      "locale" : "en",
+      "path" : "exports/en/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "1b19851074d32e43bb65b419ba2d4922bc4f7ef638432ccfe5007c98ce46b9be"
+    }, {
+      "index" : 4,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "52473bbe8bcba3293b5f83d9fe7c10ba98ce6239317b04c83735cd351f6d470d"
+    } ],
+    "section" : "ExportFusionBundles",
+    "variants" : {
+      "en" : {
+        "codexSecret" : false,
+        "description" : "Consumed to upgrade the Railjack Grid and Avionics.",
+        "fusionPoints" : 100,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/CrewShipFusionBundles/MarketTier1CrewShipFusionBundle"
+      },
+      "zh" : {
+        "codexSecret" : false,
+        "description" : "用来升级航道星舰区格和航电设备",
+        "fusionPoints" : 100,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/CrewShipFusionBundles/MarketTier1CrewShipFusionBundle"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Upgrades/Mods/FusionBundles/CrewShipFusionBundles/MarketTier2CrewShipFusionBundle",
+    "key" : "ExportFusionBundles|/Lotus/Upgrades/Mods/FusionBundles/CrewShipFusionBundles/MarketTier2CrewShipFusionBundle",
+    "names" : {
+      "en" : null,
+      "zh" : null
+    },
+    "provenance" : [ {
+      "index" : 5,
+      "locale" : "en",
+      "path" : "exports/en/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "1b19851074d32e43bb65b419ba2d4922bc4f7ef638432ccfe5007c98ce46b9be"
+    }, {
+      "index" : 5,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "52473bbe8bcba3293b5f83d9fe7c10ba98ce6239317b04c83735cd351f6d470d"
+    } ],
+    "section" : "ExportFusionBundles",
+    "variants" : {
+      "en" : {
+        "codexSecret" : false,
+        "description" : "Consumed to upgrade the Railjack Grid and Avionics.",
+        "fusionPoints" : 400,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/CrewShipFusionBundles/MarketTier2CrewShipFusionBundle"
+      },
+      "zh" : {
+        "codexSecret" : false,
+        "description" : "用来升级航道星舰区格和航电设备",
+        "fusionPoints" : 400,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/CrewShipFusionBundles/MarketTier2CrewShipFusionBundle"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Upgrades/Mods/FusionBundles/CrewShipFusionBundles/MarketTier3CrewShipFusionBundle",
+    "key" : "ExportFusionBundles|/Lotus/Upgrades/Mods/FusionBundles/CrewShipFusionBundles/MarketTier3CrewShipFusionBundle",
+    "names" : {
+      "en" : null,
+      "zh" : null
+    },
+    "provenance" : [ {
+      "index" : 6,
+      "locale" : "en",
+      "path" : "exports/en/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "1b19851074d32e43bb65b419ba2d4922bc4f7ef638432ccfe5007c98ce46b9be"
+    }, {
+      "index" : 6,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "52473bbe8bcba3293b5f83d9fe7c10ba98ce6239317b04c83735cd351f6d470d"
+    } ],
+    "section" : "ExportFusionBundles",
+    "variants" : {
+      "en" : {
+        "codexSecret" : false,
+        "description" : "Consumed to upgrade the Railjack Grid and Avionics.",
+        "fusionPoints" : 1000,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/CrewShipFusionBundles/MarketTier3CrewShipFusionBundle"
+      },
+      "zh" : {
+        "codexSecret" : false,
+        "description" : "用来升级航道星舰区格和航电设备",
+        "fusionPoints" : 1000,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/CrewShipFusionBundles/MarketTier3CrewShipFusionBundle"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Upgrades/Mods/FusionBundles/CrewShipFusionBundles/SaturnCommonAvionicsEndo",
+    "key" : "ExportFusionBundles|/Lotus/Upgrades/Mods/FusionBundles/CrewShipFusionBundles/SaturnCommonAvionicsEndo",
+    "names" : {
+      "en" : null,
+      "zh" : null
+    },
+    "provenance" : [ {
+      "index" : 7,
+      "locale" : "en",
+      "path" : "exports/en/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "1b19851074d32e43bb65b419ba2d4922bc4f7ef638432ccfe5007c98ce46b9be"
+    }, {
+      "index" : 7,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "52473bbe8bcba3293b5f83d9fe7c10ba98ce6239317b04c83735cd351f6d470d"
+    } ],
+    "section" : "ExportFusionBundles",
+    "variants" : {
+      "en" : {
+        "codexSecret" : false,
+        "description" : "Consumed to upgrade the Railjack Grid and Avionics.",
+        "fusionPoints" : 100,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/CrewShipFusionBundles/SaturnCommonAvionicsEndo"
+      },
+      "zh" : {
+        "codexSecret" : false,
+        "description" : "用来升级航道星舰区格和航电设备",
+        "fusionPoints" : 100,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/CrewShipFusionBundles/SaturnCommonAvionicsEndo"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Upgrades/Mods/FusionBundles/CrewShipFusionBundles/SaturnUncommonAvionicsEndo",
+    "key" : "ExportFusionBundles|/Lotus/Upgrades/Mods/FusionBundles/CrewShipFusionBundles/SaturnUncommonAvionicsEndo",
+    "names" : {
+      "en" : null,
+      "zh" : null
+    },
+    "provenance" : [ {
+      "index" : 8,
+      "locale" : "en",
+      "path" : "exports/en/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "1b19851074d32e43bb65b419ba2d4922bc4f7ef638432ccfe5007c98ce46b9be"
+    }, {
+      "index" : 8,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "52473bbe8bcba3293b5f83d9fe7c10ba98ce6239317b04c83735cd351f6d470d"
+    } ],
+    "section" : "ExportFusionBundles",
+    "variants" : {
+      "en" : {
+        "codexSecret" : false,
+        "description" : "Consumed to upgrade the Railjack Grid and Avionics.",
+        "fusionPoints" : 200,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/CrewShipFusionBundles/SaturnUncommonAvionicsEndo"
+      },
+      "zh" : {
+        "codexSecret" : false,
+        "description" : "用来升级航道星舰区格和航电设备",
+        "fusionPoints" : 200,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/CrewShipFusionBundles/SaturnUncommonAvionicsEndo"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Upgrades/Mods/FusionBundles/EliteAlertFusionBundleLarge",
+    "key" : "ExportFusionBundles|/Lotus/Upgrades/Mods/FusionBundles/EliteAlertFusionBundleLarge",
+    "names" : {
+      "en" : null,
+      "zh" : null
+    },
+    "provenance" : [ {
+      "index" : 24,
+      "locale" : "en",
+      "path" : "exports/en/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "1b19851074d32e43bb65b419ba2d4922bc4f7ef638432ccfe5007c98ce46b9be"
+    }, {
+      "index" : 24,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "52473bbe8bcba3293b5f83d9fe7c10ba98ce6239317b04c83735cd351f6d470d"
+    } ],
+    "section" : "ExportFusionBundles",
+    "variants" : {
+      "en" : {
+        "codexSecret" : false,
+        "description" : "Consumed in the fusion process to power up existing Mods.",
+        "fusionPoints" : 1500,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/EliteAlertFusionBundleLarge"
+      },
+      "zh" : {
+        "codexSecret" : false,
+        "description" : "在融铸时使用以增强你的 Mod。",
+        "fusionPoints" : 1500,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/EliteAlertFusionBundleLarge"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Upgrades/Mods/FusionBundles/EliteAlertFusionBundleMedium",
+    "key" : "ExportFusionBundles|/Lotus/Upgrades/Mods/FusionBundles/EliteAlertFusionBundleMedium",
+    "names" : {
+      "en" : null,
+      "zh" : null
+    },
+    "provenance" : [ {
+      "index" : 25,
+      "locale" : "en",
+      "path" : "exports/en/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "1b19851074d32e43bb65b419ba2d4922bc4f7ef638432ccfe5007c98ce46b9be"
+    }, {
+      "index" : 25,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "52473bbe8bcba3293b5f83d9fe7c10ba98ce6239317b04c83735cd351f6d470d"
+    } ],
+    "section" : "ExportFusionBundles",
+    "variants" : {
+      "en" : {
+        "codexSecret" : false,
+        "description" : "Consumed in the fusion process to power up existing Mods.",
+        "fusionPoints" : 1200,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/EliteAlertFusionBundleMedium"
+      },
+      "zh" : {
+        "codexSecret" : false,
+        "description" : "在融铸时使用以增强你的 Mod。",
+        "fusionPoints" : 1200,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/EliteAlertFusionBundleMedium"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Upgrades/Mods/FusionBundles/EliteAlertFusionBundleSmall",
+    "key" : "ExportFusionBundles|/Lotus/Upgrades/Mods/FusionBundles/EliteAlertFusionBundleSmall",
+    "names" : {
+      "en" : null,
+      "zh" : null
+    },
+    "provenance" : [ {
+      "index" : 26,
+      "locale" : "en",
+      "path" : "exports/en/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "1b19851074d32e43bb65b419ba2d4922bc4f7ef638432ccfe5007c98ce46b9be"
+    }, {
+      "index" : 26,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "52473bbe8bcba3293b5f83d9fe7c10ba98ce6239317b04c83735cd351f6d470d"
+    } ],
+    "section" : "ExportFusionBundles",
+    "variants" : {
+      "en" : {
+        "codexSecret" : false,
+        "description" : "Consumed in the fusion process to power up existing Mods.",
+        "fusionPoints" : 900,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/EliteAlertFusionBundleSmall"
+      },
+      "zh" : {
+        "codexSecret" : false,
+        "description" : "在融铸时使用以增强你的 Mod。",
+        "fusionPoints" : 900,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/EliteAlertFusionBundleSmall"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Upgrades/Mods/FusionBundles/EndoJackpotBundle",
+    "key" : "ExportFusionBundles|/Lotus/Upgrades/Mods/FusionBundles/EndoJackpotBundle",
+    "names" : {
+      "en" : null,
+      "zh" : null
+    },
+    "provenance" : [ {
+      "index" : 27,
+      "locale" : "en",
+      "path" : "exports/en/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "1b19851074d32e43bb65b419ba2d4922bc4f7ef638432ccfe5007c98ce46b9be"
+    }, {
+      "index" : 27,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "52473bbe8bcba3293b5f83d9fe7c10ba98ce6239317b04c83735cd351f6d470d"
+    } ],
+    "section" : "ExportFusionBundles",
+    "variants" : {
+      "en" : {
+        "codexSecret" : false,
+        "description" : "Consumed in the fusion process to power up existing Mods.",
+        "fusionPoints" : 15000,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/EndoJackpotBundle"
+      },
+      "zh" : {
+        "codexSecret" : false,
+        "description" : "在融铸时使用以增强你的 Mod。",
+        "fusionPoints" : 15000,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/EndoJackpotBundle"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Upgrades/Mods/FusionBundles/EvergreenLoginRewardFusionBundle",
+    "key" : "ExportFusionBundles|/Lotus/Upgrades/Mods/FusionBundles/EvergreenLoginRewardFusionBundle",
+    "names" : {
+      "en" : null,
+      "zh" : null
+    },
+    "provenance" : [ {
+      "index" : 28,
+      "locale" : "en",
+      "path" : "exports/en/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "1b19851074d32e43bb65b419ba2d4922bc4f7ef638432ccfe5007c98ce46b9be"
+    }, {
+      "index" : 28,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "52473bbe8bcba3293b5f83d9fe7c10ba98ce6239317b04c83735cd351f6d470d"
+    } ],
+    "section" : "ExportFusionBundles",
+    "variants" : {
+      "en" : {
+        "codexSecret" : false,
+        "description" : "Consumed in the fusion process to power up existing Mods.",
+        "fusionPoints" : 30000,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/EvergreenLoginRewardFusionBundle"
+      },
+      "zh" : {
+        "codexSecret" : false,
+        "description" : "在融铸时使用以增强你的 Mod。",
+        "fusionPoints" : 30000,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/EvergreenLoginRewardFusionBundle"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Upgrades/Mods/FusionBundles/JunctionRewardNPFusionBundleA",
+    "key" : "ExportFusionBundles|/Lotus/Upgrades/Mods/FusionBundles/JunctionRewardNPFusionBundleA",
+    "names" : {
+      "en" : null,
+      "zh" : null
+    },
+    "provenance" : [ {
+      "index" : 29,
+      "locale" : "en",
+      "path" : "exports/en/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "1b19851074d32e43bb65b419ba2d4922bc4f7ef638432ccfe5007c98ce46b9be"
+    }, {
+      "index" : 29,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "52473bbe8bcba3293b5f83d9fe7c10ba98ce6239317b04c83735cd351f6d470d"
+    } ],
+    "section" : "ExportFusionBundles",
+    "variants" : {
+      "en" : {
+        "codexSecret" : false,
+        "description" : "Consumed in the fusion process to power up existing Mods.",
+        "fusionPoints" : 2500,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/JunctionRewardNPFusionBundleA"
+      },
+      "zh" : {
+        "codexSecret" : false,
+        "description" : "在融铸时使用以增强你的 Mod。",
+        "fusionPoints" : 2500,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/JunctionRewardNPFusionBundleA"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Upgrades/Mods/FusionBundles/JunctionRewardNPFusionBundleB",
+    "key" : "ExportFusionBundles|/Lotus/Upgrades/Mods/FusionBundles/JunctionRewardNPFusionBundleB",
+    "names" : {
+      "en" : null,
+      "zh" : null
+    },
+    "provenance" : [ {
+      "index" : 30,
+      "locale" : "en",
+      "path" : "exports/en/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "1b19851074d32e43bb65b419ba2d4922bc4f7ef638432ccfe5007c98ce46b9be"
+    }, {
+      "index" : 30,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "52473bbe8bcba3293b5f83d9fe7c10ba98ce6239317b04c83735cd351f6d470d"
+    } ],
+    "section" : "ExportFusionBundles",
+    "variants" : {
+      "en" : {
+        "codexSecret" : false,
+        "description" : "Consumed in the fusion process to power up existing Mods.",
+        "fusionPoints" : 750,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/JunctionRewardNPFusionBundleB"
+      },
+      "zh" : {
+        "codexSecret" : false,
+        "description" : "在融铸时使用以增强你的 Mod。",
+        "fusionPoints" : 750,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/JunctionRewardNPFusionBundleB"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Upgrades/Mods/FusionBundles/LoginRewardFusionBundle",
+    "key" : "ExportFusionBundles|/Lotus/Upgrades/Mods/FusionBundles/LoginRewardFusionBundle",
+    "names" : {
+      "en" : null,
+      "zh" : null
+    },
+    "provenance" : [ {
+      "index" : 31,
+      "locale" : "en",
+      "path" : "exports/en/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "1b19851074d32e43bb65b419ba2d4922bc4f7ef638432ccfe5007c98ce46b9be"
+    }, {
+      "index" : 31,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "52473bbe8bcba3293b5f83d9fe7c10ba98ce6239317b04c83735cd351f6d470d"
+    } ],
+    "section" : "ExportFusionBundles",
+    "variants" : {
+      "en" : {
+        "codexSecret" : false,
+        "description" : "Consumed in the fusion process to power up existing Mods.",
+        "fusionPoints" : 1000,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/LoginRewardFusionBundle"
+      },
+      "zh" : {
+        "codexSecret" : false,
+        "description" : "在融铸时使用以增强你的 Mod。",
+        "fusionPoints" : 1000,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/LoginRewardFusionBundle"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Upgrades/Mods/FusionBundles/MPVDualPackFusionBundle",
+    "key" : "ExportFusionBundles|/Lotus/Upgrades/Mods/FusionBundles/MPVDualPackFusionBundle",
+    "names" : {
+      "en" : null,
+      "zh" : null
+    },
+    "provenance" : [ {
+      "index" : 32,
+      "locale" : "en",
+      "path" : "exports/en/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "1b19851074d32e43bb65b419ba2d4922bc4f7ef638432ccfe5007c98ce46b9be"
+    }, {
+      "index" : 32,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "52473bbe8bcba3293b5f83d9fe7c10ba98ce6239317b04c83735cd351f6d470d"
+    } ],
+    "section" : "ExportFusionBundles",
+    "variants" : {
+      "en" : {
+        "codexSecret" : false,
+        "description" : "Consumed in the fusion process to power up existing Mods.",
+        "fusionPoints" : 50000,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/MPVDualPackFusionBundle"
+      },
+      "zh" : {
+        "codexSecret" : false,
+        "description" : "在融铸时使用以增强你的 Mod。",
+        "fusionPoints" : 50000,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/MPVDualPackFusionBundle"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Upgrades/Mods/FusionBundles/MPVSinglePackFusionBundle",
+    "key" : "ExportFusionBundles|/Lotus/Upgrades/Mods/FusionBundles/MPVSinglePackFusionBundle",
+    "names" : {
+      "en" : null,
+      "zh" : null
+    },
+    "provenance" : [ {
+      "index" : 33,
+      "locale" : "en",
+      "path" : "exports/en/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "1b19851074d32e43bb65b419ba2d4922bc4f7ef638432ccfe5007c98ce46b9be"
+    }, {
+      "index" : 33,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "52473bbe8bcba3293b5f83d9fe7c10ba98ce6239317b04c83735cd351f6d470d"
+    } ],
+    "section" : "ExportFusionBundles",
+    "variants" : {
+      "en" : {
+        "codexSecret" : false,
+        "description" : "Consumed in the fusion process to power up existing Mods.",
+        "fusionPoints" : 10000,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/MPVSinglePackFusionBundle"
+      },
+      "zh" : {
+        "codexSecret" : false,
+        "description" : "在融铸时使用以增强你的 Mod。",
+        "fusionPoints" : 10000,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/MPVSinglePackFusionBundle"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Upgrades/Mods/FusionBundles/MarketTier1FusionBundle",
+    "key" : "ExportFusionBundles|/Lotus/Upgrades/Mods/FusionBundles/MarketTier1FusionBundle",
+    "names" : {
+      "en" : null,
+      "zh" : null
+    },
+    "provenance" : [ {
+      "index" : 34,
+      "locale" : "en",
+      "path" : "exports/en/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "1b19851074d32e43bb65b419ba2d4922bc4f7ef638432ccfe5007c98ce46b9be"
+    }, {
+      "index" : 34,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "52473bbe8bcba3293b5f83d9fe7c10ba98ce6239317b04c83735cd351f6d470d"
+    } ],
+    "section" : "ExportFusionBundles",
+    "variants" : {
+      "en" : {
+        "codexSecret" : false,
+        "description" : "Consumed in the fusion process to power up existing Mods.",
+        "fusionPoints" : 100,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/MarketTier1FusionBundle"
+      },
+      "zh" : {
+        "codexSecret" : false,
+        "description" : "在融铸时使用以增强你的 Mod。",
+        "fusionPoints" : 100,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/MarketTier1FusionBundle"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Upgrades/Mods/FusionBundles/MarketTier2FusionBundle",
+    "key" : "ExportFusionBundles|/Lotus/Upgrades/Mods/FusionBundles/MarketTier2FusionBundle",
+    "names" : {
+      "en" : null,
+      "zh" : null
+    },
+    "provenance" : [ {
+      "index" : 35,
+      "locale" : "en",
+      "path" : "exports/en/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "1b19851074d32e43bb65b419ba2d4922bc4f7ef638432ccfe5007c98ce46b9be"
+    }, {
+      "index" : 35,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "52473bbe8bcba3293b5f83d9fe7c10ba98ce6239317b04c83735cd351f6d470d"
+    } ],
+    "section" : "ExportFusionBundles",
+    "variants" : {
+      "en" : {
+        "codexSecret" : false,
+        "description" : "Consumed in the fusion process to power up existing Mods.",
+        "fusionPoints" : 400,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/MarketTier2FusionBundle"
+      },
+      "zh" : {
+        "codexSecret" : false,
+        "description" : "在融铸时使用以增强你的 Mod。",
+        "fusionPoints" : 400,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/MarketTier2FusionBundle"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Upgrades/Mods/FusionBundles/MarketTier3FusionBundle",
+    "key" : "ExportFusionBundles|/Lotus/Upgrades/Mods/FusionBundles/MarketTier3FusionBundle",
+    "names" : {
+      "en" : null,
+      "zh" : null
+    },
+    "provenance" : [ {
+      "index" : 36,
+      "locale" : "en",
+      "path" : "exports/en/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "1b19851074d32e43bb65b419ba2d4922bc4f7ef638432ccfe5007c98ce46b9be"
+    }, {
+      "index" : 36,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "52473bbe8bcba3293b5f83d9fe7c10ba98ce6239317b04c83735cd351f6d470d"
+    } ],
+    "section" : "ExportFusionBundles",
+    "variants" : {
+      "en" : {
+        "codexSecret" : false,
+        "description" : "Consumed in the fusion process to power up existing Mods.",
+        "fusionPoints" : 1000,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/MarketTier3FusionBundle"
+      },
+      "zh" : {
+        "codexSecret" : false,
+        "description" : "在融铸时使用以增强你的 Mod。",
+        "fusionPoints" : 1000,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/MarketTier3FusionBundle"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Upgrades/Mods/FusionBundles/NightwatchFusionBundle",
+    "key" : "ExportFusionBundles|/Lotus/Upgrades/Mods/FusionBundles/NightwatchFusionBundle",
+    "names" : {
+      "en" : null,
+      "zh" : null
+    },
+    "provenance" : [ {
+      "index" : 37,
+      "locale" : "en",
+      "path" : "exports/en/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "1b19851074d32e43bb65b419ba2d4922bc4f7ef638432ccfe5007c98ce46b9be"
+    }, {
+      "index" : 37,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "52473bbe8bcba3293b5f83d9fe7c10ba98ce6239317b04c83735cd351f6d470d"
+    } ],
+    "section" : "ExportFusionBundles",
+    "variants" : {
+      "en" : {
+        "codexSecret" : false,
+        "description" : "Consumed in the fusion process to power up existing Mods.",
+        "fusionPoints" : 1500,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/NightwatchFusionBundle"
+      },
+      "zh" : {
+        "codexSecret" : false,
+        "description" : "在融铸时使用以增强你的 Mod。",
+        "fusionPoints" : 1500,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/NightwatchFusionBundle"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Upgrades/Mods/FusionBundles/PurgatoryBlackTokenFusionBundle",
+    "key" : "ExportFusionBundles|/Lotus/Upgrades/Mods/FusionBundles/PurgatoryBlackTokenFusionBundle",
+    "names" : {
+      "en" : null,
+      "zh" : null
+    },
+    "provenance" : [ {
+      "index" : 38,
+      "locale" : "en",
+      "path" : "exports/en/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "1b19851074d32e43bb65b419ba2d4922bc4f7ef638432ccfe5007c98ce46b9be"
+    }, {
+      "index" : 38,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "52473bbe8bcba3293b5f83d9fe7c10ba98ce6239317b04c83735cd351f6d470d"
+    } ],
+    "section" : "ExportFusionBundles",
+    "variants" : {
+      "en" : {
+        "codexSecret" : false,
+        "description" : "Consumed in the fusion process to power up existing Mods.",
+        "fusionPoints" : 600,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/PurgatoryBlackTokenFusionBundle"
+      },
+      "zh" : {
+        "codexSecret" : false,
+        "description" : "在融铸时使用以增强你的 Mod。",
+        "fusionPoints" : 600,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/PurgatoryBlackTokenFusionBundle"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Upgrades/Mods/FusionBundles/PurgatoryBlueTokenFusionBundle",
+    "key" : "ExportFusionBundles|/Lotus/Upgrades/Mods/FusionBundles/PurgatoryBlueTokenFusionBundle",
+    "names" : {
+      "en" : null,
+      "zh" : null
+    },
+    "provenance" : [ {
+      "index" : 39,
+      "locale" : "en",
+      "path" : "exports/en/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "1b19851074d32e43bb65b419ba2d4922bc4f7ef638432ccfe5007c98ce46b9be"
+    }, {
+      "index" : 39,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "52473bbe8bcba3293b5f83d9fe7c10ba98ce6239317b04c83735cd351f6d470d"
+    } ],
+    "section" : "ExportFusionBundles",
+    "variants" : {
+      "en" : {
+        "codexSecret" : false,
+        "description" : "Consumed in the fusion process to power up existing Mods.",
+        "fusionPoints" : 200,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/PurgatoryBlueTokenFusionBundle"
+      },
+      "zh" : {
+        "codexSecret" : false,
+        "description" : "在融铸时使用以增强你的 Mod。",
+        "fusionPoints" : 200,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/PurgatoryBlueTokenFusionBundle"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Upgrades/Mods/FusionBundles/PurgatoryGoldTokenFusionBundle",
+    "key" : "ExportFusionBundles|/Lotus/Upgrades/Mods/FusionBundles/PurgatoryGoldTokenFusionBundle",
+    "names" : {
+      "en" : null,
+      "zh" : null
+    },
+    "provenance" : [ {
+      "index" : 40,
+      "locale" : "en",
+      "path" : "exports/en/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "1b19851074d32e43bb65b419ba2d4922bc4f7ef638432ccfe5007c98ce46b9be"
+    }, {
+      "index" : 40,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "52473bbe8bcba3293b5f83d9fe7c10ba98ce6239317b04c83735cd351f6d470d"
+    } ],
+    "section" : "ExportFusionBundles",
+    "variants" : {
+      "en" : {
+        "codexSecret" : false,
+        "description" : "Consumed in the fusion process to power up existing Mods.",
+        "fusionPoints" : 400,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/PurgatoryGoldTokenFusionBundle"
+      },
+      "zh" : {
+        "codexSecret" : false,
+        "description" : "在融铸时使用以增强你的 Mod。",
+        "fusionPoints" : 400,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/PurgatoryGoldTokenFusionBundle"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Upgrades/Mods/FusionBundles/RailjackEndoTierALarge",
+    "key" : "ExportFusionBundles|/Lotus/Upgrades/Mods/FusionBundles/RailjackEndoTierALarge",
+    "names" : {
+      "en" : null,
+      "zh" : null
+    },
+    "provenance" : [ {
+      "index" : 41,
+      "locale" : "en",
+      "path" : "exports/en/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "1b19851074d32e43bb65b419ba2d4922bc4f7ef638432ccfe5007c98ce46b9be"
+    }, {
+      "index" : 41,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "52473bbe8bcba3293b5f83d9fe7c10ba98ce6239317b04c83735cd351f6d470d"
+    } ],
+    "section" : "ExportFusionBundles",
+    "variants" : {
+      "en" : {
+        "codexSecret" : false,
+        "description" : "Consumed in the fusion process to power up existing Mods.",
+        "fusionPoints" : 150,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/RailjackEndoTierALarge"
+      },
+      "zh" : {
+        "codexSecret" : false,
+        "description" : "在融铸时使用以增强你的 Mod。",
+        "fusionPoints" : 150,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/RailjackEndoTierALarge"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Upgrades/Mods/FusionBundles/RailjackEndoTierASmall",
+    "key" : "ExportFusionBundles|/Lotus/Upgrades/Mods/FusionBundles/RailjackEndoTierASmall",
+    "names" : {
+      "en" : null,
+      "zh" : null
+    },
+    "provenance" : [ {
+      "index" : 42,
+      "locale" : "en",
+      "path" : "exports/en/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "1b19851074d32e43bb65b419ba2d4922bc4f7ef638432ccfe5007c98ce46b9be"
+    }, {
+      "index" : 42,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "52473bbe8bcba3293b5f83d9fe7c10ba98ce6239317b04c83735cd351f6d470d"
+    } ],
+    "section" : "ExportFusionBundles",
+    "variants" : {
+      "en" : {
+        "codexSecret" : false,
+        "description" : "Consumed in the fusion process to power up existing Mods.",
+        "fusionPoints" : 100,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/RailjackEndoTierASmall"
+      },
+      "zh" : {
+        "codexSecret" : false,
+        "description" : "在融铸时使用以增强你的 Mod。",
+        "fusionPoints" : 100,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/RailjackEndoTierASmall"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Upgrades/Mods/FusionBundles/RailjackEndoTierBLarge",
+    "key" : "ExportFusionBundles|/Lotus/Upgrades/Mods/FusionBundles/RailjackEndoTierBLarge",
+    "names" : {
+      "en" : null,
+      "zh" : null
+    },
+    "provenance" : [ {
+      "index" : 43,
+      "locale" : "en",
+      "path" : "exports/en/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "1b19851074d32e43bb65b419ba2d4922bc4f7ef638432ccfe5007c98ce46b9be"
+    }, {
+      "index" : 43,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "52473bbe8bcba3293b5f83d9fe7c10ba98ce6239317b04c83735cd351f6d470d"
+    } ],
+    "section" : "ExportFusionBundles",
+    "variants" : {
+      "en" : {
+        "codexSecret" : false,
+        "description" : "Consumed in the fusion process to power up existing Mods.",
+        "fusionPoints" : 300,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/RailjackEndoTierBLarge"
+      },
+      "zh" : {
+        "codexSecret" : false,
+        "description" : "在融铸时使用以增强你的 Mod。",
+        "fusionPoints" : 300,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/RailjackEndoTierBLarge"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Upgrades/Mods/FusionBundles/RailjackEndoTierBSmall",
+    "key" : "ExportFusionBundles|/Lotus/Upgrades/Mods/FusionBundles/RailjackEndoTierBSmall",
+    "names" : {
+      "en" : null,
+      "zh" : null
+    },
+    "provenance" : [ {
+      "index" : 44,
+      "locale" : "en",
+      "path" : "exports/en/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "1b19851074d32e43bb65b419ba2d4922bc4f7ef638432ccfe5007c98ce46b9be"
+    }, {
+      "index" : 44,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "52473bbe8bcba3293b5f83d9fe7c10ba98ce6239317b04c83735cd351f6d470d"
+    } ],
+    "section" : "ExportFusionBundles",
+    "variants" : {
+      "en" : {
+        "codexSecret" : false,
+        "description" : "Consumed in the fusion process to power up existing Mods.",
+        "fusionPoints" : 200,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/RailjackEndoTierBSmall"
+      },
+      "zh" : {
+        "codexSecret" : false,
+        "description" : "在融铸时使用以增强你的 Mod。",
+        "fusionPoints" : 200,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/RailjackEndoTierBSmall"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Upgrades/Mods/FusionBundles/RailjackEndoTierCLarge",
+    "key" : "ExportFusionBundles|/Lotus/Upgrades/Mods/FusionBundles/RailjackEndoTierCLarge",
+    "names" : {
+      "en" : null,
+      "zh" : null
+    },
+    "provenance" : [ {
+      "index" : 45,
+      "locale" : "en",
+      "path" : "exports/en/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "1b19851074d32e43bb65b419ba2d4922bc4f7ef638432ccfe5007c98ce46b9be"
+    }, {
+      "index" : 45,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "52473bbe8bcba3293b5f83d9fe7c10ba98ce6239317b04c83735cd351f6d470d"
+    } ],
+    "section" : "ExportFusionBundles",
+    "variants" : {
+      "en" : {
+        "codexSecret" : false,
+        "description" : "Consumed in the fusion process to power up existing Mods.",
+        "fusionPoints" : 450,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/RailjackEndoTierCLarge"
+      },
+      "zh" : {
+        "codexSecret" : false,
+        "description" : "在融铸时使用以增强你的 Mod。",
+        "fusionPoints" : 450,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/RailjackEndoTierCLarge"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Upgrades/Mods/FusionBundles/RailjackEndoTierCSmall",
+    "key" : "ExportFusionBundles|/Lotus/Upgrades/Mods/FusionBundles/RailjackEndoTierCSmall",
+    "names" : {
+      "en" : null,
+      "zh" : null
+    },
+    "provenance" : [ {
+      "index" : 46,
+      "locale" : "en",
+      "path" : "exports/en/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "1b19851074d32e43bb65b419ba2d4922bc4f7ef638432ccfe5007c98ce46b9be"
+    }, {
+      "index" : 46,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "52473bbe8bcba3293b5f83d9fe7c10ba98ce6239317b04c83735cd351f6d470d"
+    } ],
+    "section" : "ExportFusionBundles",
+    "variants" : {
+      "en" : {
+        "codexSecret" : false,
+        "description" : "Consumed in the fusion process to power up existing Mods.",
+        "fusionPoints" : 300,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/RailjackEndoTierCSmall"
+      },
+      "zh" : {
+        "codexSecret" : false,
+        "description" : "在融铸时使用以增强你的 Mod。",
+        "fusionPoints" : 300,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/RailjackEndoTierCSmall"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Upgrades/Mods/FusionBundles/RailjackEndoTierDLarge",
+    "key" : "ExportFusionBundles|/Lotus/Upgrades/Mods/FusionBundles/RailjackEndoTierDLarge",
+    "names" : {
+      "en" : null,
+      "zh" : null
+    },
+    "provenance" : [ {
+      "index" : 47,
+      "locale" : "en",
+      "path" : "exports/en/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "1b19851074d32e43bb65b419ba2d4922bc4f7ef638432ccfe5007c98ce46b9be"
+    }, {
+      "index" : 47,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "52473bbe8bcba3293b5f83d9fe7c10ba98ce6239317b04c83735cd351f6d470d"
+    } ],
+    "section" : "ExportFusionBundles",
+    "variants" : {
+      "en" : {
+        "codexSecret" : false,
+        "description" : "Consumed in the fusion process to power up existing Mods.",
+        "fusionPoints" : 600,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/RailjackEndoTierDLarge"
+      },
+      "zh" : {
+        "codexSecret" : false,
+        "description" : "在融铸时使用以增强你的 Mod。",
+        "fusionPoints" : 600,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/RailjackEndoTierDLarge"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Upgrades/Mods/FusionBundles/RailjackEndoTierDSmall",
+    "key" : "ExportFusionBundles|/Lotus/Upgrades/Mods/FusionBundles/RailjackEndoTierDSmall",
+    "names" : {
+      "en" : null,
+      "zh" : null
+    },
+    "provenance" : [ {
+      "index" : 48,
+      "locale" : "en",
+      "path" : "exports/en/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "1b19851074d32e43bb65b419ba2d4922bc4f7ef638432ccfe5007c98ce46b9be"
+    }, {
+      "index" : 48,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "52473bbe8bcba3293b5f83d9fe7c10ba98ce6239317b04c83735cd351f6d470d"
+    } ],
+    "section" : "ExportFusionBundles",
+    "variants" : {
+      "en" : {
+        "codexSecret" : false,
+        "description" : "Consumed in the fusion process to power up existing Mods.",
+        "fusionPoints" : 400,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/RailjackEndoTierDSmall"
+      },
+      "zh" : {
+        "codexSecret" : false,
+        "description" : "在融铸时使用以增强你的 Mod。",
+        "fusionPoints" : 400,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/RailjackEndoTierDSmall"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Upgrades/Mods/FusionBundles/RareFusionBundle",
+    "key" : "ExportFusionBundles|/Lotus/Upgrades/Mods/FusionBundles/RareFusionBundle",
+    "names" : {
+      "en" : null,
+      "zh" : null
+    },
+    "provenance" : [ {
+      "index" : 49,
+      "locale" : "en",
+      "path" : "exports/en/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "1b19851074d32e43bb65b419ba2d4922bc4f7ef638432ccfe5007c98ce46b9be"
+    }, {
+      "index" : 49,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "52473bbe8bcba3293b5f83d9fe7c10ba98ce6239317b04c83735cd351f6d470d"
+    } ],
+    "section" : "ExportFusionBundles",
+    "variants" : {
+      "en" : {
+        "codexSecret" : false,
+        "description" : "Consumed in the fusion process to power up existing Mods.",
+        "fusionPoints" : 80,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/RareFusionBundle"
+      },
+      "zh" : {
+        "codexSecret" : false,
+        "description" : "在融铸时使用以增强你的 Mod。",
+        "fusionPoints" : 80,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/RareFusionBundle"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Upgrades/Mods/FusionBundles/UncommonFusionBundle",
+    "key" : "ExportFusionBundles|/Lotus/Upgrades/Mods/FusionBundles/UncommonFusionBundle",
+    "names" : {
+      "en" : null,
+      "zh" : null
+    },
+    "provenance" : [ {
+      "index" : 50,
+      "locale" : "en",
+      "path" : "exports/en/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "1b19851074d32e43bb65b419ba2d4922bc4f7ef638432ccfe5007c98ce46b9be"
+    }, {
+      "index" : 50,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportFusionBundles.json",
+      "section" : "ExportFusionBundles",
+      "sha256" : "52473bbe8bcba3293b5f83d9fe7c10ba98ce6239317b04c83735cd351f6d470d"
+    } ],
+    "section" : "ExportFusionBundles",
+    "variants" : {
+      "en" : {
+        "codexSecret" : false,
+        "description" : "Consumed in the fusion process to power up existing Mods.",
+        "fusionPoints" : 50,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/UncommonFusionBundle"
+      },
+      "zh" : {
+        "codexSecret" : false,
+        "description" : "在融铸时使用以增强你的 Mod。",
+        "fusionPoints" : 50,
+        "uniqueName" : "/Lotus/Upgrades/Mods/FusionBundles/UncommonFusionBundle"
+      }
+    }
+  } ],
+  "model" : "regional-catalog-v1",
+  "region" : "international",
+  "schemaVersion" : 1,
+  "section" : "ExportFusionBundles"
+}

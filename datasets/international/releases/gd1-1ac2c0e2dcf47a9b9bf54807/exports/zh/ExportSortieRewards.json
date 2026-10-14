@@ -1,0 +1,2408 @@
+{
+  "locale" : "zh",
+  "region" : "international",
+  "schemaVersion" : 1,
+  "sections" : {
+    "ExportIntrinsics" : [ {
+      "name" : "战术",
+      "ranks" : [ {
+        "description" : "部署战术 Mod 并通过 |TACT_MENU| 战术选单访问舰员追踪系统。",
+        "name" : "战术系统"
+      }, {
+        "description" : "可将战甲的技能作为战术支援来部署。启用舰员追踪视角。",
+        "name" : "动态技能与远程监督"
+      }, {
+        "description" : "在舰内快速移动。使用命令界面来统筹小队成员。",
+        "name" : "指挥联结"
+      }, {
+        "description" : "可以在任意地方使用万用工具来曲速传送回星舰。",
+        "name" : "曲速召回"
+      }, {
+        "description" : "在所有航道星舰任务中部署殁世机甲。",
+        "name" : "部署殁世机甲"
+      }, {
+        "description" : "降低 25% 战斗 Mod 消耗的能量。",
+        "name" : "战术效率"
+      }, {
+        "description" : "减少 20% 的战术 Mod 冷却时间。",
+        "name" : "战术响应"
+      }, {
+        "description" : "减少 25% 的 曲翼闪瞬冷却时间。减少 25% 的殁世机甲召唤冷却时间。",
+        "name" : "曲翼战术闪瞬和殁世机甲冷却时间"
+      }, {
+        "description" : "进一步减少 20% 的战术 Mod 冷却时间。",
+        "name" : "迅捷战术"
+      }, {
+        "description" : "从星舰曲速传送前往舰员所在处。",
+        "name" : "曲速支援"
+      } ]
+    }, {
+      "name" : "操纵",
+      "ranks" : [ {
+        "description" : "长按 |SPRINT| 来助推引擎速度。使用舰首炮台开火会中断助推过程。",
+        "name" : "助推"
+      }, {
+        "description" : "轻按 |ACTION| 可使定向推进器助推加速。",
+        "name" : "矢量机动"
+      }, {
+        "description" : "在矢量机动过程中，附近敌方投射物失去目标锁定。",
+        "name" : "向量回避"
+      }, {
+        "description" : "在矢量机动期间，按下并按住 |SPRINT| 来漂移。",
+        "name" : "漂移机动"
+      }, {
+        "description" : "在助推、漂移，或躲避时，增加 3x 的战利品拾取范围。隐藏的遗迹会被标记。",
+        "name" : "强劲搜集"
+      }, {
+        "description" : "有 25% 的几率干扰一艘来袭冲锋艇的瞄准系统，使其越过目标并爆炸。",
+        "name" : "干扰冲撞"
+      }, {
+        "description" : "殁世机甲的移动速度提高 10%。",
+        "name" : "殁世机甲急速"
+      }, {
+        "description" : "曲翼速度提高 20%。",
+        "name" : "战舰驾驶员"
+      }, {
+        "description" : "助推时受到的来袭伤害降低 2000%。助推时撞向敌人会造成 25 <DT_IMPACT>冲击伤害。",
+        "name" : "撞击速度"
+      }, {
+        "description" : "双击<JUMP>把航道星舰瞬移至前方，并留下一道湍流航迹来减缓附近敌人的速度。",
+        "name" : "航道星舰闪瞬"
+      } ]
+    }, {
+      "name" : "枪炮",
+      "ranks" : [ {
+        "description" : "舰顶、舰腹炮台的伤害提高 50%。",
+        "name" : "充能枪管"
+      }, {
+        "description" : "增强的二次投影和炮台悬架可实现 360 度全方位作战。",
+        "name" : "幻影之眼"
+      }, {
+        "description" : "高速部署曲翼到战斗区域。被弹射的曲翼可以对战机造成伤害，并能穿透敌方战舰的舰体。",
+        "name" : "曲翼弹射器"
+      }, {
+        "description" : "曲翼吸引范围增加 0.75 米，近战范围增加 20 米，伤害增加 25%。",
+        "name" : "曲翼暴怒"
+      }, {
+        "description" : "增加 20% 殁世机甲的枪械伤害。",
+        "name" : "殁世机甲暴怒"
+      }, {
+        "description" : "炮台热量积聚减少 20%。",
+        "name" : "冰冷触发"
+      }, {
+        "description" : "过热恢复时间减少 50%。弹射器范围扩大 50%。",
+        "name" : "进阶枪炮"
+      }, {
+        "description" : "提升曲翼技能：伤害 +20%，技能强度 +20%，技能范围 +20%，技能效率 +25%。",
+        "name" : "复仇曲翼"
+      }, {
+        "description" : "武器过热时重新装填，会在 0.5 秒内将武器热量冷却至 0。",
+        "name" : "冲刷散热"
+      }, {
+        "description" : "炮台瞄准将吸附到提前量标记上 3 秒。",
+        "name" : "反射瞄准"
+      } ]
+    }, {
+      "name" : "工程",
+      "ranks" : [ {
+        "description" : "加快事故抢救和舰体维修",
+        "name" : "应用万用工具"
+      }, {
+        "description" : "降低 50% 的空中支援呼叫器冷却时间。",
+        "name" : "快速支援"
+      }, {
+        "description" : "在部署时补充火炮补给。",
+        "name" : "火炮锻造"
+      }, {
+        "description" : "在战斗中补充前装光能炮弹药。",
+        "name" : "穹顶能量弹锻造"
+      }, {
+        "description" : "锻造产量提高 1%。可制造舰体修复物。",
+        "name" : "优化锻造"
+      }, {
+        "description" : "锻造处理速度提高 25%。",
+        "name" : "锻造加速"
+      }, {
+        "description" : "锻造产量进一步提高 25%。",
+        "name" : "全面优化"
+      }, {
+        "description" : "提升曲翼防御能力。生命值 +30%，护盾 +30%，护甲 +30%。",
+        "name" : "警觉曲翼"
+      }, {
+        "description" : "提升殁世机甲的防御。生命值 +25%。护盾 +25%。",
+        "name" : "警觉殁世机甲"
+      }, {
+        "description" : "远程修复舰上所有危险。",
+        "name" : "复原如初"
+      } ]
+    }, {
+      "name" : "命令",
+      "ranks" : [ {
+        "description" : "解锁第一位舰员，以及从 Ticker 那里招募他们的能力。",
+        "name" : "第一位舰员"
+      }, {
+        "description" : "可以给你的舰员 1 能力点数。",
+        "name" : "能力获取"
+      }, {
+        "description" : "解锁第二位舰员。",
+        "name" : "第二位舰员"
+      }, {
+        "description" : "可以给你的舰员 1 能力点数。",
+        "name" : "能力获取"
+      }, {
+        "description" : "解锁第三位舰员。",
+        "name" : "第三位舰员"
+      }, {
+        "description" : "可以给你的舰员 1 能力点数。",
+        "name" : "能力获取"
+      }, {
+        "description" : "让你可以重新分配之前分配过的能力点数。",
+        "name" : "能力再训"
+      }, {
+        "description" : "可以让被感化的玄骸们在你的航道星舰上成为守护舰员。",
+        "name" : "罕见舰员"
+      }, {
+        "description" : "你的一名舰员可以被指定进入待命状态，并可以在非航道星舰任务中被召唤出来协助你。",
+        "name" : "随叫随到"
+      }, {
+        "description" : "现在可从 Ticker 处招募更强大的舰员。",
+        "name" : "精英舰员"
+      } ]
+    } ],
+    "ExportNightwave" : {
+      "affiliationTag" : "RadioLegionIntermission16Syndicate",
+      "challenges" : [ {
+        "description" : "飞身瞄准时击杀 |COUNT| 名敌人",
+        "name" : "滑翔者",
+        "required" : 15,
+        "standing" : 1000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyAimGlide"
+      }, {
+        "description" : "自定义一件装备的颜色。",
+        "name" : "艺术家",
+        "required" : 1,
+        "standing" : 1000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyArtist"
+      }, {
+        "description" : "旋身飞跃 |COUNT| 次。",
+        "name" : "蹦弹",
+        "required" : 150,
+        "standing" : 1000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyBulletJump"
+      }, {
+        "description" : "扫描 |COUNT| 次物件或敌人。",
+        "name" : "研究者",
+        "required" : 15,
+        "standing" : 1000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyCodexScan"
+      }, {
+        "description" : "拾取 |COUNT| 现金。",
+        "name" : "储蓄者",
+        "required" : 15000,
+        "standing" : 1000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyCollectCredits"
+      }, {
+        "description" : "完成一场任务。",
+        "name" : "特务",
+        "required" : 1,
+        "standing" : 1000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyCompleteMission"
+      }, {
+        "description" : "在任务中设置一枚浮印。",
+        "name" : "涂鸦",
+        "required" : 1,
+        "standing" : 1000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyDeployGlyph"
+      }, {
+        "description" : "击杀 |COUNT| 名敌人。",
+        "name" : "开枪警告",
+        "required" : 200,
+        "standing" : 1000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyKillEnemies"
+      }, {
+        "description" : "使用技能击杀 |COUNT| 名敌人。",
+        "name" : "力量展现",
+        "required" : 150,
+        "standing" : 1000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyKillEnemiesWithAbilities"
+      }, {
+        "description" : "使用<DT_EXPLOSION>爆炸伤害击杀 |COUNT| 名敌人。",
+        "name" : "引爆者",
+        "required" : 150,
+        "standing" : 1000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyKillEnemiesWithBlast"
+      }, {
+        "description" : "使用<DT_CORROSIVE>腐蚀伤害击杀 |COUNT| 名敌人。",
+        "name" : "熔毁",
+        "required" : 150,
+        "standing" : 1000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyKillEnemiesWithCorrosive"
+      }, {
+        "description" : "使用<DT_ELECTRICITY>电击伤害击杀 |COUNT| 名敌人。",
+        "name" : "短路",
+        "required" : 150,
+        "standing" : 1000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyKillEnemiesWithElectricity"
+      }, {
+        "description" : "处决击杀 |COUNT| 名敌人。",
+        "name" : "处刑者",
+        "required" : 10,
+        "standing" : 1000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyKillEnemiesWithFinishers"
+      }, {
+        "description" : "使用<DT_FIRE>火焰伤害击杀 |COUNT| 名敌人。",
+        "name" : "纵火犯",
+        "required" : 150,
+        "standing" : 1000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyKillEnemiesWithFire"
+      }, {
+        "description" : "使用<DT_FREEZE>冰冻伤害击杀 |COUNT| 名敌人。",
+        "name" : "极度冷冻",
+        "required" : 150,
+        "standing" : 1000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyKillEnemiesWithFreeze"
+      }, {
+        "description" : "使用<DT_GAS>毒气伤害击杀 |COUNT| 名敌人。",
+        "name" : "生化危害",
+        "required" : 150,
+        "standing" : 1000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyKillEnemiesWithGas"
+      }, {
+        "description" : "爆头击杀 |COUNT| 名敌人。",
+        "name" : "老练射手",
+        "required" : 40,
+        "standing" : 1000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyKillEnemiesWithHeadshots"
+      }, {
+        "description" : "使用<DT_MAGNETIC>磁力伤害击杀 |COUNT| 名敌人。",
+        "name" : "吸引力",
+        "required" : 150,
+        "standing" : 1000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyKillEnemiesWithMagnetic"
+      }, {
+        "description" : "使用近战武器击杀 |COUNT| 名敌人。",
+        "name" : "剑舞",
+        "required" : 150,
+        "standing" : 1000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyKillEnemiesWithMelee"
+      }, {
+        "description" : "使用<DT_POISON>毒素伤害击杀 |COUNT| 名敌人。",
+        "name" : "投毒者",
+        "required" : 150,
+        "standing" : 1000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyKillEnemiesWithPoison"
+      }, {
+        "description" : "使用主要武器击杀 |COUNT| 名敌人。",
+        "name" : "撂倒他们",
+        "required" : 150,
+        "standing" : 1000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyKillEnemiesWithPrimary"
+      }, {
+        "description" : "使用<DT_RADIATION>辐射伤害击杀 |COUNT| 名敌人。",
+        "name" : "核反应器",
+        "required" : 150,
+        "standing" : 1000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyKillEnemiesWithRadiation"
+      }, {
+        "description" : "使用次要武器击杀 |COUNT| 名敌人。",
+        "name" : "小兵大功",
+        "required" : 150,
+        "standing" : 1000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyKillEnemiesWithSecondary"
+      }, {
+        "description" : "使用<DT_VIRAL>病毒伤害击杀 |COUNT| 名敌人。",
+        "name" : "疯狂散毒",
+        "required" : 150,
+        "standing" : 1000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyKillEnemiesWithViral"
+      }, {
+        "description" : "拾取 |COUNT| 个能量球。",
+        "name" : "激励",
+        "required" : 20,
+        "standing" : 1000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyPickUpEnergy"
+      }, {
+        "description" : "拾取 |COUNT| 个 Mod。",
+        "name" : "闪闪发亮",
+        "required" : 8,
+        "standing" : 1000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyPickUpMods"
+      }, {
+        "description" : "标记 |COUNT| 个 Mod 或资源。",
+        "name" : "交流者",
+        "required" : 5,
+        "standing" : 1000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyPlaceMarker"
+      }, {
+        "description" : "使用 |COUNT| 个表情动作。",
+        "name" : "善于表达之人",
+        "required" : 1,
+        "standing" : 1000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyPlayEmote"
+      }, {
+        "description" : "滑行时击杀 |COUNT| 名敌人。",
+        "name" : "加速者",
+        "required" : 10,
+        "standing" : 1000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailySlideKills"
+      }, {
+        "description" : "骑乘 K 式悬浮板、绝灵骥、迅敏节虫或原子摩托车时击杀 |COUNT| 名敌人。",
+        "name" : "惊险骑手",
+        "required" : 20,
+        "standing" : 1000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyKillEnemiesWhileOnKDrive"
+      }, {
+        "description" : "出售仓库中的任意物品以获取现金。",
+        "name" : "清算",
+        "required" : 1,
+        "standing" : 1000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyLiquidation"
+      }, {
+        "description" : "在单次弓箭射击中射穿并杀死 2 名以上的敌人。",
+        "name" : "一石二鸟",
+        "required" : 1,
+        "standing" : 1000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyTwoForOne"
+      }, {
+        "description" : "使用近战武器击杀 |COUNT| 架无人机或鱼鹰。",
+        "name" : "拍打者",
+        "required" : 3,
+        "standing" : 1000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailySwatter"
+      }, {
+        "description" : "成功防御挖掘机并且不让挖掘机耗尽能量。",
+        "name" : "源源不断",
+        "required" : 1,
+        "standing" : 1000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyToppingOffTheTank"
+      }, {
+        "description" : "在你的轨道飞行器中放置 1 个装饰物。",
+        "name" : "自得其乐",
+        "required" : 1,
+        "standing" : 1000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyThePersonalTouch"
+      }, {
+        "description" : "从铸造厂中领取一件物品。",
+        "name" : "制造者之触",
+        "required" : 1,
+        "standing" : 1000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyBuildersTouch"
+      }, {
+        "description" : "仅装备近战武器来完成一场任务",
+        "name" : "剑客",
+        "required" : 1,
+        "standing" : 1000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyCompleteMissionMelee"
+      }, {
+        "description" : "仅装备主要武器来完成一场任务",
+        "name" : "枪不释手",
+        "required" : 1,
+        "standing" : 1000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyCompleteMissionPrimary"
+      }, {
+        "description" : "仅装备次要武器来完成一场任务",
+        "name" : "随身火力",
+        "required" : 1,
+        "standing" : 1000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyCompleteMissionSecondary"
+      }, {
+        "description" : "在任务中部署一个空中支援呼叫器",
+        "name" : "天降神兵",
+        "required" : 1,
+        "standing" : 1000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyDeployAirSupport"
+      }, {
+        "description" : "部署一个魅影",
+        "name" : "二重身",
+        "required" : 1,
+        "standing" : 1000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyDeploySpecter"
+      }, {
+        "description" : "为莱弗博物馆进行捐赠",
+        "name" : "赞助者",
+        "required" : 1,
+        "standing" : 1000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyDonateLeverian"
+      }, {
+        "description" : "与你的库狛或库娃互动",
+        "name" : "忠心不二",
+        "required" : 1,
+        "standing" : 1000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyInteractWithPet"
+      }, {
+        "description" : "对一名敌人施展怜悯之击",
+        "name" : "不施怜悯",
+        "required" : 1,
+        "standing" : 1000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyMercyKill"
+      }, {
+        "description" : "使用一次重击震地近战攻击让 5 个或以上敌人同时浮空",
+        "name" : "深度冲击",
+        "required" : 1,
+        "standing" : 1000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailySuspendFiveEnemies"
+      }, {
+        "description" : "完成 |COUNT| 次 Mod 转换",
+        "name" : "以旧换新",
+        "required" : 1,
+        "standing" : 1000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyTransmuteMods"
+      }, {
+        "description" : "参观一处特色道场",
+        "name" : "随便看看",
+        "required" : 1,
+        "standing" : 1000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyVisitFeaturedDojo"
+      }, {
+        "description" : "在 10 秒内使用你的主要、次要，和近战武器各击杀一名敌人。",
+        "name" : "整个军械库",
+        "required" : 1,
+        "standing" : 1000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Daily/SeasonDailyWholeArsenal"
+      }, {
+        "description" : "使用主要弓箭击杀 |COUNT| 名敌人。",
+        "name" : "弓箭进攻",
+        "required" : 150,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyBowOffense"
+      }, {
+        "description" : "在夜灵平野捕捉 |COUNT| 条稀有鱼。",
+        "name" : "地球渔者",
+        "required" : 3,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyCatchRarePlainsFish"
+      }, {
+        "description" : "在奥布山谷捕捉 |COUNT| 条稀有伺服鱼。",
+        "name" : "金星渔者",
+        "required" : 3,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyCatchRareVenusFish"
+      }, {
+        "description" : "完成 |COUNT| 项刺杀任务。",
+        "name" : "刺客",
+        "required" : 3,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyCompleteAssassination"
+      }, {
+        "description" : "完成 |COUNT| 项捕获任务。",
+        "name" : "狱吏",
+        "required" : 3,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyCompleteCapture"
+      }, {
+        "description" : "帮助 Clem 完成他的周常任务。",
+        "name" : "好朋友",
+        "required" : 1,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyCompleteClemMission"
+      }, {
+        "description" : "完成 |COUNT| 项歼灭任务。",
+        "name" : "排除者",
+        "required" : 3,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyCompleteExterminate"
+      }, {
+        "description" : "完成 |COUNT| 项任何类型的入侵任务。",
+        "name" : "入侵者",
+        "required" : 6,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyCompleteInvasionMissions"
+      }, {
+        "description" : "完成 |COUNT| 项移动防御任务。",
+        "name" : "保护者",
+        "required" : 3,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyCompleteMobileDefense"
+      }, {
+        "description" : "完成 |COUNT| 项任何类型的噩梦任务。",
+        "name" : "声之眠者",
+        "required" : 3,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyCompleteNightmareMissions"
+      }, {
+        "description" : "完成 |COUNT| 项救援任务。",
+        "name" : "救援者",
+        "required" : 3,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyCompleteRescue"
+      }, {
+        "description" : "完成 |COUNT| 项破坏任务。",
+        "name" : "破坏者",
+        "required" : 3,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyCompleteSabotage"
+      }, {
+        "description" : "完成 |COUNT| 次突击。",
+        "name" : "突击专家",
+        "required" : 1,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyCompleteSortie"
+      }, {
+        "description" : "完成 |COUNT| 项间谍任务。",
+        "name" : "特工",
+        "required" : 3,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyCompleteSpy"
+      }, {
+        "description" : "完成 |COUNT| 项集团任务。",
+        "name" : "支持者",
+        "required" : 5,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyCompleteSyndicateMissions"
+      }, {
+        "description" : "在 Maroo 的市集寻找 Maroo 的阿耶檀识宝物。",
+        "name" : "动像者",
+        "required" : 1,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyCompleteTreasures"
+      }, {
+        "description" : "爆头击杀 |COUNT| 名敌人。",
+        "name" : "这不是警告射击",
+        "required" : 100,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyKillEnemiesWithHeadshots"
+      }, {
+        "description" : "在夜灵平野中开采到 |COUNT| 次稀有宝石或矿石。",
+        "name" : "地球矿工",
+        "required" : 3,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyMineRarePlainsResources"
+      }, {
+        "description" : "在奥布山谷中开采到 |COUNT| 次稀有宝石或矿石。",
+        "name" : "金星矿工",
+        "required" : 3,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyMineRareVenusResources"
+      }, {
+        "description" : "在奥布山谷完成 |COUNT| 个不同动物的完美捕获。",
+        "name" : "保育者",
+        "required" : 3,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPerfectAnimalCapture"
+      }, {
+        "description" : "在双衍王境中完成 1 个谜题",
+        "name" : "谜惑不解",
+        "required" : 1,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPerplexed"
+      }, {
+        "description" : "找到 |COUNT| 集团奖章。可以自己搜索，也可以组队搜索。",
+        "name" : "狩猎开始",
+        "required" : 10,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPickUpMedallion"
+      }, {
+        "description" : "在夜灵平野完成 |COUNT| 个赏金任务。",
+        "name" : "地球赏金猎人",
+        "required" : 3,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPlainsBounties"
+      }, {
+        "description" : "在任意任务中找到 |COUNT| 个储藏箱。",
+        "name" : "箱子猎人",
+        "required" : 6,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklySabotageCaches"
+      }, {
+        "description" : "使用主要步枪击杀 |COUNT| 名敌人。",
+        "name" : "步枪进攻",
+        "required" : 150,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyRifleOffense"
+      }, {
+        "description" : "完成 |COUNT| 个圣殿突袭的区域。",
+        "name" : "测试对象",
+        "required" : 8,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklySanctuaryOnslaught"
+      }, {
+        "description" : "使用主要霰弹枪击杀 |COUNT| 名敌人。",
+        "name" : "霰弹枪进攻",
+        "required" : 150,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyShotgunOffense"
+      }, {
+        "description" : "完成 |COUNT| 个中枢 Simaris 的扫描。",
+        "name" : "圣殿研究者",
+        "required" : 3,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklySimarisScan"
+      }, {
+        "description" : "使用主要狙击步枪击杀 |COUNT| 名敌人。",
+        "name" : "狙击枪进攻",
+        "required" : 150,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklySniperOffense"
+      }, {
+        "description" : "为荧尘分解一个赋能。",
+        "name" : "化为灰烬",
+        "required" : 1,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyToAshes"
+      }, {
+        "description" : "解锁 |COUNT| 个火卫二龙钥宝库。",
+        "name" : "宝库劫者",
+        "required" : 4,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyUnlockDragonVaults"
+      }, {
+        "description" : "解开 |COUNT| 个遗物",
+        "name" : "解开遗物",
+        "required" : 3,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyUnlockRelics"
+      }, {
+        "description" : "极化一个武器、同伴或战甲（不在幻影装置中）。",
+        "name" : "已极化",
+        "required" : 1,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyUseForma"
+      }, {
+        "description" : "在奥布山谷完成 |COUNT| 个赏金任务。",
+        "name" : "金星赏金猎人",
+        "required" : 3,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyVenusBounties"
+      }, {
+        "description" : "收集 |COUNT| 个虚空光体。",
+        "name" : "虚空之网",
+        "required" : 30,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyVoidNet"
+      }, {
+        "description" : "在魔胎之境中收集 |COUNT| 个\"秩序\"或\"混乱\"的残留物。",
+        "name" : "日日夜夜",
+        "required" : 10,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyNightAndDay"
+      }, {
+        "description" : "获得 |COUNT| 任意集团的声望。",
+        "name" : "忠心耿耿",
+        "required" : 5000,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyLoyalty"
+      }, {
+        "description" : "仅装备一把手枪和战刃来完成 1 次任务。",
+        "name" : "老路子",
+        "required" : 1,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyTheOldWays"
+      }, {
+        "description" : "在 5 秒内击杀 20 名敌人。",
+        "name" : "大杀特杀",
+        "required" : 1,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyBloodthirsty"
+      }, {
+        "description" : "在火卫二的魔胎之境中完成一个隔离库赏金任务。",
+        "name" : "宝库强袭者",
+        "required" : 1,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyIsolationBounties"
+      }, {
+        "description" : "向 Helminth 饲喂任意资源。",
+        "name" : "喂饱野兽",
+        "required" : 1,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyFeedHelminth"
+      }, {
+        "description" : "使用殁世机甲击杀 |COUNT| 名敌人。",
+        "name" : "殁世者",
+        "required" : 100,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyKillEnemiesInMech"
+      }, {
+        "description" : "在中断任务中完成 |COUNT| 个导管",
+        "name" : "别搞砸了",
+        "required" : 12,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyCompleteDisruptionConduits"
+      }, {
+        "description" : "完成 |COUNT| 个赤毒虹吸器任务",
+        "name" : "无需惧怕死神",
+        "required" : 3,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyCompleteKuva"
+      }, {
+        "description" : "在金星的奥布山谷或是火卫二的魔胎之境完成一场 K 式悬浮板比赛。",
+        "name" : "上板时刻",
+        "required" : 1,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyCompleteVenusRace"
+      }, {
+        "description" : "使用前装光能炮来摧毁一艘战舰",
+        "name" : "前瞻思想",
+        "required" : 1,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyDestroyCrewshipArtillery"
+      }, {
+        "description" : "使用曲翼枪械击杀 |COUNT| 名敌人",
+        "name" : "重型火炮",
+        "required" : 500,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyKillArchgunEnemies"
+      }, {
+        "description" : "在夜灵平野上击杀一个巨牙重击者",
+        "name" : "巨牙重击",
+        "required" : 1,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyKillThumper"
+      }, {
+        "description" : "完成 |COUNT| 项航道星舰任务",
+        "name" : "探险家",
+        "required" : 3,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyRailjackMissions"
+      }, {
+        "description" : "击败奥金魇龙",
+        "name" : "野兽杀手",
+        "required" : 1,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyBeastSlayer"
+      }, {
+        "description" : "在战甲没有受到伤害的情况下清除一批登上航道星舰的敌人。",
+        "name" : "完美无瑕",
+        "required" : 1,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyBoardingPartyNoDamage"
+      }, {
+        "description" : "从双衍王境收集 |COUNT| 个资源",
+        "name" : "收集者",
+        "required" : 100,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyCollector"
+      }, {
+        "description" : "在双衍王境进行一次演奏三线琴歌曲的活动",
+        "name" : "精准调音",
+        "required" : 1,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyFinelyTuned"
+      }, {
+        "description" : "驾驭绝灵骥飞行 |COUNT| 米",
+        "name" : "马上漫游",
+        "required" : 1500,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyHorsingAround"
+      }, {
+        "description" : "在单次双衍王境进程或无尽回廊中收集 |COUNT| 个王令。",
+        "name" : "我的王令",
+        "required" : 15,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyIDecree"
+      }, {
+        "description" : "在双衍王境击杀 |COUNT| 名禁卫敌人",
+        "name" : "不为人知的事",
+        "required" : 50,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklySkeletonsInTheCloset"
+      }, {
+        "description" : "游玩《奥利的极速赛道》并完成一场比赛",
+        "name" : "哎哟喂！",
+        "required" : 1,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyCompleteRace"
+      }, {
+        "description" : "在火卫二激活 3 座安魂方尖碑。",
+        "name" : "远古方尖碑",
+        "required" : 3,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyRequiemTotem"
+      }, {
+        "description" : "收集 |COUNT| 个资源",
+        "name" : "收集者",
+        "required" : 4000,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyCollectHundredResources"
+      }, {
+        "description" : "入侵 |COUNT| 个控制台。",
+        "name" : "黑客",
+        "required" : 10,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklySolveCiphers"
+      }, {
+        "description" : "打开 |COUNT| 个储物柜。",
+        "name" : "盗窃癖",
+        "required" : 30,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyOpenLockers"
+      }, {
+        "description" : "完成 |COUNT| 项任务",
+        "name" : "任务完成",
+        "required" : 15,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentCompleteMissions"
+      }, {
+        "description" : "击杀 |COUNT| 名卓越者。",
+        "name" : "卓越歼灭者",
+        "required" : 30,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentKillEximus"
+      }, {
+        "description" : "击杀 |COUNT| 名敌人。",
+        "name" : "这不是警告射击",
+        "required" : 500,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentKillEnemies"
+      }, {
+        "description" : "完成 |COUNT| 项任务",
+        "name" : "任务完成 II",
+        "required" : 15,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentCompleteMissions2"
+      }, {
+        "description" : "击杀 |COUNT| 名卓越者。",
+        "name" : "卓越歼灭者 II",
+        "required" : 30,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentKillEximus2"
+      }, {
+        "description" : "击杀 |COUNT| 名敌人。",
+        "name" : "这不是警告射击 II",
+        "required" : 500,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentKillEnemies2"
+      }, {
+        "description" : "完成 |COUNT| 项任务",
+        "name" : "任务完成 III",
+        "required" : 15,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentCompleteMissions3"
+      }, {
+        "description" : "击杀 |COUNT| 名卓越者。",
+        "name" : "卓越歼灭者 III",
+        "required" : 30,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentKillEximus3"
+      }, {
+        "description" : "击杀 |COUNT| 名敌人。",
+        "name" : "这不是警告射击 III",
+        "required" : 500,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentKillEnemies3"
+      }, {
+        "description" : "完成 |COUNT| 项任务",
+        "name" : "任务完成 IV",
+        "required" : 15,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentCompleteMissions4"
+      }, {
+        "description" : "击杀 |COUNT| 名卓越者。",
+        "name" : "卓越歼灭者 IV",
+        "required" : 30,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentKillEximus4"
+      }, {
+        "description" : "击杀 |COUNT| 名敌人。",
+        "name" : "这不是警告射击 IV",
+        "required" : 500,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentKillEnemies4"
+      }, {
+        "description" : "完成 |COUNT| 项任务",
+        "name" : "任务完成 V",
+        "required" : 15,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentCompleteMissions5"
+      }, {
+        "description" : "击杀 |COUNT| 名卓越者。",
+        "name" : "卓越歼灭者 V",
+        "required" : 30,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentKillEximus5"
+      }, {
+        "description" : "击杀 |COUNT| 名敌人。",
+        "name" : "这不是警告射击 V",
+        "required" : 500,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentKillEnemies5"
+      }, {
+        "description" : "完成 |COUNT| 项任务",
+        "name" : "任务完成 VI",
+        "required" : 15,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentCompleteMissions6"
+      }, {
+        "description" : "击杀 |COUNT| 名卓越者。",
+        "name" : "卓越歼灭者 VI",
+        "required" : 30,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentKillEximus6"
+      }, {
+        "description" : "击杀 |COUNT| 名敌人。",
+        "name" : "这不是警告射击 VI",
+        "required" : 500,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentKillEnemies6"
+      }, {
+        "description" : "完成 |COUNT| 项任务",
+        "name" : "任务完成 VII",
+        "required" : 15,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentCompleteMissions7"
+      }, {
+        "description" : "击杀 |COUNT| 名卓越者。",
+        "name" : "卓越歼灭者 VII",
+        "required" : 30,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentKillEximus7"
+      }, {
+        "description" : "击杀 |COUNT| 名敌人。",
+        "name" : "这不是警告射击 VII",
+        "required" : 500,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentKillEnemies7"
+      }, {
+        "description" : "完成 |COUNT| 项任务",
+        "name" : "任务完成 VIII",
+        "required" : 15,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentCompleteMissions8"
+      }, {
+        "description" : "击杀 |COUNT| 名卓越者。",
+        "name" : "卓越歼灭者 VIII",
+        "required" : 30,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentKillEximus8"
+      }, {
+        "description" : "击杀 |COUNT| 名敌人。",
+        "name" : "这不是警告射击 VIII",
+        "required" : 500,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentKillEnemies8"
+      }, {
+        "description" : "完成 |COUNT| 项任务",
+        "name" : "任务完成 IX",
+        "required" : 15,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentCompleteMissions9"
+      }, {
+        "description" : "击杀 |COUNT| 名卓越者。",
+        "name" : "卓越歼灭者 IX",
+        "required" : 30,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentKillEximus9"
+      }, {
+        "description" : "击杀 |COUNT| 名敌人。",
+        "name" : "这不是警告射击 IX",
+        "required" : 500,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentKillEnemies9"
+      }, {
+        "description" : "完成 |COUNT| 项任务",
+        "name" : "任务完成 X",
+        "required" : 15,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentCompleteMissions10"
+      }, {
+        "description" : "击杀 |COUNT| 名卓越者。",
+        "name" : "卓越歼灭者 X",
+        "required" : 30,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentKillEximus10"
+      }, {
+        "description" : "击杀 |COUNT| 名敌人。",
+        "name" : "这不是警告射击 X",
+        "required" : 500,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentKillEnemies10"
+      }, {
+        "description" : "完成 |COUNT| 项任务",
+        "name" : "任务完成 XI",
+        "required" : 15,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentCompleteMissions11"
+      }, {
+        "description" : "击杀 |COUNT| 名卓越者。",
+        "name" : "卓越歼灭者 XI",
+        "required" : 30,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentKillEximus11"
+      }, {
+        "description" : "击杀 |COUNT| 名敌人。",
+        "name" : "这不是警告射击 XI",
+        "required" : 500,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentKillEnemies11"
+      }, {
+        "description" : "完成 |COUNT| 项任务",
+        "name" : "任务完成 XII",
+        "required" : 15,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentCompleteMissions12"
+      }, {
+        "description" : "击杀 |COUNT| 名卓越者。",
+        "name" : "卓越歼灭者 XII",
+        "required" : 30,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentKillEximus12"
+      }, {
+        "description" : "击杀 |COUNT| 名敌人。",
+        "name" : "这不是警告射击 XII",
+        "required" : 500,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentKillEnemies12"
+      }, {
+        "description" : "完成 |COUNT| 项任务",
+        "name" : "任务完成 XIII",
+        "required" : 15,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentCompleteMissions13"
+      }, {
+        "description" : "击杀 |COUNT| 名卓越者。",
+        "name" : "卓越歼灭者 XIII",
+        "required" : 30,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentKillEximus13"
+      }, {
+        "description" : "击杀 |COUNT| 名敌人。",
+        "name" : "这不是警告射击 XIII",
+        "required" : 500,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentKillEnemies13"
+      }, {
+        "description" : "完成 |COUNT| 项任务",
+        "name" : "任务完成 XIV",
+        "required" : 15,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentCompleteMissions14"
+      }, {
+        "description" : "击杀 |COUNT| 名卓越者。",
+        "name" : "卓越歼灭者 XIV",
+        "required" : 30,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentKillEximus14"
+      }, {
+        "description" : "击杀 |COUNT| 名敌人。",
+        "name" : "这不是警告射击 XIV",
+        "required" : 500,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentKillEnemies14"
+      }, {
+        "description" : "完成 |COUNT| 项任务",
+        "name" : "任务完成 XV",
+        "required" : 15,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentCompleteMissions15"
+      }, {
+        "description" : "击杀 |COUNT| 名卓越者。",
+        "name" : "卓越歼灭者 XV",
+        "required" : 30,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentKillEximus15"
+      }, {
+        "description" : "击杀 |COUNT| 名敌人。",
+        "name" : "这不是警告射击 XV",
+        "required" : 500,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentKillEnemies15"
+      }, {
+        "description" : "完成 |COUNT| 项任务",
+        "name" : "任务完成 XVI",
+        "required" : 15,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentCompleteMissions16"
+      }, {
+        "description" : "击杀 |COUNT| 名卓越者。",
+        "name" : "卓越歼灭者 XVI",
+        "required" : 30,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentKillEximus16"
+      }, {
+        "description" : "击杀 |COUNT| 名敌人。",
+        "name" : "这不是警告射击 XVI",
+        "required" : 500,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentKillEnemies16"
+      }, {
+        "description" : "完成 |COUNT| 项任务",
+        "name" : "任务完成 XVII",
+        "required" : 15,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentCompleteMissions17"
+      }, {
+        "description" : "击杀 |COUNT| 名卓越者。",
+        "name" : "卓越歼灭者 XVII",
+        "required" : 30,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentKillEximus17"
+      }, {
+        "description" : "击杀 |COUNT| 名敌人。",
+        "name" : "这不是警告射击 XVII",
+        "required" : 500,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentKillEnemies17"
+      }, {
+        "description" : "完成 |COUNT| 项任务",
+        "name" : "任务完成 XVIII",
+        "required" : 15,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentCompleteMissions18"
+      }, {
+        "description" : "击杀 |COUNT| 名卓越者。",
+        "name" : "卓越歼灭者 XVIII",
+        "required" : 30,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentKillEximus18"
+      }, {
+        "description" : "击杀 |COUNT| 名敌人。",
+        "name" : "这不是警告射击 XVIII",
+        "required" : 500,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentKillEnemies18"
+      }, {
+        "description" : "完成 |COUNT| 项任务",
+        "name" : "任务完成 XIX",
+        "required" : 15,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentCompleteMissions19"
+      }, {
+        "description" : "击杀 |COUNT| 名卓越者。",
+        "name" : "卓越歼灭者 XIX",
+        "required" : 30,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentKillEximus19"
+      }, {
+        "description" : "击杀 |COUNT| 名敌人。",
+        "name" : "这不是警告射击 XIX",
+        "required" : 500,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentKillEnemies19"
+      }, {
+        "description" : "完成 |COUNT| 项任务",
+        "name" : "任务完成 XX",
+        "required" : 15,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentCompleteMissions20"
+      }, {
+        "description" : "击杀 |COUNT| 名卓越者。",
+        "name" : "卓越歼灭者 XX",
+        "required" : 30,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentKillEximus20"
+      }, {
+        "description" : "击杀 |COUNT| 名敌人。",
+        "name" : "这不是警告射击 XX",
+        "required" : 500,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentKillEnemies20"
+      }, {
+        "description" : "完成 |COUNT| 项任务",
+        "name" : "任务完成 XXI",
+        "required" : 15,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentCompleteMissions21"
+      }, {
+        "description" : "击杀 |COUNT| 名卓越者。",
+        "name" : "卓越歼灭者 XXI",
+        "required" : 30,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentKillEximus21"
+      }, {
+        "description" : "击杀 |COUNT| 名敌人。",
+        "name" : "这不是警告射击 XXI",
+        "required" : 500,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentKillEnemies21"
+      }, {
+        "description" : "完成 |COUNT| 项任务",
+        "name" : "任务完成 XXII",
+        "required" : 15,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentCompleteMissions22"
+      }, {
+        "description" : "击杀 |COUNT| 名卓越者。",
+        "name" : "卓越歼灭者 XXII",
+        "required" : 30,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentKillEximus22"
+      }, {
+        "description" : "击杀 |COUNT| 名敌人。",
+        "name" : "这不是警告射击 XXII",
+        "required" : 500,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentKillEnemies22"
+      }, {
+        "description" : "完成 |COUNT| 项任务",
+        "name" : "任务完成 XXIII",
+        "required" : 15,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentCompleteMissions23"
+      }, {
+        "description" : "击杀 |COUNT| 名卓越者。",
+        "name" : "卓越歼灭者 XXIII",
+        "required" : 30,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentKillEximus23"
+      }, {
+        "description" : "击杀 |COUNT| 名敌人。",
+        "name" : "这不是警告射击 XXIII",
+        "required" : 500,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentKillEnemies23"
+      }, {
+        "description" : "完成 |COUNT| 项任务",
+        "name" : "任务完成 XXIV",
+        "required" : 15,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentCompleteMissions24"
+      }, {
+        "description" : "击杀 |COUNT| 名卓越者。",
+        "name" : "卓越歼灭者 XXIV",
+        "required" : 30,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentKillEximus24"
+      }, {
+        "description" : "击杀 |COUNT| 名敌人。",
+        "name" : "这不是警告射击 XXIV",
+        "required" : 500,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentKillEnemies24"
+      }, {
+        "description" : "完成 |COUNT| 项任务",
+        "name" : "任务完成 XXV",
+        "required" : 15,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentCompleteMissions25"
+      }, {
+        "description" : "击杀 |COUNT| 名卓越者。",
+        "name" : "卓越歼灭者 XXV",
+        "required" : 30,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentKillEximus25"
+      }, {
+        "description" : "击杀 |COUNT| 名敌人。",
+        "name" : "这不是警告射击 XXV",
+        "required" : 500,
+        "standing" : 4500,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/Weekly/SeasonWeeklyPermanentKillEnemies25"
+      }, {
+        "description" : "完成 |COUNT| 间月球上的晋升大厅。",
+        "name" : "上行",
+        "required" : 4,
+        "standing" : 7000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardLuaPuzzles"
+      }, {
+        "description" : "完成佩里塔叛乱，并且完成至少 |COUNT| 个命令。",
+        "name" : "身经百战",
+        "required" : 6,
+        "standing" : 7000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardBattleHardened"
+      }, {
+        "description" : "完成 |COUNT| 项任何类型的噩梦任务。",
+        "name" : "暗夜之恐",
+        "required" : 5,
+        "standing" : 7000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardCompleteNightmareMissions"
+      }, {
+        "description" : "完成 |COUNT| 次突击。",
+        "name" : "突击行家",
+        "required" : 3,
+        "standing" : 7000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardCompleteSortie"
+      }, {
+        "description" : "在元素转换游戏模式中完成 |COUNT| 次成功转换。",
+        "name" : "小菜一碟，亲爱的",
+        "required" : 3,
+        "standing" : 7000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardElementaryMyDear"
+      }, {
+        "description" : "完成 |COUNT| 个精英级圣殿突袭区域。",
+        "name" : "精英测试对象",
+        "required" : 8,
+        "standing" : 7000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardEliteSanctuaryOnslaught"
+      }, {
+        "description" : "完成 |COUNT| 场虚空决战回合。",
+        "name" : "永恒守卫",
+        "required" : 2,
+        "standing" : 7000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardEternalGuardian"
+      }, {
+        "description" : "完成一场至少 12 波的防御任务。",
+        "name" : "防御",
+        "required" : 1,
+        "standing" : 7000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardFriendsDefense"
+      }, {
+        "description" : "击杀利润收割者。",
+        "name" : "利润收割者",
+        "required" : 1,
+        "standing" : 7000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardFriendsProfitTaker"
+      }, {
+        "description" : "完成一场至少 20 分钟的生存任务。",
+        "name" : "生存",
+        "required" : 1,
+        "standing" : 7000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardFriendsSurvival"
+      }, {
+        "description" : "在沉沦之地中击败罗瑟。",
+        "name" : "勇往直下",
+        "required" : 1,
+        "standing" : 7000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardGoingDown"
+      }, {
+        "description" : "在虚空洪流中封闭 |COUNT| 个裂口",
+        "name" : "制高点",
+        "required" : 12,
+        "standing" : 7000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardHighGround"
+      }, {
+        "description" : "从深矿中收集 |COUNT| 个蘑菇。",
+        "name" : "满载而归",
+        "required" : 6,
+        "standing" : 7000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardHoldTheMushrooms"
+      }, {
+        "description" : "在《指数之场》的一场比赛中连续赢得 3 场投注。",
+        "name" : "日间商人",
+        "required" : 1,
+        "standing" : 7000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardIndexWinStreak"
+      }, {
+        "description" : "击杀 |COUNT| 名敌人。",
+        "name" : "杀戮",
+        "required" : 1500,
+        "standing" : 7000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardKillEnemies"
+      }, {
+        "description" : "击杀 |COUNT| 名卓越者。",
+        "name" : "卓越处刑者",
+        "required" : 100,
+        "standing" : 7000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardKillEximus"
+      }, {
+        "description" : "击杀或捕获一个夜灵水力使。",
+        "name" : "水力使猎人",
+        "required" : 1,
+        "standing" : 7000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardKillOrCaptureRainalyst"
+      }, {
+        "description" : "在赤毒生存任务中生存超过 20 分钟。",
+        "name" : "屏住你的呼吸",
+        "required" : 1,
+        "standing" : 7000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardKuvaSurvivalNoCapsules"
+      }, {
+        "description" : "解开 |COUNT| 个遗物",
+        "name" : "解开遗物",
+        "required" : 10,
+        "standing" : 7000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardUnlockRelics"
+      }, {
+        "description" : "在钢铁之路击杀 |COUNT| 名敌人。",
+        "name" : "寒冰玄铁",
+        "required" : 1000,
+        "standing" : 7000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardKillEnemiesSteelPath"
+      }, {
+        "description" : "完成一场织屿人双衍王境任务。",
+        "name" : "蜘蛛狩猎",
+        "required" : 1,
+        "standing" : 7000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardSpiderHunt"
+      }, {
+        "description" : "完成一次衰退室。",
+        "name" : "来自过去的宝藏",
+        "required" : 1,
+        "standing" : 7000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardTreasureFromThePast"
+      }, {
+        "description" : "收集 |COUNT| 种不同类型的资源。",
+        "name" : "资源清道夫",
+        "required" : 20,
+        "standing" : 7000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardCollectUniqueResources"
+      }, {
+        "description" : "完成 |COUNT| 场不同的钢铁之路任务。",
+        "name" : "罕迹之路",
+        "required" : 5,
+        "standing" : 7000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardCompleteSteelPathMissions"
+      }, {
+        "description" : "开启每个类型 |COUNT| 的遗物（古纪、前纪、中纪、后纪）。",
+        "name" : "收藏家",
+        "required" : 4,
+        "standing" : 7000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardAntiquarian"
+      }, {
+        "description" : "使用一枚格拉努硬币来解救一名索拉里斯人质。",
+        "name" : "自由的代价",
+        "required" : 1,
+        "standing" : 7000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardThePriceOfFreedom"
+      }, {
+        "description" : "用 10 个裂罅碎块换取一张裂罅 Mod",
+        "name" : "聚沙成卡",
+        "required" : 1,
+        "standing" : 7000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardTheManyMadeWhole"
+      }, {
+        "description" : "消灭 |COUNT| 名隔离库殁世机甲守卫。",
+        "name" : "终结者",
+        "required" : 3,
+        "standing" : 7000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardTerminated"
+      }, {
+        "description" : "使用殁世机甲击杀 |COUNT| 名敌人并且不被摧毁。",
+        "name" : "机甲崛起",
+        "required" : 300,
+        "standing" : 7000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardRiseOfTheMachine"
+      }, {
+        "description" : "在扎里曼号上击杀 |COUNT| 个虚空天使。 ",
+        "name" : "堕落天使",
+        "required" : 3,
+        "standing" : 7000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardFallenAngel"
+      }, {
+        "description" : "在 90 秒内完成一个捕获任务",
+        "name" : "极速战士",
+        "required" : 1,
+        "standing" : 7000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardFastCapture"
+      }, {
+        "description" : "击杀剥削者圆蛛",
+        "name" : "唯利是图",
+        "required" : 1,
+        "standing" : 7000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardKillExploiterOrb"
+      }, {
+        "description" : "在夜灵平野上击杀一个巨牙重击者朵玛",
+        "name" : "无律之行",
+        "required" : 1,
+        "standing" : 7000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardKillThumper"
+      }, {
+        "description" : "完成 |COUNT| 项航道星舰任务",
+        "name" : "精英探险家",
+        "required" : 6,
+        "standing" : 7000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardRailjackMissions"
+      }, {
+        "description" : "完成一次执刑官猎杀。",
+        "name" : "执刑官猎杀者",
+        "required" : 1,
+        "standing" : 7000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardCompleteArchonHunt"
+      }, {
+        "description" : "在单次任务中防御两个镜像防御目标各 3 次。",
+        "name" : "魔镜，魔镜",
+        "required" : 1,
+        "standing" : 7000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardFriendsMirrorDefense"
+      }, {
+        "description" : "在任务中激活任意灵化武器的灵化形态 |COUNT| 次",
+        "name" : "仪式的进化",
+        "required" : 5,
+        "standing" : 7000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardCeremonialEvolution"
+      }, {
+        "description" : "在钢铁之路中击败奥金魇龙",
+        "name" : "精英野兽杀手",
+        "required" : 1,
+        "standing" : 7000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardEliteBeastSlayer"
+      }, {
+        "description" : "完成一场仲裁任务",
+        "name" : "关键仲裁者",
+        "required" : 1,
+        "standing" : 7000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardVitalArbiter"
+      }, {
+        "description" : "在扎里曼号完成 |COUNT| 次赏金任务。",
+        "name" : "扎里曼赏金猎人",
+        "required" : 4,
+        "standing" : 7000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardZarimanBountyHunter"
+      }, {
+        "description" : "击败一辆 H-09 艾弗旺坦克",
+        "name" : "坦克破灭",
+        "required" : 1,
+        "standing" : 7000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardKillTank"
+      }, {
+        "description" : "完成一次深层科研或时光科研",
+        "name" : "自愿受试者",
+        "required" : 1,
+        "standing" : 7000,
+        "uniqueName" : "/Lotus/Types/Challenges/Seasons/WeeklyHard/SeasonWeeklyHardCompleteConquest"
+      } ],
+      "rewards" : [ {
+        "itemCount" : 150,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "description" : "如果想哭了，这只毛茸茸的滴答玩偶可以陪伴你！",
+        "name" : "滴答玩偶",
+        "uniqueName" : "/Lotus/StoreItems/Types/Items/ShipDecos/Plushies/PlushyDrippy"
+      }, {
+        "description" : "内含 3 个 Forma 的组合包。",
+        "name" : "Forma 组合包",
+        "uniqueName" : "/Lotus/Types/StoreItems/Packages/FormaPack"
+      }, {
+        "components" : [ "科腐肩甲", "科腐胸甲", "科腐腿甲" ],
+        "description" : "科腐者风格的外观，但没有那令人厌恶的致命感染。",
+        "name" : "科腐者护甲组合包",
+        "uniqueName" : "/Lotus/Types/StoreItems/Packages/Inf1999ArmorBundle"
+      }, {
+        "itemCount" : 50,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "uniqueName" : "/Lotus/Upgrades/Skins/Scarves/LasNightwaveCape"
+      }, {
+        "uniqueName" : "/Lotus/Types/Items/ShipDecos/Nightwave/NightwaveEntertechmentCrate"
+      }, {
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/WeaponPrimaryArcaneUnlocker"
+      }, {
+        "description" : "增加 2 个武器槽位。",
+        "name" : "武器槽位",
+        "uniqueName" : "/Lotus/StoreItems/Types/StoreItems/SlotItems/TwoWeaponSlotItem"
+      }, {
+        "uniqueName" : "/Lotus/Upgrades/Mods/Pistol/Event/Nightwave/NightwaveLasGooPistolAugmentMod"
+      }, {
+        "itemCount" : 50,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/FormaStance"
+      }, {
+        "uniqueName" : "/Lotus/Types/StoreItems/AvatarImages/AvatarImageNightwaveDrippyGraffitiGlyph"
+      }, {
+        "itemCount" : 3,
+        "uniqueName" : "/Lotus/Upgrades/CosmeticEnhancers/Defensive/ArmourOnDamage"
+      }, {
+        "uniqueName" : "/Lotus/Upgrades/Skins/Operator/Accessories/NightWaveScouterEyePiece"
+      }, {
+        "itemCount" : 150,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "uniqueName" : "/Lotus/Upgrades/Skins/BrokenFrame/XakuCosmosSkin"
+      }, {
+        "uniqueName" : "/Lotus/Upgrades/Skins/MeleeDangles/DrippyKeychainMeleeDangle"
+      }, {
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/RivenIdentifier"
+      }, {
+        "description" : "增加 1 个战甲槽位。",
+        "name" : "战甲槽位",
+        "uniqueName" : "/Lotus/StoreItems/Types/StoreItems/SlotItems/SuitSlotItem"
+      }, {
+        "itemCount" : 50,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "uniqueName" : "/Lotus/Types/Items/Emotes/FinishLine"
+      }, {
+        "uniqueName" : "/Lotus/Upgrades/Skins/Effects/NightwaveDigitalEphemera"
+      }, {
+        "itemCount" : 50,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "uniqueName" : "/Lotus/Upgrades/Mods/Rifle/Event/Nightwave/NightwaveLasGooAKAugmentMod"
+      }, {
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/FormaAura"
+      }, {
+        "uniqueName" : "/Lotus/Types/StoreItems/SuitCustomizations/ColourPickerNightwave1999Item"
+      }, {
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/FormaUmbra"
+      }, {
+        "uniqueName" : "/Lotus/Types/Items/Titles/ShockwaveTitle"
+      }, {
+        "components" : [ "凯恩壳原子摩托车夹克", "凯恩壳原子摩托车头盔", "凯恩壳原子摩托车绑腿", "凯恩壳原子摩托车袖件" ],
+        "description" : "穿上这套新千年风格的机车服。适用于漂泊者和指挥官。",
+        "name" : "凯恩壳原子摩托车礼服",
+        "uniqueName" : "/Lotus/Types/StoreItems/Packages/OperatorSuitNightwave1999Bundle"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      }, {
+        "itemCount" : 15,
+        "uniqueName" : "/Lotus/Types/Items/MiscItems/NoraIntermissionSixteenCreds"
+      } ]
+    },
+    "ExportOther" : [ {
+      "description" : "随机出售一件未贴标的库存余货，恕不提供挑选。每位顾客限购一件。",
+      "excludeFromCodex" : true,
+      "name" : "虚空余货",
+      "uniqueName" : "/Lotus/StoreItems/Types/BoosterPacks/BaroTreasureBox"
+    }, {
+      "description" : "提升你的 Tenno 武器和装备经验。当启用后你获得的经验值增加一倍。",
+      "excludeFromCodex" : true,
+      "name" : "30 天经验值加成",
+      "uniqueName" : "/Lotus/Types/StoreItems/Boosters/AffinityBooster30DayStoreItem"
+    }, {
+      "description" : "提升你的 Tenno 武器和装备经验。当启用后你获得的经验值增加一倍。",
+      "excludeFromCodex" : true,
+      "name" : "3 天经验值加成",
+      "uniqueName" : "/Lotus/Types/StoreItems/Boosters/AffinityBooster3DayStoreItem"
+    }, {
+      "description" : "提升你的 Tenno 武器和装备经验。当启用后你获得的经验值增加一倍。",
+      "excludeFromCodex" : true,
+      "name" : "7 天经验值加成",
+      "uniqueName" : "/Lotus/Types/StoreItems/Boosters/AffinityBooster7DayStoreItem"
+    }, {
+      "description" : "提升你的 Tenno 武器和装备经验。当启用后你获得的经验值增加一倍。",
+      "excludeFromCodex" : true,
+      "name" : "90 天经验值加成",
+      "uniqueName" : "/Lotus/Types/StoreItems/Boosters/AffinityBooster90DayStoreItem"
+    }, {
+      "description" : "将你从拾取和任务奖励中获得的现金数量加倍。",
+      "excludeFromCodex" : true,
+      "name" : "30 天现金加成",
+      "uniqueName" : "/Lotus/Types/StoreItems/Boosters/CreditBooster30DayStoreItem"
+    }, {
+      "description" : "将你从拾取和任务奖励中获得的现金数量加倍。",
+      "excludeFromCodex" : true,
+      "name" : "3 天现金加成",
+      "uniqueName" : "/Lotus/Types/StoreItems/Boosters/CreditBooster3DayStoreItem"
+    }, {
+      "description" : "将你从拾取和任务奖励中获得的现金数量加倍。",
+      "excludeFromCodex" : true,
+      "name" : "7 天现金加成",
+      "uniqueName" : "/Lotus/Types/StoreItems/Boosters/CreditBooster7DayStoreItem"
+    }, {
+      "description" : "将你从拾取和任务奖励中获得的现金数量加倍。",
+      "excludeFromCodex" : true,
+      "name" : "90 天现金加成",
+      "uniqueName" : "/Lotus/Types/StoreItems/Boosters/CreditBooster90DayStoreItem"
+    }, {
+      "description" : "敌人掉落 Mod、内融核心和赋能的几率增加一倍。",
+      "excludeFromCodex" : true,
+      "name" : "30 天 Mod 掉落几率加成",
+      "uniqueName" : "/Lotus/Types/StoreItems/Boosters/ModDropChanceBooster30DayStoreItem"
+    }, {
+      "description" : "敌人掉落 Mod、内融核心和赋能的几率增加一倍。",
+      "excludeFromCodex" : true,
+      "name" : "3 天 Mod 掉落几率加成",
+      "uniqueName" : "/Lotus/Types/StoreItems/Boosters/ModDropChanceBooster3DayStoreItem"
+    }, {
+      "description" : "敌人掉落 Mod、内融核心和赋能的几率增加一倍。",
+      "excludeFromCodex" : true,
+      "name" : "7 天 Mod 掉落几率加成",
+      "uniqueName" : "/Lotus/Types/StoreItems/Boosters/ModDropChanceBooster7DayStoreItem"
+    }, {
+      "description" : "敌人掉落 Mod、内融核心和赋能的几率增加一倍。",
+      "excludeFromCodex" : true,
+      "name" : "90 天 Mod 掉落几率加成",
+      "uniqueName" : "/Lotus/Types/StoreItems/Boosters/ModDropChanceBooster90DayStoreItem"
+    }, {
+      "description" : "使用者所拾取的资源数量增加一倍。",
+      "excludeFromCodex" : true,
+      "name" : "30 天资源数量加成",
+      "uniqueName" : "/Lotus/Types/StoreItems/Boosters/ResourceAmount30DayStoreItem"
+    }, {
+      "description" : "使用者所拾取的资源数量增加一倍。",
+      "excludeFromCodex" : true,
+      "name" : "3 天资源数量加成",
+      "uniqueName" : "/Lotus/Types/StoreItems/Boosters/ResourceAmount3DayStoreItem"
+    }, {
+      "description" : "使用者所拾取的资源数量增加一倍。",
+      "excludeFromCodex" : true,
+      "name" : "7 天资源数量加成",
+      "uniqueName" : "/Lotus/Types/StoreItems/Boosters/ResourceAmount7DayStoreItem"
+    }, {
+      "description" : "使用者所拾取的资源数量增加一倍。",
+      "excludeFromCodex" : true,
+      "name" : "90 天资源数量加成",
+      "uniqueName" : "/Lotus/Types/StoreItems/Boosters/ResourceAmount90DayStoreItem"
+    }, {
+      "description" : "资源掉落的几率增加一倍",
+      "excludeFromCodex" : true,
+      "name" : "30 天资源掉落几率加成",
+      "uniqueName" : "/Lotus/Types/StoreItems/Boosters/ResourceDropChance30DayStoreItem"
+    }, {
+      "description" : "资源掉落的几率增加一倍",
+      "excludeFromCodex" : true,
+      "name" : "3 天资源掉落几率加成",
+      "uniqueName" : "/Lotus/Types/StoreItems/Boosters/ResourceDropChance3DayStoreItem"
+    }, {
+      "description" : "资源掉落的几率增加一倍",
+      "excludeFromCodex" : true,
+      "name" : "7 天资源掉落几率加成",
+      "uniqueName" : "/Lotus/Types/StoreItems/Boosters/ResourceDropChance7DayStoreItem"
+    }, {
+      "description" : "改变库娃的外表颜色和花纹来配合镜像型库娃或者笑面型库娃的种类特征。",
+      "name" : "库娃基因伪装包",
+      "uniqueName" : "/Lotus/Types/StoreItems/Packages/KavatBaseColorPack"
+    }, {
+      "description" : "使用这些独立的基因序列来自定义库娃的皮毛外观。",
+      "excludeFromCodex" : true,
+      "name" : "识海库娃基因伪装包",
+      "uniqueName" : "/Lotus/Types/StoreItems/Packages/KavatColorPackCeph"
+    }, {
+      "description" : "现存的记录表明，狄尔拉库娃种族是由奥罗金培育的，并深受其喜爱。[Tenno之友比赛冠军]",
+      "name" : "狄尔拉库娃基因伪装包",
+      "uniqueName" : "/Lotus/Types/StoreItems/Packages/KavatColorPackContest"
+    }, {
+      "description" : "奥罗金设计了这种 DNA 结构，让他们的库娃体现季节的更新。",
+      "name" : "破晓库娃基因伪装包",
+      "uniqueName" : "/Lotus/Types/StoreItems/Packages/KavatColorPackDaybreak"
+    }, {
+      "description" : "将《双衍王境故事集》中的可娃带回始源星系作为库娃外观。",
+      "name" : "可娃库娃基因伪装包",
+      "uniqueName" : "/Lotus/Types/StoreItems/Packages/KavatColorPackDuviri"
+    }, {
+      "description" : "让你的库娃看起来像卡利莫斯，它是阿尔布雷希特·英择谛忠实的同伴。",
+      "name" : "卡利莫斯库娃基因伪装包",
+      "uniqueName" : "/Lotus/Types/StoreItems/Packages/KavatColorPackEntrati"
+    }, {
+      "description" : "一种适合夜间狩猎的库娃花纹。",
+      "name" : "无月库娃基因伪装包",
+      "uniqueName" : "/Lotus/Types/StoreItems/Packages/KavatColorPackFeral"
+    }, {
+      "description" : "借由调整其 DNA 架构将库娃蜕化为一头无毛鬣猫。",
+      "name" : "鬣猫基因伪装包",
+      "uniqueName" : "/Lotus/Types/StoreItems/Packages/KavatColorPackHyekka"
+    }, {
+      "description" : "使用这些独立的基因序列来自定义库娃的皮毛外观。",
+      "name" : "克雷斯特基因伪装包",
+      "uniqueName" : "/Lotus/Types/StoreItems/Packages/KavatColorPackKrest"
+    }, {
+      "description" : "使用这些独立的基因序列来自定义库娃的皮毛外观。",
+      "name" : "奈赛尔基因伪装包",
+      "uniqueName" : "/Lotus/Types/StoreItems/Packages/KavatColorPackNesyr"
+    }, {
+      "description" : "以这些分离的 DNA 序列来自定义库娃的毛色。",
+      "name" : "纳瑟斯基因伪装包",
+      "uniqueName" : "/Lotus/Types/StoreItems/Packages/KavatColorPackNexus"
+    }, {
+      "description" : "用这套优雅的 Prime 版基因伪装来搭配库娃的蒂伯护甲吧。",
+      "name" : "蒂伯 Prime 基因伪装包",
+      "uniqueName" : "/Lotus/Types/StoreItems/Packages/KavatColorPackPrimeA"
+    }, {
+      "description" : "以这组分离的 DNA 序列自定库娃的毛色。",
+      "name" : "冬至库娃基因伪装包",
+      "uniqueName" : "/Lotus/Types/StoreItems/Packages/KavatColorPackSolstice"
+    }, {
+      "description" : "以这组分离的 DNA 序列自定库娃的毛色。",
+      "name" : "菱格基因伪装包",
+      "uniqueName" : "/Lotus/Types/StoreItems/Packages/KavatColorPackXmas"
+    }, {
+      "description" : "提供给库狛的天生 DNA 结构用的基础版遮蔽选项，让你能自定义库狛的颜色。",
+      "name" : "基本版基因伪装包",
+      "uniqueName" : "/Lotus/Types/StoreItems/Packages/KubrowBaseColorPack"
+    }, {
+      "description" : "这个工具提供了改造库狛 DNA 结构所需的全部基因信息，并让 Tenno 能自定库狛的毛皮花纹。",
+      "name" : "尼蒐丛基因伪装包",
+      "uniqueName" : "/Lotus/Types/StoreItems/Packages/KubrowColorPackCandyCane"
+    }, {
+      "description" : "与库狛的海诺祖先匹配的毛皮花纹，来自库狛大师 Skvirl 保存下来的一个基因序列 。[Tenno 之友比赛冠军]",
+      "name" : "爪喀库狛基因伪装包",
+      "uniqueName" : "/Lotus/Types/StoreItems/Packages/KubrowColorPackContest"
+    }, {
+      "description" : "奥罗金设计了这种 DNA 结构，让他们的库狛体现季节的更新。",
+      "name" : "破晓库狛基因伪装包",
+      "uniqueName" : "/Lotus/Types/StoreItems/Packages/KubrowColorPackDaybreak"
+    }, {
+      "description" : "这个工具提供了改造库狛 DNA 结构所需的全部基因信息，并让 Tenno 能自定库狛的毛皮花纹。",
+      "name" : "奥克鲁特基因伪装包",
+      "uniqueName" : "/Lotus/Types/StoreItems/Packages/KubrowColorPackLiquid"
+    }, {
+      "description" : "这个工具提供了改造库狛 DNA 结构所需的全部基因信息，并让 Tenno 能自定库狛的毛皮花纹。",
+      "name" : "奈良鹿基因伪装包",
+      "uniqueName" : "/Lotus/Types/StoreItems/Packages/KubrowColorPackReindeer"
+    }, {
+      "description" : "这个工具提供了改造库狛 DNA 结构所需的全部基因信息，并让 Tenno 能自定库狛的毛皮花纹。",
+      "name" : "冬至库狛基因伪装包",
+      "uniqueName" : "/Lotus/Types/StoreItems/Packages/KubrowColorPackSolstice"
+    }, {
+      "description" : "这个工具包含了改造库狛 DNA 结构并使其毛皮花纹与其大麦町祖先相匹配所需的全部基因信息。",
+      "name" : "大麦町基因伪装包",
+      "uniqueName" : "/Lotus/Types/StoreItems/Packages/KubrowColorPackSpeckled"
+    }, {
+      "description" : "这个工具包含了改造库狛 DNA 结构并使其毛皮花纹与其赛凡咖祖先相匹配所需的全部基因信息。",
+      "name" : "赛凡咖基因伪装包",
+      "uniqueName" : "/Lotus/Types/StoreItems/Packages/KubrowColorPackStriped"
+    }, {
+      "description" : "这个工具包含了改造库狛 DNA 结构并使其毛皮花纹与其虎古尔祖先相匹配所需的全部基因信息。",
+      "name" : "虎古尔基因伪装包",
+      "uniqueName" : "/Lotus/Types/StoreItems/Packages/KubrowColorPackTiger"
+    }, {
+      "description" : "用这款毛皮花纹来培育一只足以赢得选美大奖的库狛和库娃吧。此组合包同时包含海诺库狛毛皮花纹和狄尔拉库娃毛皮花纹。[Tenno 之友比赛冠军]",
+      "name" : "同伴花纹冠军组合包",
+      "uniqueName" : "/Lotus/Types/StoreItems/Packages/KubrowKavatContestPack"
+    }, {
+      "description" : "为时髦 Tenno 打造的整套装饰性护甲。",
+      "name" : "曙光女神 Prime 护甲套装",
+      "uniqueName" : "/Lotus/Types/StoreItems/Packages/VTEosArmourBundle"
+    } ],
+    "ExportRailjack" : {
+      "nodes" : [ {
+        "name" : "弗雷沙",
+        "uniqueName" : "CrewBattleNode553"
+      }, {
+        "name" : "H-2 星云",
+        "uniqueName" : "CrewBattleNode554"
+      }, {
+        "name" : "R-9 星云",
+        "uniqueName" : "CrewBattleNode555"
+      }, {
+        "name" : "恩斯尤区格",
+        "uniqueName" : "CrewBattleNode550"
+      }, {
+        "name" : "蒲芦",
+        "uniqueName" : "CrewBattleNode538"
+      }, {
+        "name" : "努秘",
+        "uniqueName" : "CrewBattleNode539"
+      }, {
+        "name" : "曲银之地",
+        "uniqueName" : "CrewBattleNode540"
+      }, {
+        "name" : "深情之域",
+        "uniqueName" : "CrewBattleNode541"
+      }, {
+        "name" : "鹿岩",
+        "uniqueName" : "CrewBattleNode542"
+      }, {
+        "name" : "萨米尔星云",
+        "uniqueName" : "CrewBattleNode543"
+      } ]
+    },
+    "ExportSortieRewards" : [ {
+      "itemCount" : 1,
+      "probability" : 0.28,
+      "rarity" : "COMMON",
+      "rewardName" : "/Lotus/StoreItems/Types/Items/FusionTreasures/OroFusexF",
+      "tier" : 0
+    }, {
+      "itemCount" : 50,
+      "probability" : 0.12,
+      "rarity" : "COMMON",
+      "rewardName" : "/Lotus/StoreItems/Upgrades/Mods/FusionBundles/RareFusionBundle",
+      "tier" : 0
+    }, {
+      "itemCount" : 1,
+      "probability" : 0.025,
+      "rarity" : "COMMON",
+      "rewardName" : "/Lotus/StoreItems/Types/Items/MiscItems/Forma",
+      "tier" : 0
+    }, {
+      "itemCount" : 1,
+      "probability" : 0.025,
+      "rarity" : "COMMON",
+      "rewardName" : "/Lotus/StoreItems/Types/Items/MiscItems/UtilityUnlocker",
+      "tier" : 0
+    }, {
+      "itemCount" : 1,
+      "probability" : 0.025,
+      "rarity" : "COMMON",
+      "rewardName" : "/Lotus/StoreItems/Types/Recipes/Components/OrokinReactorBlueprint",
+      "tier" : 0
+    }, {
+      "itemCount" : 1,
+      "probability" : 0.025,
+      "rarity" : "COMMON",
+      "rewardName" : "/Lotus/StoreItems/Types/Recipes/Components/OrokinCatalystBlueprint",
+      "tier" : 0
+    }, {
+      "itemCount" : 1,
+      "probability" : 0.0019,
+      "rarity" : "COMMON",
+      "rewardName" : "/Lotus/StoreItems/Upgrades/Mods/Fusers/LegendaryModFuser",
+      "tier" : 0
+    }, {
+      "itemCount" : 6000,
+      "probability" : 0.12,
+      "rarity" : "COMMON",
+      "rewardName" : "/Lotus/StoreItems/Types/Items/MiscItems/Kuva",
+      "tier" : 0
+    }, {
+      "itemCount" : 1,
+      "probability" : 0.032699998,
+      "rarity" : "COMMON",
+      "rewardName" : "/Lotus/Types/StoreItems/Boosters/AffinityBoosterStoreItem",
+      "tier" : 0
+    }, {
+      "itemCount" : 1,
+      "probability" : 0.032699998,
+      "rarity" : "COMMON",
+      "rewardName" : "/Lotus/Types/StoreItems/Boosters/ResourceDropChanceBoosterStoreItem",
+      "tier" : 0
+    }, {
+      "itemCount" : 1,
+      "probability" : 0.032699998,
+      "rarity" : "COMMON",
+      "rewardName" : "/Lotus/Types/StoreItems/Boosters/ModDropChanceBoosterStoreItem",
+      "tier" : 0
+    }, {
+      "itemCount" : 1,
+      "probability" : 0.07,
+      "rarity" : "COMMON",
+      "rewardName" : "/Lotus/StoreItems/Upgrades/Mods/Randomized/RawRifleRandomMod",
+      "tier" : 0
+    }, {
+      "itemCount" : 1,
+      "probability" : 0.07,
+      "rarity" : "COMMON",
+      "rewardName" : "/Lotus/StoreItems/Upgrades/Mods/Randomized/RawPistolRandomMod",
+      "tier" : 0
+    }, {
+      "itemCount" : 1,
+      "probability" : 0.022,
+      "rarity" : "COMMON",
+      "rewardName" : "/Lotus/StoreItems/Upgrades/Mods/Randomized/RawShotgunRandomMod",
+      "tier" : 0
+    }, {
+      "itemCount" : 1,
+      "probability" : 0.097999997,
+      "rarity" : "COMMON",
+      "rewardName" : "/Lotus/StoreItems/Upgrades/Mods/Randomized/RawMeleeRandomMod",
+      "tier" : 0
+    }, {
+      "itemCount" : 1,
+      "probability" : 0.0099999998,
+      "rarity" : "COMMON",
+      "rewardName" : "/Lotus/StoreItems/Upgrades/Mods/Randomized/RawModularMeleeRandomMod",
+      "tier" : 0
+    }, {
+      "itemCount" : 1,
+      "probability" : 0.010000138,
+      "rarity" : "COMMON",
+      "rewardName" : "/Lotus/StoreItems/Upgrades/Mods/Randomized/RawModularPistolRandomMod",
+      "tier" : 0
+    } ]
+  },
+  "sourceId" : "ExportSortieRewards"
+}

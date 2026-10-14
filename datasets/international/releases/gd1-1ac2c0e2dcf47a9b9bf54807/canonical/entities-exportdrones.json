@@ -1,0 +1,301 @@
+{
+  "entities" : [ {
+    "id" : "/Lotus/Types/Ship/AdvancedResourceDrone",
+    "key" : "ExportDrones|/Lotus/Types/Ship/AdvancedResourceDrone",
+    "names" : {
+      "en" : "Titan Extractor Prime",
+      "zh" : "泰坦采集机 Prime"
+    },
+    "provenance" : [ {
+      "index" : 0,
+      "locale" : "en",
+      "path" : "exports/en/ExportDrones.json",
+      "section" : "ExportDrones",
+      "sha256" : "144572577f66592254752c33484ec5779162da6fcb59a27915aca321c612d4c4"
+    }, {
+      "index" : 0,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportDrones.json",
+      "section" : "ExportDrones",
+      "sha256" : "5ec7f91d6efa01df0b0b8bc0133e663935c1b871546a27a70ccad175416547d1"
+    } ],
+    "section" : "ExportDrones",
+    "variants" : {
+      "en" : {
+        "binCapacity" : 2,
+        "binCount" : 1,
+        "capacityMultiplier" : [ 8, 6, 4, 1 ],
+        "codexSecret" : false,
+        "description" : "Deploy the Extractor on a planet to collect large amounts of resources.\r\n\r\nMust be emptied regularly for maximum efficiency and monitored for damage.",
+        "durability" : 100,
+        "fillRate" : 4,
+        "name" : "Titan Extractor Prime",
+        "repairRate" : 10,
+        "specialities" : [ ],
+        "uniqueName" : "/Lotus/Types/Ship/AdvancedResourceDrone"
+      },
+      "zh" : {
+        "binCapacity" : 2,
+        "binCount" : 1,
+        "capacityMultiplier" : [ 8, 6, 4, 1 ],
+        "codexSecret" : false,
+        "description" : "在一个星球上部署采集机来收集大量资源。\r\n\r\n必须定期清理，才能达到最高效率并防止损坏。",
+        "durability" : 100,
+        "fillRate" : 4,
+        "name" : "泰坦采集机 Prime",
+        "repairRate" : 10,
+        "specialities" : [ ],
+        "uniqueName" : "/Lotus/Types/Ship/AdvancedResourceDrone"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Types/Ship/AdvancedUcResourceDrone",
+    "key" : "ExportDrones|/Lotus/Types/Ship/AdvancedUcResourceDrone",
+    "names" : {
+      "en" : "Distilling Extractor Prime",
+      "zh" : "精粹采集机 Prime"
+    },
+    "provenance" : [ {
+      "index" : 1,
+      "locale" : "en",
+      "path" : "exports/en/ExportDrones.json",
+      "section" : "ExportDrones",
+      "sha256" : "144572577f66592254752c33484ec5779162da6fcb59a27915aca321c612d4c4"
+    }, {
+      "index" : 1,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportDrones.json",
+      "section" : "ExportDrones",
+      "sha256" : "5ec7f91d6efa01df0b0b8bc0133e663935c1b871546a27a70ccad175416547d1"
+    } ],
+    "section" : "ExportDrones",
+    "variants" : {
+      "en" : {
+        "binCapacity" : 2,
+        "binCount" : 1,
+        "capacityMultiplier" : [ 8, 6, 4, 1 ],
+        "codexSecret" : false,
+        "description" : "The Distilling Extractor Prime has an increased chance of acquiring uncommon and rare resources.\r\n\r\nDeploy this Extractor on a planet to collect large amounts of resources. It must be emptied regularly and monitored for damage.",
+        "durability" : 200,
+        "fillRate" : 8,
+        "name" : "Distilling Extractor Prime",
+        "repairRate" : 20,
+        "specialities" : [ ],
+        "uniqueName" : "/Lotus/Types/Ship/AdvancedUcResourceDrone"
+      },
+      "zh" : {
+        "binCapacity" : 2,
+        "binCount" : 1,
+        "capacityMultiplier" : [ 8, 6, 4, 1 ],
+        "codexSecret" : false,
+        "description" : "精粹采集机 PRIME 增加获得稀有资源的几率。\r\n\r\n部署采集机在星球收集大量资源 ，它必须定期清理并检查是否有损坏。",
+        "durability" : 200,
+        "fillRate" : 8,
+        "name" : "精粹采集机 Prime",
+        "repairRate" : 20,
+        "specialities" : [ ],
+        "uniqueName" : "/Lotus/Types/Ship/AdvancedUcResourceDrone"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Types/Ship/BasicResourceDrone",
+    "key" : "ExportDrones|/Lotus/Types/Ship/BasicResourceDrone",
+    "names" : {
+      "en" : "Titan Extractor",
+      "zh" : "泰坦采集机"
+    },
+    "provenance" : [ {
+      "index" : 2,
+      "locale" : "en",
+      "path" : "exports/en/ExportDrones.json",
+      "section" : "ExportDrones",
+      "sha256" : "144572577f66592254752c33484ec5779162da6fcb59a27915aca321c612d4c4"
+    }, {
+      "index" : 2,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportDrones.json",
+      "section" : "ExportDrones",
+      "sha256" : "5ec7f91d6efa01df0b0b8bc0133e663935c1b871546a27a70ccad175416547d1"
+    } ],
+    "section" : "ExportDrones",
+    "variants" : {
+      "en" : {
+        "binCapacity" : 1,
+        "binCount" : 1,
+        "capacityMultiplier" : [ 8, 6, 4, 1 ],
+        "codexSecret" : false,
+        "description" : "Deploy the Extractor on a planet to collect resources.\r\n\r\nMust be emptied regularly for maximum efficiency and monitored for damage.",
+        "durability" : 100,
+        "fillRate" : 4,
+        "name" : "Titan Extractor",
+        "repairRate" : 10,
+        "specialities" : [ ],
+        "uniqueName" : "/Lotus/Types/Ship/BasicResourceDrone"
+      },
+      "zh" : {
+        "binCapacity" : 1,
+        "binCount" : 1,
+        "capacityMultiplier" : [ 8, 6, 4, 1 ],
+        "codexSecret" : false,
+        "description" : "在一个星球上部署采集机来收集资源。\r\n\r\n必须定期清理，才能达到最高效率并防止损坏。",
+        "durability" : 100,
+        "fillRate" : 4,
+        "name" : "泰坦采集机",
+        "repairRate" : 10,
+        "specialities" : [ ],
+        "uniqueName" : "/Lotus/Types/Ship/BasicResourceDrone"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Types/Ship/BasicUcResourceDrone",
+    "key" : "ExportDrones|/Lotus/Types/Ship/BasicUcResourceDrone",
+    "names" : {
+      "en" : "Distilling Extractor",
+      "zh" : "精粹采集机"
+    },
+    "provenance" : [ {
+      "index" : 3,
+      "locale" : "en",
+      "path" : "exports/en/ExportDrones.json",
+      "section" : "ExportDrones",
+      "sha256" : "144572577f66592254752c33484ec5779162da6fcb59a27915aca321c612d4c4"
+    }, {
+      "index" : 3,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportDrones.json",
+      "section" : "ExportDrones",
+      "sha256" : "5ec7f91d6efa01df0b0b8bc0133e663935c1b871546a27a70ccad175416547d1"
+    } ],
+    "section" : "ExportDrones",
+    "variants" : {
+      "en" : {
+        "binCapacity" : 1,
+        "binCount" : 1,
+        "capacityMultiplier" : [ 8, 6, 4, 1 ],
+        "codexSecret" : false,
+        "description" : "The Distilling Extractor has an increased chance of acquiring uncommon and rare resources.\r\n\r\nDeploy this Extractor on a planet to collect resources. It must be emptied regularly and monitored for damage.",
+        "durability" : 200,
+        "fillRate" : 8,
+        "name" : "Distilling Extractor",
+        "repairRate" : 20,
+        "specialities" : [ ],
+        "uniqueName" : "/Lotus/Types/Ship/BasicUcResourceDrone"
+      },
+      "zh" : {
+        "binCapacity" : 1,
+        "binCount" : 1,
+        "capacityMultiplier" : [ 8, 6, 4, 1 ],
+        "codexSecret" : false,
+        "description" : "精粹采集机增加获得稀有资源的几率。\r\n\r\n将采集机部署到一个星球上收集资源。采集机必须定期清理和检查以防止损坏。",
+        "durability" : 200,
+        "fillRate" : 8,
+        "name" : "精粹采集机",
+        "repairRate" : 20,
+        "specialities" : [ ],
+        "uniqueName" : "/Lotus/Types/Ship/BasicUcResourceDrone"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Types/Ship/LandscapeTrapLight",
+    "key" : "ExportDrones|/Lotus/Types/Ship/LandscapeTrapLight",
+    "names" : {
+      "en" : "Titan Extractor",
+      "zh" : "泰坦采集机"
+    },
+    "provenance" : [ {
+      "index" : 4,
+      "locale" : "en",
+      "path" : "exports/en/ExportDrones.json",
+      "section" : "ExportDrones",
+      "sha256" : "144572577f66592254752c33484ec5779162da6fcb59a27915aca321c612d4c4"
+    }, {
+      "index" : 4,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportDrones.json",
+      "section" : "ExportDrones",
+      "sha256" : "5ec7f91d6efa01df0b0b8bc0133e663935c1b871546a27a70ccad175416547d1"
+    } ],
+    "section" : "ExportDrones",
+    "variants" : {
+      "en" : {
+        "binCapacity" : 20,
+        "binCount" : 1,
+        "capacityMultiplier" : [ 8, 4, 1, 1 ],
+        "codexSecret" : false,
+        "description" : "Deploy the Extractor on a planet to collect resources.\r\n\r\nMust be emptied regularly for maximum efficiency and monitored for damage.",
+        "durability" : 100,
+        "fillRate" : 0.1,
+        "name" : "Titan Extractor",
+        "repairRate" : 0,
+        "specialities" : [ ],
+        "uniqueName" : "/Lotus/Types/Ship/LandscapeTrapLight"
+      },
+      "zh" : {
+        "binCapacity" : 20,
+        "binCount" : 1,
+        "capacityMultiplier" : [ 8, 4, 1, 1 ],
+        "codexSecret" : false,
+        "description" : "在一个星球上部署采集机来收集资源。\r\n\r\n必须定期清理，才能达到最高效率并防止损坏。",
+        "durability" : 100,
+        "fillRate" : 0.1,
+        "name" : "泰坦采集机",
+        "repairRate" : 0,
+        "specialities" : [ ],
+        "uniqueName" : "/Lotus/Types/Ship/LandscapeTrapLight"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Types/Ship/VoidTraderResourceDrone",
+    "key" : "ExportDrones|/Lotus/Types/Ship/VoidTraderResourceDrone",
+    "names" : {
+      "en" : "Prisma Niroda Extractor",
+      "zh" : "棱晶 平衡采集机"
+    },
+    "provenance" : [ {
+      "index" : 5,
+      "locale" : "en",
+      "path" : "exports/en/ExportDrones.json",
+      "section" : "ExportDrones",
+      "sha256" : "144572577f66592254752c33484ec5779162da6fcb59a27915aca321c612d4c4"
+    }, {
+      "index" : 5,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportDrones.json",
+      "section" : "ExportDrones",
+      "sha256" : "5ec7f91d6efa01df0b0b8bc0133e663935c1b871546a27a70ccad175416547d1"
+    } ],
+    "section" : "ExportDrones",
+    "variants" : {
+      "en" : {
+        "binCapacity" : 1,
+        "binCount" : 1,
+        "capacityMultiplier" : [ 8, 6, 4, 1 ],
+        "codexSecret" : false,
+        "description" : "Featuring unrivaled Orokin engineering, this advanced model was designed for peak volume extraction in the harshest of conditions.",
+        "durability" : 200,
+        "fillRate" : 8,
+        "name" : "Prisma Niroda Extractor",
+        "repairRate" : 20,
+        "specialities" : [ ],
+        "uniqueName" : "/Lotus/Types/Ship/VoidTraderResourceDrone"
+      },
+      "zh" : {
+        "binCapacity" : 1,
+        "binCount" : 1,
+        "capacityMultiplier" : [ 8, 6, 4, 1 ],
+        "codexSecret" : false,
+        "description" : "拥有奥罗金最顶尖的技术，这款进阶采集机被设计为能在最恶劣的环境下取得最多数量的资源。",
+        "durability" : 200,
+        "fillRate" : 8,
+        "name" : "棱晶 平衡采集机",
+        "repairRate" : 20,
+        "specialities" : [ ],
+        "uniqueName" : "/Lotus/Types/Ship/VoidTraderResourceDrone"
+      }
+    }
+  } ],
+  "model" : "regional-catalog-v1",
+  "region" : "international",
+  "schemaVersion" : 1,
+  "section" : "ExportDrones"
+}
