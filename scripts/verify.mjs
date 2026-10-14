@@ -54,6 +54,7 @@ for (const region of regions) {
     assert(Array.isArray(manifest.files) && manifest.files.length > 0 && manifest.files.length <= 512);
     const expected = new Set(['manifest.json']); let bytesTotal = 0;
     const entityIds = new Map(); let canonicalCoverage, canonicalRelations;
+    let rivenProfiles, weaponParameters, rivenCoverage;
     for (const file of manifest.files) {
       assert(/^(?:exports\/(?:en|zh|tc|neutral)\/Export[A-Za-z0-9]+|reviewed\/[a-z0-9-]+|canonical\/[a-z0-9-]+|quality)\.json$/.test(file.path), 'Unapproved path');
       assert(!expected.has(file.path), 'Duplicate file'); expected.add(file.path);
@@ -80,8 +81,26 @@ for (const region of regions) {
       }
       if (file.path === 'canonical/coverage.json') canonicalCoverage = content;
       if (file.path === 'canonical/relations.json') canonicalRelations = content;
+      if (file.path === 'exports/neutral/ExportClientRivenProfiles.json') rivenProfiles = content.sections.ClientRivenProfiles;
+      if (file.path === 'exports/neutral/ExportClientWeaponParameters.json') weaponParameters = content.sections.ClientWeaponParameters;
+      if (file.path === 'exports/neutral/ExportClientRivenCoverage.json') rivenCoverage = content.sections.ClientRivenCoverage;
     }
     assert(bytesTotal <= 384 * 1024 * 1024); assert(expected.has('quality.json'));
+    if (manifest.capabilities.includes('client-riven-facts-v1')) {
+      assert(Array.isArray(rivenProfiles) && Array.isArray(weaponParameters) && rivenCoverage);
+      assert.equal(rivenProfiles.length, rivenCoverage.profileFamilies);
+      assert.equal(new Set(rivenProfiles.map(p => p.uniqueName)).size, rivenProfiles.length);
+      assert.equal(rivenProfiles.reduce((sum,p) => sum + p.traits.length, 0), rivenCoverage.traits);
+      assert.equal(weaponParameters.length, rivenCoverage.weapons);
+      assert.equal(new Set(weaponParameters.map(p => p.uniqueName)).size, weaponParameters.length);
+      assert.equal(weaponParameters.filter(p => p.values.OmegaAttenuation !== null).length, rivenCoverage.explicitDisposition);
+      assert.deepEqual(weaponParameters.filter(p => p.values.OmegaAttenuation === null).map(p => p.uniqueName), rivenCoverage.unknownDisposition);
+      for (const profile of rivenProfiles) {
+        assert(profile.fieldSources && profile.values && profile.traitsSource);
+        assert.equal(new Set(profile.traits.map(t => t.Tag)).size, profile.traits.length);
+        for (const trait of profile.traits) for (const entry of trait.upgrades) assert(Number.isFinite(entry.upgrade.Value));
+      }
+    }
     if (manifest.canonicalModel || entityIds.size) {
       assert.equal(manifest.canonicalModel, 'regional-catalog-v1');
       assert(manifest.capabilities.includes('regional-catalog-v1'));

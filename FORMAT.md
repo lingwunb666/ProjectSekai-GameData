@@ -39,6 +39,18 @@ PublicExport 的清单是采集时读取的索引，不应以本机游戏 EXE �
 
 `manifest.clientExtraction` 保存 TOC、压缩资源、解压资源哈希和解码计数。`clientBuild=packages-sha256-...` 是资源内容身份，不是游戏面板版本号。客户端来源各自独立，即使资源 ID 相同也不得跨区域覆盖。
 
+## 紫卡和武器参数事实
+
+能力 `client-riven-facts-v1` 表示 `ExportClientRivenProfiles`、`ExportClientWeaponParameters` 和 `ExportClientRivenCoverage` 三类文件同时存在。紫卡配置保留词条值、限制、显示舍入规则和字段继承来源；没有导出完整脚本、贴图或资源档案。`Value` 是原始升级数值，不是满级属性。
+
+武器参数中的 `OmegaAttenuation` 与 Kitgun 的 `PrimaryOmegaAttenuation` 分别保留，后者不能误认作 Prime 参数。Zaw 打击部和 Kitgun 枪膛按实际资源基类识别，商店原始 `MiscItems` 分类不改写成普通武器。缺失值和来源均为 `null`，不使用其他区域、官方导出或猜测默认值填补。仍需类型适配、默认值核对和完整计算验收后才能宣称紫卡引擎可消费。
+
+## 同区域来源组合
+
+合包的 `inputs` 保存输入版本和 manifest SHA-256，`sources` 保留各来源。只接受同一区域，不同文件并存；同路径不同内容拒绝生成，禁止覆盖冲突。原查询投影被丢弃，合包后重新生成。
+
+`sourceAlignment=INDEPENDENT_VERSIONS_NOT_MECHANICS_RECONCILED` 表示来源版本仍独立。官方索引与客户端资源哈希不能相互充当版本证明，同在一个包中也不允许默认用一方数值覆盖另一方。
+
 ## 统一查询模型
 
 能力 `regional-catalog-v1` 和 `canonicalModel` 表示包中含以下只读查询投影：
@@ -46,6 +58,8 @@ PublicExport 的清单是采集时读取的索引，不应以本机游戏 EXE �
 - `canonical/entities-<分类小写>.json`：`entities` 数组。每项有 `key=section|id`、`section`、`id`、`names`、`variants`、`provenance`。`variants` 保留每种语言的源记录，`provenance` 指向原始文件、分类、数组下标及文件校验和。
 - `canonical/relations.json`：按明确字段抽取的引用，包含源实体、语言、JSON Pointer、关系种类、原始和规范化目标 ID、候选实体及 `RESOLVED/UNRESOLVED/AMBIGUOUS`。仅对精确 `/Lotus/StoreItems/` 前缀进行资源 ID 转换，不按相似名称匹配。
 - `canonical/coverage.json`：实体数、分类数、源记录数、未投影记录、完全重复记录、跨语言数值冲突、关系统计和逐功能支持状态。
+
+覆盖报告中的 `dispositionReconciliation` 比较同 ID 的官方英文武器倾向性和客户端原始倾向性，保留两边值及客户端字段来源。`EXACT` 与 `SAME_F32`（转为 IEEE-754 单精度才一致）分别标注；缺失为 `CLIENT_UNKNOWN/OFFICIAL_UNKNOWN`，差异为 `CONFLICT`。它只报告，不覆盖数值，也不证明整个游戏机制版本一致。
 
 所有文件保留 `schemaVersion=1`、区域和 `model=regional-catalog-v1`。分类与源 ID 联合确定实体；名称不充当 ID。完全相同的重复记录仅保留一份语言变体，但保留全部来源；冲突重复拒绝生成。缺失名称为 `null`，不合成跨语言或跨服回退。
 
