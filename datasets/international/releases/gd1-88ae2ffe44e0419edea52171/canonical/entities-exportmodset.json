@@ -1,0 +1,638 @@
+{
+  "entities" : [ {
+    "id" : "/Lotus/Upgrades/Mods/Sets/Amar/AmarSetMod",
+    "key" : "ExportModSet|/Lotus/Upgrades/Mods/Sets/Amar/AmarSetMod",
+    "names" : {
+      "en" : null,
+      "zh" : null
+    },
+    "provenance" : [ {
+      "index" : 18,
+      "locale" : "en",
+      "path" : "exports/en/ExportUpgrades.json",
+      "section" : "ExportModSet",
+      "sha256" : "5dc9d871082d9cf5298ef9d2431d12df249ec701744d40b4f68d984ade49b6bb"
+    }, {
+      "index" : 18,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportUpgrades.json",
+      "section" : "ExportModSet",
+      "sha256" : "09bb9605a1e5a877d337a7563fdeef257e139f0df27ac87ee0e033fdcc1eab37"
+    } ],
+    "section" : "ExportModSet",
+    "variants" : {
+      "en" : {
+        "numUpgradesInSet" : 3,
+        "stats" : [ "Teleport to a target within 10m on using a Heavy Attack.", "Teleport to a target within 20m on using a Heavy Attack.", "Teleport to a target within 30m on using a Heavy Attack." ],
+        "uniqueName" : "/Lotus/Upgrades/Mods/Sets/Amar/AmarSetMod"
+      },
+      "zh" : {
+        "numUpgradesInSet" : 3,
+        "stats" : [ "使用重击时可瞬移至在 10 米内目标的身边。", "使用重击时可瞬移至在 20 米内目标的身边。", "使用重击时可瞬移至在 30 米内目标的身边。" ],
+        "uniqueName" : "/Lotus/Upgrades/Mods/Sets/Amar/AmarSetMod"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Upgrades/Mods/Sets/Ashen/AshenSetMod",
+    "key" : "ExportModSet|/Lotus/Upgrades/Mods/Sets/Ashen/AshenSetMod",
+    "names" : {
+      "en" : null,
+      "zh" : null
+    },
+    "provenance" : [ {
+      "index" : 17,
+      "locale" : "en",
+      "path" : "exports/en/ExportUpgrades.json",
+      "section" : "ExportModSet",
+      "sha256" : "5dc9d871082d9cf5298ef9d2431d12df249ec701744d40b4f68d984ade49b6bb"
+    }, {
+      "index" : 17,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportUpgrades.json",
+      "section" : "ExportModSet",
+      "sha256" : "09bb9605a1e5a877d337a7563fdeef257e139f0df27ac87ee0e033fdcc1eab37"
+    } ],
+    "section" : "ExportModSet",
+    "variants" : {
+      "en" : {
+        "numUpgradesInSet" : 3,
+        "stats" : [ "Killing an enemy with a Heavy Attack reduces Enemy Accuracy against Warframe by 10% and grants immunity to Status Effects for 2s", "Killing an enemy with a Heavy Attack reduces Enemy Accuracy against Warframe by 20% and grants immunity to Status Effects for 4s", "Killing an enemy with a Heavy Attack reduces Enemy Accuracy against Warframe by 30% and grants immunity to Status Effects for 6s" ],
+        "uniqueName" : "/Lotus/Upgrades/Mods/Sets/Ashen/AshenSetMod"
+      },
+      "zh" : {
+        "numUpgradesInSet" : 3,
+        "stats" : [ "通过重击击杀敌人可以使敌人对战甲的精准度降低 10%，并免疫异常状态，持续 2 秒", "通过重击击杀敌人可以使敌人对战甲的精准度降低 20%，并免疫异常状态，持续 4 秒", "通过重击击杀敌人可以使敌人对战甲的精准度降低 30%，并免疫异常状态，持续 6 秒" ],
+        "uniqueName" : "/Lotus/Upgrades/Mods/Sets/Ashen/AshenSetMod"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Upgrades/Mods/Sets/Augur/AugurSetMod",
+    "key" : "ExportModSet|/Lotus/Upgrades/Mods/Sets/Augur/AugurSetMod",
+    "names" : {
+      "en" : null,
+      "zh" : null
+    },
+    "provenance" : [ {
+      "index" : 16,
+      "locale" : "en",
+      "path" : "exports/en/ExportUpgrades.json",
+      "section" : "ExportModSet",
+      "sha256" : "5dc9d871082d9cf5298ef9d2431d12df249ec701744d40b4f68d984ade49b6bb"
+    }, {
+      "index" : 16,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportUpgrades.json",
+      "section" : "ExportModSet",
+      "sha256" : "09bb9605a1e5a877d337a7563fdeef257e139f0df27ac87ee0e033fdcc1eab37"
+    } ],
+    "section" : "ExportModSet",
+    "variants" : {
+      "en" : {
+        "numUpgradesInSet" : 6,
+        "stats" : [ "40% Energy spent on abilities is converted to Shields.", "80% Energy spent on abilities is converted to Shields.", "120% Energy spent on abilities is converted to Shields.", "160% Energy spent on abilities is converted to Shields.", "200% Energy spent on abilities is converted to Shields.", "240% Energy spent on abilities is converted to Shields." ],
+        "uniqueName" : "/Lotus/Upgrades/Mods/Sets/Augur/AugurSetMod"
+      },
+      "zh" : {
+        "numUpgradesInSet" : 6,
+        "stats" : [ "40% 用在技能上的能量将转化成护盾。", "80% 用在技能上的能量将转化成护盾。", "120% 用在技能上的能量将转化成护盾。", "160% 用在技能上的能量将转化成护盾。", "200% 用在技能上的能量将转化成护盾。", "240% 用在技能上的能量将转化成护盾。" ],
+        "uniqueName" : "/Lotus/Upgrades/Mods/Sets/Augur/AugurSetMod"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Upgrades/Mods/Sets/Boneblade/BonebladeSetMod",
+    "key" : "ExportModSet|/Lotus/Upgrades/Mods/Sets/Boneblade/BonebladeSetMod",
+    "names" : {
+      "en" : null,
+      "zh" : null
+    },
+    "provenance" : [ {
+      "index" : 15,
+      "locale" : "en",
+      "path" : "exports/en/ExportUpgrades.json",
+      "section" : "ExportModSet",
+      "sha256" : "5dc9d871082d9cf5298ef9d2431d12df249ec701744d40b4f68d984ade49b6bb"
+    }, {
+      "index" : 15,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportUpgrades.json",
+      "section" : "ExportModSet",
+      "sha256" : "09bb9605a1e5a877d337a7563fdeef257e139f0df27ac87ee0e033fdcc1eab37"
+    } ],
+    "section" : "ExportModSet",
+    "variants" : {
+      "en" : {
+        "numUpgradesInSet" : 3,
+        "stats" : [ "Slam attacks manifest Tendrils to lash enemies within 3m, stunning them for 1s and dealing 25 <DT_PUNCTURE_COLOR>Puncture Damage. Cooldown: 12s", "Slam attacks manifest Tendrils to lash enemies within 6m, stunning them for 2s and dealing 50 <DT_PUNCTURE_COLOR>Puncture Damage. Cooldown: 9s", "Slam attacks manifest Tendrils to lash enemies within 10m, stunning them for 3s and dealing 75 <DT_PUNCTURE_COLOR>Puncture Damage. Cooldown: 6s" ],
+        "uniqueName" : "/Lotus/Upgrades/Mods/Sets/Boneblade/BonebladeSetMod"
+      },
+      "zh" : {
+        "numUpgradesInSet" : 3,
+        "stats" : [ "震地攻击产生卷须，来抽打 3 米内的敌人，击晕敌人 1 秒，并造成 25 <DT_PUNCTURE_COLOR>穿刺伤害。冷却时间：12 秒", "震地攻击产生卷须，来抽打 6 米内的敌人，击晕敌人 2 秒，并造成 50 <DT_PUNCTURE_COLOR>穿刺伤害。冷却时间：9 秒", "震地攻击产生卷须，来抽打 10 米内的敌人，击晕敌人 3 秒，并造成 75 <DT_PUNCTURE_COLOR>穿刺伤害。冷却时间：6 秒" ],
+        "uniqueName" : "/Lotus/Upgrades/Mods/Sets/Boneblade/BonebladeSetMod"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Upgrades/Mods/Sets/Boreal/BorealSetMod",
+    "key" : "ExportModSet|/Lotus/Upgrades/Mods/Sets/Boreal/BorealSetMod",
+    "names" : {
+      "en" : null,
+      "zh" : null
+    },
+    "provenance" : [ {
+      "index" : 14,
+      "locale" : "en",
+      "path" : "exports/en/ExportUpgrades.json",
+      "section" : "ExportModSet",
+      "sha256" : "5dc9d871082d9cf5298ef9d2431d12df249ec701744d40b4f68d984ade49b6bb"
+    }, {
+      "index" : 14,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportUpgrades.json",
+      "section" : "ExportModSet",
+      "sha256" : "09bb9605a1e5a877d337a7563fdeef257e139f0df27ac87ee0e033fdcc1eab37"
+    } ],
+    "section" : "ExportModSet",
+    "variants" : {
+      "en" : {
+        "numUpgradesInSet" : 3,
+        "stats" : [ "Reduces damage by +20% when Airborne.", "Reduces damage by +40% when Airborne.", "Reduces damage by +60% when Airborne." ],
+        "uniqueName" : "/Lotus/Upgrades/Mods/Sets/Boreal/BorealSetMod"
+      },
+      "zh" : {
+        "numUpgradesInSet" : 3,
+        "stats" : [ "在空中时减少 +20% 受到的伤害。", "在空中时减少 +40% 受到的伤害。", "在空中时减少 +60% 受到的伤害。" ],
+        "uniqueName" : "/Lotus/Upgrades/Mods/Sets/Boreal/BorealSetMod"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Upgrades/Mods/Sets/Femur/FemurSetMod",
+    "key" : "ExportModSet|/Lotus/Upgrades/Mods/Sets/Femur/FemurSetMod",
+    "names" : {
+      "en" : null,
+      "zh" : null
+    },
+    "provenance" : [ {
+      "index" : 13,
+      "locale" : "en",
+      "path" : "exports/en/ExportUpgrades.json",
+      "section" : "ExportModSet",
+      "sha256" : "5dc9d871082d9cf5298ef9d2431d12df249ec701744d40b4f68d984ade49b6bb"
+    }, {
+      "index" : 13,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportUpgrades.json",
+      "section" : "ExportModSet",
+      "sha256" : "09bb9605a1e5a877d337a7563fdeef257e139f0df27ac87ee0e033fdcc1eab37"
+    } ],
+    "section" : "ExportModSet",
+    "variants" : {
+      "en" : {
+        "numUpgradesInSet" : 3,
+        "stats" : [ "Lifted enemies explode on death, dealing 10% Enemy Max Health as <DT_IMPACT_COLOR>Impact Damage in a 4m radius.\r\nCooldown: 6s", "Lifted enemies explode on death, dealing 20% Enemy Max Health as <DT_IMPACT_COLOR>Impact Damage in a 8m radius.\r\nCooldown: 6s", "Lifted enemies explode on death, dealing 30% Enemy Max Health as <DT_IMPACT_COLOR>Impact Damage in a 12m radius.\r\nCooldown: 6s" ],
+        "uniqueName" : "/Lotus/Upgrades/Mods/Sets/Femur/FemurSetMod"
+      },
+      "zh" : {
+        "numUpgradesInSet" : 3,
+        "stats" : [ "击飞的敌人在死亡时爆炸，对 4 米范围内的敌人造成最大生命值的 10% 的 <DT_IMPACT_COLOR>冲击伤害。\r\n冷却时间：6 秒", "击飞的敌人在死亡时爆炸，对 8 米范围内的敌人造成最大生命值的 20% 的 <DT_IMPACT_COLOR>冲击伤害。\r\n冷却时间：6 秒", "击飞的敌人在死亡时爆炸，对 12 米范围内的敌人造成最大生命值的 30% 的 <DT_IMPACT_COLOR>冲击伤害。\r\n冷却时间：6 秒" ],
+        "uniqueName" : "/Lotus/Upgrades/Mods/Sets/Femur/FemurSetMod"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Upgrades/Mods/Sets/Gladiator/GladiatorSetMod",
+    "key" : "ExportModSet|/Lotus/Upgrades/Mods/Sets/Gladiator/GladiatorSetMod",
+    "names" : {
+      "en" : null,
+      "zh" : null
+    },
+    "provenance" : [ {
+      "index" : 12,
+      "locale" : "en",
+      "path" : "exports/en/ExportUpgrades.json",
+      "section" : "ExportModSet",
+      "sha256" : "5dc9d871082d9cf5298ef9d2431d12df249ec701744d40b4f68d984ade49b6bb"
+    }, {
+      "index" : 12,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportUpgrades.json",
+      "section" : "ExportModSet",
+      "sha256" : "09bb9605a1e5a877d337a7563fdeef257e139f0df27ac87ee0e033fdcc1eab37"
+    } ],
+    "section" : "ExportModSet",
+    "variants" : {
+      "en" : {
+        "numUpgradesInSet" : 6,
+        "stats" : [ "10% Melee Critical Chance per Combo Multiplier", "20% Melee Critical Chance per Combo Multiplier", "30% Melee Critical Chance per Combo Multiplier", "40% Melee Critical Chance per Combo Multiplier", "50% Melee Critical Chance per Combo Multiplier", "60% Melee Critical Chance per Combo Multiplier" ],
+        "uniqueName" : "/Lotus/Upgrades/Mods/Sets/Gladiator/GladiatorSetMod"
+      },
+      "zh" : {
+        "numUpgradesInSet" : 6,
+        "stats" : [ "连击倍率可叠加 10% 近战暴击几率", "连击倍率可叠加 20% 近战暴击几率", "连击倍率可叠加 30% 近战暴击几率", "连击倍率可叠加 40% 近战暴击几率", "连击倍率可叠加 50% 近战暴击几率", "连击倍率可叠加 60% 近战暴击几率" ],
+        "uniqueName" : "/Lotus/Upgrades/Mods/Sets/Gladiator/GladiatorSetMod"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Upgrades/Mods/Sets/Hawk/HawkSetMod",
+    "key" : "ExportModSet|/Lotus/Upgrades/Mods/Sets/Hawk/HawkSetMod",
+    "names" : {
+      "en" : null,
+      "zh" : null
+    },
+    "provenance" : [ {
+      "index" : 11,
+      "locale" : "en",
+      "path" : "exports/en/ExportUpgrades.json",
+      "section" : "ExportModSet",
+      "sha256" : "5dc9d871082d9cf5298ef9d2431d12df249ec701744d40b4f68d984ade49b6bb"
+    }, {
+      "index" : 11,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportUpgrades.json",
+      "section" : "ExportModSet",
+      "sha256" : "09bb9605a1e5a877d337a7563fdeef257e139f0df27ac87ee0e033fdcc1eab37"
+    } ],
+    "section" : "ExportModSet",
+    "variants" : {
+      "en" : {
+        "numUpgradesInSet" : 3,
+        "stats" : [ "Damage enemies while Aim Gliding and put up to 5 of them to Sleep for 3s on landing.", "Damage enemies while Aim Gliding and put up to 5 of them to Sleep for 6s on landing.", "Damage enemies while Aim Gliding and put up to 5 of them to Sleep for 9s on landing." ],
+        "uniqueName" : "/Lotus/Upgrades/Mods/Sets/Hawk/HawkSetMod"
+      },
+      "zh" : {
+        "numUpgradesInSet" : 3,
+        "stats" : [ "在飞身瞄准时对敌人造成伤害后，落地时将使最多 5 名敌人进入3 秒的睡眠状态。", "在飞身瞄准时对敌人造成伤害后，落地时将使最多 5 名敌人进入6 秒的睡眠状态。", "在飞身瞄准时对敌人造成伤害后，落地时将使最多 5 名敌人进入9 秒的睡眠状态。" ],
+        "uniqueName" : "/Lotus/Upgrades/Mods/Sets/Hawk/HawkSetMod"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Upgrades/Mods/Sets/Hunter/HunterSetMod",
+    "key" : "ExportModSet|/Lotus/Upgrades/Mods/Sets/Hunter/HunterSetMod",
+    "names" : {
+      "en" : null,
+      "zh" : null
+    },
+    "provenance" : [ {
+      "index" : 10,
+      "locale" : "en",
+      "path" : "exports/en/ExportUpgrades.json",
+      "section" : "ExportModSet",
+      "sha256" : "5dc9d871082d9cf5298ef9d2431d12df249ec701744d40b4f68d984ade49b6bb"
+    }, {
+      "index" : 10,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportUpgrades.json",
+      "section" : "ExportModSet",
+      "sha256" : "09bb9605a1e5a877d337a7563fdeef257e139f0df27ac87ee0e033fdcc1eab37"
+    } ],
+    "section" : "ExportModSet",
+    "variants" : {
+      "en" : {
+        "numUpgradesInSet" : 6,
+        "stats" : [ "+25% Companion Damage on enemies affected by <DT_SLASH_COLOR>Slash.", "+50% Companion Damage on enemies affected by <DT_SLASH_COLOR>Slash.", "+75% Companion Damage on enemies affected by <DT_SLASH_COLOR>Slash.", "+100% Companion Damage on enemies affected by <DT_SLASH_COLOR>Slash.", "+125% Companion Damage on enemies affected by <DT_SLASH_COLOR>Slash.", "+150% Companion Damage on enemies affected by <DT_SLASH_COLOR>Slash." ],
+        "uniqueName" : "/Lotus/Upgrades/Mods/Sets/Hunter/HunterSetMod"
+      },
+      "zh" : {
+        "numUpgradesInSet" : 6,
+        "stats" : [ "同伴对受到 <DT_SLASH_COLOR>切割状态影响的敌人造成 +25% 伤害。", "同伴对受到 <DT_SLASH_COLOR>切割状态影响的敌人造成 +50% 伤害。", "同伴对受到 <DT_SLASH_COLOR>切割状态影响的敌人造成 +75% 伤害。", "同伴对受到 <DT_SLASH_COLOR>切割状态影响的敌人造成 +100% 伤害。", "同伴对受到 <DT_SLASH_COLOR>切割状态影响的敌人造成 +125% 伤害。", "同伴对受到 <DT_SLASH_COLOR>切割状态影响的敌人造成 +150% 伤害。" ],
+        "uniqueName" : "/Lotus/Upgrades/Mods/Sets/Hunter/HunterSetMod"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Upgrades/Mods/Sets/Mecha/MechaSetMod",
+    "key" : "ExportModSet|/Lotus/Upgrades/Mods/Sets/Mecha/MechaSetMod",
+    "names" : {
+      "en" : null,
+      "zh" : null
+    },
+    "provenance" : [ {
+      "index" : 9,
+      "locale" : "en",
+      "path" : "exports/en/ExportUpgrades.json",
+      "section" : "ExportModSet",
+      "sha256" : "5dc9d871082d9cf5298ef9d2431d12df249ec701744d40b4f68d984ade49b6bb"
+    }, {
+      "index" : 9,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportUpgrades.json",
+      "section" : "ExportModSet",
+      "sha256" : "09bb9605a1e5a877d337a7563fdeef257e139f0df27ac87ee0e033fdcc1eab37"
+    } ],
+    "section" : "ExportModSet",
+    "variants" : {
+      "en" : {
+        "numUpgradesInSet" : 4,
+        "stats" : [ "Companion marks a target every 60s for 3s. Killing the target applies their Status Effects to all enemies within 7.5m.", "Companion marks a target every 45s for 6s. Killing the target applies their Status Effects to all enemies within 15m.", "Companion marks a target every 30s for 9s. Killing the target applies their Status Effects to all enemies within 22.5m.", "Companion marks a target every 15s for 12s. Killing the target applies their Status Effects to all enemies within 30m." ],
+        "uniqueName" : "/Lotus/Upgrades/Mods/Sets/Mecha/MechaSetMod"
+      },
+      "zh" : {
+        "numUpgradesInSet" : 4,
+        "stats" : [ "每隔 60 秒同伴将会标记一名目标，持续 3 秒。击杀被标记的目标会将其身上所受的状态作用于 7.5 米范围内的所有敌人。", "每隔 45 秒同伴将会标记一名目标，持续 6 秒。击杀被标记的目标会将其身上所受的状态作用于 15 米范围内的所有敌人。", "每隔 30 秒同伴将会标记一名目标，持续 9 秒。击杀被标记的目标会将其身上所受的状态作用于 22.5 米范围内的所有敌人。", "每隔 15 秒同伴将会标记一名目标，持续 12 秒。击杀被标记的目标会将其身上所受的状态作用于 30 米范围内的所有敌人。" ],
+        "uniqueName" : "/Lotus/Upgrades/Mods/Sets/Mecha/MechaSetMod"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Upgrades/Mods/Sets/Nira/NiraSetMod",
+    "key" : "ExportModSet|/Lotus/Upgrades/Mods/Sets/Nira/NiraSetMod",
+    "names" : {
+      "en" : null,
+      "zh" : null
+    },
+    "provenance" : [ {
+      "index" : 8,
+      "locale" : "en",
+      "path" : "exports/en/ExportUpgrades.json",
+      "section" : "ExportModSet",
+      "sha256" : "5dc9d871082d9cf5298ef9d2431d12df249ec701744d40b4f68d984ade49b6bb"
+    }, {
+      "index" : 8,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportUpgrades.json",
+      "section" : "ExportModSet",
+      "sha256" : "09bb9605a1e5a877d337a7563fdeef257e139f0df27ac87ee0e033fdcc1eab37"
+    } ],
+    "section" : "ExportModSet",
+    "variants" : {
+      "en" : {
+        "numUpgradesInSet" : 3,
+        "stats" : [ "Increase damage from Slam Attacks by +150%.", "Increase damage from Slam Attacks by +300%.", "Increase damage from Slam Attacks by +450%." ],
+        "uniqueName" : "/Lotus/Upgrades/Mods/Sets/Nira/NiraSetMod"
+      },
+      "zh" : {
+        "numUpgradesInSet" : 3,
+        "stats" : [ "增加 +150% 震地攻击伤害。", "增加 +300% 震地攻击伤害。", "增加 +450% 震地攻击伤害。" ],
+        "uniqueName" : "/Lotus/Upgrades/Mods/Sets/Nira/NiraSetMod"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Upgrades/Mods/Sets/Raptor/RaptorSetMod",
+    "key" : "ExportModSet|/Lotus/Upgrades/Mods/Sets/Raptor/RaptorSetMod",
+    "names" : {
+      "en" : null,
+      "zh" : null
+    },
+    "provenance" : [ {
+      "index" : 7,
+      "locale" : "en",
+      "path" : "exports/en/ExportUpgrades.json",
+      "section" : "ExportModSet",
+      "sha256" : "5dc9d871082d9cf5298ef9d2431d12df249ec701744d40b4f68d984ade49b6bb"
+    }, {
+      "index" : 7,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportUpgrades.json",
+      "section" : "ExportModSet",
+      "sha256" : "09bb9605a1e5a877d337a7563fdeef257e139f0df27ac87ee0e033fdcc1eab37"
+    } ],
+    "section" : "ExportModSet",
+    "variants" : {
+      "en" : {
+        "numUpgradesInSet" : 3,
+        "stats" : [ "+33% chance to become immune to Knockdown effects while airborne.", "+67% chance to become immune to Knockdown effects while airborne.", "+100% chance to become immune to Knockdown effects while airborne." ],
+        "uniqueName" : "/Lotus/Upgrades/Mods/Sets/Raptor/RaptorSetMod"
+      },
+      "zh" : {
+        "numUpgradesInSet" : 3,
+        "stats" : [ "在空中时有 +33% 几率免疫击倒效果。", "在空中时有 +67% 几率免疫击倒效果。", "在空中时有 +100% 几率免疫击倒效果。" ],
+        "uniqueName" : "/Lotus/Upgrades/Mods/Sets/Raptor/RaptorSetMod"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Upgrades/Mods/Sets/Sacrifice/SacrificeSetMod",
+    "key" : "ExportModSet|/Lotus/Upgrades/Mods/Sets/Sacrifice/SacrificeSetMod",
+    "names" : {
+      "en" : null,
+      "zh" : null
+    },
+    "provenance" : [ {
+      "index" : 6,
+      "locale" : "en",
+      "path" : "exports/en/ExportUpgrades.json",
+      "section" : "ExportModSet",
+      "sha256" : "5dc9d871082d9cf5298ef9d2431d12df249ec701744d40b4f68d984ade49b6bb"
+    }, {
+      "index" : 6,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportUpgrades.json",
+      "section" : "ExportModSet",
+      "sha256" : "09bb9605a1e5a877d337a7563fdeef257e139f0df27ac87ee0e033fdcc1eab37"
+    } ],
+    "section" : "ExportModSet",
+    "variants" : {
+      "en" : {
+        "buffSet" : true,
+        "numUpgradesInSet" : 2,
+        "stats" : [ "Enhance mods in this set.", "Enhance mods in this set." ],
+        "uniqueName" : "/Lotus/Upgrades/Mods/Sets/Sacrifice/SacrificeSetMod"
+      },
+      "zh" : {
+        "buffSet" : true,
+        "numUpgradesInSet" : 2,
+        "stats" : [ "增强这个组合中的 MOD。", "增强这个组合中的 MOD。" ],
+        "uniqueName" : "/Lotus/Upgrades/Mods/Sets/Sacrifice/SacrificeSetMod"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Upgrades/Mods/Sets/Spider/SpiderSetMod",
+    "key" : "ExportModSet|/Lotus/Upgrades/Mods/Sets/Spider/SpiderSetMod",
+    "names" : {
+      "en" : null,
+      "zh" : null
+    },
+    "provenance" : [ {
+      "index" : 5,
+      "locale" : "en",
+      "path" : "exports/en/ExportUpgrades.json",
+      "section" : "ExportModSet",
+      "sha256" : "5dc9d871082d9cf5298ef9d2431d12df249ec701744d40b4f68d984ade49b6bb"
+    }, {
+      "index" : 5,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportUpgrades.json",
+      "section" : "ExportModSet",
+      "sha256" : "09bb9605a1e5a877d337a7563fdeef257e139f0df27ac87ee0e033fdcc1eab37"
+    } ],
+    "section" : "ExportModSet",
+    "variants" : {
+      "en" : {
+        "numUpgradesInSet" : 3,
+        "stats" : [ "During a Wall Latch gain +17% Damage Reduction", "During a Wall Latch gain +33% Damage Reduction", "During a Wall Latch gain +50% Damage Reduction" ],
+        "uniqueName" : "/Lotus/Upgrades/Mods/Sets/Spider/SpiderSetMod"
+      },
+      "zh" : {
+        "numUpgradesInSet" : 3,
+        "stats" : [ "壁面攀附期间获得 +17% 伤害减免", "壁面攀附期间获得 +33% 伤害减免", "壁面攀附期间获得 +50% 伤害减免" ],
+        "uniqueName" : "/Lotus/Upgrades/Mods/Sets/Spider/SpiderSetMod"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Upgrades/Mods/Sets/Strain/StrainSetMod",
+    "key" : "ExportModSet|/Lotus/Upgrades/Mods/Sets/Strain/StrainSetMod",
+    "names" : {
+      "en" : null,
+      "zh" : null
+    },
+    "provenance" : [ {
+      "index" : 4,
+      "locale" : "en",
+      "path" : "exports/en/ExportUpgrades.json",
+      "section" : "ExportModSet",
+      "sha256" : "5dc9d871082d9cf5298ef9d2431d12df249ec701744d40b4f68d984ade49b6bb"
+    }, {
+      "index" : 4,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportUpgrades.json",
+      "section" : "ExportModSet",
+      "sha256" : "09bb9605a1e5a877d337a7563fdeef257e139f0df27ac87ee0e033fdcc1eab37"
+    } ],
+    "section" : "ExportModSet",
+    "variants" : {
+      "en" : {
+        "numUpgradesInSet" : 4,
+        "stats" : [ "Grows up to 2 Cysts over 6s that erupt every 25s to spawn a maggot.", "Grows up to 4 Cysts over 12s that erupt every 25s to spawn a maggot.", "Grows up to 6 Cysts over 18s that erupt every 25s to spawn a maggot.", "Grows up to 8 Cysts over 24s that erupt every 25s to spawn a maggot." ],
+        "uniqueName" : "/Lotus/Upgrades/Mods/Sets/Strain/StrainSetMod"
+      },
+      "zh" : {
+        "numUpgradesInSet" : 4,
+        "stats" : [ "在 6 秒内生长至多 2 颗包囊，包囊每 25 秒会爆裂并生出一只蛆虫。", "在 12 秒内生长至多 4 颗包囊，包囊每 25 秒会爆裂并生出一只蛆虫。", "在 18 秒内生长至多 6 颗包囊，包囊每 25 秒会爆裂并生出一只蛆虫。", "在 24 秒内生长至多 8 颗包囊，包囊每 25 秒会爆裂并生出一只蛆虫。" ],
+        "uniqueName" : "/Lotus/Upgrades/Mods/Sets/Strain/StrainSetMod"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Upgrades/Mods/Sets/Synth/SynthSetMod",
+    "key" : "ExportModSet|/Lotus/Upgrades/Mods/Sets/Synth/SynthSetMod",
+    "names" : {
+      "en" : null,
+      "zh" : null
+    },
+    "provenance" : [ {
+      "index" : 3,
+      "locale" : "en",
+      "path" : "exports/en/ExportUpgrades.json",
+      "section" : "ExportModSet",
+      "sha256" : "5dc9d871082d9cf5298ef9d2431d12df249ec701744d40b4f68d984ade49b6bb"
+    }, {
+      "index" : 3,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportUpgrades.json",
+      "section" : "ExportModSet",
+      "sha256" : "09bb9605a1e5a877d337a7563fdeef257e139f0df27ac87ee0e033fdcc1eab37"
+    } ],
+    "section" : "ExportModSet",
+    "variants" : {
+      "en" : {
+        "numUpgradesInSet" : 4,
+        "stats" : [ "Holstering Primary and Secondary Weapons reload 5% of Magazine/s.", "Holstering Primary and Secondary Weapons reload 10% of Magazine/s.", "Holstering Primary and Secondary Weapons reload 15% of Magazine/s.", "Holstering Primary and Secondary Weapons reload 20% of Magazine/s." ],
+        "uniqueName" : "/Lotus/Upgrades/Mods/Sets/Synth/SynthSetMod"
+      },
+      "zh" : {
+        "numUpgradesInSet" : 4,
+        "stats" : [ "收起主要武器/次要武器时，每秒自动装填 5% 的弹匣。", "收起主要武器/次要武器时，每秒自动装填 10% 的弹匣。", "收起主要武器/次要武器时，每秒自动装填 15% 的弹匣。", "收起主要武器/次要武器时，每秒自动装填 20% 的弹匣。" ],
+        "uniqueName" : "/Lotus/Upgrades/Mods/Sets/Synth/SynthSetMod"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Upgrades/Mods/Sets/Tek/TekSetMod",
+    "key" : "ExportModSet|/Lotus/Upgrades/Mods/Sets/Tek/TekSetMod",
+    "names" : {
+      "en" : null,
+      "zh" : null
+    },
+    "provenance" : [ {
+      "index" : 2,
+      "locale" : "en",
+      "path" : "exports/en/ExportUpgrades.json",
+      "section" : "ExportModSet",
+      "sha256" : "5dc9d871082d9cf5298ef9d2431d12df249ec701744d40b4f68d984ade49b6bb"
+    }, {
+      "index" : 2,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportUpgrades.json",
+      "section" : "ExportModSet",
+      "sha256" : "09bb9605a1e5a877d337a7563fdeef257e139f0df27ac87ee0e033fdcc1eab37"
+    } ],
+    "section" : "ExportModSet",
+    "variants" : {
+      "en" : {
+        "numUpgradesInSet" : 4,
+        "stats" : [ "Mark a 3m zone every 60s that inflicts 50 Damage/s to enemies.", "Mark a 6m zone every 45s that inflicts 100 Damage/s to enemies.", "Mark a 9m zone every 30s that inflicts 150 Damage/s to enemies.", "Mark a 12m zone every 15s that inflicts 200 Damage/s to enemies." ],
+        "uniqueName" : "/Lotus/Upgrades/Mods/Sets/Tek/TekSetMod"
+      },
+      "zh" : {
+        "numUpgradesInSet" : 4,
+        "stats" : [ "每 60 秒创造一个半径 3 米的区域并造成每秒 50 的伤害。", "每 45 秒创造一个半径 6 米的区域并造成每秒 100 的伤害。", "每 30 秒创造一个半径 9 米的区域并造成每秒 150 的伤害。", "每 15 秒创造一个半径 12 米的区域并造成每秒 200 的伤害。" ],
+        "uniqueName" : "/Lotus/Upgrades/Mods/Sets/Tek/TekSetMod"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Upgrades/Mods/Sets/Umbra/UmbraSetMod",
+    "key" : "ExportModSet|/Lotus/Upgrades/Mods/Sets/Umbra/UmbraSetMod",
+    "names" : {
+      "en" : null,
+      "zh" : null
+    },
+    "provenance" : [ {
+      "index" : 1,
+      "locale" : "en",
+      "path" : "exports/en/ExportUpgrades.json",
+      "section" : "ExportModSet",
+      "sha256" : "5dc9d871082d9cf5298ef9d2431d12df249ec701744d40b4f68d984ade49b6bb"
+    }, {
+      "index" : 1,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportUpgrades.json",
+      "section" : "ExportModSet",
+      "sha256" : "09bb9605a1e5a877d337a7563fdeef257e139f0df27ac87ee0e033fdcc1eab37"
+    } ],
+    "section" : "ExportModSet",
+    "variants" : {
+      "en" : {
+        "buffSet" : true,
+        "numUpgradesInSet" : 3,
+        "stats" : [ "Enhance mods in this set.", "Enhance mods in this set.", "Enhance mods in this set." ],
+        "uniqueName" : "/Lotus/Upgrades/Mods/Sets/Umbra/UmbraSetMod"
+      },
+      "zh" : {
+        "buffSet" : true,
+        "numUpgradesInSet" : 3,
+        "stats" : [ "增强这个组合中的 MOD。", "增强这个组合中的 MOD。", "增强这个组合中的 MOD。" ],
+        "uniqueName" : "/Lotus/Upgrades/Mods/Sets/Umbra/UmbraSetMod"
+      }
+    }
+  }, {
+    "id" : "/Lotus/Upgrades/Mods/Sets/Vigilante/VigilanteSetMod",
+    "key" : "ExportModSet|/Lotus/Upgrades/Mods/Sets/Vigilante/VigilanteSetMod",
+    "names" : {
+      "en" : null,
+      "zh" : null
+    },
+    "provenance" : [ {
+      "index" : 0,
+      "locale" : "en",
+      "path" : "exports/en/ExportUpgrades.json",
+      "section" : "ExportModSet",
+      "sha256" : "5dc9d871082d9cf5298ef9d2431d12df249ec701744d40b4f68d984ade49b6bb"
+    }, {
+      "index" : 0,
+      "locale" : "zh",
+      "path" : "exports/zh/ExportUpgrades.json",
+      "section" : "ExportModSet",
+      "sha256" : "09bb9605a1e5a877d337a7563fdeef257e139f0df27ac87ee0e033fdcc1eab37"
+    } ],
+    "section" : "ExportModSet",
+    "variants" : {
+      "en" : {
+        "numUpgradesInSet" : 6,
+        "stats" : [ "5% chance to enhance Critical Hits from Primary Weapons.", "10% chance to enhance Critical Hits from Primary Weapons.", "15% chance to enhance Critical Hits from Primary Weapons.", "20% chance to enhance Critical Hits from Primary Weapons.", "25% chance to enhance Critical Hits from Primary Weapons.", "30% chance to enhance Critical Hits from Primary Weapons." ],
+        "uniqueName" : "/Lotus/Upgrades/Mods/Sets/Vigilante/VigilanteSetMod"
+      },
+      "zh" : {
+        "numUpgradesInSet" : 6,
+        "stats" : [ "5% 的几率强化主要武器的暴击。", "10% 的几率强化主要武器的暴击。", "15% 的几率强化主要武器的暴击。", "20% 的几率强化主要武器的暴击。", "25% 的几率强化主要武器的暴击。", "30% 的几率强化主要武器的暴击。" ],
+        "uniqueName" : "/Lotus/Upgrades/Mods/Sets/Vigilante/VigilanteSetMod"
+      }
+    }
+  } ],
+  "model" : "regional-catalog-v1",
+  "region" : "international",
+  "schemaVersion" : 1,
+  "section" : "ExportModSet"
+}

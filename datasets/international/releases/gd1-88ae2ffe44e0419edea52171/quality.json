@@ -1,0 +1,332 @@
+{
+  "artifactCount" : 33,
+  "canonicalCoverage" : {
+    "entities" : 19889,
+    "features" : {
+      "automaticLoadout" : "UNSUPPORTED_ATTACKS_MODS_EVOLUTIONS_STANCES_COVERAGE_REQUIRED",
+      "catalogQuery" : "AVAILABLE",
+      "rivenCalculation" : "UNSUPPORTED_TYPED_TRAITS_AND_DISPOSITION_COVERAGE_REQUIRED"
+    },
+    "identicalDuplicates" : [ {
+      "index" : 655,
+      "key" : "ExportWeapons|/Lotus/Weapons/Tenno/Archwing/Primary/ThanoTechArchLongGun/ThanoTechLongGun",
+      "locale" : "en",
+      "path" : "exports/en/ExportWeapons.json"
+    }, {
+      "index" : 657,
+      "key" : "ExportWeapons|/Lotus/Weapons/Tenno/Archwing/Primary/ThanoTechArchLongGun/ThanoTechLongGun",
+      "locale" : "en",
+      "path" : "exports/en/ExportWeapons.json"
+    }, {
+      "index" : 655,
+      "key" : "ExportWeapons|/Lotus/Weapons/Tenno/Archwing/Primary/ThanoTechArchLongGun/ThanoTechLongGun",
+      "locale" : "zh",
+      "path" : "exports/zh/ExportWeapons.json"
+    }, {
+      "index" : 657,
+      "key" : "ExportWeapons|/Lotus/Weapons/Tenno/Archwing/Primary/ThanoTechArchLongGun/ThanoTechLongGun",
+      "locale" : "zh",
+      "path" : "exports/zh/ExportWeapons.json"
+    } ],
+    "inputRecords" : {
+      "ExportAbilities:en" : 13,
+      "ExportAbilities:zh" : 13,
+      "ExportAvionics:en" : 82,
+      "ExportAvionics:zh" : 82,
+      "ExportCustoms:en" : 4836,
+      "ExportCustoms:zh" : 4836,
+      "ExportDrones:en" : 6,
+      "ExportDrones:zh" : 6,
+      "ExportFlavour:en" : 2683,
+      "ExportFlavour:zh" : 2683,
+      "ExportFocusUpgrades:en" : 105,
+      "ExportFocusUpgrades:zh" : 105,
+      "ExportFusionBundles:en" : 51,
+      "ExportFusionBundles:zh" : 51,
+      "ExportGear:en" : 180,
+      "ExportGear:zh" : 180,
+      "ExportIntrinsics:en" : 5,
+      "ExportIntrinsics:zh" : 5,
+      "ExportKeys:en" : 49,
+      "ExportKeys:zh" : 49,
+      "ExportModSet:en" : 19,
+      "ExportModSet:zh" : 19,
+      "ExportOther:en" : 46,
+      "ExportOther:zh" : 46,
+      "ExportRailjackWeapons:en" : 143,
+      "ExportRailjackWeapons:zh" : 143,
+      "ExportRecipes:en" : 1885,
+      "ExportRecipes:zh" : 1885,
+      "ExportRegions:en" : 269,
+      "ExportRegions:zh" : 269,
+      "ExportRelicArcane:en" : 3369,
+      "ExportRelicArcane:zh" : 3369,
+      "ExportResources:en" : 3550,
+      "ExportResources:zh" : 3550,
+      "ExportSentinels:en" : 34,
+      "ExportSentinels:zh" : 34,
+      "ExportSortieRewards:en" : 17,
+      "ExportSortieRewards:zh" : 17,
+      "ExportUpgrades:en" : 1603,
+      "ExportUpgrades:zh" : 1603,
+      "ExportWarframes:en" : 127,
+      "ExportWarframes:zh" : 127,
+      "ExportWeapons:en" : 841,
+      "ExportWeapons:zh" : 841
+    },
+    "limits" : [ "Identities are scoped by section; identical labels never merge records.", "Payload variants are preserved per locale; missing names have no synthetic fallback.", "Unresolved references may target native types or data outside this release; they are not deleted.", "Client records may be hidden or unreleased; presence does not establish gameplay availability.", "This projection is queryable, not a complete combat model. Numeric conflicts remain visible." ],
+    "localeNumericConflicts" : [ ],
+    "model" : "regional-catalog-v1",
+    "region" : "international",
+    "relationCounts" : {
+      "RESOLVED" : 56202,
+      "UNRESOLVED" : 8208
+    },
+    "schemaVersion" : 1,
+    "sections" : 20,
+    "unidentified" : [ {
+      "index" : 0,
+      "path" : "exports/en/ExportSortieRewards.json",
+      "reason" : "NO_EXPLICIT_IDENTITY",
+      "section" : "ExportIntrinsics"
+    }, {
+      "index" : 1,
+      "path" : "exports/en/ExportSortieRewards.json",
+      "reason" : "NO_EXPLICIT_IDENTITY",
+      "section" : "ExportIntrinsics"
+    }, {
+      "index" : 2,
+      "path" : "exports/en/ExportSortieRewards.json",
+      "reason" : "NO_EXPLICIT_IDENTITY",
+      "section" : "ExportIntrinsics"
+    }, {
+      "index" : 3,
+      "path" : "exports/en/ExportSortieRewards.json",
+      "reason" : "NO_EXPLICIT_IDENTITY",
+      "section" : "ExportIntrinsics"
+    }, {
+      "index" : 4,
+      "path" : "exports/en/ExportSortieRewards.json",
+      "reason" : "NO_EXPLICIT_IDENTITY",
+      "section" : "ExportIntrinsics"
+    }, {
+      "path" : "exports/en/ExportSortieRewards.json",
+      "reason" : "NON_ARRAY_SECTION",
+      "section" : "ExportNightwave"
+    }, {
+      "path" : "exports/en/ExportSortieRewards.json",
+      "reason" : "NON_ARRAY_SECTION",
+      "section" : "ExportRailjack"
+    }, {
+      "index" : 0,
+      "path" : "exports/en/ExportSortieRewards.json",
+      "reason" : "NO_EXPLICIT_IDENTITY",
+      "section" : "ExportSortieRewards"
+    }, {
+      "index" : 1,
+      "path" : "exports/en/ExportSortieRewards.json",
+      "reason" : "NO_EXPLICIT_IDENTITY",
+      "section" : "ExportSortieRewards"
+    }, {
+      "index" : 2,
+      "path" : "exports/en/ExportSortieRewards.json",
+      "reason" : "NO_EXPLICIT_IDENTITY",
+      "section" : "ExportSortieRewards"
+    }, {
+      "index" : 3,
+      "path" : "exports/en/ExportSortieRewards.json",
+      "reason" : "NO_EXPLICIT_IDENTITY",
+      "section" : "ExportSortieRewards"
+    }, {
+      "index" : 4,
+      "path" : "exports/en/ExportSortieRewards.json",
+      "reason" : "NO_EXPLICIT_IDENTITY",
+      "section" : "ExportSortieRewards"
+    }, {
+      "index" : 5,
+      "path" : "exports/en/ExportSortieRewards.json",
+      "reason" : "NO_EXPLICIT_IDENTITY",
+      "section" : "ExportSortieRewards"
+    }, {
+      "index" : 6,
+      "path" : "exports/en/ExportSortieRewards.json",
+      "reason" : "NO_EXPLICIT_IDENTITY",
+      "section" : "ExportSortieRewards"
+    }, {
+      "index" : 7,
+      "path" : "exports/en/ExportSortieRewards.json",
+      "reason" : "NO_EXPLICIT_IDENTITY",
+      "section" : "ExportSortieRewards"
+    }, {
+      "index" : 8,
+      "path" : "exports/en/ExportSortieRewards.json",
+      "reason" : "NO_EXPLICIT_IDENTITY",
+      "section" : "ExportSortieRewards"
+    }, {
+      "index" : 9,
+      "path" : "exports/en/ExportSortieRewards.json",
+      "reason" : "NO_EXPLICIT_IDENTITY",
+      "section" : "ExportSortieRewards"
+    }, {
+      "index" : 10,
+      "path" : "exports/en/ExportSortieRewards.json",
+      "reason" : "NO_EXPLICIT_IDENTITY",
+      "section" : "ExportSortieRewards"
+    }, {
+      "index" : 11,
+      "path" : "exports/en/ExportSortieRewards.json",
+      "reason" : "NO_EXPLICIT_IDENTITY",
+      "section" : "ExportSortieRewards"
+    }, {
+      "index" : 12,
+      "path" : "exports/en/ExportSortieRewards.json",
+      "reason" : "NO_EXPLICIT_IDENTITY",
+      "section" : "ExportSortieRewards"
+    }, {
+      "index" : 13,
+      "path" : "exports/en/ExportSortieRewards.json",
+      "reason" : "NO_EXPLICIT_IDENTITY",
+      "section" : "ExportSortieRewards"
+    }, {
+      "index" : 14,
+      "path" : "exports/en/ExportSortieRewards.json",
+      "reason" : "NO_EXPLICIT_IDENTITY",
+      "section" : "ExportSortieRewards"
+    }, {
+      "index" : 15,
+      "path" : "exports/en/ExportSortieRewards.json",
+      "reason" : "NO_EXPLICIT_IDENTITY",
+      "section" : "ExportSortieRewards"
+    }, {
+      "index" : 16,
+      "path" : "exports/en/ExportSortieRewards.json",
+      "reason" : "NO_EXPLICIT_IDENTITY",
+      "section" : "ExportSortieRewards"
+    }, {
+      "index" : 0,
+      "path" : "exports/zh/ExportSortieRewards.json",
+      "reason" : "NO_EXPLICIT_IDENTITY",
+      "section" : "ExportIntrinsics"
+    }, {
+      "index" : 1,
+      "path" : "exports/zh/ExportSortieRewards.json",
+      "reason" : "NO_EXPLICIT_IDENTITY",
+      "section" : "ExportIntrinsics"
+    }, {
+      "index" : 2,
+      "path" : "exports/zh/ExportSortieRewards.json",
+      "reason" : "NO_EXPLICIT_IDENTITY",
+      "section" : "ExportIntrinsics"
+    }, {
+      "index" : 3,
+      "path" : "exports/zh/ExportSortieRewards.json",
+      "reason" : "NO_EXPLICIT_IDENTITY",
+      "section" : "ExportIntrinsics"
+    }, {
+      "index" : 4,
+      "path" : "exports/zh/ExportSortieRewards.json",
+      "reason" : "NO_EXPLICIT_IDENTITY",
+      "section" : "ExportIntrinsics"
+    }, {
+      "path" : "exports/zh/ExportSortieRewards.json",
+      "reason" : "NON_ARRAY_SECTION",
+      "section" : "ExportNightwave"
+    }, {
+      "path" : "exports/zh/ExportSortieRewards.json",
+      "reason" : "NON_ARRAY_SECTION",
+      "section" : "ExportRailjack"
+    }, {
+      "index" : 0,
+      "path" : "exports/zh/ExportSortieRewards.json",
+      "reason" : "NO_EXPLICIT_IDENTITY",
+      "section" : "ExportSortieRewards"
+    }, {
+      "index" : 1,
+      "path" : "exports/zh/ExportSortieRewards.json",
+      "reason" : "NO_EXPLICIT_IDENTITY",
+      "section" : "ExportSortieRewards"
+    }, {
+      "index" : 2,
+      "path" : "exports/zh/ExportSortieRewards.json",
+      "reason" : "NO_EXPLICIT_IDENTITY",
+      "section" : "ExportSortieRewards"
+    }, {
+      "index" : 3,
+      "path" : "exports/zh/ExportSortieRewards.json",
+      "reason" : "NO_EXPLICIT_IDENTITY",
+      "section" : "ExportSortieRewards"
+    }, {
+      "index" : 4,
+      "path" : "exports/zh/ExportSortieRewards.json",
+      "reason" : "NO_EXPLICIT_IDENTITY",
+      "section" : "ExportSortieRewards"
+    }, {
+      "index" : 5,
+      "path" : "exports/zh/ExportSortieRewards.json",
+      "reason" : "NO_EXPLICIT_IDENTITY",
+      "section" : "ExportSortieRewards"
+    }, {
+      "index" : 6,
+      "path" : "exports/zh/ExportSortieRewards.json",
+      "reason" : "NO_EXPLICIT_IDENTITY",
+      "section" : "ExportSortieRewards"
+    }, {
+      "index" : 7,
+      "path" : "exports/zh/ExportSortieRewards.json",
+      "reason" : "NO_EXPLICIT_IDENTITY",
+      "section" : "ExportSortieRewards"
+    }, {
+      "index" : 8,
+      "path" : "exports/zh/ExportSortieRewards.json",
+      "reason" : "NO_EXPLICIT_IDENTITY",
+      "section" : "ExportSortieRewards"
+    }, {
+      "index" : 9,
+      "path" : "exports/zh/ExportSortieRewards.json",
+      "reason" : "NO_EXPLICIT_IDENTITY",
+      "section" : "ExportSortieRewards"
+    }, {
+      "index" : 10,
+      "path" : "exports/zh/ExportSortieRewards.json",
+      "reason" : "NO_EXPLICIT_IDENTITY",
+      "section" : "ExportSortieRewards"
+    }, {
+      "index" : 11,
+      "path" : "exports/zh/ExportSortieRewards.json",
+      "reason" : "NO_EXPLICIT_IDENTITY",
+      "section" : "ExportSortieRewards"
+    }, {
+      "index" : 12,
+      "path" : "exports/zh/ExportSortieRewards.json",
+      "reason" : "NO_EXPLICIT_IDENTITY",
+      "section" : "ExportSortieRewards"
+    }, {
+      "index" : 13,
+      "path" : "exports/zh/ExportSortieRewards.json",
+      "reason" : "NO_EXPLICIT_IDENTITY",
+      "section" : "ExportSortieRewards"
+    }, {
+      "index" : 14,
+      "path" : "exports/zh/ExportSortieRewards.json",
+      "reason" : "NO_EXPLICIT_IDENTITY",
+      "section" : "ExportSortieRewards"
+    }, {
+      "index" : 15,
+      "path" : "exports/zh/ExportSortieRewards.json",
+      "reason" : "NO_EXPLICIT_IDENTITY",
+      "section" : "ExportSortieRewards"
+    }, {
+      "index" : 16,
+      "path" : "exports/zh/ExportSortieRewards.json",
+      "reason" : "NO_EXPLICIT_IDENTITY",
+      "section" : "ExportSortieRewards"
+    } ]
+  },
+  "checks" : [ "index-stable-during-collection", "official-root-shapes", "region-isolation", "content-hashes", "public-content-screening", "canonical-identities-and-regional-relations" ],
+  "limits" : [ "Official-export sections retain their original structure; not an engine-ready complete mechanics catalog.", "An unchanged source index does not prove equivalence to any particular installed client build.", "Language zh denotes Simplified Chinese, not the China server." ],
+  "region" : "international",
+  "schemaVersion" : 1,
+  "sourceRecordCount" : 59973,
+  "status" : "PASS",
+  "warnings" : [ "NON_ARRAY_SECTION:ExportSortieRewards.json:ExportNightwave", "NON_ARRAY_SECTION:ExportSortieRewards.json:ExportRailjack", "IDENTICAL_DUPLICATE_PROPERTIES:exports/en/ExportWeapons.json:564", "NON_ARRAY_SECTION:ExportSortieRewards.json:ExportNightwave", "NON_ARRAY_SECTION:ExportSortieRewards.json:ExportRailjack", "IDENTICAL_DUPLICATE_PROPERTIES:exports/zh/ExportWeapons.json:564" ]
+}
