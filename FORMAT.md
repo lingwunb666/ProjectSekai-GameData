@@ -47,7 +47,7 @@ PublicExport 的清单是采集时读取的索引，不应以本机游戏 EXE �
 
 ## 同区域来源组合
 
-合包的 `inputs` 保存输入版本和 manifest SHA-256，`sources` 保留各来源。只接受同一区域，不同文件并存；同路径不同内容拒绝生成，禁止覆盖冲突。原查询投影被丢弃，合包后重新生成。
+合包的 `inputs` 保存输入版本和 `contentSha256`，算法与版本身份相同但保留完整 64 位十六进制哈希，不含 `releaseId/collectedAt`。这使相同输入的重复采集不因时间变化而产生新版本。早期包的 `manifestSha256` 仍用于核对当时的完整 manifest 字节，不改写历史包。`sources` 保留各来源。只接受同一区域，不同文件并存；同路径不同内容拒绝生成，禁止覆盖冲突。原查询投影被丢弃，合包后重新生成。
 
 `sourceAlignment=INDEPENDENT_VERSIONS_NOT_MECHANICS_RECONCILED` 表示来源版本仍独立。官方索引与客户端资源哈希不能相互充当版本证明，同在一个包中也不允许默认用一方数值覆盖另一方。
 
