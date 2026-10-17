@@ -2,6 +2,16 @@
 
 格式版本为 `1`。区域与语言是独立字段，不允许由语言推断区域，也不允许因为另一区域存在同名物品就认为可跨服复用。
 
+字典文件 `exports/<locale>/ExportClientDictionary.json` 可使用 `en,zh,de,es,fr,it,ja,ko,pl,pt,ru,tc,th,tr,uk`，每份仍必须通过本服精确缓存来源、计数、EOF 和语言清单验证；英中为基础必需项，额外字典不强制所有语言都已安装，也不表示该语言的实体视图已经实现。额外语言不放行任意 `Export*.json` 路径，`xx` 不作为翻译来源。此为验证器能力更新，已有固定版本仍未改变。
+
+### 字典压缩与独立官方语言来源（1.61）
+
+`ClientDictionary` 的 `client-dictionary-v2` 仅压缩 `entries`，不改变标签、空串、换行或格式标记。字段精确为 `schema,locale,entryCount,emptyCount,source,encoding,entriesBytes,entriesSha256,entriesGzip`；`encoding=gzip-base64-json-v1`。解码后的 UTF-8 JSON 对象最多 48 MiB，GZIP 最多 16 MiB，最多 250,000 条；必须验证单流、CRC、展开长度、SHA-256，拒绝拼接流和额外尾部。v1 仍可读取。整个数据包仍限制 512 MiB，压缩不是绕过展开量或语义校验。
+
+额外语言的 `source.distribution` 可声明 `official-client-dictionary-v1`：固定本区域官方启动器分发索引的 URL／哈希／大小、采集元数据哈希、官方 EXE 的 MD5 版本标识、精确语言 TOC／cache 文件及下载／解码摘要。国际服仅 `content.warframe.com`，国服仅 `content-zhpt.wf.qq.com`；不能交叉使用。公开包不含原始客户端缓存或可执行文件。
+
+其策略固定为 `EXACT_TAG_TEXT_ONLY_INDEPENDENT_VERSION`：仅按精确标签查询文本，不用于解析战斗数值，也不声称与本机 EXE 同版或更新。它不能覆盖英中基础字典，合包也不能覆盖任何已存在的语言。安装观察 `client-locale-inventory-v1` 保持原样：官方下载到法语字典与本机法语 `NOT_INSTALLED` 可以同时成立。来源哈希随不可变数据包固定，运行时不下载、不追随 latest、不以另一语言填空。
+
 ## Manifest
 
 `manifest.json` 包含 `schemaVersion`、`region`、`releaseId`、`collectorVersion`、`collectedAt`、`locales`、`capabilities`、`engineCompatibility`、`sources` 和 `files`。

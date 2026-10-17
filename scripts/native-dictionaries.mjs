@@ -1,16 +1,18 @@
 import assert from 'node:assert/strict';
-import {verifyLocaleInventory} from './native-locale-inventory.mjs';
+import {verifyLocaleInventory,EXPECTED_LOCALES} from './native-locale-inventory.mjs';
+import {unpackDictionary} from './dictionary-encoding.mjs';
+import {verifyOfficialDictionary} from './official-dictionary-source.mjs';
 
 export class NativeDictionaries {
   locales=new Set(); region; sources=new Map();
   accept(path,envelope) {
     if(!path.endsWith('/ExportClientDictionary.json'))return;
     const {locale,region,sections}=envelope;
-    assert(['en','zh'].includes(locale)&&['china','international'].includes(region)&&envelope.schemaVersion===1
+    assert(EXPECTED_LOCALES.includes(locale)&&['china','international'].includes(region)&&envelope.schemaVersion===1
       &&path===`exports/${locale}/ExportClientDictionary.json`,'dictionary envelope');
     if(this.region===undefined)this.region=region;assert.equal(this.region,region,'dictionary regional isolation');
     assert(!this.locales.has(locale),'duplicate dictionary locale');
-    assert.deepEqual(Object.keys(sections),['ClientDictionary']);const d=sections.ClientDictionary;
+    assert.deepEqual(Object.keys(sections),['ClientDictionary']);const d=unpackDictionary(sections.ClientDictionary);
     assert(d.schema==='client-dictionary-v1'&&d.locale===locale&&d.entries&&typeof d.entries==='object'
       &&!Array.isArray(d.entries),'dictionary schema');
     const entries=Object.entries(d.entries),s=d.source,c=s?.checks;
@@ -24,10 +26,11 @@ export class NativeDictionaries {
       assert(key.startsWith('/')&&key.length<=1024&&!/[\x00-\x1f]/.test(key)&&typeof value==='string'&&value.length<=65536,'dictionary literal');
       if(value==='')empty++;
     }
+    verifyOfficialDictionary(region,locale,s);
     assert.equal(d.emptyCount,empty,'dictionary empty-string preservation');this.locales.add(locale);this.sources.set(locale,s);
   }
   verify(required=false,manifest) {
-    if(required||this.locales.size)assert.deepEqual([...this.locales].sort(),['en','zh'],'complete installed dictionary locales');
+    if(required||this.locales.size)assert(['en','zh'].every(locale=>this.locales.has(locale)),'complete installed dictionary locales');
     if(manifest)verifyLocaleInventory(manifest,this.sources);
   }
 }

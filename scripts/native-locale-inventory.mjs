@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict';
-const locales=['en','zh','de','es','fr','it','ja','ko','pl','pt','ru','tc','th','tr','uk'];
+export const EXPECTED_LOCALES=Object.freeze(['en','zh','de','es','fr','it','ja','ko','pl','pt','ru','tc','th','tr','uk']);
+const locales=EXPECTED_LOCALES;
 const exact=(value,keys)=>assert(value&&typeof value==='object'&&!Array.isArray(value)
   &&Object.keys(value).sort().join('|')===[...keys].sort().join('|'),'locale inventory fields');
 const integer=(value,min,max)=>assert(Number.isSafeInteger(value)&&value>=min&&value<=max,'locale inventory integer');
@@ -23,7 +24,8 @@ export function verifyLocaleInventory(manifest,dictionaries=new Map()) {
   for(let i=0;i<locales.length;i++){
     const locale=locales[i],row=inventory.locales[i],cache='H.Misc_'+locale;
     exact(row,['locale','cache','state','evidence']);assert(row.locale===locale&&row.cache===cache,'locale identity/order');
-    const toc=files.has(cache+'.toc'),data=files.has(cache+'.cache'),source=dictionaries.get(locale),e=row.evidence;let expected;
+    const toc=files.has(cache+'.toc'),data=files.has(cache+'.cache'),candidate=dictionaries.get(locale),e=row.evidence;let expected;
+    const source=candidate&&Object.hasOwn(candidate,'distribution')?undefined:candidate;
     if(!toc||!data){assert(e===null&&!source,'absent cache with dictionary');expected=toc===data?'NOT_INSTALLED':'INCOMPLETE_CACHE_PAIR';}
     else {
       exact(e,['tocSha256','cacheBytes','resource']);assert(typeof e.tocSha256==='string'&&/^[a-f0-9]{64}$/.test(e.tocSha256));
