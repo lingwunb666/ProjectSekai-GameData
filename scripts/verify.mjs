@@ -19,6 +19,7 @@ import {NativeChallengeSelection} from './native-challenge-selection.mjs';
 import {NativeRewards} from './native-rewards.mjs';
 import {NativeArbitration} from './native-arbitration.mjs';
 import {verifyWeaponStoreTraits} from './native-weapon-store-traits.mjs';
+import {NativeEnemyDrops} from './native-enemy-drops.mjs';
 import {expandRelation} from './canonical-relations.mjs';
 import {expandEntities} from './canonical-entities.mjs';
 
@@ -73,6 +74,7 @@ async function verifyRelease(directory, region, version) {
     const nativeDictionaries = new NativeDictionaries();
     const nativeChallengeSelection = new NativeChallengeSelection();
     const nativeRewards = new NativeRewards();
+    const nativeEnemyDrops = new NativeEnemyDrops();
     const nativeArbitration = new NativeArbitration();
     let rivenProfiles, weaponParameters, rivenCoverage;
     for (const file of manifest.files) {
@@ -88,6 +90,7 @@ async function verifyRelease(directory, region, version) {
       nativeRewards.accept(file.path, content);
       nativeArbitration.accept(file.path, content);
       verifyWeaponStoreTraits(file.path, content);
+      nativeEnemyDrops.accept(file.path, content);
       nativeTextIcons.accept(file.path, content);
       nativeItemParents.accept(file.path, content);
       nativeNpc.accept(file.path, content);
@@ -200,6 +203,7 @@ async function verifyRelease(directory, region, version) {
     nativeChallengeSelection.verify(manifest.capabilities?.includes('client-challenge-selection-facts-v1')??false);
     nativeRewards.verify(manifest.capabilities?.includes('client-mission-reward-manifests-v1')??false, manifest);
     nativeArbitration.verify(manifest);
+    nativeEnemyDrops.verify(manifest);
     // One original file at a time: indices never require all full export trees to remain resident.
     for (const [path, references] of sourceReferences) {
       const bytes = await read(resolve(directory, path));
