@@ -41,13 +41,22 @@ ProjectSekai 的公开、版本化游戏数据仓库。数据由独立采集工�
 
 仓库不包含账号、凭据、个人游戏记录、客户端二进制、IDA 数据库或完整资源包。游戏名称、文本及其他游戏内容的权利仍属于其各自权利人；本项目不对上游游戏数据另行授予所有权或再许可。仓库不是 Digital Extremes 或国服运营方的官方产品。
 
-## 区域图片包（开发中）
+## 区域图片包
 
 结构化包新增 `client-complete-dictionaries-v1` 能力：`exports/en/ExportClientDictionary.json` 和 `exports/zh/ExportClientDictionary.json` 来自各服自己的完整语言包，词典按标签存储，不是物品数组。独立校验器核对两种语言、来源、声明计数、唯一标签和字符串边界；显式空串与缺失标签不能混淆，不跨服补值。能力支持不表示仓库已发布最新采集版本。
 
 `scripts/verify-images.mjs --release <图片包目录>` 独立验证采集器生成的 `regional-image-assets-v1/v2` 包。包按区域及客户端来源标识，PNG 按 SHA-256 寻址，包含物品／商店图、文字图标及技能、挑战、专精、套装等显式贴图声明。v2 将四类完整元数据独立保存并固定哈希，主清单只保存来源与文件清单。验证覆盖来源哈希、图像闭包、mip 布局、PNG CRC、完整解压及额外文件；`complete=false` 不会被解释为功能验收通过。
 
-图片包与结构化 `gd1-*` 版本分开，不能仅凭同名物品互相拼接，也不能拿国际服图片填补国服。消费侧绑定同区域、Packages 内容版本、客户端 EXE 和纹理目录哈希。当前尚未发布图片 Release 或切换业务渲染；图标／贴图版权仍归游戏权利人。
+图片包与结构化 `gd1-*` 版本分开，不能仅凭同名物品互相拼接，也不能拿国际服图片填补国服。消费侧绑定同区域、Packages 内容版本、客户端 EXE 和纹理目录哈希。图标／贴图版权仍归游戏权利人。
+
+2026-10-17 已发布以下固定配对，两个图片包仍有覆盖诊断，均为 prerelease、`complete=false`。发布不代表 ProjectSekai 已生产切换。
+
+| 区域 | 结构化版本 | 图片分发版本 | 索引 SHA-256 |
+| --- | --- | --- | --- |
+| 国际服 | `gd1-d1183120429b80a3d5828948` | `gad1-965ba12a5b755a151a8a9266` | `828bf3abe32413df85cbd7bff37b916c7847f19c3efecebfd16d6bea0dab8d0b` |
+| 国服 | `gd1-a7b3be54a91b59effce2be16` | `gad1-72f31c138eca7e8f27d7504b` | `dbd8e49831a4f87b78458b3256c63e7f7cb48248409cc56c878d87867241fc25` |
+
+国际服配对的固定提交为 `2e274a1626eccd0e3fd6856dff1c6b7e68242fe5`，国服为 `a992ad6f5acd61bccee30d9274378ef41a5a3654`；下载前仍须验证结构化 manifest 及图片 manifest。图片分别见 [国际服 Release](https://github.com/lingwunb666/ProjectSekai-GameData/releases/tag/images-international-gad1-965ba12a5b755a151a8a9266) 和 [国服 Release](https://github.com/lingwunb666/ProjectSekai-GameData/releases/tag/images-china-gad1-72f31c138eca7e8f27d7504b)。各 11 个分块及索引已验证远端摘要；公开索引和固定提交的结构化清单已匿名下载复核，未重复下载整个图片包。
 
 离线打包和恢复（Node.js 24）：
 
@@ -91,4 +100,4 @@ node scripts/fetch-images.mjs --region china --distribution <gad1-id> --sha256 <
 
 下载目录必须专用；可以续用同一固定版本的完整分块，冲突文件不覆盖。尚未下完的当前块重下，不使用未验哈希的断点字节；异常退出只清理本次创建的临时块，已通过校验的块保留。进程被强制结束可能遗留 `.image-download.lock`／`.part`，确认该目录没有下载进程后再人工处理，工具不会擅自清理未知文件。完整下载后逐文件复核，`--restore` 再执行完整 PNG 验证；恢复目录必须是新目录。预览包下载同样需要 `--allow-incomplete`。
 
-下载不修改主项目配置、数据库或 active 指针。将恢复目录和图片 manifest 哈希显式配置到主项目对应区域的验收实例，仍需匹配结构化包的客户端身份。上述工具已支持发布流程，不表示本仓库已经有最新图片 Release。
+下载不修改主项目配置、数据库或 active 指针。将恢复目录和图片 manifest 哈希显式配置到主项目对应区域的验收实例，仍需匹配结构化包的客户端身份。已发布版本见上表；后续版本是否可用以固定发布记录为准，不能从工具版本推断。
