@@ -81,7 +81,7 @@ node scripts/publish-images.mjs --release /data/china-images --input /data/china
 # 确认输出后，显式增加 --publish；凭据只从 GH_TOKEN 或 GITHUB_TOKEN 环境变量读取。
 ```
 
-`--publish` 固定发布到本仓库，先建草稿，上传并核对每个附件的大小和远端 SHA-256，所有附件齐全才公开。不会改变仓库的 latest Release。失败后重跑可续用完全相同的附件；不同内容、缺少哈希或未完成的 starter 附件会报错，工具不会删除或覆盖。存在覆盖诊断的包必须显式增加 `--allow-incomplete`，且始终作为 prerelease，不代表生产验收通过。请求时限为每次 120 秒，单块过慢时可稍后重试。
+`--publish` 固定发布到本仓库，先建草稿，上传并核对每个附件的大小和远端 SHA-256，所有附件齐全才公开。不会改变仓库的 latest Release。失败后重跑可续用完全相同的附件；不同内容、缺少哈希或未完成的 starter 附件会报错，工具不会删除或覆盖。存在覆盖诊断的包必须显式增加 `--allow-incomplete`，且始终作为 prerelease，不代表生产验收通过。元数据请求时限为 120 秒；256 MiB 附件流式上传单独允许 600 秒，避免正常低速上传被过早中断，仍保持单分片空间上限。
 
 发布后的获取命令无需凭据；版本 ID 和索引哈希必须来自审核过的发布记录，不要从任意 URL 或 main 自动推断：
 

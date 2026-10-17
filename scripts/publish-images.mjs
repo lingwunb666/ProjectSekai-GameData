@@ -58,7 +58,7 @@ export function prepareImagePublication({release,input,region,indexSha256,commit
 /** Only fixed GitHub API/upload origins, no redirects or response-body logging. */
 export function githubImageClient(token,fetcher=fetch) {
   assert(typeof token==='string'&&token.trim()&&!/[\r\n]/.test(token),'GH_TOKEN or GITHUB_TOKEN is required');
-  async function request(url,{method='GET',json,body,type,allow404=false}={}) {
+  async function request(url,{method='GET',json,body,type,allow404=false,timeoutMs=120_000}={}) {
     const parsed=new URL(url),allowed=(parsed.origin==='https://api.github.com'||parsed.origin==='https://uploads.github.com')
       &&parsed.pathname.startsWith(`/repos/${REPOSITORY}/`);
     assert(allowed&&!parsed.username&&!parsed.password&&!parsed.hash,'unexpected GitHub request URL');
@@ -67,7 +67,7 @@ export function githubImageClient(token,fetcher=fetch) {
     if(json!==undefined){headers['Content-Type']='application/json';body=JSON.stringify(json);}
     if(type)headers['Content-Type']=type;
     let response;
-    try {response=await fetcher(url,{method,headers,body,redirect:'error',signal:AbortSignal.timeout(120_000)});}
+    try {response=await fetcher(url,{method,headers,body,redirect:'error',signal:AbortSignal.timeout(timeoutMs)});}
     catch {throw new Error('GitHub request failed or timed out; rerun to inspect and resume the draft');}
     if(allow404&&response.status===404){await response.body?.cancel();return null;}
     if(!response.ok){await response.body?.cancel();throw new Error(`GitHub request failed with HTTP ${response.status}; draft was not deleted`);}
@@ -109,7 +109,8 @@ export function githubImageClient(token,fetcher=fetch) {
       const body=await fs.openAsBlob(file);assert.equal(body.size,asset.bytes,'upload file size changed');
       const digest=createHash('sha256');for await(const bytes of body.stream())digest.update(bytes);
       assert.equal(digest.digest('hex'),asset.sha256,'upload file changed before streaming');
-      return request(url,{method:'POST',body,type:asset.name.endsWith('.json')?'application/json':'application/octet-stream'});
+      return request(url,{method:'POST',body,type:asset.name.endsWith('.json')?'application/json':'application/octet-stream',
+        timeoutMs:600_000});
     },
     async publish(id){return request(`${API}/releases/${id}`,{method:'PATCH',json:{draft:false,make_latest:'false'}});},
   };
