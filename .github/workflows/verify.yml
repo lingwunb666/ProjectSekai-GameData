@@ -11,3 +11,4 @@ jobs:
         with:
           node-version: '24.20.0'
       - run: node scripts/verify.mjs
+      - run: node --test scripts/*.test.mjs
