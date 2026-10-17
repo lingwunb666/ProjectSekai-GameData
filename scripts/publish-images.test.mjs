@@ -116,6 +116,18 @@ function onDemandFixture(f) {
   return {...f,input,indexSha256:index.indexSha256,onDemand:true};
 }
 
+test('commit validation uses the bounded Git object endpoint, not a potentially huge dataset diff',async()=>{
+  const sha='a'.repeat(40),calls=[];
+  const client=githubImageClient('test-only-placeholder',async(url,request)=>{
+    calls.push(url);assert.equal(request.redirect,'error');
+    assert.equal(url,'https://api.github.com/repos/lingwunb666/ProjectSekai-GameData/git/commits/'+sha);
+    return Response.json({sha,tree:{sha:'b'.repeat(40)}});
+  });
+  assert.equal((await client.commit(sha)).sha,sha);
+  await assert.rejects(client.commit('main'),/explicit commit SHA/);
+  assert.equal(calls.length,1);
+});
+
 test('on-demand publisher stages only a missing chunk and removes it on failure before resumable retry',async()=>{
   const f=fixture();try {
     const p=onDemandFixture(f),plan=prepareImagePublication(p),{state,client}=remote(plan),reservations=[];

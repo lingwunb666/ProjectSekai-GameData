@@ -78,7 +78,9 @@ export function githubImageClient(token,fetcher=fetch) {
     }catch{throw new Error('GitHub metadata response is invalid or incomplete');}
   }
   return {
-    async commit(sha){return request(`${API}/commits/${sha}`);},
+    // Inspect the small Git object, not the REST commit diff (dataset patches can be enormous).
+    async commit(sha){assert(typeof sha==='string'&&/^[a-f0-9]{40}$/.test(sha),'explicit commit SHA required');
+      return request(`${API}/git/commits/${sha}`);},
     async tag(tag){return request(`${API}/git/ref/tags/${tag}`,{allow404:true});},
     async find(tag){
       // Listing is required for resumable drafts; the public tag endpoint is not a draft inventory.
