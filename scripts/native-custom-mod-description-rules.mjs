@@ -25,7 +25,19 @@ export const GETTERS=[
   {id:'grimoire-range',resource:'/Lotus/Upgrades/Grimoire/RangeUpgradeApplicator.lua',bytes:4439,
     sha256:'bba0f6bf6e975b28641edc256653d19aeb48ea5d99b82d82033cd8545dd41071',name:'GetDescription',prototype:10,parameters:1,symbolHash:2213775760},
   {id:'grimoire-khra',resource:'/Lotus/Upgrades/Grimoire/KhraAuraMod.lua',bytes:1113,
-    sha256:'861b7aee26f03fed6495127a5db819a6684b7ab44cb434f3609068f36776c4e2',name:'GetDescription',prototype:3,parameters:1,symbolHash:2213775760}
+    sha256:'861b7aee26f03fed6495127a5db819a6684b7ab44cb434f3609068f36776c4e2',name:'GetDescription',prototype:3,parameters:1,symbolHash:2213775760},
+  {id:'arcane-overshield-crit',resource:'/Lotus/Upgrades/CosmeticEnhancers/Zariman/SecondaryOnOvershieldCritChance.lua',bytes:1231,
+    sha256:'1975f6993f1fac68b2a3b27f9c69d7eaa58c3045c43d611c89f21813b178e00b',name:'GetDescription',prototype:0,parameters:1,symbolHash:2213775760},
+  {id:'arcane-shield-duration',resource:'/Lotus/Upgrades/CosmeticEnhancers/Zariman/WarframeOnShieldUptimePowerDuration.lua',bytes:1535,
+    sha256:'48aea8bf82cd271409989a0de1b095a52ead60cb2af74f7a7a82c26b30fbc8bd',name:'GetDescription',prototype:0,parameters:1,symbolHash:2213775760},
+  {id:'arcane-energy-heal',resource:'/Lotus/Upgrades/CosmeticEnhancers/Utility/HealAlliesOnEnergySpent.lua',bytes:1881,
+    sha256:'ecf7f5fcf4e433088058545979dc0f72ea3873d5f772e89b9dd0ed6f66b16a9e',name:'GetDescriptionInfo',prototype:1,parameters:3,symbolHash:3662879226},
+  {id:'arcane-ally-buff',resource:'/Lotus/Upgrades/CosmeticEnhancers/Offensive/UpgradePerAllyBuff.lua',bytes:2461,
+    sha256:'aa465e54329c967acc9de64601e49e1e2549aa4555a897c20fecabde4b549ada',name:'GetDescription',prototype:1,parameters:1,symbolHash:2213775760},
+  {id:'arcane-resistance-stacks',resource:'/Lotus/Upgrades/CosmeticEnhancers/Defensive/DamageResistanceStacksOverTime.lua',bytes:7393,
+    sha256:'46670707b0fc0dc3f532f8adf04c9ea5f904cc46fa50e1b7fdf9b2e57fcae05e',name:'GetDescription',prototype:0,parameters:1,symbolHash:2213775760},
+  {id:'arcane-free-cast',resource:'/Lotus/Upgrades/Boons/Utility/NoCostCastChanceOnCast.lua',bytes:1315,
+    sha256:'44134923bd40b437afeb8cc313d1dfc0ebe0ca7fe76cedd908e97658908c85d7',name:'GetDescriptionFreeCastOnCast',prototype:0,parameters:3,symbolHash:2441447004}
 ];
 export function verifyCustomModDescriptionRules(data,manifest) {
   const rows=data.sections?.ClientCustomModDescriptionRules;if(rows===undefined)return;
