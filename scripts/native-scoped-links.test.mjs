@@ -5,6 +5,16 @@ function fixture(){return {ClientSyndicates:[{referenceRule:'native-declaration-
   values:{Titles:[{rewards:[{ItemType:'Currency'}]}]},fieldSources:{Titles:{resource:'/Lotus/Parent'}},
   references:[{pointer:'/values/Titles/0/rewards/0/ItemType',rawTarget:'Currency',owner:'/Lotus/Parent',
     resourceTarget:'/Lotus/Currency',status:'RESOLVED'}]}]};}
+
+test('robotic and beast companions require exact default weapon declaration scope',()=>{
+  for(const section of ['ClientCompanionPowerSuits','ClientPetPowerSuits']) {
+    const row={referenceRule:'native-declaration-scope-v2',values:{DefaultWeapon:'Gun'},
+      fieldSources:{DefaultWeapon:{resource:'/Lotus/Parent',field:'DefaultWeapon'}},
+      references:[{pointer:'/values/DefaultWeapon',rawTarget:'Gun',owner:'/Lotus/Parent',resourceTarget:'/Lotus/Gun',status:'RESOLVED'}]};
+    verifyScopedLinks({[section]:[row]});row.references[0].owner='/Lotus/Child';assert.throws(()=>verifyScopedLinks({[section]:[row]}));
+    row.references=[];assert.throws(()=>verifyScopedLinks({[section]:[row]}),/Missing/);
+  }
+});
 test('nested fields bind to the whole declaring owner and omitted links fail',()=>{
   const f=fixture();verifyScopedLinks(f);
   f.ClientSyndicates[0].references[0].owner='/Lotus/Child';assert.throws(()=>verifyScopedLinks(f));

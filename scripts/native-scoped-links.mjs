@@ -8,6 +8,8 @@ const fields={
   ClientRelics:['RewardManifest'],ClientAnimals:['HuntingInfo/ItemReward','HuntingInfo/WoundedAnimalReward'],
   ClientFocusUpgrades:['ParentAbility'],ClientFocusAbilities:['ParentAbility','BaseTree'],
   ClientPlayerPowerSuits:['AbilityTypes/*','DefaultSlottedUpgrades/*/ItemType'],
+  ClientCompanionPowerSuits:['DefaultWeapon','AbilityTypes/*','DefaultSlottedUpgrades/*/ItemType','AdditionalItems/*','SpecialSlotItem/*/ItemType'],
+  ClientPetPowerSuits:['DefaultWeapon','AbilityTypes/*','DefaultSlottedUpgrades/*/ItemType','AdditionalItems/*','SpecialSlotItem/*/ItemType'],
   ClientBundles:['PackageComponents/*/TypeName'],
   ClientBoosterPacks:['Components/*/Item','COMMON_Components/*/Item','UNCOMMON_Components/*/Item',
     'RARE_Components/*/Item','LEGENDARY_Components/*/Item'],
