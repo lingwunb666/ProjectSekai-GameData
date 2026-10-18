@@ -3,7 +3,8 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
 import {packImageDistribution,verifyImageDistribution,verifyImageDistributionPlan,
-  withImageDistributionChunk} from './image-distribution.mjs';
+  withImageDistributionChunk,restoreImageDistribution} from './image-distribution.mjs';
+import {FREE_RESERVE} from './storage-space.mjs';
 import {fixture,hash} from './test-fixtures/image-pack.mjs';
 
 export function planned(f) {
@@ -12,6 +13,25 @@ export function planned(f) {
   assert.equal(result.indexSha256,f.indexSha256);
   return {...f,input};
 }
+
+test('restore refuses insufficient capacity before creating any output',t=>{
+  const f=fixture();try {
+    const output=path.join(f.temporary,'restore'),index=JSON.parse(fs.readFileSync(path.join(f.input,'distribution.json')));
+    const bytes=index.chunks.reduce((sum,chunk)=>sum+chunk.bytes,0);
+    t.mock.method(fs,'statfsSync',()=>({bsize:1n,bavail:FREE_RESERVE+BigInt(bytes)-1n}));
+    assert.throws(()=>restoreImageDistribution(f.input,output,f),/Insufficient image storage/);
+    assert(!fs.existsSync(output));assert.equal(verifyImageDistribution(f.input,f).indexSha256,f.indexSha256);
+  }finally{f.close();}
+});
+
+test('restore checks a corrupt last chunk before writing any earlier images',()=>{
+  const f=fixture();try {
+    const output=path.join(f.temporary,'restore'),index=JSON.parse(fs.readFileSync(path.join(f.input,'distribution.json')));
+    const file=path.join(f.input,index.chunks.at(-1).path),bytes=fs.readFileSync(file);bytes[0]^=1;fs.writeFileSync(file,bytes);
+    assert.throws(()=>restoreImageDistribution(f.input,output,f),/chunk integrity mismatch/);
+    assert(!fs.existsSync(output));assert.deepEqual(fs.readFileSync(file),bytes);
+  }finally{f.close();}
+});
 
 test('index-only plan has byte-identical pins and chunks without creating a second image pack',async()=>{
   const f=fixture();try {

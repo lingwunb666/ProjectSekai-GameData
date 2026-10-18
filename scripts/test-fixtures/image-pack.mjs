@@ -36,5 +36,6 @@ export function fixture({complete=true}={}) {
   const result=packImageDistribution(release,input,{chunkBytes:3000});
   return {temporary,release,input,region:'china',indexSha256:result.indexSha256,commit:'b'.repeat(40),
     close(){const resolved=path.resolve(temporary);assert(path.dirname(resolved)===path.resolve(os.tmpdir())
-      &&path.basename(resolved).startsWith('sekai-image-publish-test-'));fs.rmSync(resolved,{recursive:true,force:true});}};
+      &&path.basename(resolved).startsWith('sekai-image-publish-test-')&&fs.lstatSync(resolved).isDirectory()
+      &&!fs.lstatSync(resolved).isSymbolicLink());fs.rmSync(resolved,{recursive:true,force:false});}};
 }

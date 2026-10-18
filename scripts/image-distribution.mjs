@@ -5,6 +5,7 @@ import path from 'node:path';
 import {createHash} from 'node:crypto';
 import {fileURLToPath} from 'node:url';
 import {verifyImagePack} from './verify-images.mjs';
+import {requireSpace} from './storage-space.mjs';
 
 const CHUNK_BYTES=256*1024*1024,MAX_FILE=48*1024*1024,MAX_TOTAL=4*1024**3+136*1024**2;
 const digest=x=>typeof x==='string'&&/^[a-f0-9]{64}$/.test(x);
@@ -99,9 +100,10 @@ export function parseImageDistributionIndex(bytes,{region,indexSha256}) {
 }
 
 /** Validate the closed distribution layout before reading any chunk or creating an output. */
-function distributionIndex(input,pin) {
+function distributionIndex(input,pin,leases=[]) {
   const parsed=parseImageDistributionIndex(boundedRead(path.join(input,'distribution.json'),8*1024*1024),pin);
-  assert.deepEqual(fs.readdirSync(input).sort(),['distribution.json',...parsed.index.chunks.map(x=>x.path)].sort(),'extra distribution files');
+  assert(leases.length===0||leases.length===1&&leases[0]==='.image-download.lock','unknown distribution lease');
+  assert.deepEqual(fs.readdirSync(input).sort(),['distribution.json',...leases,...parsed.index.chunks.map(x=>x.path)].sort(),'extra distribution files');
   return parsed;
 }
 
@@ -172,8 +174,8 @@ export async function withImageDistributionChunk(release,input,pin,name,consume,
 }
 
 /** One bounded streaming pass, without restoring several gigabytes just to verify publication inputs. */
-export function verifyImageDistribution(input,pin) {
-  const {index,bytes,chunkFiles}=distributionIndex(input,pin),buffer=Buffer.alloc(1024*1024);
+export function verifyImageDistribution(input,pin,leases=[]) {
+  const {index,bytes,chunkFiles}=distributionIndex(input,pin,leases),buffer=Buffer.alloc(1024*1024);
   index.chunks.forEach((chunk,i)=>{
     const file=path.join(input,chunk.path);noLinks(file);const stat=fs.lstatSync(file);
     assert(stat.isFile()&&stat.size===chunk.bytes,'chunk size mismatch');
@@ -197,11 +199,19 @@ export function verifyImageDistribution(input,pin) {
 /** Caller supplies a separately trusted index digest and region; returned directory has passed full PNG verification. */
 export function restoreImageDistribution(input,output,pin) {
   const {index:d,chunkFiles}=distributionIndex(input,pin),{region}=pin;
-  const root=newOutput(input,output);fs.mkdirSync(path.join(root,'metadata'));fs.mkdirSync(path.join(root,'images'));
-  for(let i=0;i<d.chunks.length;i++) {
-    const chunk=d.chunks[i],file=path.join(input,chunk.path),stat=fs.lstatSync(file);noLinks(file);
+  let remaining=d.chunks.reduce((sum,chunk)=>sum+chunk.bytes,0);
+  requireSpace(output,remaining);
+  // Same two streaming passes as before, but no partial output for an already-corrupt later chunk.
+  for(const chunk of d.chunks) {
+    const file=path.join(input,chunk.path);noLinks(file);const stat=fs.lstatSync(file);
     assert(stat.isFile()&&stat.size===chunk.bytes,'chunk size mismatch');
     assert.deepEqual(chunkHash(file),{bytes:chunk.bytes,sha256:chunk.sha256},'chunk integrity mismatch');
+  }
+  const root=newOutput(input,output);fs.mkdirSync(path.join(root,'metadata'));fs.mkdirSync(path.join(root,'images'));
+  for(let i=0;i<d.chunks.length;i++) {
+    requireSpace(root,remaining);
+    const chunk=d.chunks[i],file=path.join(input,chunk.path),stat=fs.lstatSync(file);noLinks(file);
+    assert(stat.isFile()&&stat.size===chunk.bytes,'chunk size mismatch');
     const fd=fs.openSync(file,'r');
     try {
       for(const f of chunkFiles[i]) {
@@ -209,6 +219,7 @@ export function restoreImageDistribution(input,output,pin) {
         while(at<bytes.length){const n=fs.readSync(fd,bytes,at,bytes.length-at,f.offset+at);assert(n>0,'truncated chunk');at+=n;}
         assert.equal(hash(bytes),f.sha256,'restored file hash mismatch');
         fs.writeFileSync(path.join(root,f.path),bytes,{flag:'wx'});
+        remaining-=f.bytes;
       }
     }finally {fs.closeSync(fd);}
   }

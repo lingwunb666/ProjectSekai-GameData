@@ -5,6 +5,7 @@ import path from 'node:path';
 import {createHash,randomUUID} from 'node:crypto';
 import {fileURLToPath} from 'node:url';
 import {parseImageDistributionIndex,verifyImageDistribution,restoreImageDistribution} from './image-distribution.mjs';
+import {requireSpace,requireDownloadSpace,existingDirectory} from './storage-space.mjs';
 
 const REPOSITORY='lingwunb666/ProjectSekai-GameData',MAX_INDEX=8*1024*1024,LOCK='.image-download.lock';
 const digest=value=>typeof value==='string'&&/^[a-f0-9]{64}$/.test(value);
@@ -48,6 +49,7 @@ async function responseFor(url,fetcher,signal) {
 async function downloadFile(root,name,expected,base,fetcher) {
   const target=path.join(root,name);noLinks(target);
   if(fs.existsSync(target)){localFile(target,expected);return 'REUSED';}
+  requireSpace(root,expected.maxBytes??expected.bytes);
   const temporary=path.join(root,`.${name}.${randomUUID()}.part`),fd=fs.openSync(temporary,'wx');
   try {
    try {
@@ -76,12 +78,17 @@ async function downloadFile(root,name,expected,base,fetcher) {
   }finally{fs.unlinkSync(temporary);}
 }
 
-export async function fetchImageDistribution({directory,region,distributionId,indexSha256,allowIncomplete=false},fetcher=fetch) {
+export async function fetchImageDistribution({directory,region,distributionId,indexSha256,allowIncomplete=false,restoreDirectory},fetcher=fetch) {
   assert(['china','international'].includes(region)&&/^gad1-[a-f0-9]{24}$/.test(distributionId)
     &&digest(indexSha256),'explicit region, distribution ID and trusted index SHA-256 required');
   assert(typeof directory==='string'&&directory.trim(),'dedicated download directory required');
   const root=path.resolve(directory);noLinks(root);fs.mkdirSync(root,{recursive:true});
   assert(fs.statSync(root).isDirectory(),'download destination is not a directory');
+  if(restoreDirectory) {
+    existingDirectory(restoreDirectory);assert(!fs.existsSync(restoreDirectory),'restore output must be a NEW directory');
+    const relative=path.relative(root,path.resolve(restoreDirectory));
+    assert(relative&&(relative.startsWith('..'+path.sep)||path.isAbsolute(relative)),'restore output cannot be inside download');
+  }
   const lock=path.join(root,LOCK);let lockFd;
   try {lockFd=fs.openSync(lock,'wx');}catch{throw new Error('Image download directory is locked; do not run concurrent downloads or remove an active lock');}
   const initial=new Set(fs.readdirSync(root)),created=[];
@@ -97,15 +104,28 @@ export async function fetchImageDistribution({directory,region,distributionId,in
     assert(index.complete||allowIncomplete,'incomplete image pack requires explicit --allow-incomplete');
     const allowed=new Set([LOCK,'distribution.json',...index.chunks.map(c=>c.path)]);
     assert(fs.readdirSync(root).every(name=>allowed.has(name)),'unexpected file in image download directory');
-    for(const chunk of index.chunks)created.push(await downloadFile(root,chunk.path,chunk,base,fetcher));
+    // Check every retained chunk first: a corrupt later chunk must not waste new downloads.
+    let missing=0;const retained=new Set();
+    for(const chunk of index.chunks) {
+      const file=path.join(root,chunk.path);
+      if(fs.existsSync(file)){localFile(file,chunk);retained.add(chunk.path);}else missing+=chunk.bytes;
+    }
+    const restoreBytes=index.chunks.reduce((sum,chunk)=>sum+chunk.bytes,0);
+    if(missing||restoreDirectory)requireDownloadSpace(root,missing,restoreDirectory,restoreBytes);
+    for(const chunk of index.chunks) {
+      if(retained.has(chunk.path)){created.push('REUSED');continue;}
+      requireDownloadSpace(root,missing,restoreDirectory,restoreBytes);
+      created.push(await downloadFile(root,chunk.path,chunk,base,fetcher));
+      missing-=chunk.bytes;
+    }
+    const {index:verified}=verifyImageDistribution(root,{region,indexSha256},[LOCK]);
+    return {download:'VERIFIED_DISTRIBUTION',region,distributionId,indexSha256,
+      assetReleaseId:verified.assetReleaseId,manifestSha256:verified.manifestSha256,complete:verified.complete,
+      downloaded:created.filter(s=>s==='DOWNLOADED').length,reused:created.filter(s=>s==='REUSED').length,activation:'NOT_ACTIVATED'};
   }finally {
     fs.closeSync(lockFd);fs.unlinkSync(lock);
     // Complete verified chunks remain; only this invocation's unfinished temporary file is discarded.
   }
-  const {index}=verifyImageDistribution(root,{region,indexSha256});
-  return {download:'VERIFIED_DISTRIBUTION',region,distributionId,indexSha256,
-    assetReleaseId:index.assetReleaseId,manifestSha256:index.manifestSha256,complete:index.complete,
-    downloaded:created.filter(s=>s==='DOWNLOADED').length,reused:created.filter(s=>s==='REUSED').length,activation:'NOT_ACTIVATED'};
 }
 
 if(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.url)) {
@@ -119,7 +139,8 @@ if(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.ur
     }
     if(options['--restore']){noLinks(options['--restore']);assert(!fs.existsSync(options['--restore']),'restore output must be a NEW directory');}
     const result=await fetchImageDistribution({directory:options['--directory'],region:options['--region'],
-      distributionId:options['--distribution'],indexSha256:options['--sha256'],allowIncomplete:Boolean(options['--allow-incomplete'])});
+      distributionId:options['--distribution'],indexSha256:options['--sha256'],allowIncomplete:Boolean(options['--allow-incomplete']),
+      restoreDirectory:options['--restore']});
     if(options['--restore'])result.restored=restoreImageDistribution(options['--directory'],options['--restore'],
       {region:result.region,indexSha256:result.indexSha256});
     console.log(JSON.stringify(result));

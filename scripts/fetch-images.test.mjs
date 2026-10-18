@@ -5,11 +5,85 @@ import path from 'node:path';
 import {fetchImageDistribution} from './fetch-images.mjs';
 import {restoreImageDistribution,parseImageDistributionIndex} from './image-distribution.mjs';
 import {fixture,hash} from './test-fixtures/image-pack.mjs';
+import {FREE_RESERVE,requireDownloadSpace,requireSpace} from './storage-space.mjs';
 
 function input(f) {
   return {...f,directory:path.join(f.temporary,'download'),
     distributionId:JSON.parse(fs.readFileSync(path.join(f.input,'distribution.json'))).distributionId};
 }
+
+test('low space rejects before index download and leaves no owned lock or partial file',async t=>{
+  const f=fixture();try {
+    const options=input(f),remote=server(f);
+    t.mock.method(fs,'statfsSync',()=>({bsize:1n,bavail:FREE_RESERVE}));
+    await assert.rejects(fetchImageDistribution(options,remote.fetch),/Insufficient image storage/);
+    assert.deepEqual(remote.calls,[]);assert.deepEqual(fs.readdirSync(options.directory),[]);
+  }finally{f.close();}
+});
+
+test('same-filesystem download plus restoration is budgeted together before requesting chunks',async t=>{
+  const f=fixture();try {
+    const options=input(f),remote=server(f),restoreDirectory=path.join(f.temporary,'restore');
+    fs.mkdirSync(options.directory);
+    fs.copyFileSync(path.join(f.input,'distribution.json'),path.join(options.directory,'distribution.json'));
+    const index=JSON.parse(fs.readFileSync(path.join(f.input,'distribution.json')));
+    const total=index.chunks.reduce((sum,chunk)=>sum+chunk.bytes,0);
+    t.mock.method(fs,'statfsSync',()=>({bsize:1n,bavail:FREE_RESERVE+BigInt(total)}));
+    await assert.rejects(fetchImageDistribution({...options,restoreDirectory},remote.fetch),/Insufficient image storage/);
+    assert.deepEqual(remote.calls,[]);assert(!fs.existsSync(restoreDirectory));
+    assert.deepEqual(fs.readdirSync(options.directory),['distribution.json']);
+    const accepted=await fetchImageDistribution(options,remote.fetch);
+    assert.equal(accepted.download,'VERIFIED_DISTRIBUTION');
+  }finally{f.close();}
+});
+
+test('corrupt retained later chunk is detected before downloading any earlier missing chunk',async()=>{
+  const f=fixture();try {
+    const options=input(f),remote=server(f),index=JSON.parse(fs.readFileSync(path.join(f.input,'distribution.json')));
+    fs.mkdirSync(options.directory);
+    fs.copyFileSync(path.join(f.input,'distribution.json'),path.join(options.directory,'distribution.json'));
+    const last=index.chunks.at(-1),file=path.join(options.directory,last.path),bytes=fs.readFileSync(path.join(f.input,last.path));
+    bytes[0]^=1;fs.writeFileSync(file,bytes);
+    await assert.rejects(fetchImageDistribution(options,remote.fetch),/no overwrite/);
+    assert.deepEqual(remote.calls,[]);assert.deepEqual(fs.readFileSync(file),bytes);
+    assert.deepEqual(fs.readdirSync(options.directory).sort(),['distribution.json',last.path].sort());
+  }finally{f.close();}
+});
+
+test('verified existing chunks do not count as future writes and final verification still holds the lock',async t=>{
+  const f=fixture();try {
+    const options=input(f),index=JSON.parse(fs.readFileSync(path.join(f.input,'distribution.json'))),last=index.chunks.at(-1);
+    fs.mkdirSync(options.directory);
+    for(const name of ['distribution.json',...index.chunks.slice(0,-1).map(c=>c.path)])
+      fs.copyFileSync(path.join(f.input,name),path.join(options.directory,name));
+    t.mock.method(fs,'statfsSync',()=>({bsize:1n,bavail:FREE_RESERVE+BigInt(last.bytes)}));
+    const remote=server(f),read=fs.readdirSync.bind(fs);let verifiedUnderLock=false;
+    t.mock.method(fs,'readdirSync',(target,...args)=>{
+      if(path.resolve(target)===options.directory&&fs.existsSync(path.join(options.directory,last.path))
+        &&fs.existsSync(path.join(options.directory,'.image-download.lock')))verifiedUnderLock=true;
+      return read(target,...args);
+    });
+    const accepted=await fetchImageDistribution(options,remote.fetch);
+    assert.equal(accepted.downloaded,1);assert.deepEqual(remote.calls,[last.path]);assert(verifiedUnderLock);
+  }finally{f.close();}
+});
+
+test('space is checked on each destination filesystem and unknown capacity is not silently accepted',t=>{
+  const f=fixture();try {
+    const output=path.join(f.temporary,'other-volume');fs.mkdirSync(output);
+    const stat=fs.statSync.bind(fs),lookups=[];
+    t.mock.method(fs,'statSync',(target,...args)=>{
+      const result=stat(target,...args);if(path.resolve(target)===output)result.dev+=1n;return result;
+    });
+    let available=FREE_RESERVE+100n;
+    t.mock.method(fs,'statfsSync',target=>{lookups.push(path.resolve(target));return {bsize:1n,bavail:available};});
+    requireDownloadSpace(f.input,60,output,80);
+    assert.deepEqual(lookups,[f.input,output]);
+    assert.throws(()=>requireDownloadSpace(f.input,60,output,101),/Insufficient image storage/);
+    available=-1n;
+    assert.throws(()=>requireSpace(f.input,0),/space is unknown/);
+  }finally{f.close();}
+});
 function server(f,{interrupt,change}={}) {
   const calls=[];
   return {calls,fetch:async(url,options)=>{
