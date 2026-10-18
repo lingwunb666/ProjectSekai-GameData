@@ -6,6 +6,17 @@ function fixture(){return {ClientSyndicates:[{referenceRule:'native-declaration-
   references:[{pointer:'/values/Titles/0/rewards/0/ItemType',rawTarget:'Currency',owner:'/Lotus/Parent',
     resourceTarget:'/Lotus/Currency',status:'RESOLVED'}]}]};}
 
+test('inventory store object links and item scalar links stay distinct and cannot omit their rule',()=>{
+  const store='/Lotus/StoreItems/Skin',item='/Lotus/Skin',layer=(id,isStore)=>({uniqueName:id,
+    referenceRule:'native-declaration-scope-v2',values:{AdditionalItems:isStore?[{TypeName:'Other',PurchaseQuantity:2}]:['Other']},
+    fieldSources:{AdditionalItems:{resource:id,field:'AdditionalItems'}},references:[{pointer:'/values/AdditionalItems/0'+(isStore?'/TypeName':''),
+      owner:id,rawTarget:'Other',resourceTarget:isStore?'/Lotus/StoreItems/Other':'/Lotus/Other',status:'RESOLVED'}]});
+  const row={uniqueName:store,itemTarget:item,rule:'native-inventory-details-v1',store:layer(store,true),item:layer(item,false)};
+  verifyScopedLinks({ClientInventoryDetails:[row]});row.store.references=[];
+  assert.throws(()=>verifyScopedLinks({ClientInventoryDetails:[row]}),/Missing/);
+  delete row.store.referenceRule;assert.throws(()=>verifyScopedLinks({ClientInventoryDetails:[row]}));
+});
+
 test('robotic and beast companions require exact default weapon declaration scope',()=>{
   for(const section of ['ClientCompanionPowerSuits','ClientPetPowerSuits']) {
     const row={referenceRule:'native-declaration-scope-v2',values:{DefaultWeapon:'Gun'},
@@ -14,6 +25,14 @@ test('robotic and beast companions require exact default weapon declaration scop
     verifyScopedLinks({[section]:[row]});row.references[0].owner='/Lotus/Child';assert.throws(()=>verifyScopedLinks({[section]:[row]}));
     row.references=[];assert.throws(()=>verifyScopedLinks({[section]:[row]}),/Missing/);
   }
+});
+test('mail attachments retain their declaring message scope and cannot omit a link',()=>{
+  const row={referenceRule:'native-declaration-scope-v2',values:{Message:{att:['Gift']}},
+    fieldSources:{Message:{resource:'/Lotus/Mail/Base',field:'Message'}},
+    references:[{pointer:'/values/Message/att/0',rawTarget:'Gift',owner:'/Lotus/Mail/Base',resourceTarget:'/Lotus/Mail/Gift',status:'RESOLVED'}]};
+  verifyScopedLinks({ClientEmailItems:[row]});row.references[0].owner='/Lotus/Mail/Child';
+  assert.throws(()=>verifyScopedLinks({ClientEmailItems:[row]}));
+  row.references=[];assert.throws(()=>verifyScopedLinks({ClientEmailItems:[row]}),/Missing/);
 });
 test('nested fields bind to the whole declaring owner and omitted links fail',()=>{
   const f=fixture();verifyScopedLinks(f);

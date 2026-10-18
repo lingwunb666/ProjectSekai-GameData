@@ -10,6 +10,9 @@ const fields={
   ClientPlayerPowerSuits:['AbilityTypes/*','DefaultSlottedUpgrades/*/ItemType'],
   ClientCompanionPowerSuits:['DefaultWeapon','AbilityTypes/*','DefaultSlottedUpgrades/*/ItemType','AdditionalItems/*','SpecialSlotItem/*/ItemType'],
   ClientPetPowerSuits:['DefaultWeapon','AbilityTypes/*','DefaultSlottedUpgrades/*/ItemType','AdditionalItems/*','SpecialSlotItem/*/ItemType'],
+  ClientEmailItems:['Message/att/*'],
+  ClientInventoryDetailStores:['AdditionalItems/*/TypeName','RandomizedUpgrades/*','CrewShipUpgrades/*','DefaultSlottedUpgrades/*/ItemType'],
+  ClientInventoryDetailItems:['AdditionalItems/*','RandomizedUpgrades/*','CrewShipUpgrades/*','DefaultSlottedUpgrades/*/ItemType'],
   ClientBundles:['PackageComponents/*/TypeName'],
   ClientBoosterPacks:['Components/*/Item','COMMON_Components/*/Item','UNCOMMON_Components/*/Item',
     'RARE_Components/*/Item','LEGENDARY_Components/*/Item'],
@@ -24,6 +27,17 @@ const resource=x=>typeof x==='string'&&/^\/(?:[A-Za-z0-9_.-]+\/)*[A-Za-z0-9_.-]+
 const escape=x=>x.replaceAll('~','~0').replaceAll('/','~1');
 export function verifyScopedLinks(sections) {
   for(const [section,rows]of Object.entries(sections??{})) {
+    if(section==='ClientInventoryDetails') {
+      assert(Array.isArray(rows)&&rows.length<=12000);
+      for(const row of rows) {
+        assert.equal(row.rule,'native-inventory-details-v1');
+        assert.equal(row.store?.uniqueName,row.uniqueName);assert.equal(row.item?.uniqueName,row.itemTarget);
+        assert(resource(row.uniqueName)&&resource(row.itemTarget));
+        for(const layer of [row.store,row.item])assert.equal(layer.referenceRule,'native-declaration-scope-v2');
+        verifyScopedLinks({ClientInventoryDetailStores:[row.store],ClientInventoryDetailItems:[row.item]});
+      }
+      continue;
+    }
     if(!fields[section])continue;
     assert(Array.isArray(rows));
     for(const row of rows) {

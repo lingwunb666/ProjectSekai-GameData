@@ -8,7 +8,8 @@ export class NativeIdentities {
   #invalidEvidence=false;
   accept(data) {
     for(const [section,rows]of Object.entries(data.sections??{})) {
-      if(section.startsWith('ClientInventory')&&Array.isArray(rows)) for(const row of rows) {
+      if(section.startsWith('ClientInventory')&&!['ClientInventoryDetails','ClientInventoryRandomUpgrades','ClientInventorySubroutines'].includes(section)
+          &&Array.isArray(rows)) for(const row of rows) {
         assert(typeof row.uniqueName==='string'&&row.uniqueName.startsWith('/Lotus/StoreItems/'));
         assert(typeof row.typeName==='string'&&row.typeName.startsWith('/'));
         if(row.values?.TypeName!==row.typeName || typeof row.fieldSources?.TypeName!=='string'
