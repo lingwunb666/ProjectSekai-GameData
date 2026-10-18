@@ -3,7 +3,15 @@ export const GETTERS=[
   {id:'ammo-mutation',resource:'/Lotus/Scripts/Mods/AmmoMutationMod.lua',bytes:603,
     sha256:'15968ebe9164dc5c1318838b2f3ddfe72f77d62bfd75dea21acc7a53740b6c7e',name:'GetDescriptionInfo',prototype:1,parameters:3,symbolHash:3662879226},
   {id:'resistance-on-damage',resource:'/Lotus/Scripts/Mods/ResistanceOnDamage.lua',bytes:2983,
-    sha256:'c9acf46704abe0a3033923ca6573cde76bbf125a2962ce8f6cf2258fb7a5c644',name:'GetDescription',prototype:0,parameters:1,symbolHash:2213775760}
+    sha256:'c9acf46704abe0a3033923ca6573cde76bbf125a2962ce8f6cf2258fb7a5c644',name:'GetDescription',prototype:0,parameters:1,symbolHash:2213775760},
+  {id:'lucky-companion',resource:'/Lotus/Types/Sentinels/SentinelAbilities/LuckyCompanion.lua',bytes:1859,
+    sha256:'08e608ab7e2e960cff315b482c6800d8baf61df1924ff04e09242407e90d8a9c',name:'GetDescriptionInfo',prototype:1,parameters:2,symbolHash:3662879226},
+  {id:'avatar-holster',resource:'/Lotus/Scripts/Mods/AvatarHolsterUpgrades.lua',bytes:2325,
+    sha256:'a69e61acfb4df457d8783cbe1b18849e18b5fad64f423cf145203c1c5758739e',name:'GetDescription',prototype:0,parameters:1,symbolHash:2213775760},
+  {id:'bleed-fire-rate',resource:'/Lotus/Upgrades/Mods/Rifle/BleedOnImpactFireRateCheck.lua',bytes:3604,
+    sha256:'87b75ea62ce0ff90b338026b8d9d0f94a2a48acee7fa5cbeb95795e6272d0883',name:'GetDescription',prototype:5,parameters:1,symbolHash:2213775760},
+  {id:'spiders-leap',resource:'/Lotus/Scripts/Mods/SpidersLeap.lua',bytes:646,
+    sha256:'66aeeccf9df57c87538834619e860e26e661ebee5bad8cd5ebd027172bbe5dbb',name:'GetDescriptionInfo',prototype:0,parameters:1,symbolHash:3662879226}
 ];
 export function verifyCustomModDescriptionRules(data,manifest) {
   const rows=data.sections?.ClientCustomModDescriptionRules;if(rows===undefined)return;
