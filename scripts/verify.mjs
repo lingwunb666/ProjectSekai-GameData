@@ -25,6 +25,7 @@ import {verifyPalettes} from './native-palettes.mjs';
 import {verifyRailjack} from './native-railjack.mjs';
 import {verifyLevelJobBindings} from './native-level-job-bindings.mjs';
 import {verifyModDescriptionRules} from './native-mod-description-rules.mjs';
+import {verifyModSetDescriptionRules} from './native-mod-set-description-rules.mjs';
 import {expandRelation} from './canonical-relations.mjs';
 import {expandEntities} from './canonical-entities.mjs';
 
@@ -101,6 +102,8 @@ async function verifyRelease(directory, region, version) {
       verifyLevelJobBindings(content,manifest);
       if(content.sections?.ClientModDescriptionRules) assert.equal(file.path,'exports/neutral/ExportClientModDescriptionRules.json');
       verifyModDescriptionRules(content,manifest);
+      if(content.sections?.ClientModSetDescriptionRules!==undefined) assert.equal(file.path,'exports/neutral/ExportClientModSetDescriptionRules.json');
+      verifyModSetDescriptionRules(content,manifest);
       nativeEnemyDrops.accept(file.path, content);
       nativeTextIcons.accept(file.path, content);
       nativeItemParents.accept(file.path, content);
