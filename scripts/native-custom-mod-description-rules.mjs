@@ -11,7 +11,15 @@ export const GETTERS=[
   {id:'bleed-fire-rate',resource:'/Lotus/Upgrades/Mods/Rifle/BleedOnImpactFireRateCheck.lua',bytes:3604,
     sha256:'87b75ea62ce0ff90b338026b8d9d0f94a2a48acee7fa5cbeb95795e6272d0883',name:'GetDescription',prototype:5,parameters:1,symbolHash:2213775760},
   {id:'spiders-leap',resource:'/Lotus/Scripts/Mods/SpidersLeap.lua',bytes:646,
-    sha256:'66aeeccf9df57c87538834619e860e26e661ebee5bad8cd5ebd027172bbe5dbb',name:'GetDescriptionInfo',prototype:0,parameters:1,symbolHash:3662879226}
+    sha256:'66aeeccf9df57c87538834619e860e26e661ebee5bad8cd5ebd027172bbe5dbb',name:'GetDescriptionInfo',prototype:0,parameters:1,symbolHash:3662879226},
+  {id:'add-timed-upgrade',resource:'/Lotus/Upgrades/Mods/Warframe/Kahl/AddTimedUpgrade.lua',bytes:1304,
+    sha256:'931e5679949feadc4ea12c616bc8201c9fa07c8995bdde0fab4650e93fde5ef4',name:'GetDescriptionInfo',prototype:0,parameters:1,symbolHash:3662879226},
+  {id:'proc-ability-stack',resource:'/Lotus/Upgrades/Mods/Warframe/Kahl/ProcAbilityStack.lua',bytes:828,
+    sha256:'da20c7a4c03c3f20193b1a4a3dc911ee911815a7bdbe742ca0112f1e3fea8dfc',name:'GetDescriptionInfo',prototype:0,parameters:1,symbolHash:3662879226},
+  {id:'spawn-globe',resource:'/Lotus/Upgrades/Mods/Warframe/Kahl/SpawnGlobe.lua',bytes:1672,
+    sha256:'b44675a8cdffc0117d56d4643de700a07ab8ad8178cc64e484149f61ea41dbcf',name:'GetDescriptionInfo',prototype:0,parameters:1,symbolHash:3662879226},
+  {id:'antique-upgrades',resource:'/Lotus/Upgrades/Mods/Antiques/AntiqueUpgrades.lua',bytes:1833,
+    sha256:'a7a00de19307010fb94b4f74d994bdf68d2127b28754ed095cda8b449f06099a',name:'GetDescription',prototype:3,parameters:6,symbolHash:2213775760}
 ];
 export function verifyCustomModDescriptionRules(data,manifest) {
   const rows=data.sections?.ClientCustomModDescriptionRules;if(rows===undefined)return;
