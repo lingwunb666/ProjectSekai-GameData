@@ -37,7 +37,25 @@ export const GETTERS=[
   {id:'arcane-resistance-stacks',resource:'/Lotus/Upgrades/CosmeticEnhancers/Defensive/DamageResistanceStacksOverTime.lua',bytes:7393,
     sha256:'46670707b0fc0dc3f532f8adf04c9ea5f904cc46fa50e1b7fdf9b2e57fcae05e',name:'GetDescription',prototype:0,parameters:1,symbolHash:2213775760},
   {id:'arcane-free-cast',resource:'/Lotus/Upgrades/Boons/Utility/NoCostCastChanceOnCast.lua',bytes:1315,
-    sha256:'44134923bd40b437afeb8cc313d1dfc0ebe0ca7fe76cedd908e97658908c85d7',name:'GetDescriptionFreeCastOnCast',prototype:0,parameters:3,symbolHash:2441447004}
+    sha256:'44134923bd40b437afeb8cc313d1dfc0ebe0ca7fe76cedd908e97658908c85d7',name:'GetDescriptionFreeCastOnCast',prototype:0,parameters:3,symbolHash:2441447004},
+  {id:'arcane-sliding-ammo',resource:'/Lotus/Upgrades/CosmeticEnhancers/Offensive/AmmoEfficiencyOnSliding.lua',bytes:2630,
+    sha256:'c4f9cc354c2bc50b94d64778c074396d2056388210cb3de95a97c57c336ffaf2',name:'GetDescription',prototype:1,parameters:1,symbolHash:2213775760},
+  {id:'arcane-shield-melee',resource:'/Lotus/Upgrades/CosmeticEnhancers/Offensive/MeleeDamageForActiveShields.lua',bytes:2799,
+    sha256:'4c1910d4eb34e59024735fa83131a5ae54de7b04a8b8b8e391bab2810fa03419',name:'GetDescription',prototype:3,parameters:1,symbolHash:2213775760},
+  {id:'arcane-combo-bonus',resource:'/Lotus/Upgrades/CosmeticEnhancers/Offensive/MultishotForCombo.lua',bytes:2539,
+    sha256:'b23f41119aa66ded6f8dfc8b3dcad550e9bf51371536bdf4153255226cc504c9',name:'GetDescription',prototype:1,parameters:1,symbolHash:2213775760},
+  {id:'arcane-residual-buff',resource:'/Lotus/Upgrades/CosmeticEnhancers/Utility/ResidualTrigger.lua',bytes:17817,
+    sha256:'2ad8a7c954171381a372650511b242304bfddeaf52b40476fbcf1491b1bb66a7',name:'GetBuffDescription',prototype:4,parameters:1,symbolHash:738986191},
+  {id:'arcane-residual-orb',resource:'/Lotus/Upgrades/CosmeticEnhancers/Utility/ResidualTrigger.lua',bytes:17817,
+    sha256:'2ad8a7c954171381a372650511b242304bfddeaf52b40476fbcf1491b1bb66a7',name:'GetOrbDescription',prototype:3,parameters:1,symbolHash:2122694518},
+  {id:'arcane-companion-heal',resource:'/Lotus/Upgrades/CosmeticEnhancers/Offensive/HealCompanion.lua',bytes:1043,
+    sha256:'34190b90d24f2feeebc27425ceba472a4acd260959c64dc0444da307674f9869',name:'GetDescription',prototype:0,parameters:1,symbolHash:2213775760},
+  {id:'arcane-next-bow-shot',resource:'/Lotus/Upgrades/CosmeticEnhancers/Offensive/BonusDamageForNextShot.lua',bytes:2142,
+    sha256:'2fba815185db3e07b21fffcdafc4c2f2ed39e69c19e51f68fde5781f77764460',name:'GetLocValues',prototype:1,parameters:1,symbolHash:2854114375},
+  {id:'arcane-secondary-proc',resource:'/Lotus/Upgrades/CosmeticEnhancers/Zariman/SecondaryOnStatusProcBonusDamage.lua',bytes:795,
+    sha256:'66d2bee4f451244fe41e15ef8024547a3ff5db7ee911949bff677ed0b80652e7',name:'GetDescription',prototype:0,parameters:1,symbolHash:2213775760},
+  {id:'arcane-operator-next-cast',resource:'/Lotus/Scripts/Mods/StrengthForOneCast.lua',bytes:2826,
+    sha256:'d8afe52161d23ac688026edbab7a1e7ab3aec6ccc2123f1a3908d475c1face6e',name:'GetDrainPowerDescription',prototype:1,parameters:1,symbolHash:3368638374}
 ];
 export function verifyCustomModDescriptionRules(data,manifest) {
   const rows=data.sections?.ClientCustomModDescriptionRules;if(rows===undefined)return;
