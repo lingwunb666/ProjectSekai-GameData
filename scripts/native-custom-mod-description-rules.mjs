@@ -19,7 +19,13 @@ export const GETTERS=[
   {id:'spawn-globe',resource:'/Lotus/Upgrades/Mods/Warframe/Kahl/SpawnGlobe.lua',bytes:1672,
     sha256:'b44675a8cdffc0117d56d4643de700a07ab8ad8178cc64e484149f61ea41dbcf',name:'GetDescriptionInfo',prototype:0,parameters:1,symbolHash:3662879226},
   {id:'antique-upgrades',resource:'/Lotus/Upgrades/Mods/Antiques/AntiqueUpgrades.lua',bytes:1833,
-    sha256:'a7a00de19307010fb94b4f74d994bdf68d2127b28754ed095cda8b449f06099a',name:'GetDescription',prototype:3,parameters:6,symbolHash:2213775760}
+    sha256:'a7a00de19307010fb94b4f74d994bdf68d2127b28754ed095cda8b449f06099a',name:'GetDescription',prototype:3,parameters:6,symbolHash:2213775760},
+  {id:'grimoire-strike',resource:'/Lotus/Upgrades/Grimoire/GrimoireStrike.lua',bytes:428,
+    sha256:'b3c9fd49e3ccda8b26e76ba94530c41af55d99fdadc5828d9e86ab06b9735bf4',name:'GetDescription',prototype:0,parameters:3,symbolHash:2213775760},
+  {id:'grimoire-range',resource:'/Lotus/Upgrades/Grimoire/RangeUpgradeApplicator.lua',bytes:4439,
+    sha256:'bba0f6bf6e975b28641edc256653d19aeb48ea5d99b82d82033cd8545dd41071',name:'GetDescription',prototype:10,parameters:1,symbolHash:2213775760},
+  {id:'grimoire-khra',resource:'/Lotus/Upgrades/Grimoire/KhraAuraMod.lua',bytes:1113,
+    sha256:'861b7aee26f03fed6495127a5db819a6684b7ab44cb434f3609068f36776c4e2',name:'GetDescription',prototype:3,parameters:1,symbolHash:2213775760}
 ];
 export function verifyCustomModDescriptionRules(data,manifest) {
   const rows=data.sections?.ClientCustomModDescriptionRules;if(rows===undefined)return;
