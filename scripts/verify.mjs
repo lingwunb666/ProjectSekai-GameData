@@ -22,6 +22,7 @@ import {verifyWeaponStoreTraits} from './native-weapon-store-traits.mjs';
 import {verifyCurrencyContent} from './native-currency-content.mjs';
 import {NativeEnemyDrops} from './native-enemy-drops.mjs';
 import {verifyPalettes} from './native-palettes.mjs';
+import {verifyRailjack} from './native-railjack.mjs';
 import {expandRelation} from './canonical-relations.mjs';
 import {expandEntities} from './canonical-entities.mjs';
 
@@ -94,6 +95,7 @@ async function verifyRelease(directory, region, version) {
       verifyWeaponStoreTraits(file.path, content);
       verifyCurrencyContent(file.path, content);
       verifyPalettes(content);
+      verifyRailjack(content);
       nativeEnemyDrops.accept(file.path, content);
       nativeTextIcons.accept(file.path, content);
       nativeItemParents.accept(file.path, content);
