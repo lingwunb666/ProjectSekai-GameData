@@ -13,7 +13,7 @@ test('each optional custom getter requires original same-release source and bind
   const {data,manifest}=fixture();verifyCustomModDescriptionRules(data,manifest);
   assert.throws(()=>verifyCustomModDescriptionRules(data,{}));
   for(const mutate of [r=>r.push(r[0]),r=>r[0].getter.source.stamp='99',r=>r[0].getter.source.bytes++,
-    r=>r[0].getter.function.parameters=1,r=>r[0].getter.source.decodedSha256='0'.repeat(64)]){
+    r=>r[0].getter.function.parameters++,r=>r[0].getter.source.decodedSha256='0'.repeat(64)]){
     const changed=structuredClone(data);mutate(changed.sections.ClientCustomModDescriptionRules);assert.throws(()=>verifyCustomModDescriptionRules(changed,manifest));
   }
   data.sections.ClientCustomModDescriptionRules.pop();verifyCustomModDescriptionRules(data,manifest);
