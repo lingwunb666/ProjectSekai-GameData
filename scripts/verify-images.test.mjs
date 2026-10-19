@@ -7,6 +7,7 @@ import {createHash} from 'node:crypto';
 import {crc32,deflateSync} from 'node:zlib';
 import {verifyPng,verifyImagePack} from './verify-images.mjs';
 import {packImageDistribution,restoreImageDistribution} from './image-distribution.mjs';
+import {fixture as imageFixture} from './test-fixtures/image-pack.mjs';
 const hash=b=>createHash('sha256').update(b).digest('hex');
 function png() {
   const chunk=(kind,payload)=>{const b=Buffer.alloc(payload.length+12);b.writeUInt32BE(payload.length);b.write(kind,4);payload.copy(b,8);b.writeUInt32BE(crc32(b.subarray(4,-4)),b.length-4);return b;};
@@ -18,6 +19,39 @@ test('PNG independently checks CRC, exact dimensions, inflation and EOF',()=>{
   const bytes=png();verifyPng(bytes,1,1);assert.throws(()=>verifyPng(bytes,2,1),/dimensions/);
   const corrupt=Buffer.from(bytes);corrupt[45]^=1;assert.throws(()=>verifyPng(corrupt,1,1),/CRC/);
   assert.throws(()=>verifyPng(Buffer.concat([bytes,Buffer.from([0])]),1,1),/framing/);
+});
+
+test('sealed v2 image packs reject ambiguous and incoherent item/store icons',()=>{
+  const f=imageFixture();
+  try {
+    const base=JSON.parse(fs.readFileSync(path.join(f.release,'manifest.json')));
+    const binding=JSON.parse(fs.readFileSync(path.join(f.release,'metadata/bindings.json'))).records[0];
+    function seal(rows) {
+      const m=structuredClone(base);delete m.assetReleaseId;
+      const bytes=Buffer.from(JSON.stringify({schemaVersion:1,region:'china',section:'bindings',records:rows})+'\n');
+      fs.writeFileSync(path.join(f.release,'metadata/bindings.json'),bytes);
+      Object.assign(m.metadata.bindings,{bytes:bytes.length,sha256:hash(bytes),records:rows.length});
+      m.assetReleaseId='ga2-'+hash(Buffer.from(JSON.stringify(m))).slice(0,24);
+      fs.writeFileSync(path.join(f.release,'manifest.json'),JSON.stringify(m));
+    }
+    for(const kind of ['ITEM_ICON','STORE_ICON'])for(const conflict of [false,true]) {
+      const row={...binding,kind},second={...row,...(conflict?{status:'EMPTY_OVERRIDE',rawTarget:'',resourceTarget:null}:{})};
+      seal([row,second]);assert.throws(()=>verifyImagePack(f.release),/duplicate item\/store icon binding/);
+    }
+    for(const patch of [{field:'TipIcon'},{itemTarget:'/Lotus/Other'},{itemTarget:3},{rawTarget:3},{rawTarget:''},
+      {status:'EMPTY_OVERRIDE',resourceTarget:null},{status:'UNRESOLVED',rawTarget:'',resourceTarget:null},
+      {kind:'STORE_ICON',itemTarget:'../Other'}]) {
+      seal([{...binding,...patch}]);assert.throws(()=>verifyImagePack(f.release),/item\/store|image item identity/);
+    }
+    // The same item may have distinct store art, declared illustrations and repeated foil variants.
+    for(const status of ['EMPTY_OVERRIDE','UNRESOLVED']) {
+      seal([{...binding,status,rawTarget:status==='EMPTY_OVERRIDE'?'':'Unavailable.png',resourceTarget:null,itemTarget:binding.resource},
+        {...binding,kind:'STORE_ICON',resource:'/Lotus/StoreItems/Item',itemTarget:binding.resource},
+        {...binding,kind:'DECLARED_TEXTURE'}, {...binding,kind:'DECLARED_TEXTURE'}]);
+      assert.equal(verifyImagePack(f.release).images,1);
+    }
+    seal([{...binding,itemTarget:binding.resource}]);assert.equal(verifyImagePack(f.release).images,1);
+  }finally{f.close();}
 });
 test('asset pack verifies image closure, content identity and rejects region/generation mixing',()=>{
   const temporary=fs.mkdtempSync(path.join(os.tmpdir(),'sekai-image-pack-test-'));
@@ -73,6 +107,9 @@ test('asset pack verifies image closure, content identity and rejects region/gen
     assert.throws(()=>verifyImagePack(root),/extra PNG/);
   } finally {
     // Only the unique directory created above is owned by this test.
-    fs.rmSync(temporary,{recursive:true,force:true});
+    assert(path.dirname(path.resolve(temporary))===path.resolve(os.tmpdir())
+      &&path.basename(temporary).startsWith('sekai-image-pack-test-')
+      &&fs.lstatSync(temporary).isDirectory()&&!fs.lstatSync(temporary).isSymbolicLink());
+    fs.rmSync(temporary,{recursive:true,force:false});
   }
 });

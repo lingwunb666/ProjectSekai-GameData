@@ -84,10 +84,18 @@ export function verifyImagePack(directory,expected={}) {
   assert.equal(m.decoder,'Pillow/12.3.0','image decoder');
   assert(Array.isArray(m.bindings)&&m.bindings.length<=100000&&Array.isArray(m.issues)&&m.issues.length<=100000,'image binding bounds');
   assert(Array.isArray(m.textures)&&m.textures.length<=32768&&Array.isArray(m.files)&&m.files.length<=32768,'image file bounds');
-  const targets=new Set();
+  const targets=new Set(),iconKeys=new Set();
   for(const b of m.bindings) {
     assert(resource(b.resource)&&resource(b.owner)&&['ITEM_ICON','STORE_ICON','TEXT_ICON_DIFFUSE','DECLARED_TEXTURE'].includes(b.kind),'image binding');
     assert(['RESOLVED','EMPTY_OVERRIDE','UNRESOLVED'].includes(b.status),'image binding status');
+    if(b.kind==='ITEM_ICON'||b.kind==='STORE_ICON') {
+      const key=b.kind+':'+b.resource;
+      assert(!iconKeys.has(key),'duplicate item/store icon binding');iconKeys.add(key);
+      assert(b.field==='Icon'&&typeof b.rawTarget==='string','item/store icon field');
+      assert((b.status==='EMPTY_OVERRIDE')===(b.rawTarget===''),'item/store empty icon override');
+      if(Object.hasOwn(b,'itemTarget'))assert(b.kind==='ITEM_ICON'?b.itemTarget===b.resource:
+        b.itemTarget===null||resource(b.itemTarget),'image item identity');
+    }
     if(b.status==='RESOLVED') {assert(resource(b.resourceTarget),'image target');targets.add(b.resourceTarget);}
     else assert(b.resourceTarget===null,'nonresolved image target');
   }
