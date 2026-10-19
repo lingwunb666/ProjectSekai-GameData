@@ -1,5 +1,15 @@
 import assert from 'node:assert/strict';
 export const GETTERS=[
+  {id:'peculiar-cyote',resource:'/Lotus/Upgrades/CosmeticEnhancers/Peculiars/CyoteStarSpawn.lua',bytes:832,
+    sha256:'d21d26e83b0688b5a3687b6c1282304a774bf8274e121f1f5ce4dcd49516fccc',name:'GetDescription',prototype:1,parameters:1,symbolHash:2213775760},
+  {id:'peculiar-haunting',resource:'/Lotus/Upgrades/CosmeticEnhancers/Peculiars/EvilSpirit.lua',bytes:716,
+    sha256:'2a20a908c11581f01cf1d7ccbf288af945f1f93c5a4c22bff8862ebf3a11e7cb',name:'GetDescription',prototype:0,parameters:1,symbolHash:2213775760},
+  {id:'peculiar-growth',resource:'/Lotus/Upgrades/CosmeticEnhancers/Peculiars/InflationMode.lua',bytes:3882,
+    sha256:'0d3b6ebbdf5b34816ec830cd3c0612b66572b814832f37a910c5bebe7f94a8e4',name:'GetDescription',prototype:0,parameters:1,symbolHash:2213775760},
+  {id:'antique-looter',resource:'/Lotus/Upgrades/Mods/Antiques/Looter.lua',bytes:1862,
+    sha256:'cf549abad149e41637d34e2d02c6ca383f2d70ec58773f4c857593f33b71b516',name:'GetDescription',prototype:2,parameters:1,symbolHash:2213775760},
+  {id:'potency-antivirus',resource:'/Lotus/Upgrades/Mods/DataSpike/Potency/GainAntivirusEffect.lua',bytes:1664,
+    sha256:'8139cf87d0f07293acf9ed020a7bcbac8680a11a2022de1e3af3aecbb8c4d172',name:'GetGainAntiVirusFullDescription',prototype:4,parameters:1,symbolHash:4068790238},
   {id:'hoverboard-cold',resource:'/Lotus/Types/Vehicles/Hoverboard/HoverboardAbility/HBColdLeak.lua',bytes:1724,
     sha256:'5a6b8725149911abf05717cef66865bb181b0ca751d1dcbecb79ae453675db35',name:'GetDescriptionInfo',prototype:2,parameters:1,symbolHash:3662879226},
   {id:'hoverboard-trail',resource:'/Lotus/Types/Vehicles/Hoverboard/HoverboardAbility/HBElementalTrail.lua',bytes:2757,
