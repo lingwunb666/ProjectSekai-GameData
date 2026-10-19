@@ -6,7 +6,7 @@ function fixture(){
   const rows=GETTERS.map(s=>({schema:'native-custom-mod-description-v1',uniqueName:'native-custom-mod-'+s.id+'-v1',
     execution:'NO_SCRIPT_OR_CLIENT_EXECUTION',scope:'CATALOG_PRESENTATION_NOT_COMBAT',
     getter:{source:source(s),format:{luau:9,types:3},function:{name:s.name,prototype:s.prototype,parameters:s.parameters,
-      symbolHash:s.symbolHash,callerSymbolBinding:'native-luau-script-symbol-v1'}}}));
+      symbolHash:s.symbolHash,callerSymbolBinding:s.binding??'native-luau-script-symbol-v1'}}}));
   return {data:{locale:'neutral',sections:{ClientCustomModDescriptionRules:rows}},manifest:{inputs:[{clientExtraction:{sourceRecords:GETTERS.map(source)}}]}};
 }
 test('each optional custom getter requires original same-release source and binding',()=>{
