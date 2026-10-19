@@ -1,6 +1,10 @@
 import assert from 'node:assert/strict';
 import {validateScriptParameterDefaults} from './native-script-parameter-defaults.mjs';
 export const GETTERS=[
+  {id:'antique-next-shot',resource:'/Lotus/Upgrades/Mods/Antiques/NextShootMultiplier.lua',bytes:1031,
+    sha256:'81b146615dafab161be4ff35782e985dd165b67110aaa2a70d93efbf71bfd0d9',name:'GetDescription',prototype:2,parameters:1,symbolHash:2213775760},
+  {id:'antique-knockdown-void',resource:'/Lotus/Upgrades/Mods/Antiques/EnterVoidMode.lua',bytes:3177,
+    sha256:'3bc0010189e48b72ad4f2846689694a4233521d9e753f63134a5f99c96f65071',name:'GetDescription',prototype:2,parameters:1,symbolHash:2213775760},
   {id:'augment-berserker-grapple',resource:'/Lotus/Powersuits/Berserker/Abilities/GrappleHookPower.lua',bytes:25486,
     sha256:'31c584f1de21f42638533dd51640691451f8ba9b50cdd386536384d4e2dc4d6a',name:'GetAugmentDescriptionInfo',prototype:5,parameters:2,symbolHash:3238080930},
   {id:'augment-saryn-shed',resource:'/Lotus/Powersuits/Saryn/Abilities/Shed.lua',bytes:13903,
