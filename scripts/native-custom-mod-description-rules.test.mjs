@@ -1,13 +1,17 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {GETTERS,verifyCustomModDescriptionRules} from './native-custom-mod-description-rules.mjs';
+import {SCRIPT_DEFAULT_HEADERS} from './native-script-parameter-defaults.mjs';
 function fixture(){
   const source=s=>({resource:s.resource,cache:'B.Font',bytes:s.bytes,decodedSha256:s.sha256,stamp:'1234',tocSha256:'a'.repeat(64),compressedSha256:'b'.repeat(64)});
   const rows=GETTERS.map(s=>({schema:'native-custom-mod-description-v1',uniqueName:'native-custom-mod-'+s.id+'-v1',
     execution:'NO_SCRIPT_OR_CLIENT_EXECUTION',scope:'CATALOG_PRESENTATION_NOT_COMBAT',
     getter:{source:source(s),format:{luau:9,types:3},function:{name:s.name,prototype:s.prototype,parameters:s.parameters,
       symbolHash:s.symbolHash,callerSymbolBinding:s.binding??'native-luau-script-symbol-v1'}}}));
-  return {data:{locale:'neutral',sections:{ClientCustomModDescriptionRules:rows}},manifest:{inputs:[{clientExtraction:{sourceRecords:GETTERS.map(source)}}]}};
+  const headers=SCRIPT_DEFAULT_HEADERS.map(s=>({...source(s),cache:'H.Font'}));
+  for(const s of SCRIPT_DEFAULT_HEADERS)rows.find(r=>r.uniqueName==='native-custom-mod-'+s.id+'-v1').getter.defaults={
+    schema:'native-script-parameter-defaults-v1',source:headers.find(h=>h.resource===s.resource),values:{...s.values}};
+  return {data:{locale:'neutral',sections:{ClientCustomModDescriptionRules:rows}},manifest:{inputs:[{clientExtraction:{sourceRecords:[...GETTERS.map(source),...headers]}}]}};
 }
 test('each optional custom getter requires original same-release source and binding',()=>{
   const {data,manifest}=fixture();verifyCustomModDescriptionRules(data,manifest);
@@ -20,4 +24,10 @@ test('each optional custom getter requires original same-release source and bind
   data.sections.ClientCustomModDescriptionRules=[];verifyCustomModDescriptionRules(data,manifest);
   const conflict=fixture();conflict.manifest.inputs.push({clientExtraction:{sourceRecords:[{cache:'B.Font',resource:GETTERS[0].resource}]}});
   assert.throws(()=>verifyCustomModDescriptionRules(conflict.data,conflict.manifest));
+});
+test('parameter headers need their own same-release source, not just the function body',()=>{
+  const {data,manifest}=fixture();manifest.inputs[0].clientExtraction.sourceRecords=manifest.inputs[0].clientExtraction.sourceRecords.filter(r=>r.cache!=='H.Font');
+  assert.throws(()=>verifyCustomModDescriptionRules(data,manifest));
+  const wrong=fixture();wrong.data.sections.ClientCustomModDescriptionRules[0].getter.defaults.values.value=99;
+  assert.throws(()=>verifyCustomModDescriptionRules(wrong.data,wrong.manifest));
 });

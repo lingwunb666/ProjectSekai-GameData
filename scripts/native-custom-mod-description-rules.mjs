@@ -1,5 +1,8 @@
 import assert from 'node:assert/strict';
+import {validateScriptParameterDefaults} from './native-script-parameter-defaults.mjs';
 export const GETTERS=[
+  {id:'utility-health-conversion',resource:'/Lotus/Scripts/Mods/OnPickup.lua',bytes:843,
+    sha256:'d5ee6dcaf8e8b0f1e58cce38862bc3f7285c0386bf9e624afb8f5a4df0a7da63',name:'GetArmourForOneHitDesc',prototype:1,parameters:1,symbolHash:206049405},
   {id:'utility-mech-rebuke',resource:'/Lotus/Upgrades/Mods/Necromech/NecromechReflectOnShieldBreakMod.lua',bytes:2615,
     sha256:'9cf0733aa6f8436f47fe7cda9e1833dda2ac4327f2138f4744ef1dca4d52594b',name:'GetDescriptionInfo',prototype:0,parameters:1,symbolHash:3662879226},
   {id:'utility-mech-repair',resource:'/Lotus/Upgrades/Mods/Necromech/NecromechRegenOnLowHealthMod.lua',bytes:1699,
@@ -545,6 +548,8 @@ export function verifyCustomModDescriptionRules(data,manifest) {
     assert.deepEqual(row.getter.format,{luau:9,types:3});
     assert.deepEqual(row.getter.function,{name:spec.name,prototype:spec.prototype,parameters:spec.parameters,
       symbolHash:spec.symbolHash,callerSymbolBinding:spec.binding??'native-luau-script-symbol-v1'});
+    validateScriptParameterDefaults(spec.id,row.getter.defaults);
+    for(const s of [row.getter.source,...(row.getter.defaults?[row.getter.defaults.source]:[])]){
     let visited=0,acquired=false;
     function visit(node,depth=0) {
       assert(node&&typeof node==='object'&&!Array.isArray(node)&&depth<=16&&++visited<=128,'custom provenance bounds');
@@ -559,5 +564,6 @@ export function verifyCustomModDescriptionRules(data,manifest) {
       if(node.inputs!==undefined){assert(Array.isArray(node.inputs)&&node.inputs.length<=16);for(const input of node.inputs)visit(input,depth+1);}
     }
     visit(manifest);assert(acquired,'custom source acquisition missing');
+    }
   }
 }
