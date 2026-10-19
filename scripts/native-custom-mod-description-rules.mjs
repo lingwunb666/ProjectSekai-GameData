@@ -55,7 +55,27 @@ export const GETTERS=[
   {id:'arcane-secondary-proc',resource:'/Lotus/Upgrades/CosmeticEnhancers/Zariman/SecondaryOnStatusProcBonusDamage.lua',bytes:795,
     sha256:'66d2bee4f451244fe41e15ef8024547a3ff5db7ee911949bff677ed0b80652e7',name:'GetDescription',prototype:0,parameters:1,symbolHash:2213775760},
   {id:'arcane-operator-next-cast',resource:'/Lotus/Scripts/Mods/StrengthForOneCast.lua',bytes:2826,
-    sha256:'d8afe52161d23ac688026edbab7a1e7ab3aec6ccc2123f1a3908d475c1face6e',name:'GetDrainPowerDescription',prototype:1,parameters:1,symbolHash:3368638374}
+    sha256:'d8afe52161d23ac688026edbab7a1e7ab3aec6ccc2123f1a3908d475c1face6e',name:'GetDrainPowerDescription',prototype:1,parameters:1,symbolHash:3368638374},
+  {id:'arcane-residual-electric',resource:'/Lotus/Upgrades/CosmeticEnhancers/Utility/ResidualTrigger.lua',bytes:17817,
+    sha256:'2ad8a7c954171381a372650511b242304bfddeaf52b40476fbcf1491b1bb66a7',name:'GetElectricDescription',prototype:0,parameters:1,symbolHash:3484546185},
+  {id:'arcane-residual-poison-ice',resource:'/Lotus/Upgrades/CosmeticEnhancers/Utility/ResidualTrigger.lua',bytes:17817,
+    sha256:'2ad8a7c954171381a372650511b242304bfddeaf52b40476fbcf1491b1bb66a7',name:'GetPoisonIceDescription',prototype:1,parameters:1,symbolHash:1525704190},
+  {id:'arcane-residual-cyst',resource:'/Lotus/Upgrades/CosmeticEnhancers/Utility/ResidualTrigger.lua',bytes:17817,
+    sha256:'2ad8a7c954171381a372650511b242304bfddeaf52b40476fbcf1491b1bb66a7',name:'GetCystDescription',prototype:2,parameters:1,symbolHash:1178643597},
+  {id:'arcane-radial-cooldown',resource:'/Lotus/Upgrades/CosmeticEnhancers/Utility/RadialHeal.lua',bytes:1399,
+    sha256:'79c53ed73cc003ee9657aa597b45c3b0412376d184e6068c75ee1f9c54ea990e',name:'GetCooldown',prototype:0,parameters:1,symbolHash:351567011},
+  {id:'arcane-radial-amount',resource:'/Lotus/Upgrades/CosmeticEnhancers/Utility/RadialHeal.lua',bytes:1399,
+    sha256:'79c53ed73cc003ee9657aa597b45c3b0412376d184e6068c75ee1f9c54ea990e',name:'GetHealAmount',prototype:1,parameters:1,symbolHash:1210800564},
+  {id:'arcane-radial-radius',resource:'/Lotus/Upgrades/CosmeticEnhancers/Utility/RadialHeal.lua',bytes:1399,
+    sha256:'79c53ed73cc003ee9657aa597b45c3b0412376d184e6068c75ee1f9c54ea990e',name:'GetHealRadius',prototype:2,parameters:1,symbolHash:2186791746},
+  {id:'arcane-slam-pull',resource:'/Lotus/Upgrades/CosmeticEnhancers/Offensive/MeleeArcanePull.lua',bytes:1146,
+    sha256:'a7e255f88c4eace68c8d880818e463a939fb13151e6b7ca624601482c4c3fe3d',name:'GetDescriptionInfo',prototype:0,parameters:1,symbolHash:3662879226},
+  {id:'arcane-give-stat',resource:'/Lotus/Upgrades/CosmeticEnhancers/Offensive/GiveStatForStat.lua',bytes:4863,
+    sha256:'79254f689a3fbb4bf5deb2fd277647f86b333acf57189efedc996b474580e71a',name:'GetDescriptionInfo',prototype:0,parameters:2,symbolHash:3662879226},
+  {id:'arcane-give-stat-damage',resource:'/Lotus/Upgrades/CosmeticEnhancers/Offensive/GiveStatForDamageType.lua',bytes:5814,
+    sha256:'6478224a7fd381c2ef39d69eca8893e5bdb508558e2257bea5be249c15e8f1e7',name:'GetDescriptionInfo',prototype:0,parameters:2,symbolHash:3662879226},
+  {id:'arcane-per-armor',resource:'/Lotus/Upgrades/Boons/Offensive/StatIncreasePerArmor.lua',bytes:3822,
+    sha256:'0bc2be08dd01ea453464ca88a9e8ddef26b8a4242005ffe9c776dca86715176c',name:'GetDescription',prototype:0,parameters:1,symbolHash:2213775760}
 ];
 export function verifyCustomModDescriptionRules(data,manifest) {
   const rows=data.sections?.ClientCustomModDescriptionRules;if(rows===undefined)return;
