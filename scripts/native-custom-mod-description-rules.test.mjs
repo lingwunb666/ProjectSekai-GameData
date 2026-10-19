@@ -28,6 +28,7 @@ test('each optional custom getter requires original same-release source and bind
 test('parameter headers need their own same-release source, not just the function body',()=>{
   const {data,manifest}=fixture();manifest.inputs[0].clientExtraction.sourceRecords=manifest.inputs[0].clientExtraction.sourceRecords.filter(r=>r.cache!=='H.Font');
   assert.throws(()=>verifyCustomModDescriptionRules(data,manifest));
-  const wrong=fixture();wrong.data.sections.ClientCustomModDescriptionRules[0].getter.defaults.values.value=99;
+  const wrong=fixture();wrong.data.sections.ClientCustomModDescriptionRules
+    .find(r=>r.uniqueName==='native-custom-mod-utility-health-conversion-v1').getter.defaults.values.value=99;
   assert.throws(()=>verifyCustomModDescriptionRules(wrong.data,wrong.manifest));
 });
