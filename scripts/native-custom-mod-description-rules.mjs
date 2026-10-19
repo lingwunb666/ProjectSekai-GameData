@@ -1,6 +1,8 @@
 import assert from 'node:assert/strict';
 import {validateScriptParameterDefaults} from './native-script-parameter-defaults.mjs';
 export const GETTERS=[
+  {id:'augment-berserker-grapple',resource:'/Lotus/Powersuits/Berserker/Abilities/GrappleHookPower.lua',bytes:25486,
+    sha256:'31c584f1de21f42638533dd51640691451f8ba9b50cdd386536384d4e2dc4d6a',name:'GetAugmentDescriptionInfo',prototype:5,parameters:2,symbolHash:3238080930},
   {id:'augment-saryn-shed',resource:'/Lotus/Powersuits/Saryn/Abilities/Shed.lua',bytes:13903,
     sha256:'ce408ea5c09248d7dff29c34f75c1ed9f59aef14ed448f19d89c22a2da24b50a',name:'GetAugmentDescriptionInfo',prototype:6,parameters:2,symbolHash:3238080930},
   {id:'augment-saryn-weapon-poison',resource:'/Lotus/Powersuits/Saryn/Abilities/WeaponPoison.lua',bytes:10901,
