@@ -27,7 +27,11 @@ ProjectSekai 的公开、版本化游戏数据仓库。数据由独立采集工�
 
 ## 验证
 
-使用 Node.js 24 运行 `node scripts/verify.mjs`。CI 在每次提交及 Pull Request 中检查所有版本的内容标识、校验和、区域、路径与公开内容边界。
+使用 Node.js 24 运行 `node scripts/verify.mjs`，检查当前检出的全部版本；指定任一历史固定包可用 `node scripts/verify.mjs --release <目录>`。
+
+CI 先稀疏检出校验代码，再按各区域 `latest.json` 的 Git 历史选取当前版与上一不同版本，最多完整检查四份包的内容标识、全部文件校验和、来源、关系、区域、路径与公开内容边界，并运行全部脚本测试。不会重新展开几十份历史包，也不会删除 Git 中的历史版本或改写指针。历史包在发布时已校验，仍可按固定提交单独复验。这是工作目录与重复校验范围的限制，不降低选中包的内容检查。
+
+`node scripts/ci-checkout.mjs` 只预览选择计划；`--apply` 仅允许在干净的 GitHub Actions 临时工作区中执行。浅历史、错误区域、manifest 哈希不一致或未知目录会失败。检出配置依据固定版本的 [actions/checkout 参数](https://github.com/actions/checkout/blob/d23441a48e516b6c34aea4fa41551a30e30af803/README.md)；显式使用稀疏模式和完整提交历史，不另设会覆盖稀疏选项的 `filter`。
 
 `client-challenge-selection-facts-v1` 包含同服审阅过的特殊赏金选择／阵营规则与脚本指纹，不含脚本正文。校验器独立检查精确规则和来源；`REVIEW_REQUIRED` 只允许保留未审阅事实，不能用于生成推荐。业务还必须提供同服有效官方周期、有序节点覆盖及奖励资料，不能仅凭这个能力标记宣称赏金完整可用。
 
