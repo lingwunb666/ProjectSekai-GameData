@@ -1,5 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import {CUSTOM_MOD_SOURCE_VERSIONS} from './custom-mod-source-versions.mjs';
 import {GETTERS,verifyCustomModDescriptionRules} from './native-custom-mod-description-rules.mjs';
 import {SCRIPT_DEFAULT_HEADERS} from './native-script-parameter-defaults.mjs';
 function fixture(){
@@ -13,6 +14,19 @@ function fixture(){
     schema:'native-script-parameter-defaults-v1',source:headers.find(h=>h.resource===s.resource),values:{...s.values}};
   return {data:{locale:'neutral',sections:{ClientCustomModDescriptionRules:rows}},manifest:{inputs:[{clientExtraction:{sourceRecords:[...GETTERS.map(source),...headers]}}]}};
 }
+test('new reviewed revisions never borrow old acquisition proofs',()=>{
+  for(const [id,version] of Object.entries(CUSTOM_MOD_SOURCE_VERSIONS)) {
+    const {data,manifest}=fixture();
+    const source=data.sections.ClientCustomModDescriptionRules.find(r=>r.uniqueName===`native-custom-mod-${id}-v1`).getter.source;
+    const old=structuredClone(manifest);
+    Object.assign(source,{bytes:version.bytes,decodedSha256:version.sha256});
+    for(const row of manifest.inputs[0].clientExtraction.sourceRecords)
+      if(row.cache===source.cache&&row.resource===source.resource)Object.assign(row,source);
+    verifyCustomModDescriptionRules(data,manifest);
+    assert.throws(()=>verifyCustomModDescriptionRules(data,old));
+    source.bytes++;assert.throws(()=>verifyCustomModDescriptionRules(data,manifest));
+  }
+});
 test('each optional custom getter requires original same-release source and binding',()=>{
   const {data,manifest}=fixture();verifyCustomModDescriptionRules(data,manifest);
   assert.throws(()=>verifyCustomModDescriptionRules(data,{}));

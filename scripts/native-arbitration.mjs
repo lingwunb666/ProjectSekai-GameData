@@ -47,8 +47,10 @@ export class NativeArbitration {
     assert(Array.isArray(row.sources) && row.sources.length === 4); const seen = new Set();
     for (const source of row.sources) {
       assert(Object.hasOwn(expected, source.resource) && !seen.has(source.resource)); seen.add(source.resource);
-      assert.equal(source.reviewedSha256, expected[source.resource]);
-      assert.equal(source.verified, source.decodedSha256 === expected[source.resource]);
+      const alternate=region==='china'&&source.resource==='/Lotus/Interface/LotusUtilities.lua'
+        &&source.reviewedSha256==='5736580711930c267047875897a60ca4520624ed5ae856b887087cf4904bbeed';
+      assert(source.reviewedSha256===expected[source.resource]||alternate,'regional reviewed hash');
+      assert.equal(source.verified, source.decodedSha256 === source.reviewedSha256);
       assert(!reviewed || source.verified);
       if (source.decodedSha256 !== null) {
         assert(typeof source.decodedSha256 === 'string' && /^[a-f0-9]{64}$/.test(source.decodedSha256));

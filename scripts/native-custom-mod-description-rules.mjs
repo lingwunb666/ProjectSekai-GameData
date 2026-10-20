@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import {reviewedCustomModSource} from './custom-mod-source-versions.mjs';
 import {validateScriptParameterDefaults} from './native-script-parameter-defaults.mjs';
 export const GETTERS=[
   {id:'antique-next-shot',resource:'/Lotus/Upgrades/Mods/Antiques/NextShootMultiplier.lua',bytes:1031,
@@ -1030,7 +1031,7 @@ export function verifyCustomModDescriptionRules(data,manifest) {
       &&row.execution==='NO_SCRIPT_OR_CLIENT_EXECUTION'&&row.scope==='CATALOG_PRESENTATION_NOT_COMBAT','custom getter identity');
     seen.add(spec.id);
     const s=row.getter?.source;
-    assert(s?.resource===spec.resource&&s.bytes===spec.bytes&&s.decodedSha256===spec.sha256&&s.cache==='B.Font'
+    assert(s?.resource===spec.resource&&reviewedCustomModSource(spec,s)&&s.cache==='B.Font'
       &&[s.tocSha256,s.compressedSha256].every(h=>typeof h==='string'&&/^[a-f0-9]{64}$/.test(h))
       &&typeof s.stamp==='string'&&/^[1-9]\d{0,19}$/.test(s.stamp),'custom getter source');
     assert.deepEqual(row.getter.format,{luau:9,types:3});
