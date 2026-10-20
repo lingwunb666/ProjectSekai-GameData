@@ -8,6 +8,10 @@ import {crc32,inflateSync} from 'node:zlib';
 
 const hash=b=>createHash('sha256').update(b).digest('hex');
 const digest=x=>typeof x==='string'&&/^[0-9a-f]{64}$/.test(x);
+// Only PNG structural validation is memoized, never file reads/hashes or source provenance.
+// Repeat distribution/publication checks still read each file and prove identical bytes.
+// No PNG buffers or persistent cache survive here; callers cannot seed this private map.
+const verifiedPngShapes=new Map(),MAX_VERIFIED_PNG_SHAPES=32768;
 const resource=x=>typeof x==='string'&&/^\/(?:[A-Za-z0-9_.'-]+\/)*[A-Za-z0-9_.'-]+$/.test(x)
   &&x.split('/').every(p=>p!=='.'&&p!=='..');
 function read(file,max) {
@@ -148,7 +152,13 @@ export function verifyImagePack(directory,expected={}) {
     assert(used.has(f.path)&&!fileNames.has(f.path)&&f.path==='images/'+f.sha256+'.png'&&digest(f.sha256),'image file identity');
     fileNames.add(f.path);assert.deepEqual([f.width,f.height],used.get(f.path),'image dimensions');
     const bytes=read(path.join(root,f.path),20*1024*1024);assert(bytes.length===f.bytes&&hash(bytes)===f.sha256,'image bytes/hash');
-    total+=bytes.length;assert(total<=4*1024*1024*1024,'image pack bound');verifyPng(bytes,f.width,f.height);
+    total+=bytes.length;assert(total<=4*1024*1024*1024,'image pack bound');
+    const shape=f.width+'x'+f.height+':'+bytes.length;
+    if(verifiedPngShapes.get(f.sha256)!==shape) {
+      verifyPng(bytes,f.width,f.height);
+      if(verifiedPngShapes.size>=MAX_VERIFIED_PNG_SHAPES)verifiedPngShapes.delete(verifiedPngShapes.keys().next().value);
+      verifiedPngShapes.set(f.sha256,shape);
+    }
   }
   assert.equal(fileNames.size,used.size,'unlisted image');
   assert.deepEqual(fs.readdirSync(root).sort(),m.schemaVersion===2?['images','manifest.json','metadata']:['images','manifest.json'],'extra asset files');

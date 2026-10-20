@@ -20,6 +20,16 @@ test('PNG independently checks CRC, exact dimensions, inflation and EOF',()=>{
   const corrupt=Buffer.from(bytes);corrupt[45]^=1;assert.throws(()=>verifyPng(corrupt,1,1),/CRC/);
   assert.throws(()=>verifyPng(Buffer.concat([bytes,Buffer.from([0])]),1,1),/framing/);
 });
+test('repeat PNG validation never skips rereading and hashing the file',()=>{
+  const f=imageFixture();
+  try {
+    const first=verifyImagePack(f.release);assert.deepEqual(verifyImagePack(f.release),first);
+    const m=JSON.parse(fs.readFileSync(path.join(f.release,'manifest.json')));
+    const file=path.join(f.release,m.files[0].path),stat=fs.statSync(file),bytes=fs.readFileSync(file);
+    bytes[bytes.length-1]^=1;fs.writeFileSync(file,bytes);fs.utimesSync(file,stat.atime,stat.mtime);
+    assert.throws(()=>verifyImagePack(f.release),/hash/);
+  } finally {f.close();}
+});
 
 test('sealed v2 image packs reject ambiguous and incoherent item/store icons',()=>{
   const f=imageFixture();
