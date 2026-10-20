@@ -1014,7 +1014,11 @@ export const GETTERS=[
   {id:'arcane-heavy-crit',resource:'/Lotus/Upgrades/CosmeticEnhancers/Offensive/HeavyCritEachHit.lua',bytes:4017,
     sha256:'da9380720ba95f28e91e26e78a6b83b235e36b02c1f456bade764b64acb7e3b2',name:'GetDescription',prototype:9,parameters:1,symbolHash:2213775760},
   {id:'arcane-perma-combo',resource:'/Lotus/Upgrades/CosmeticEnhancers/Offensive/PermaComboUpgrade.lua',bytes:2429,
-    sha256:'0923232d4cb0310cad80336722a20d01be91ec7b1195ba50e1d8fee8f722be22',name:'GetDescription',prototype:2,parameters:1,symbolHash:2213775760}
+    sha256:'0923232d4cb0310cad80336722a20d01be91ec7b1195ba50e1d8fee8f722be22',name:'GetDescription',prototype:2,parameters:1,symbolHash:2213775760},
+  {id:'tau-health-stack-initializer',resource:'/Lotus/Scripts/Mods/OnPickup.lua',bytes:843,
+    sha256:'d5ee6dcaf8e8b0f1e58cce38862bc3f7285c0386bf9e624afb8f5a4df0a7da63',name:'InitializeModMaxIncrease',prototype:4,parameters:5,symbolHash:354880109},
+  {id:'tau-health-stack-cap',resource:'/Lotus/Scripts/Libs/OnPickupUtilsLib.lua',bytes:6752,
+    sha256:'935cf2341856f04bbc9e7cbcef96a6e81d15ac664bf531bd38714f3b03eafa26',name:'AddStackMax',prototype:12,parameters:4,symbolHash:3138236599}
 ];
 export function verifyCustomModDescriptionRules(data,manifest) {
   const rows=data.sections?.ClientCustomModDescriptionRules;if(rows===undefined)return;
