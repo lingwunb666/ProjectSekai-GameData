@@ -7,6 +7,7 @@ import {NativeIdentities} from './native-identities.mjs';
 import {NativeDojo} from './native-dojo.mjs';
 import {NativeTextIcons} from './native-text-icons.mjs';
 import {verifyScopedLinks} from './native-scoped-links.mjs';
+import {verifyRecipeQuantityAncestry} from './native-recipe-quantity.mjs';
 import {NativeItemParents} from './native-item-parents.mjs';
 import {NativeNpc} from './native-npc.mjs';
 import {NativeAiWeapons} from './native-ai-weapons.mjs';
@@ -118,6 +119,7 @@ async function verifyRelease(directory, region, version) {
       nativeDictionaries.accept(file.path, content);
       nativeChallengeSelection.accept(file.path, content);
       if (file.path.startsWith('exports/')) verifyScopedLinks(content.sections);
+      if (file.path.startsWith('exports/')) verifyRecipeQuantityAncestry(content.sections);
       assert.equal(content.region, region); assert.equal(content.schemaVersion, 1);
       if (file.path.startsWith('exports/')) { assert.equal(content.locale, file.path.split('/')[1]); assert(content.sections && !Array.isArray(content.sections)); }
       if (file.path.startsWith('exports/')) nativeIdentities.accept(content);
