@@ -39,6 +39,18 @@ test('nested fields bind to the whole declaring owner and omitted links fail',()
   f.ClientSyndicates[0].references[0].owner='/Lotus/Child';assert.throws(()=>verifyScopedLinks(f));
   f.ClientSyndicates[0].references=[];assert.throws(()=>verifyScopedLinks(f),/Missing/);
 });
+test('ordered extra syndicate reward manifests retain exact declaring scope and cannot omit or duplicate links',()=>{
+  const row={uniqueName:'/Lotus/Syndicates/Child',referenceRule:'native-declaration-scope-v2',
+    values:{ExtraJobRewardManifests:['PoolA','PoolB']},fieldSources:{ExtraJobRewardManifests:{resource:'/Lotus/Syndicates/Base'}},
+    references:['PoolA','PoolB'].map((rawTarget,i)=>({pointer:'/values/ExtraJobRewardManifests/'+i,rawTarget,
+      owner:'/Lotus/Syndicates/Base',resourceTarget:'/Lotus/Syndicates/'+rawTarget,status:'RESOLVED'}))};
+  verifyScopedLinks({ClientSyndicates:[row]});
+  const wrong=structuredClone(row);wrong.references[0].owner=row.uniqueName;
+  assert.throws(()=>verifyScopedLinks({ClientSyndicates:[wrong]}));
+  const duplicate=structuredClone(row);duplicate.references.push(duplicate.references[0]);
+  assert.throws(()=>verifyScopedLinks({ClientSyndicates:[duplicate]}),/Unknown\/duplicate/);
+  row.references.pop();assert.throws(()=>verifyScopedLinks({ClientSyndicates:[row]}),/Missing/);
+});
 test('legacy v1 is not retroactively required to have new v2 rank links',()=>{
   const f=fixture();f.ClientSyndicates[0].referenceRule='native-declaration-scope-v1';f.ClientSyndicates[0].references=[];
   verifyScopedLinks(f);

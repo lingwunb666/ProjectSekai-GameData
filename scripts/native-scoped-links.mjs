@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 
 const fields={
-  ClientSyndicates:['Manifest','JobManifest','SeasonCurrency','SeasonVendorManifest',
+  ClientSyndicates:['Manifest','JobManifest','ExtraJobRewardManifests/*','SeasonCurrency','SeasonVendorManifest',
     'SeasonFeaturedRewards/*/ItemType','SeasonFeaturedStoreItemRewards/*',
     'SeasonChallenges/*/dailyChallenges/*','SeasonChallenges/*/weeklyChallenges/*',
     'Titles/*/rewards/*/ItemType','Titles/*/sacrifice/items/*/ItemType'],
@@ -54,7 +54,7 @@ export function verifyScopedLinks(sections) {
       }
       for(const pattern of fields[section])collect(row.values,pattern.split('/'),'/values',section==='ClientNpcResources'?row.uniqueName:null);
       for(const ref of row.references) {
-        const e=expected.get(ref.pointer);assert(e,'Unknown/duplicate native link');
+        const e=expected.get(ref.pointer);assert(e,`Unknown/duplicate native link: ${section} ${row.uniqueName??''} ${ref.pointer}`);
         assert.equal(ref.rawTarget,e.raw);assert.equal(ref.owner,e.owner);assert(resource(ref.owner),'Native link owner');
         if(ref.status==='RESOLVED')assert(resource(ref.resourceTarget));
         else {assert.equal(ref.status,'UNRESOLVED');assert.equal(ref.resourceTarget,null);}
