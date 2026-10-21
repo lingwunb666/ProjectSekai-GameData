@@ -67,6 +67,12 @@ PublicExport 的清单是采集时读取的索引，不应以本机游戏 EXE �
 
 `manifest.clientExtraction` 保存 TOC、压缩资源、解压资源哈希和解码计数。`clientBuild=packages-sha256-...` 是资源内容身份，不是游戏面板版本号。客户端来源各自独立，即使资源 ID 相同也不得跨区域覆盖。
 
+## 技能准入配置事实
+
+1.78.0 的 `ClientAbilities` 投影增加 `values.AllowReactivate` 与 `fieldSources.AllowReactivate`。显式 0／1 保留原值，字段来源保留整字段的声明资源和字段名；完整继承链均未声明时两者为 null。旧包缺少该键表示未采集，不能转换成 false。此批同代际增量包只补齐怒吼条目，不保证所有技能已有这一字段；完整采集会对所采技能投影该字段。
+
+`manifest.abilityProjectionRefresh` 记录原完整包、原 manifest 摘要、候选摘要及本服源清单摘要，范围为 `ADDITIVE_ROAR_REACTIVATION_METADATA`。生成器拒绝改变目标条目的任何旧字段，其它源文件保留，受影响的规范化索引重新生成。此记录不代表战甲已装备、技能实际施放成功、运行时没有改写或跨服机制一致；null 的程序缺省由消费方按已审核本服机制判断，采集器不填缺省。
+
 ## 紫卡和武器参数事实
 
 能力 `client-riven-facts-v1` 表示 `ExportClientRivenProfiles`、`ExportClientWeaponParameters` 和 `ExportClientRivenCoverage` 三类文件同时存在。紫卡配置保留词条值、限制、显示舍入规则和字段继承来源；没有导出完整脚本、贴图或资源档案。`Value` 是原始升级数值，不是满级属性。
@@ -83,7 +89,7 @@ PublicExport 的清单是采集时读取的索引，不应以本机游戏 EXE �
 
 采集器 1.20.0 写入 `regional-catalog-v5`。实体分片声明 `entityEncoding=shared-provenance-v1`，以分片内 `sources` 数组共享 `{path,section,locale,sha256}`；最多 512 个来源／2,000 个实体。每个实体的 `provenance` 是有序 `[sourceIndex, recordIndex]` 元组数组，`variantSources` 是语言到该实体 provenance 索引的映射。名字、说明、身份和原始 exports 不变。恢复后仍必须逐条对照原文件的哈希、区域、语言、记录身份和标签，不能仅以索引在范围内判定有效。拒绝重复／未引用来源、越界索引、错误语言及未知编码；同来源文件不同记录行保留，不去掉重复记录证据。关系仍使用 v4 编码。读取器兼容 v1–v4；旧读取器必须拒绝 v5 而非猜读。
 
-`canonicalModel` 标明只读查询模型版本，当前写入 `regional-catalog-v3`，读取器继续支持历史 v1/v2：
+`canonicalModel` 标明只读查询模型版本，当前写入上述 `regional-catalog-v5`。下列布局说明沿用历史 v3 的逻辑字段；v5 的来源恢复必须遵循上述字典／索引规则，不能直接当成 v3 读取：
 
 - `canonical/entities-<分类小写>[-序号].json`：`entities` 数组。每项有 `key=section|id`、`section`、`id`、`names`、`descriptions`、`variantSources`、`provenance`。v3 不重复保存原始记录；`variantSources[locale]` 指向原始导出文件的 `path/sha256/section/index/locale`，全部原始字段只存放在 `exports`。完全重复的记录仍保留全部 `provenance`。旧 v1/v2 的 `variants` 为内嵌完整记录。
 - `canonical/relations*.json`：按明确字段抽取的引用，包含源实体、语言、JSON Pointer、关系种类、原始和规范化目标 ID、候选实体及 `RESOLVED/UNRESOLVED/AMBIGUOUS`。优先精确 ID，否则仅使用显式且唯一的商店到物品映射，不裁剪路径前缀或按相似名称猜测。
