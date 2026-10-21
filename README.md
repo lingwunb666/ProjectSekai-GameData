@@ -14,6 +14,8 @@ ProjectSekai 的公开、版本化游戏数据仓库。数据由独立采集工�
 
 每个区域的 `datasets/<region>/latest.json` 只用于发现版本，消费者必须锁定 Git 提交和 `manifestSha256`，不能把 `main` 当作不可变版本。数据位于 `datasets/<region>/releases/<releaseId>/`。
 
+已撤回推荐：国际服 `gd1-3ad0e99f9cf7145225f0e7e9` 的专精数据有效，但增量底座过旧，漏带后来的配方数量继承修正；不要固定到该版本。发现后先恢复前版发现指针，再以 `gd1-a5e40f83e4fc2cc6e4f913e7`（采集器 1.77.1）替代，完整保留配方及既有脚本修正。对应国服修正版为 `gd1-30216259cad63756e5c45f99`。旧版本只保留在不可变历史中用于追溯；内容校验通过不等于已证明所有业务修正都得到保留。
+
 1. 从固定 Git 提交读取 `latest.json` 或指定版本的 `manifest.json`。
 2. 校验 manifest SHA-256、区域、格式版本及所需能力。
 3. 按 `manifest.files` 下载并校验文件大小与 SHA-256。
