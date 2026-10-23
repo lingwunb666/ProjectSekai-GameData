@@ -59,7 +59,9 @@ CI 先稀疏检出校验代码，再按各区域 `latest.json` 的 Git 历史选
 
 图片包与结构化 `gd1-*` 版本分开，不能仅凭同名物品互相拼接，也不能拿国际服图片填补国服。消费侧绑定同区域、Packages 内容版本、客户端 EXE 和纹理目录哈希。图标／贴图版权仍归游戏权利人。
 
-2026-10-17 已发布以下固定配对，两个图片包仍有覆盖诊断，均为 prerelease、`complete=false`。发布不代表 ProjectSekai 已生产切换。
+2026-10-23 国际服新增与上述 1.87.0 结构化包配对的[图片 Release](https://github.com/lingwunb666/ProjectSekai-GameData/releases/tag/images-international-gad1-2f853117efda7aba61282772)：分发版本 `gad1-2f853117efda7aba61282772`，索引 SHA-256 `22eea50dacf89fa11eea9f0fb943403d7dc1a9343200b7ed5d95f336714218b3`，图片 manifest SHA-256 `2024b1fcda90f103cece041954be575517b34ee7a96738c931a9f44937282f16`，固定目标提交 `648180964f505eb0323522a7790dbecff0de186f`。11 个分块和索引远端摘要已验证。包含 20,706 个 PNG；仍有 2,446 条图标覆盖诊断，保持 `complete=false`、prerelease。国服未随国际服更新，也没有生产激活。
+
+2026-10-17 的历史配对保留如下，两个图片包仍有覆盖诊断，均为 prerelease、`complete=false`。发布不代表 ProjectSekai 已生产切换。
 
 | 区域 | 结构化版本 | 图片分发版本 | 索引 SHA-256 |
 | --- | --- | --- | --- |
