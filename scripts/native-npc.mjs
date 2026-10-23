@@ -5,8 +5,9 @@ const kinds=['ClientNpcAgents','ClientNpcAvatars','ClientNpcDamageControllers','
 const resource=id=>typeof id==='string'&&/^\/(?:[A-Za-z0-9_.-]+\/)*[A-Za-z0-9_.-]+$/.test(id)
   &&id.split('/').every(p=>p!=='.'&&p!=='..');
 const nullableText=x=>x===null||typeof x==='string';
+const handlerFields=new Set(['InjuryHandlersEx','PainHandler','PreDeathHandler','DeathHandler']);
 
-/** The wire format stores declarations once; only the nearest WHOLE field inherits. */
+/** Generic metadata view uses the nearest WHOLE field. Not a native handler-map merge. */
 export function npcView(sections,fields,kind,id) {
   const resources=new Map(sections.ClientNpcResources.map(row=>[row.uniqueName,row]));
   const chain=[],seen=new Set();let current=id;
@@ -49,6 +50,17 @@ export class NativeNpc {
       assert(Array.isArray(coverage.fields[kind])&&coverage.fields[kind].length>0&&coverage.fields[kind].length<=64);
       assert.equal(new Set(coverage.fields[kind]).size,coverage.fields[kind].length);
       for(const field of coverage.fields[kind]){assert(/^[A-Za-z][A-Za-z0-9]*$/.test(field));allowed.add(field);}
+    }
+    if(coverage.ancestryReferences!==undefined) {
+      const inventory=coverage.ancestryReferences;
+      assert(inventory&&typeof inventory==='object'&&!Array.isArray(inventory),'NPC ancestry reference inventory');
+      assert(Object.keys(inventory).every(k=>k==='ClientNpcDamageControllers'),'NPC ancestry reference kind');
+      const fields=inventory.ClientNpcDamageControllers;
+      if(fields!==undefined) {
+        assert(Array.isArray(fields)&&fields.length<=4&&new Set(fields).size===fields.length,'NPC ancestry reference fields');
+        for(const field of fields)assert(handlerFields.has(field)&&coverage.fields.ClientNpcDamageControllers.includes(field),
+          'NPC ancestry reference field outside declared inventory');
+      }
     }
     assert(Array.isArray(sections.ClientNpcResources)&&sections.ClientNpcResources.length>0&&sections.ClientNpcResources.length<=32768);
     const resources=new Map();

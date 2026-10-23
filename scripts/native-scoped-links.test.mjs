@@ -91,3 +91,19 @@ test('bundle and random-pack references require all component declarations and p
     row.references=[];assert.throws(()=>verifyScopedLinks({[section]:[row]}),/Missing/);
   }
 });
+test('NPC handler references retain own scope, explicit clears and unresolved targets',()=>{
+  const owner='/Lotus/Controllers/Base';
+  const row={uniqueName:owner,referenceRule:'native-declaration-scope-v2',values:{
+    InjuryHandlersEx:{PT_KNOCKBACK:'Impact',PT_BLEEDING:''},PainHandler:'Pain',PreDeathHandler:'Missing',DeathHandler:''},
+    references:[['InjuryHandlersEx/PT_KNOCKBACK','Impact','/Lotus/Handlers/Impact'],['PainHandler','Pain','/Lotus/Handlers/Pain'],
+      ['PreDeathHandler','Missing',null]].map(([field,rawTarget,resourceTarget])=>({pointer:'/values/'+field,owner,
+        rawTarget,resourceTarget,status:resourceTarget?'RESOLVED':'UNRESOLVED'}))};
+  const check=x=>verifyScopedLinks({ClientNpcResources:[x]});check(row);
+  for(const mutate of [x=>x.references.pop(),x=>x.references.push(x.references[0]),
+    x=>x.references[0].owner='/Lotus/Child',x=>x.references[0].rawTarget='Different',
+    x=>x.references.push({pointer:'/values/DeathHandler',owner,rawTarget:'',resourceTarget:null,status:'UNRESOLVED'})]) {
+    const bad=structuredClone(row);mutate(bad);assert.throws(()=>check(bad));
+  }
+  const empty=structuredClone(row);empty.values.InjuryHandlersEx=[];empty.references.shift();check(empty);
+  empty.values.InjuryHandlersEx={};check(empty);
+});

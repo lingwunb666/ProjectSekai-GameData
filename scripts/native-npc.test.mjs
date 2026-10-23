@@ -33,3 +33,19 @@ test('NPC dangling/cyclic chains, wrong owners, missing capability and counts re
     const f=fixture();mutate(f);assert.throws(()=>check(f));
   }
 });
+
+test('handler ancestry claims require known unique fields in the controller inventory, and old packages remain valid',()=>{
+  const f=fixture();check(f);
+  const fields=['InjuryHandlersEx','PainHandler','PreDeathHandler','DeathHandler'];
+  f.coverage.fields.ClientNpcDamageControllers.push(...fields);
+  f.coverage.ancestryReferences={ClientNpcDamageControllers:fields};check(f);
+  for(const mutate of [
+    x=>x.coverage.ancestryReferences=null,
+    x=>x.coverage.ancestryReferences=[],
+    x=>x.coverage.ancestryReferences.ClientNpcAvatars=[],
+    x=>x.coverage.ancestryReferences.ClientNpcDamageControllers=['DeathHandler','DeathHandler'],
+    x=>x.coverage.ancestryReferences.ClientNpcDamageControllers=['Unknown'],
+    x=>x.coverage.fields.ClientNpcDamageControllers=['MaxShield']]) {
+    const bad=structuredClone(f);mutate(bad);assert.throws(()=>check(bad));
+  }
+});

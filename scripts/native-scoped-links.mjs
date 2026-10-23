@@ -21,7 +21,8 @@ const fields={
     'MissionPermutations/*/vipAgent','MissionPermutations/*/advancedSpawners/*'],
   ClientAchievementRegistries:['EnabledChallenges/*'],ClientChallengeDefinitions:['Parents/*'],
   ClientLoreFragments:['PowerSuitRes','Song','SecretTransmission'],
-  ClientNpcResources:['AvatarTypes/*','NewAdditionalInventory/*/item','DamageControllerType','DropTable','AbilityResistanceData','HitProxies/*/Type']};
+  ClientNpcResources:['AvatarTypes/*','NewAdditionalInventory/*/item','DamageControllerType','DropTable','AbilityResistanceData','HitProxies/*/Type',
+    'InjuryHandlersEx/*','PainHandler','PreDeathHandler','DeathHandler']};
 const resource=x=>typeof x==='string'&&/^\/(?:[A-Za-z0-9_.-]+\/)*[A-Za-z0-9_.-]+$/.test(x)
   &&x.split('/').every(p=>p!=='.'&&p!=='..');
 const escape=x=>x.replaceAll('~','~0').replaceAll('/','~1');
