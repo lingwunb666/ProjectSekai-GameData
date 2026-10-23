@@ -30,6 +30,18 @@ test('arbitration capability requires its artifact', () => {
   assert.throws(() => new NativeArbitration().verify({capabilities: ['client-arbitration-selection-facts-v1']}));
   new NativeArbitration().verify({});
 });
+test('current international rules retain exact own acquisition and reject China relabeling', {
+  skip: !process.env.SEKAI_SELECTION_INTERNATIONAL
+}, () => {
+  const root = process.env.SEKAI_SELECTION_INTERNATIONAL;
+  const artifact = 'exports/neutral/ExportClientArbitrationSelection.json';
+  const data = JSON.parse(fs.readFileSync(path.join(root, artifact)));
+  const manifest = JSON.parse(fs.readFileSync(path.join(root, 'manifest.json')));
+  const v = new NativeArbitration(); v.accept(artifact, data); v.verify(manifest);
+  assert.throws(() => v.verify({region:'international'}), /acquisition/);
+  data.region = 'china'; manifest.region = 'china';
+  assert.throws(() => v.verify(manifest), /regional reviewed hash/);
+});
 test('actual regional release provenance and full policy fingerprint', {skip: !process.env.SEKAI_ARBITRATION_RELEASE_RUNS}, () => {
   const root = process.env.SEKAI_ARBITRATION_RELEASE_RUNS; const seen = new Set();
   for (const item of fs.readdirSync(root, {withFileTypes: true}).filter(x => x.isDirectory())) {

@@ -89,7 +89,7 @@ async function verifyRelease(directory, region, version) {
       assert(/^(?:exports\/(?:en|zh|tc|neutral)\/Export[A-Za-z0-9]+|exports\/(?:de|es|fr|it|ja|ko|pl|pt|ru|th|tr|uk)\/ExportClientDictionary|reviewed\/[a-z0-9-]+|canonical\/[a-z0-9-]+|quality)\.json$/.test(file.path), 'Unapproved path');
       assert(!expected.has(file.path), 'Duplicate file'); expected.add(file.path);
       const bytes = await read(resolve(directory, file.path)); bytesTotal += bytes.length;
-      assert(bytesTotal <= 512 * 1024 * 1024, 'Regional release exceeds size budget');
+      assert(bytesTotal <= 640 * 1024 * 1024, 'Regional release exceeds size budget');
       assert.equal(bytes.length, file.bytes); assert.equal(hash(bytes), file.sha256, file.path);
       let content = JSON.parse(bytes);
       if(file.path.endsWith('/ExportClientDictionary.json'))content={...content,

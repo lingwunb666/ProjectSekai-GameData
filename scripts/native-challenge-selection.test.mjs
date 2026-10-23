@@ -18,6 +18,11 @@ test('independent real regional artifacts reject modified rules and source claim
     assert.equal(data.region, region);
     const validate = value => { const verifier = new NativeChallengeSelection(); verifier.accept(artifact, value); verifier.verify(true); };
     validate(data);
+    if (region === 'international' && data.sections.ClientChallengeSelection[0].sources.some(
+      s => s.reviewedSha256 === '37732628ba33d6965be043e07809e36a8983a21f9e7a897347c9c77269e4827e')) {
+      const wrongRegion = structuredClone(data); wrongRegion.region = 'china';
+      assert.throws(() => validate(wrongRegion), /reviewed hash/);
+    }
     for (const mutate of [row => row.factionPolicy.corpusRemainder = 0,
       row => row.policies.find(p => p.syndicateTag === 'HexSyndicate').titleRequirements.SolNode858 = 5,
       row => row.sources[0].decodedSha256 = '0'.repeat(64), row => row.policies.pop(), row => row.bytecode = 'not public']) {

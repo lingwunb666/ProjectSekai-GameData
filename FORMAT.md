@@ -6,7 +6,7 @@
 
 ### 字典压缩与独立官方语言来源（1.61）
 
-`ClientDictionary` 的 `client-dictionary-v2` 仅压缩 `entries`，不改变标签、空串、换行或格式标记。字段精确为 `schema,locale,entryCount,emptyCount,source,encoding,entriesBytes,entriesSha256,entriesGzip`；`encoding=gzip-base64-json-v1`。解码后的 UTF-8 JSON 对象最多 48 MiB，GZIP 最多 16 MiB，最多 250,000 条；必须验证单流、CRC、展开长度、SHA-256，拒绝拼接流和额外尾部。v1 仍可读取。整个数据包仍限制 512 MiB，压缩不是绕过展开量或语义校验。
+`ClientDictionary` 的 `client-dictionary-v2` 仅压缩 `entries`，不改变标签、空串、换行或格式标记。字段精确为 `schema,locale,entryCount,emptyCount,source,encoding,entriesBytes,entriesSha256,entriesGzip`；`encoding=gzip-base64-json-v1`。解码后的 UTF-8 JSON 对象最多 48 MiB，GZIP 最多 16 MiB，最多 250,000 条；必须验证单流、CRC、展开长度、SHA-256，拒绝拼接流和额外尾部。v1 仍可读取。当前整个数据包限制 640 MiB（1.84 起；此前为 512 MiB），压缩不是绕过展开量或语义校验。
 
 额外语言的 `source.distribution` 可声明 `official-client-dictionary-v1`：固定本区域官方启动器分发索引的 URL／哈希／大小、采集元数据哈希、官方 EXE 的 MD5 版本标识、精确语言 TOC／cache 文件及下载／解码摘要。国际服仅 `content.warframe.com`，国服仅 `content-zhpt.wf.qq.com`；不能交叉使用。公开包不含原始客户端缓存或可执行文件。
 
@@ -97,7 +97,7 @@ PublicExport 的清单是采集时读取的索引，不应以本机游戏 EXE �
 
 覆盖报告中的 `dispositionReconciliation` 比较同 ID 的官方英文武器倾向性和客户端原始倾向性，保留两边值及客户端字段来源。`EXACT` 与 `SAME_F32`（转为 IEEE-754 单精度才一致）分别标注；缺失为 `CLIENT_UNKNOWN/OFFICIAL_UNKNOWN`，差异为 `CONFLICT`。它只报告，不覆盖数值，也不证明整个游戏机制版本一致。
 
-所有文件保留 `schemaVersion=1`、区域和对应的 `model`。分类与源 ID 联合确定实体；名称不充当 ID。完全相同的重复记录仅保留一份语言变体，但保留全部来源；冲突重复拒绝生成。缺失名称为 `null`，不合成跨语言或跨服回退。1.9.0 的 v3 写入每片最多 2,000 条／8 MiB，早先 v2/v3 为 1,000 条；完整包仍不超过 512 文件／384 MiB。消费者必须读取全部实体分片及 `coverage.relationFiles` 指定的全部关系分片，不把记录数当固定文件布局。单条超大记录拒绝发布，不截断。
+所有文件保留 `schemaVersion=1`、区域和对应的 `model`。分类与源 ID 联合确定实体；名称不充当 ID。完全相同的重复记录仅保留一份语言变体，但保留全部来源；冲突重复拒绝生成。缺失名称为 `null`，不合成跨语言或跨服回退。1.9.0 的 v3 写入每片最多 2,000 条／8 MiB，早先 v2/v3 为 1,000 条；当前完整包不超过 512 文件／640 MiB，单文件不超过 48 MiB。消费者必须读取全部实体分片及 `coverage.relationFiles` 指定的全部关系分片，不把记录数当固定文件布局。单条超大记录拒绝发布，不截断。
 
 v3 校验除文件哈希外，还核对定位引用的区域、语言、分类、下标、源身份和名称／描述。仅修改引用并重算 manifest 不能把另一项冒充为原项。查询原始详情时由引用恢复记录；语义差异比较恢复后的字段，文件哈希或数组位置变动本身不算游戏数值变更。
 

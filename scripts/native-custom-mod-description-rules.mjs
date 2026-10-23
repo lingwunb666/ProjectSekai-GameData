@@ -2,6 +2,10 @@ import assert from 'node:assert/strict';
 import {reviewedCustomModSource} from './custom-mod-source-versions.mjs';
 import {validateScriptParameterDefaults} from './native-script-parameter-defaults.mjs';
 export const GETTERS=[
+  {id:'kill-explosion-stats',resource:'/Lotus/Scripts/Mods/ExplodeOnKill.lua',bytes:2440,
+    sha256:'6d47fa850753a6151c4b1188f30e93456ff183f0b7d40fced4df76071c600f99',name:'GetDescription',prototype:3,parameters:1,symbolHash:2213775760},
+  {id:'kill-explosion-range',resource:'/Lotus/Scripts/Mods/ExplodeOnKill.lua',bytes:2440,
+    sha256:'6d47fa850753a6151c4b1188f30e93456ff183f0b7d40fced4df76071c600f99',name:'GetDescriptionObexRangeHack',prototype:4,parameters:1,symbolHash:510824057},
   {id:'antique-next-shot',resource:'/Lotus/Upgrades/Mods/Antiques/NextShootMultiplier.lua',bytes:1031,
     sha256:'81b146615dafab161be4ff35782e985dd165b67110aaa2a70d93efbf71bfd0d9',name:'GetDescription',prototype:2,parameters:1,symbolHash:2213775760},
   {id:'antique-knockdown-void',resource:'/Lotus/Upgrades/Mods/Antiques/EnterVoidMode.lua',bytes:3177,
