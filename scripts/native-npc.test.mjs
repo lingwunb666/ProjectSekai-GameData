@@ -49,3 +49,37 @@ test('handler ancestry claims require known unique fields in the controller inve
     const bad=structuredClone(f);mutate(bad);assert.throws(()=>check(bad));
   }
 });
+
+test('optional injury definition families must be complete and ancestry fields must be declared',()=>{
+  const f=fixture();
+  const definitions={ClientNpcInjuryHandlers:['DeathInjuryType','DeathEffectType','EvaluatorTypes','ImpulseThreshold'],
+    ClientNpcInjuryEvaluators:['DamageTypes']};
+  for(const [kind,fields]of Object.entries(definitions)) {
+    f.sections[kind]=[];f.coverage.sections[kind]=0;f.coverage.fields[kind]=fields;
+  }
+  f.coverage.ancestryDefinitions=structuredClone(definitions);check(f);
+  for(const mutate of [x=>delete x.sections.ClientNpcInjuryEvaluators,
+    x=>x.coverage.ancestryDefinitions.ClientNpcAgents=[],
+    x=>x.coverage.ancestryDefinitions.ClientNpcInjuryHandlers=['Unknown'],
+    x=>x.coverage.ancestryDefinitions.ClientNpcInjuryEvaluators=['DamageTypes','DamageTypes'],
+    x=>x.coverage.fields.ClientNpcInjuryEvaluators=['Other'],
+    x=>x.coverage.ancestryDefinitions=null]) {
+    const bad=structuredClone(f);mutate(bad);assert.throws(()=>check(bad));
+  }
+});
+
+test('NPC source type arrays and script ancestry preserve explicit empties without accepting malformed declarations',()=>{
+  const f=fixture();f.coverage.fields.ClientNpcDamageControllers.push('InvalidDamageSourceEntities','ValidDamageSourceEntities');
+  f.coverage.fields.ClientNpcAvatars.push('OnDamageScript');
+  f.coverage.ancestrySourceTypeLists={ClientNpcDamageControllers:['InvalidDamageSourceEntities','ValidDamageSourceEntities']};
+  f.coverage.ancestryScriptReferences={ClientNpcAvatars:['OnDamageScript']};
+  f.sections.ClientNpcResources[1].values.InvalidDamageSourceEntities=[];check(f);
+  for(const mutate of [x=>x.sections.ClientNpcResources[1].values.InvalidDamageSourceEntities={},
+    x=>x.sections.ClientNpcResources[1].values.InvalidDamageSourceEntities=[null],
+    x=>x.sections.ClientNpcResources[1].values.InvalidDamageSourceEntities=Array(257).fill(''),
+    x=>x.coverage.ancestrySourceTypeLists.ClientNpcAgents=[],
+    x=>x.coverage.ancestryScriptReferences.ClientNpcAvatars=['Unknown'],
+    x=>x.coverage.callbackSources=null]) {
+    const bad=structuredClone(f);mutate(bad);assert.throws(()=>check(bad));
+  }
+});

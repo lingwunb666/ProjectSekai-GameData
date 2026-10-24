@@ -107,3 +107,18 @@ test('NPC handler references retain own scope, explicit clears and unresolved ta
   const empty=structuredClone(row);empty.values.InjuryHandlersEx=[];empty.references.shift();check(empty);
   empty.values.InjuryHandlersEx={};check(empty);
 });
+
+test('NPC evaluators, callback script and source filters bind every nonempty declaration',()=>{
+  const owner='/Lotus/Receiver',row={uniqueName:owner,referenceRule:'native-declaration-scope-v2',values:{
+    EvaluatorTypes:['Hit',''],DeathEffectType:'Effect',OnDamageScript:{Script:'Callback'},
+    InvalidDamageSourceEntities:['Ignored'],ValidDamageSourceEntities:['Missing']},references:[]};
+  for(const [path,rawTarget]of [['EvaluatorTypes/0','Hit'],['DeathEffectType','Effect'],['OnDamageScript/Script','Callback'],
+    ['InvalidDamageSourceEntities/0','Ignored'],['ValidDamageSourceEntities/0','Missing']])
+    row.references.push({pointer:'/values/'+path,owner,rawTarget,resourceTarget:rawTarget==='Missing'?null:'/Lotus/'+rawTarget,
+      status:rawTarget==='Missing'?'UNRESOLVED':'RESOLVED'});
+  const check=x=>verifyScopedLinks({ClientNpcResources:[x]});check(row);
+  for(let index=0;index<row.references.length;index++) {
+    const missing=structuredClone(row);missing.references.splice(index,1);assert.throws(()=>check(missing),/Missing/);
+    const wrong=structuredClone(row);wrong.references[index].owner='/Lotus/Other';assert.throws(()=>check(wrong));
+  }
+});

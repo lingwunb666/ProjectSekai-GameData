@@ -1,11 +1,25 @@
 import assert from 'node:assert/strict';
 import {verifyScopedLinks} from './native-scoped-links.mjs';
+import {verifyNpcCallbackSources} from './native-npc-callbacks.mjs';
 
-const kinds=['ClientNpcAgents','ClientNpcAvatars','ClientNpcDamageControllers','ClientNpcHitProxies'];
+const baseKinds=['ClientNpcAgents','ClientNpcAvatars','ClientNpcDamageControllers','ClientNpcHitProxies'];
+const definitionFields={ClientNpcInjuryHandlers:['DeathInjuryType','DeathEffectType','EvaluatorTypes','ImpulseThreshold'],
+  ClientNpcInjuryEvaluators:['DamageTypes']};
+const sourceTypeFields=['InvalidDamageSourceEntities','ValidDamageSourceEntities'];
 const resource=id=>typeof id==='string'&&/^\/(?:[A-Za-z0-9_.-]+\/)*[A-Za-z0-9_.-]+$/.test(id)
   &&id.split('/').every(p=>p!=='.'&&p!=='..');
 const nullableText=x=>x===null||typeof x==='string';
 const handlerFields=new Set(['InjuryHandlersEx','PainHandler','PreDeathHandler','DeathHandler']);
+
+function ancestryInventory(inventory,allowed,declared) {
+  if(inventory===undefined)return;
+  assert(inventory&&typeof inventory==='object'&&!Array.isArray(inventory),'NPC ancestry inventory');
+  for(const [kind,fields]of Object.entries(inventory)) {
+    assert(Object.hasOwn(allowed,kind)&&Array.isArray(declared[kind]),'NPC ancestry kind');
+    assert(Array.isArray(fields)&&fields.length<=allowed[kind].length&&new Set(fields).size===fields.length,'NPC ancestry fields');
+    for(const field of fields)assert(allowed[kind].includes(field)&&declared[kind].includes(field),'NPC undeclared ancestry field');
+  }
+}
 
 /** Generic metadata view uses the nearest WHOLE field. Not a native handler-map merge. */
 export function npcView(sections,fields,kind,id) {
@@ -43,6 +57,8 @@ export class NativeNpc {
     assert(sections&&coverage,'Incomplete NPC capability');
     assert.equal(coverage.schema,'client-npc-facts-v1');assert.equal(coverage.encoding,'native-npc-owned-values-v1');
     assert.equal(coverage.selectionRoot,'/EE/Types/Npc/NpcAgent');assert(Array.isArray(coverage.issues));
+    const kinds=[...baseKinds];
+    if(Object.keys(definitionFields).some(kind=>Object.hasOwn(sections,kind)))kinds.push(...Object.keys(definitionFields));
     assert.deepEqual(Object.keys(sections).sort(),[...kinds,'ClientNpcResources'].sort());
     assert.deepEqual(Object.keys(coverage.fields).sort(),kinds.slice().sort());
     const allowed=new Set();
@@ -62,6 +78,9 @@ export class NativeNpc {
           'NPC ancestry reference field outside declared inventory');
       }
     }
+    ancestryInventory(coverage.ancestryDefinitions,definitionFields,coverage.fields);
+    ancestryInventory(coverage.ancestryScriptReferences,{ClientNpcAvatars:['OnDamageScript']},coverage.fields);
+    ancestryInventory(coverage.ancestrySourceTypeLists,{ClientNpcDamageControllers:sourceTypeFields},coverage.fields);
     assert(Array.isArray(sections.ClientNpcResources)&&sections.ClientNpcResources.length>0&&sections.ClientNpcResources.length<=32768);
     const resources=new Map();
     for(const row of sections.ClientNpcResources) {
@@ -69,6 +88,9 @@ export class NativeNpc {
       assert(row.parentName===''||resource(row.parentName));assert(row.values&&typeof row.values==='object'&&!Array.isArray(row.values));
       assert.equal(row.referenceRule,'native-declaration-scope-v2');
       for(const key of Object.keys(row.values))assert(allowed.has(key),'Undeclared NPC field');
+      for(const field of sourceTypeFields)if(Object.hasOwn(row.values,field))
+        assert(Array.isArray(row.values[field])&&row.values[field].length<=256
+          &&row.values[field].every(value=>typeof value==='string'),'NPC source-type array');
     }
     assert.equal(coverage.resources,resources.size);verifyScopedLinks(sections);
     const used=new Set();
@@ -91,5 +113,6 @@ export class NativeNpc {
       }
     }
     assert.equal(used.size,resources.size,'Unreferenced NPC declarations');
+    verifyNpcCallbackSources(coverage.callbackSources,sections.ClientNpcAgents,resources);
   }
 }

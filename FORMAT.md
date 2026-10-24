@@ -61,6 +61,12 @@ PublicExport 的清单是采集时读取的索引，不应以本机游戏 EXE �
 
 ## 本地客户端事实
 
+### NPC 伤害处理与回调来源扩展
+
+`client-npc-facts-v1` 可同时包含 `ClientNpcInjuryHandlers` 与 `ClientNpcInjuryEvaluators`；两者出现时必须成对声明字段、成员及计数。旧四类 NPC 包仍可读取。新增引用包括伤害处理器的 `EvaluatorTypes`／`DeathEffectType`、化身的 `OnDamageScript/Script`，以及伤害控制器的 `InvalidDamageSourceEntities`／`ValidDamageSourceEntities`。每个引用都必须绑定本条声明资源、原始值和解析状态；显式空数组不生成虚假引用。
+
+`ancestryDefinitions`、`ancestryScriptReferences`、`ancestrySourceTypeLists` 仅描述已采集的字段范围，必须属于对应类型的字段清单。它们不定义原生默认值或字段合并行为。可选的 `callbackSources`（`npc-callback-declarations-v1/v2`）只保存选定 NPC 的声明哈希、字节数、脚本指针和依赖图，不含原始脚本正文。独立校验器检查根节点、父链、全部已解析依赖、声明归属、空正文约束、重复指针及总量上限；未知引用保留 `UNRESOLVED`。这些事实不能单独授予战斗机制准入，也不能跨服复用。
+
 能力 `client-resource-facts-v1` 表示只读解析 Packages/Languages 后的白名单事实，不是 PublicExport 格式或完整战斗模型。`exports/en|zh/ExportClientItems.json` 的 `sections.ClientItems` 包含物品和继承链；`ExportClientLocalization.json` 仅包含被引用的文本标签。`exports/neutral/ExportClientResources.json` 的 `ownFacts` 保留字段路径与原始数值/枚举，父级另存，不合并数组或填充原生默认值。
 
 `ExportClientCoverage.json` 和 `quality.clientCoverage` 给出具体缺口。未知类别、缺失语言保留 null，不能解释为默认手枪或回退到另一区域。缓存可能含隐藏/未开放物品，不能把清单作为游戏可获取列表。`completeResourceChain` 只说明资源父链可解析，不表示所有脚本、原生默认值与战斗行为已经实现。

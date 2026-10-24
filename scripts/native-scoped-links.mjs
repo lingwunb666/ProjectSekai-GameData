@@ -22,7 +22,8 @@ const fields={
   ClientAchievementRegistries:['EnabledChallenges/*'],ClientChallengeDefinitions:['Parents/*'],
   ClientLoreFragments:['PowerSuitRes','Song','SecretTransmission'],
   ClientNpcResources:['AvatarTypes/*','NewAdditionalInventory/*/item','DamageControllerType','DropTable','AbilityResistanceData','HitProxies/*/Type',
-    'InjuryHandlersEx/*','PainHandler','PreDeathHandler','DeathHandler']};
+    'InjuryHandlersEx/*','PainHandler','PreDeathHandler','DeathHandler','OnDamageScript/Script',
+    'DeathEffectType','EvaluatorTypes/*','InvalidDamageSourceEntities/*','ValidDamageSourceEntities/*']};
 const resource=x=>typeof x==='string'&&/^\/(?:[A-Za-z0-9_.-]+\/)*[A-Za-z0-9_.-]+$/.test(x)
   &&x.split('/').every(p=>p!=='.'&&p!=='..');
 const escape=x=>x.replaceAll('~','~0').replaceAll('/','~1');
