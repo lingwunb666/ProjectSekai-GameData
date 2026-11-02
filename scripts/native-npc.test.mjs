@@ -68,6 +68,24 @@ test('optional injury definition families must be complete and ancestry fields m
   }
 });
 
+test('current handler lifecycle and evaluator declarations remain explicit, unique and source-bound',()=>{
+  const f=fixture();
+  const definitions={ClientNpcInjuryHandlers:['DeathInjuryType','Duration','DurationUpgradeSymbol','MaxStacks',
+    'FrozenDuration','EndAnimEvent','ActiveFailsafeTime','DamageOverTime','RadialDamage','RadialPercentOfBaseDamage'],
+    ClientNpcInjuryEvaluators:['DamageTypes','HitTypes','AllowInjuryFromLinkDamage','OriginalFactionCheck',
+      'SelfTrigger','HitPart','HealthThreshold','MinimumDamage','AccumulatedHealthThreshold','Chance',
+      'AllowInjuryInWallSlide','PosturesThatPreventInjury','AllowStaggerRefreshing','CanBeInjuredWhileFrozenSolid','WeightMultiplier']};
+  for(const [kind,fields]of Object.entries(definitions)) {
+    f.sections[kind]=[];f.coverage.sections[kind]=0;f.coverage.fields[kind]=fields;
+  }
+  f.coverage.ancestryDefinitions=structuredClone(definitions);check(f);
+  for(const mutate of [x=>x.coverage.fields.ClientNpcInjuryHandlers=['DeathInjuryType'],
+    x=>x.coverage.ancestryDefinitions.ClientNpcInjuryEvaluators.push('Unknown'),
+    x=>x.coverage.ancestryDefinitions.ClientNpcInjuryHandlers.push('Duration')]) {
+    const bad=structuredClone(f);mutate(bad);assert.throws(()=>check(bad));
+  }
+});
+
 test('NPC source type arrays and script ancestry preserve explicit empties without accepting malformed declarations',()=>{
   const f=fixture();f.coverage.fields.ClientNpcDamageControllers.push('InvalidDamageSourceEntities','ValidDamageSourceEntities');
   f.coverage.fields.ClientNpcAvatars.push('OnDamageScript');

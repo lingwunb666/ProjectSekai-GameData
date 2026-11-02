@@ -1,10 +1,22 @@
 import assert from 'node:assert/strict';
 import {verifyScopedLinks} from './native-scoped-links.mjs';
 import {verifyNpcCallbackSources} from './native-npc-callbacks.mjs';
+import {verifyNpcAbilityResistance,verifyNpcDeformers} from './native-npc-projections.mjs';
 
 const baseKinds=['ClientNpcAgents','ClientNpcAvatars','ClientNpcDamageControllers','ClientNpcHitProxies'];
-const definitionFields={ClientNpcInjuryHandlers:['DeathInjuryType','DeathEffectType','EvaluatorTypes','ImpulseThreshold'],
-  ClientNpcInjuryEvaluators:['DamageTypes']};
+const definitionFields={ClientNpcInjuryHandlers:['DeathInjuryType','DeathEffectType','EvaluatorTypes','ImpulseThreshold',
+  'ProcInjuryType','EscalatingInjury','CanBlockInjury','AllowInjuryOnFrozenSolid','AllowInjuryInWallSlide','AllowInjuryDuringRagdoll',
+  'MaxStacks','MaxStacksWithOverguard','FrozenDuration','mReworkMaxStacks','BaseFreezeModifier','RepeatFreezeModifier',
+  'PostFrozenStacks','OverfreezeDurationPercentPerStack','Duration','DurationUpgradeSymbol','TimeBetweenInjuries',
+  'EndAnimEvent','ActiveFailsafeTime','UsePostureModifier','PostureModifier','InjuryExitsWallSlide',
+  'PlayPhrase','BarkOnZeroDamage','Bark','BarkFilter','ConditionalBarks','ImmunityEffect','InjuryEffect','DeathBark','DeathBarkFilter','IsSpace',
+  'Upgrades','StackedUpgrades','IncrementalUpgrades','FrozenDebuffs','EffectsAreSelfDestructive',
+  'RadialDamageOnProcEnd','RadialDamageSurvivesDeath','RadialDamageTickRate',
+  'DamageOverTime','DOTPercentOfBaseDamage','UseWeightedDamage','ConsolidateDamageOverTime',
+  'RadialDamage','RadialPercentOfBaseDamage'],
+  ClientNpcInjuryEvaluators:['DamageTypes','HitTypes','AllowInjuryFromLinkDamage','OriginalFactionCheck',
+    'SelfTrigger','HitPart','HealthThreshold','MinimumDamage','AccumulatedHealthThreshold','Chance',
+    'AllowInjuryInWallSlide','PosturesThatPreventInjury','AllowStaggerRefreshing','CanBeInjuredWhileFrozenSolid','WeightMultiplier']};
 const sourceTypeFields=['InvalidDamageSourceEntities','ValidDamageSourceEntities'];
 const resource=id=>typeof id==='string'&&/^\/(?:[A-Za-z0-9_.-]+\/)*[A-Za-z0-9_.-]+$/.test(id)
   &&id.split('/').every(p=>p!=='.'&&p!=='..');
@@ -114,5 +126,7 @@ export class NativeNpc {
     }
     assert.equal(used.size,resources.size,'Unreferenced NPC declarations');
     verifyNpcCallbackSources(coverage.callbackSources,sections.ClientNpcAgents,resources);
+    verifyNpcAbilityResistance(coverage.abilityResistanceDefinitions,resources);
+    verifyNpcDeformers(coverage.deformerDefinitions,sections.ClientNpcDamageControllers,resources);
   }
 }
